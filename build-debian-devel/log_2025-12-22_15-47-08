@@ -1,0 +1,109 @@
+2025-12-22 15:47:08.622960 +0000 > starting log
+2025-12-22 15:47:08.623630 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:47:08.623650 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:47:08.623659 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:47:08.623667 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:47:08.623673 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>>   anaconda.[0m
+2025-12-22 15:47:08.623679 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:47:08.623687 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 15:47:08.623693 +0000 build-debian-devel: .[38;5;246m15:47:06 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:47:11.306477 +0000 build-debian-devel: .[38;5;246m15:47:09 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp7920..[0m
+2025-12-22 15:47:11.306559 +0000 build-debian-devel: .[38;5;246m15:47:09 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7920 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-anaconda.git /builder/anaconda /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:47:24.984797 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:47:24.984869 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag caaf92640e24de0731cc02c6e21cefd8e1ef0572..[0m
+2025-12-22 15:47:24.984895 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag 0b76f017fd3cfda65bdfb735e2f3d4c5179bde64..[0m
+2025-12-22 15:47:24.984913 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag 8336b4ca36516f68022d37a66580fc4781af7a22..[0m
+2025-12-22 15:47:24.984969 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:47:24.984985 +0000 build-debian-devel: .[38;5;246m15:47:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:47:26.464707 +0000 build-debian-devel: .[38;5;246m15:47:24 .[96m[qb.fetch.anaconda] .[0mLog file: /home/user/builder-devel/logs/20251222T154706-anaconda.log.[0m
+2025-12-22 15:47:27.852697 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp8018..[0m
+2025-12-22 15:47:27.852818 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8018 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'.[0m
+2025-12-22 15:47:27.992495 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:47:27.992597 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:47:27.996566 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/anaconda'\'' --file-name '\''anaconda-41.28.tar.bz2'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'\'' --'.[0m
+2025-12-22 15:47:27.996845 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/anaconda'\'' --file-name '\''anaconda-41.28.tar.bz2'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'\'' --'.[0m
+2025-12-22 15:47:27.996921 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ set -- --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2 --.[0m
+2025-12-22 15:47:27.996960 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:47:27.996992 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:47:27.997135 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/anaconda.[0m
+2025-12-22 15:47:27.997180 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997217 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997418 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:47:27.997452 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:47:27.997480 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_NAME=anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:47:27.997499 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997518 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997537 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:47:27.997557 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:47:27.997593 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:47:27.997616 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997636 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997657 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:47:27.997678 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:47:27.997698 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:47:27.997715 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:47:27.997803 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-22 15:47:27.997851 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:47:27.997884 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-22 15:47:27.997909 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:47:27.998130 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /builder/anaconda ']'.[0m
+2025-12-22 15:47:27.998231 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mkdir -p /builder/anaconda.[0m
+2025-12-22 15:47:27.998263 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ cd /builder/anaconda.[0m
+2025-12-22 15:47:27.998301 +0000 build-debian-devel: .[38;5;246m15:47:26 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_anaconda-41.28.tar.bz2 -- https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:22.185119 +0000 build-debian-devel: .[38;5;246m15:48:20 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:48:22.185185 +0000 build-debian-devel: .[38;5;246m15:48:20 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:48:24.824385 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246mUsing executor local:/tmp/13975778054273622cb08bf/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpkxuvbvpu --untrusted-file /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512']'..[0m
+2025-12-22 15:48:24.828796 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:48:24.829540 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpkxuvbvpu --untrusted-file /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-22 15:48:24.830110 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpkxuvbvpu'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512'\'' --'.[0m
+2025-12-22 15:48:24.830571 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpkxuvbvpu'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512'\'' --'.[0m
+2025-12-22 15:48:24.830838 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpkxuvbvpu --untrusted-file /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512 --.[0m
+2025-12-22 15:48:24.831092 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:48:24.831489 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:48:24.831567 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:48:24.831611 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpkxuvbvpu.[0m
+2025-12-22 15:48:24.831650 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.831677 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.831722 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:48:24.831747 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:48:24.831804 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:24.831829 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.831872 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.831896 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:48:24.831934 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:48:24.831993 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 15:48:24.832004 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.832332 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.832348 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:48:24.832357 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:48:24.832384 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-22 15:48:24.832393 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.832400 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.832408 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:48:24.832415 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:48:24.832422 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:48:24.832430 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:48:24.832441 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-22 15:48:24.832450 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpkxuvbvpu ']'.[0m
+2025-12-22 15:48:24.832459 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpkxuvbvpu.[0m
+2025-12-22 15:48:24.832472 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:24.832969 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:24.833047 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_NAME=anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:24.833103 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:48:24.833121 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:48:24.833136 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:48:24.833720 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:48:24.833733 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:48:24.833746 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:48:24.833757 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:48:24.833773 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:48:24.833785 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 15:48:24.833798 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 15:48:24.833813 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-22 15:48:24.833832 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ printf '%s  -\n' 2522213a3251e34c681709925c51534357a33bc94caf5c5d0ea22c9205932a094cbd5d2a4759d5e530fdb826cf7566b9fbea6fa18c44fbbeb0e69e9015a9382e.[0m
+2025-12-22 15:48:24.839724 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpkxuvbvpu/untrusted_anaconda-41.28.tar.bz2 /home/user/builder-devel/tmp/tmpkxuvbvpu/anaconda-41.28.tar.bz2.[0m
+2025-12-22 15:48:24.846255 +0000 build-debian-devel: .[38;5;246m15:48:23 .[96m[qb.fetch.anaconda] .[38;5;246m['cd -- /builder', "git -C /builder/anaconda rev-parse 'HEAD^{}' >> hash", "git -C /builder/anaconda tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:48:26.554280 +0000 build-debian-devel: .[38;5;246m15:48:24 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp4293..[0m
+2025-12-22 15:48:26.554387 +0000 build-debian-devel: .[38;5;246m15:48:24 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4293 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/anaconda rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/anaconda tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:48:29.287814 +0000 build-debian-devel: .[38;5;246m15:48:27 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:48:29.288117 +0000 > closing log
