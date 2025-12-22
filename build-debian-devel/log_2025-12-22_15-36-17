@@ -1,0 +1,109 @@
+2025-12-22 15:36:17.160586 +0000 > starting log
+2025-12-22 15:36:17.160800 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:36:17.160814 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:36:17.160822 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:36:17.160828 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:36:17.160834 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>>   xfdesktop.[0m
+2025-12-22 15:36:17.160839 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:36:17.160846 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 15:36:17.160851 +0000 build-debian-devel: .[38;5;246m15:36:17 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:36:18.514007 +0000 build-debian-devel: .[38;5;246m15:36:18 .[96m[qb.fetch.xfdesktop.fetch] .[0mUsing executor qubes:disp5438..[0m
+2025-12-22 15:36:18.514183 +0000 build-debian-devel: .[38;5;246m15:36:18 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5438 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-xfdesktop.git /builder/xfdesktop /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:36:20.279813 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:36:20.279922 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m---> Good tag 8951da58eb9512c50b02a2b85719b1e1494b14db..[0m
+2025-12-22 15:36:20.279950 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m---> Good tag 100ebc947acaa8cf6ee8f865c2a9affdd2cb20b6..[0m
+2025-12-22 15:36:20.279969 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m---> Good tag 57557353eb21641f88af20f0976e3891cb38618d..[0m
+2025-12-22 15:36:20.279987 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:36:20.280003 +0000 build-debian-devel: .[38;5;246m15:36:20 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:36:22.183538 +0000 build-debian-devel: .[38;5;246m15:36:22 .[96m[qb.fetch.xfdesktop] .[0mLog file: /home/user/builder-devel/logs/20251222T153617-xfdesktop.log.[0m
+2025-12-22 15:36:29.068009 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[0mUsing executor qubes:disp7509..[0m
+2025-12-22 15:36:29.068175 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7509 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/xfdesktop --file-name xfdesktop-4.18.1.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2'.[0m
+2025-12-22 15:36:29.189806 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:36:29.189963 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/xfdesktop --file-name xfdesktop-4.18.1.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:29.191243 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/xfdesktop'\'' --file-name '\''xfdesktop-4.18.1.tar.bz2'\'' --file-url '\''https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2'\'' --'.[0m
+2025-12-22 15:36:29.191322 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/xfdesktop'\'' --file-name '\''xfdesktop-4.18.1.tar.bz2'\'' --file-url '\''https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2'\'' --'.[0m
+2025-12-22 15:36:29.191402 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ set -- --output-dir /builder/xfdesktop --file-name xfdesktop-4.18.1.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2 --.[0m
+2025-12-22 15:36:29.191417 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:36:29.191452 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:29.191492 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/xfdesktop.[0m
+2025-12-22 15:36:29.191525 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191538 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191575 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:36:29.191588 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:29.191648 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ FILE_NAME=xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:29.191660 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191713 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191725 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:36:29.191778 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:29.191817 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ FILE_URL=https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:29.191851 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191864 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.191898 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:36:29.191947 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:29.191998 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:29.192089 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:36:29.192128 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2 ']'.[0m
+2025-12-22 15:36:29.192196 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:36:29.192231 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z xfdesktop-4.18.1.tar.bz2 ']'.[0m
+2025-12-22 15:36:29.192248 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:29.192261 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n /builder/xfdesktop ']'.[0m
+2025-12-22 15:36:29.192273 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ mkdir -p /builder/xfdesktop.[0m
+2025-12-22 15:36:29.192383 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ cd /builder/xfdesktop.[0m
+2025-12-22 15:36:29.192492 +0000 build-debian-devel: .[38;5;246m15:36:29 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_xfdesktop-4.18.1.tar.bz2 -- https://archive.xfce.org/src/xfce/xfdesktop/4.18/xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:31.594993 +0000 build-debian-devel: .[38;5;246m15:36:31 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:36:31.595107 +0000 build-debian-devel: .[38;5;246m15:36:31 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:36:33.252882 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246mUsing executor local:/tmp/135530140722112f04a4b2f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpsabmkli5 --untrusted-file /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512']'..[0m
+2025-12-22 15:36:33.268720 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:36:33.268981 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpsabmkli5 --untrusted-file /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512.[0m
+2025-12-22 15:36:33.272519 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpsabmkli5'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512'\'' --'.[0m
+2025-12-22 15:36:33.273573 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpsabmkli5'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512'\'' --'.[0m
+2025-12-22 15:36:33.274163 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpsabmkli5 --untrusted-file /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512 --.[0m
+2025-12-22 15:36:33.274286 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:36:33.274327 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:36:33.274361 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:33.274394 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpsabmkli5.[0m
+2025-12-22 15:36:33.274424 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.274492 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.275992 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:36:33.276407 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:33.276501 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:33.276523 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276538 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276548 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:36:33.276558 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:33.276574 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 15:36:33.276587 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276599 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276611 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:36:33.276624 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:33.276639 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512.[0m
+2025-12-22 15:36:33.276654 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276669 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276679 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:36:33.276688 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:36:33.276702 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:36:33.276716 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:36:33.276727 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2 ']'.[0m
+2025-12-22 15:36:33.276784 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsabmkli5 ']'.[0m
+2025-12-22 15:36:33.276795 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpsabmkli5.[0m
+2025-12-22 15:36:33.281958 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:33.287612 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:33.289233 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ FILE_NAME=xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:33.289267 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:36:33.289294 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:36:33.289307 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:36:33.289318 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:36:33.289329 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:36:33.289339 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:36:33.289350 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:36:33.289366 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512 ']'.[0m
+2025-12-22 15:36:33.289374 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 15:36:33.289384 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 15:36:33.290919 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/xfdesktop/xfdesktop-4.18.1.tar.bz2.sha512.[0m
+2025-12-22 15:36:33.301137 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m++ printf '%s  -\n' cafb1e274bbabf1704a6452532fc79657af26eaf92a58374f87a70f31c35fbf213319c6658b3d18bfca2d555b69e07e46949407d1f80e5a37f48e76bbde9dc3e.[0m
+2025-12-22 15:36:33.303513 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpsabmkli5/untrusted_xfdesktop-4.18.1.tar.bz2 /home/user/builder-devel/tmp/tmpsabmkli5/xfdesktop-4.18.1.tar.bz2.[0m
+2025-12-22 15:36:33.309101 +0000 build-debian-devel: .[38;5;246m15:36:33 .[96m[qb.fetch.xfdesktop] .[38;5;246m['cd -- /builder', "git -C /builder/xfdesktop rev-parse 'HEAD^{}' >> hash", "git -C /builder/xfdesktop tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:36:37.184797 +0000 build-debian-devel: .[38;5;246m15:36:37 .[96m[qb.fetch.xfdesktop.fetch] .[0mUsing executor qubes:disp7146..[0m
+2025-12-22 15:36:37.184889 +0000 build-debian-devel: .[38;5;246m15:36:37 .[96m[qb.fetch.xfdesktop.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7146 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/xfdesktop rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/xfdesktop tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:36:39.518813 +0000 build-debian-devel: .[38;5;246m15:36:39 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:36:39.518992 +0000 > closing log
