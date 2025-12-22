@@ -1,0 +1,109 @@
+2025-12-22 15:39:26.509710 +0000 > starting log
+2025-12-22 15:39:26.510075 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:39:26.510088 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:39:26.510096 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:39:26.510101 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:39:26.510105 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>>   linux-gbulb.[0m
+2025-12-22 15:39:26.510110 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:39:26.510116 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 15:39:26.510121 +0000 build-debian-devel: .[38;5;246m15:39:26 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:39:27.974785 +0000 build-debian-devel: .[38;5;246m15:39:28 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp3655..[0m
+2025-12-22 15:39:27.974897 +0000 build-debian-devel: .[38;5;246m15:39:28 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3655 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-gbulb.git /builder/linux-gbulb /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:39:29.876670 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:39:29.876740 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag 527da9cebd411a2508d5ca17fa5ad02785dff850..[0m
+2025-12-22 15:39:29.876762 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag 1fd9e1e9be5c51f3957602b8a6700af2bc43d63b..[0m
+2025-12-22 15:39:29.876774 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag c3e78fa8c22b8088a3fef64a565e9e12160621bb..[0m
+2025-12-22 15:39:29.876835 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:39:29.876899 +0000 build-debian-devel: .[38;5;246m15:39:29 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:39:31.641670 +0000 build-debian-devel: .[38;5;246m15:39:31 .[96m[qb.fetch.linux-gbulb] .[0mLog file: /home/user/builder-devel/logs/20251222T153926-linux-gbulb.log.[0m
+2025-12-22 15:39:37.366783 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp5471..[0m
+2025-12-22 15:39:37.366890 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5471 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'.[0m
+2025-12-22 15:39:37.467725 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:39:37.467832 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:37.471369 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2025-12-22 15:39:37.471406 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2025-12-22 15:39:37.471467 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz --.[0m
+2025-12-22 15:39:37.471501 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:39:37.471541 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:37.471597 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-gbulb.[0m
+2025-12-22 15:39:37.471686 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.471696 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.471724 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:39:37.471782 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:37.471813 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:37.471855 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.471889 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.471920 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:39:37.471975 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:37.472044 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:37.472074 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.472083 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.472106 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:39:37.472169 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:37.472198 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:37.472278 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:39:37.472300 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 15:39:37.472383 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:39:37.472391 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 15:39:37.472420 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:37.472455 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /builder/linux-gbulb ']'.[0m
+2025-12-22 15:39:37.472511 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /builder/linux-gbulb.[0m
+2025-12-22 15:39:37.472688 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ cd /builder/linux-gbulb.[0m
+2025-12-22 15:39:37.472723 +0000 build-debian-devel: .[38;5;246m15:39:37 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_gbulb-0.6.6.tar.gz -- https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:38.730258 +0000 build-debian-devel: .[38;5;246m15:39:38 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:39:38.730340 +0000 build-debian-devel: .[38;5;246m15:39:38 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:39:40.418630 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mUsing executor local:/tmp/1280442607134084760efe7/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp18gk9ivr --untrusted-file /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256']'..[0m
+2025-12-22 15:39:40.425661 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:39:40.427742 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp18gk9ivr --untrusted-file /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 15:39:40.434589 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp18gk9ivr'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2025-12-22 15:39:40.434640 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp18gk9ivr'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2025-12-22 15:39:40.434674 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp18gk9ivr --untrusted-file /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 --.[0m
+2025-12-22 15:39:40.434771 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:39:40.434792 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:39:40.434809 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:40.434829 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp18gk9ivr.[0m
+2025-12-22 15:39:40.434847 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.434859 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.434869 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:39:40.434878 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:40.434895 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:40.435372 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.435518 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.435724 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:39:40.438523 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:40.438634 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2025-12-22 15:39:40.438645 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.438653 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.438660 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:39:40.438667 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:40.438680 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 15:39:40.438811 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.439003 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.439200 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:39:40.439905 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:39:40.440068 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:39:40.440238 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:39:40.440500 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 15:39:40.440669 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp18gk9ivr ']'.[0m
+2025-12-22 15:39:40.440929 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp18gk9ivr.[0m
+2025-12-22 15:39:40.441705 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:40.444474 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:40.444526 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:40.444900 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 15:39:40.444919 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 15:39:40.444934 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 15:39:40.444945 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:39:40.444956 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:39:40.444966 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:39:40.444976 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:39:40.444990 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 15:39:40.445001 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2025-12-22 15:39:40.445046 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2025-12-22 15:39:40.445061 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 15:39:40.445347 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ printf '%s  -\n' b66bb1637e956a605636ac2820747583983715a87742beaddeb2e41da37b5154.[0m
+2025-12-22 15:39:40.447357 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp18gk9ivr/untrusted_gbulb-0.6.6.tar.gz /home/user/builder-devel/tmp/tmp18gk9ivr/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 15:39:40.450681 +0000 build-debian-devel: .[38;5;246m15:39:40 .[96m[qb.fetch.linux-gbulb] .[38;5;246m['cd -- /builder', "git -C /builder/linux-gbulb rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-gbulb tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:39:45.305068 +0000 build-debian-devel: .[38;5;246m15:39:45 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp4749..[0m
+2025-12-22 15:39:45.305710 +0000 build-debian-devel: .[38;5;246m15:39:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4749 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-gbulb rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-gbulb tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:39:47.351510 +0000 build-debian-devel: .[38;5;246m15:39:45 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:39:47.351589 +0000 > closing log
