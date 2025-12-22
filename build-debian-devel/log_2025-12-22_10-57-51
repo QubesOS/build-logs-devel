@@ -1,0 +1,107 @@
+2025-12-22 10:57:51.975091 +0000 > starting log
+2025-12-22 10:57:51.975271 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 10:57:51.975283 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 10:57:51.975289 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 10:57:51.975294 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 10:57:51.975299 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>>   xorg-x11-server.[0m
+2025-12-22 10:57:51.975303 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 10:57:51.975309 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 10:57:51.975313 +0000 build-debian-devel: .[38;5;246m10:57:52 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 10:57:54.404275 +0000 build-debian-devel: .[38;5;246m10:57:54 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp4572..[0m
+2025-12-22 10:57:54.404388 +0000 build-debian-devel: .[38;5;246m10:57:54 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4572 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-xorg-x11-server.git /builder/xorg-x11-server /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 10:57:56.324210 +0000 build-debian-devel: .[38;5;246m10:57:56 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 10:57:56.325966 +0000 build-debian-devel: .[38;5;246m10:57:56 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m---> Good tag fda7fdc13c583a9e8a41b87b0e77ada7ce6dab43..[0m
+2025-12-22 10:57:56.326465 +0000 build-debian-devel: .[38;5;246m10:57:56 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 10:57:56.326783 +0000 build-debian-devel: .[38;5;246m10:57:56 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 10:57:58.016354 +0000 build-debian-devel: .[38;5;246m10:57:58 .[96m[qb.fetch.xorg-x11-server] .[0mLog file: /home/user/builder-devel/logs/20251222T105751-xorg-x11-server.log.[0m
+2025-12-22 10:58:10.983469 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp3598..[0m
+2025-12-22 10:58:10.983691 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3598 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'.[0m
+2025-12-22 10:58:11.193400 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 10:58:11.196626 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:11.197819 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.21.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'\'' --'.[0m
+2025-12-22 10:58:11.198131 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.21.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'\'' --'.[0m
+2025-12-22 10:58:11.199801 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz --.[0m
+2025-12-22 10:58:11.199869 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 10:58:11.199883 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:11.199895 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/xorg-x11-server.[0m
+2025-12-22 10:58:11.199904 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.199912 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.199919 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 10:58:11.199948 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:11.199955 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:11.199961 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.199971 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.199976 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 10:58:11.199983 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:11.199994 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_URL=https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:11.200003 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.200010 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.200038 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 10:58:11.200047 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:11.200053 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:11.200062 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 10:58:11.200072 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:11.200082 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 10:58:11.200114 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:11.200124 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:11.200134 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /builder/xorg-x11-server ']'.[0m
+2025-12-22 10:58:11.200141 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /builder/xorg-x11-server.[0m
+2025-12-22 10:58:11.200151 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ cd /builder/xorg-x11-server.[0m
+2025-12-22 10:58:11.200210 +0000 build-debian-devel: .[38;5;246m10:58:11 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_xorg-server-21.1.21.tar.xz -- https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:30.903624 +0000 build-debian-devel: .[38;5;246m10:58:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 10:58:30.903734 +0000 build-debian-devel: .[38;5;246m10:58:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:32.775780 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mUsing executor local:/tmp/1249331794994567e31d678/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmppmfvmvnf --untrusted-file /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512']'..[0m
+2025-12-22 10:58:32.778580 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 10:58:32.778688 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmppmfvmvnf --untrusted-file /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:32.780808 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmppmfvmvnf'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512'\'' --'.[0m
+2025-12-22 10:58:32.780908 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmppmfvmvnf'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512'\'' --'.[0m
+2025-12-22 10:58:32.780954 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmppmfvmvnf --untrusted-file /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 --.[0m
+2025-12-22 10:58:32.780996 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 10:58:32.781052 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 10:58:32.781092 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:32.781110 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmppmfvmvnf.[0m
+2025-12-22 10:58:32.781126 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781140 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781190 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 10:58:32.781204 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:32.781224 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:32.781239 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781252 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781265 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 10:58:32.781278 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:32.781292 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 10:58:32.781305 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781318 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781331 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 10:58:32.781344 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:32.781363 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:32.781376 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781389 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781402 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 10:58:32.781414 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:32.781427 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:32.781440 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 10:58:32.781458 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:32.781480 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmppmfvmvnf ']'.[0m
+2025-12-22 10:58:32.781496 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmppmfvmvnf.[0m
+2025-12-22 10:58:32.781514 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:32.781537 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:32.781553 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:32.781572 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:32.781591 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:32.781609 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:32.781622 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:32.781636 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 10:58:32.781649 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:32.781663 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:32.781682 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:32.781695 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 10:58:32.781710 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 10:58:32.782619 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:32.783633 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ printf '%s  -\n' bb2eb4e6756eb9e38b61bd47c017da44bcf5f45f2b7a906b4bb3a56b3d791cec64abb9bf37b224efe1e4fab9cc296f3672c9b2f8e00e1cdfc54337bef63cd16c.[0m
+2025-12-22 10:58:32.800316 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmppmfvmvnf/untrusted_xorg-server-21.1.21.tar.xz /home/user/builder-devel/tmp/tmppmfvmvnf/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:32.810679 +0000 build-debian-devel: .[38;5;246m10:58:32 .[96m[qb.fetch.xorg-x11-server] .[38;5;246m['cd -- /builder', "git -C /builder/xorg-x11-server rev-parse 'HEAD^{}' >> hash", "git -C /builder/xorg-x11-server tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 10:58:33.913010 +0000 build-debian-devel: .[38;5;246m10:58:34 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp8745..[0m
+2025-12-22 10:58:33.913228 +0000 build-debian-devel: .[38;5;246m10:58:34 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8745 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/xorg-x11-server rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/xorg-x11-server tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 10:58:36.205824 +0000 build-debian-devel: .[38;5;246m10:58:36 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 10:58:36.206572 +0000 > closing log
