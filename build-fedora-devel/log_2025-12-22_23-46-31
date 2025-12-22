@@ -1,0 +1,109 @@
+2025-12-22 23:46:31.428009 +0000 > starting log
+2025-12-22 23:46:31.428442 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 23:46:31.428460 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 23:46:31.428467 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 23:46:31.428473 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 23:46:31.428478 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>>   linux-gbulb.[0m
+2025-12-22 23:46:31.428483 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 23:46:31.428488 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-22 23:46:31.428493 +0000 build-fedora-devel: .[38;5;246m23:46:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 23:46:35.964095 +0000 build-fedora-devel: .[38;5;246m23:46:36 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp9858..[0m
+2025-12-22 23:46:35.964260 +0000 build-fedora-devel: .[38;5;246m23:46:36 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9858 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-gbulb.git /builder/linux-gbulb /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 23:46:41.367320 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 23:46:41.367427 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag 527da9cebd411a2508d5ca17fa5ad02785dff850..[0m
+2025-12-22 23:46:41.367456 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag 1fd9e1e9be5c51f3957602b8a6700af2bc43d63b..[0m
+2025-12-22 23:46:41.367474 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag c3e78fa8c22b8088a3fef64a565e9e12160621bb..[0m
+2025-12-22 23:46:41.367492 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 23:46:41.367508 +0000 build-fedora-devel: .[38;5;246m23:46:41 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 23:46:43.272279 +0000 build-fedora-devel: .[38;5;246m23:46:43 .[96m[qb.fetch.linux-gbulb] .[0mLog file: /home/user/builder-fedora/logs/20251222T234631-linux-gbulb.log.[0m
+2025-12-22 23:46:45.028424 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp8050..[0m
+2025-12-22 23:46:45.028561 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8050 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'.[0m
+2025-12-22 23:46:45.143962 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 23:46:45.144386 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:45.148425 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2025-12-22 23:46:45.148471 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2025-12-22 23:46:45.148486 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz --.[0m
+2025-12-22 23:46:45.148494 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:46:45.148501 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:45.148509 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-gbulb.[0m
+2025-12-22 23:46:45.148516 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148523 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148529 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:46:45.148535 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:45.148542 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:45.148548 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148554 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148560 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:46:45.148566 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:45.148574 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:45.148580 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148587 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148593 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:46:45.148599 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:45.148618 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:45.148640 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:46:45.148648 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 23:46:45.148667 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 23:46:45.148674 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 23:46:45.148681 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:45.148687 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /builder/linux-gbulb ']'.[0m
+2025-12-22 23:46:45.148693 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /builder/linux-gbulb.[0m
+2025-12-22 23:46:45.149948 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ cd /builder/linux-gbulb.[0m
+2025-12-22 23:46:45.150038 +0000 build-fedora-devel: .[38;5;246m23:46:45 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_gbulb-0.6.6.tar.gz -- https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:48.237868 +0000 build-fedora-devel: .[38;5;246m23:46:48 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 23:46:48.237931 +0000 build-fedora-devel: .[38;5;246m23:46:48 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:46:50.123517 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mUsing executor local:/tmp/1244379204740484f8202ed/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmps6_y0esn --untrusted-file /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256']'..[0m
+2025-12-22 23:46:50.125529 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 23:46:50.125580 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmps6_y0esn --untrusted-file /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 23:46:50.126567 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmps6_y0esn'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2025-12-22 23:46:50.126610 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmps6_y0esn'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2025-12-22 23:46:50.127207 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmps6_y0esn --untrusted-file /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 --.[0m
+2025-12-22 23:46:50.127242 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 23:46:50.127249 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:46:50.127254 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:50.127261 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmps6_y0esn.[0m
+2025-12-22 23:46:50.127268 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127274 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127280 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:46:50.127286 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:50.127293 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:50.127300 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127306 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127312 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:46:50.127317 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:50.127323 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2025-12-22 23:46:50.127329 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127336 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127342 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:46:50.127347 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:50.127354 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 23:46:50.127359 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127365 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127370 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:46:50.127375 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:46:50.127381 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:46:50.127386 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:46:50.127393 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz ']'.[0m
+2025-12-22 23:46:50.127403 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmps6_y0esn ']'.[0m
+2025-12-22 23:46:50.127410 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmps6_y0esn.[0m
+2025-12-22 23:46:50.127676 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:50.128436 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:50.128457 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:50.128541 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 23:46:50.128551 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 23:46:50.128558 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 23:46:50.128564 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:46:50.128602 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 23:46:50.128609 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:46:50.128615 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:46:50.128622 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2025-12-22 23:46:50.128644 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2025-12-22 23:46:50.128820 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2025-12-22 23:46:50.130115 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2025-12-22 23:46:50.130133 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ printf '%s  -\n' b66bb1637e956a605636ac2820747583983715a87742beaddeb2e41da37b5154.[0m
+2025-12-22 23:46:50.131582 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmps6_y0esn/untrusted_gbulb-0.6.6.tar.gz /home/user/builder-fedora/tmp/tmps6_y0esn/gbulb-0.6.6.tar.gz.[0m
+2025-12-22 23:46:50.134832 +0000 build-fedora-devel: .[38;5;246m23:46:50 .[96m[qb.fetch.linux-gbulb] .[38;5;246m['cd -- /builder', "git -C /builder/linux-gbulb rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-gbulb tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 23:46:53.668031 +0000 build-fedora-devel: .[38;5;246m23:46:53 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp4464..[0m
+2025-12-22 23:46:53.668135 +0000 build-fedora-devel: .[38;5;246m23:46:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4464 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-gbulb rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-gbulb tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 23:46:56.150697 +0000 build-fedora-devel: .[38;5;246m23:46:56 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 23:46:56.150857 +0000 > closing log
