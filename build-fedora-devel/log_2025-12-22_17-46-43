@@ -1,0 +1,109 @@
+2025-12-22 17:46:43.063644 +0000 > starting log
+2025-12-22 17:46:43.063805 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 17:46:43.063816 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 17:46:43.063822 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 17:46:43.063827 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 17:46:43.063832 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>>   salt.[0m
+2025-12-22 17:46:43.063835 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 17:46:43.063841 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-22 17:46:43.063845 +0000 build-fedora-devel: .[38;5;246m17:46:43 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 17:46:45.293972 +0000 build-fedora-devel: .[38;5;246m17:46:45 .[96m[qb.fetch.salt.fetch] .[0mUsing executor qubes:disp5349..[0m
+2025-12-22 17:46:45.294081 +0000 build-fedora-devel: .[38;5;246m17:46:45 .[96m[qb.fetch.salt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5349 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-salt.git /builder/salt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 17:46:47.545409 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 17:46:47.545552 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag ee55dcdccbeafb40e2d661113751c2e20ab4d6d3..[0m
+2025-12-22 17:46:47.545609 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag 95b00a2a550563b364dbe93ba68af54fbec91d07..[0m
+2025-12-22 17:46:47.545664 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag 343c0a0aa69dc18b34c464bb277f1783204bc315..[0m
+2025-12-22 17:46:47.545719 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 17:46:47.545770 +0000 build-fedora-devel: .[38;5;246m17:46:47 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 17:46:49.029108 +0000 build-fedora-devel: .[38;5;246m17:46:49 .[96m[qb.fetch.salt] .[0mLog file: /home/user/builder-host/logs/20251222T174642-salt.log.[0m
+2025-12-22 17:46:50.897982 +0000 build-fedora-devel: .[38;5;246m17:46:50 .[96m[qb.fetch.salt.fetch] .[0mUsing executor qubes:disp5101..[0m
+2025-12-22 17:46:50.898130 +0000 build-fedora-devel: .[38;5;246m17:46:50 .[96m[qb.fetch.salt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5101 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/salt --file-name salt-3007.8.tar.gz --file-url https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz'.[0m
+2025-12-22 17:46:51.077902 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 17:46:51.078030 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/salt --file-name salt-3007.8.tar.gz --file-url https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz.[0m
+2025-12-22 17:46:51.081917 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/salt'\'' --file-name '\''salt-3007.8.tar.gz'\'' --file-url '\''https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz'\'' --'.[0m
+2025-12-22 17:46:51.082022 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/salt'\'' --file-name '\''salt-3007.8.tar.gz'\'' --file-url '\''https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz'\'' --'.[0m
+2025-12-22 17:46:51.082115 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ set -- --output-dir /builder/salt --file-name salt-3007.8.tar.gz --file-url https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz --.[0m
+2025-12-22 17:46:51.082137 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 17:46:51.082155 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:46:51.082175 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/salt.[0m
+2025-12-22 17:46:51.082198 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082214 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082230 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 17:46:51.082249 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:46:51.082379 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ FILE_NAME=salt-3007.8.tar.gz.[0m
+2025-12-22 17:46:51.082432 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082441 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082448 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 17:46:51.082484 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:46:51.082585 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ FILE_URL=https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz.[0m
+2025-12-22 17:46:51.082592 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082629 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082673 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 17:46:51.082720 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:46:51.082751 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:46:51.082799 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 17:46:51.082843 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz ']'.[0m
+2025-12-22 17:46:51.082938 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 17:46:51.082947 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z salt-3007.8.tar.gz ']'.[0m
+2025-12-22 17:46:51.082990 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_salt-3007.8.tar.gz.[0m
+2025-12-22 17:46:51.083036 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n /builder/salt ']'.[0m
+2025-12-22 17:46:51.083069 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ mkdir -p /builder/salt.[0m
+2025-12-22 17:46:51.086185 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ cd /builder/salt.[0m
+2025-12-22 17:46:51.086337 +0000 build-fedora-devel: .[38;5;246m17:46:51 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_salt-3007.8.tar.gz -- https://github.com/saltstack/salt/releases/download/v3007.8/salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:12.701290 +0000 build-fedora-devel: .[38;5;246m17:47:12 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 17:47:12.701392 +0000 build-fedora-devel: .[38;5;246m17:47:12 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 17:47:14.755243 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246mUsing executor local:/tmp/123221483742144ca85423c/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmpxy4vudg4 --untrusted-file /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512']'..[0m
+2025-12-22 17:47:14.758091 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 17:47:14.758611 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmpxy4vudg4 --untrusted-file /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512.[0m
+2025-12-22 17:47:14.761691 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmpxy4vudg4'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512'\'' --'.[0m
+2025-12-22 17:47:14.761778 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmpxy4vudg4'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512'\'' --'.[0m
+2025-12-22 17:47:14.761795 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmpxy4vudg4 --untrusted-file /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512 --.[0m
+2025-12-22 17:47:14.761803 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 17:47:14.761810 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 17:47:14.761815 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:47:14.761822 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmpxy4vudg4.[0m
+2025-12-22 17:47:14.761859 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761865 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761871 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 17:47:14.761876 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:47:14.761883 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:14.761889 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761894 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761899 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 17:47:14.761905 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:47:14.761910 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 17:47:14.761915 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761921 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761927 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 17:47:14.761932 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:47:14.761939 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512.[0m
+2025-12-22 17:47:14.761944 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761949 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761954 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 17:47:14.761960 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 17:47:14.761965 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 17:47:14.761970 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 17:47:14.761977 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz ']'.[0m
+2025-12-22 17:47:14.761983 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmpxy4vudg4 ']'.[0m
+2025-12-22 17:47:14.761988 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmpxy4vudg4.[0m
+2025-12-22 17:47:14.762005 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:14.762011 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:14.762017 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ FILE_NAME=salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:14.762141 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512 ']'.[0m
+2025-12-22 17:47:14.762460 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512 ']'.[0m
+2025-12-22 17:47:14.762501 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -e /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512 ']'.[0m
+2025-12-22 17:47:14.762527 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 17:47:14.762551 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 17:47:14.762573 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 17:47:14.762592 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 17:47:14.762616 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512 ']'.[0m
+2025-12-22 17:47:14.763254 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 17:47:14.763287 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 17:47:14.763354 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+++ cat /home/user/builder-host/sources/salt/salt-3007.8.tar.gz.sha512.[0m
+2025-12-22 17:47:14.763637 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m++ printf '%s  -\n' 91e9ea7b7a7965bbed80d73943a6c0d36dcfa1c272b9b60c1eeca8fc1922db0de899164115de0af3d4a127830a53fdc5483a4bb1d31e9fd36d73afe2d81facf6.[0m
+2025-12-22 17:47:14.787506 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmpxy4vudg4/untrusted_salt-3007.8.tar.gz /home/user/builder-host/tmp/tmpxy4vudg4/salt-3007.8.tar.gz.[0m
+2025-12-22 17:47:14.812686 +0000 build-fedora-devel: .[38;5;246m17:47:14 .[96m[qb.fetch.salt] .[38;5;246m['cd -- /builder', "git -C /builder/salt rev-parse 'HEAD^{}' >> hash", "git -C /builder/salt tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 17:47:16.169351 +0000 build-fedora-devel: .[38;5;246m17:47:16 .[96m[qb.fetch.salt.fetch] .[0mUsing executor qubes:disp2970..[0m
+2025-12-22 17:47:16.169451 +0000 build-fedora-devel: .[38;5;246m17:47:16 .[96m[qb.fetch.salt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2970 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/salt rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/salt tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 17:47:19.022734 +0000 build-fedora-devel: .[38;5;246m17:47:19 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 17:47:19.022806 +0000 > closing log
