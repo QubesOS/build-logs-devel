@@ -1,0 +1,51 @@
+2025-12-22 17:27:38.687119 +0000 > starting log
+2025-12-22 17:27:38.687370 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 17:27:38.687385 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 17:27:38.687393 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 17:27:38.687398 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 17:27:38.687404 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>>   video-companion.[0m
+2025-12-22 17:27:38.687411 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>>     commit-hash: a52d4616316e576de445fdbfe605e7bb44f9a858.[0m
+2025-12-22 17:27:38.687419 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>>     source-hash: 3c25ec212ee278b63906ecb9fcd7029995a98c921d02d294ecd08fc2c98ea54d974f08bcdf89bc3d8aca5d38bb3683f1e78efe600cb5ec0c24f63de9425d676b.[0m
+2025-12-22 17:27:38.687424 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 17:27:38.687434 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-22 17:27:38.687439 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb] .[0mRunning stages: upload.[0m
+2025-12-22 17:27:38.687445 +0000 build-fedora-devel: .[38;5;246m17:27:38 .[96m[qb.fetch.video-companion] .[0mvideo-companion: source already fetched. Updating..[0m
+2025-12-22 17:27:40.243522 +0000 build-fedora-devel: .[38;5;246m17:27:40 .[96m[qb.fetch.video-companion.fetch] .[0mUsing executor qubes:disp6968..[0m
+2025-12-22 17:27:40.243623 +0000 build-fedora-devel: .[38;5;246m17:27:40 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6968 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-video-companion.git /builder/video-companion /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 17:27:42.865903 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 17:27:42.865992 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m---> Good tag f57bb97da08b1e639d392a4b7e3f26a90d922818..[0m
+2025-12-22 17:27:42.866021 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m---> Good tag 830e241da98ce270198c305a7c64aabad246e070..[0m
+2025-12-22 17:27:42.866165 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m---> Good tag ab0c5326f3dcc80c4e065cce023e5cd3cf39a1bf..[0m
+2025-12-22 17:27:42.866183 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 17:27:42.866197 +0000 build-fedora-devel: .[38;5;246m17:27:42 .[96m[qb.fetch.video-companion.fetch] .[38;5;246m--> Merging....[0m
+2025-12-22 17:27:44.614563 +0000 build-fedora-devel: .[38;5;246m17:27:44 .[96m[qb.fetch.video-companion] .[0mLog file: /home/user/builder-host/logs/20251222T172551-video-companion.log.[0m
+2025-12-22 17:27:44.622941 +0000 build-fedora-devel: .[38;5;246m17:27:44 .[96m[qb.upload.vm-fc41.upload] .[38;5;246mUsing executor local:/tmp/126674093244768a827a71f/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-host/repository-publish/rpm/devel/current-testing/vm/fc41/ yum.qubes-os.org:/pub/qubes/repo/yum/devel/current-testing/vm/fc41/']'..[0m
+2025-12-22 17:27:46.513554 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246msending incremental file list.[0m
+2025-12-22 17:27:46.728558 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/4b05aa82309ebe8bd308ddcc75c8cc6a04cb2456759c735d78cae723d49cdea9-filelists.xml.zst.[0m
+2025-12-22 17:27:46.728730 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          32,768  67%    0.00kB/s    0:00:00            48,639 100%   15.14MB/s    0:00:00 (xfr#1, to-chk=213/217).[0m
+2025-12-22 17:27:46.728783 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/731c540145032a65cb2d1d833ecd07df7fccbd83212a1a96080189a9c6c395ce-other.xml.zst.[0m
+2025-12-22 17:27:46.728803 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          14,784 100%   14.10MB/s    0:00:00            14,784 100%   14.10MB/s    0:00:00 (xfr#2, to-chk=212/217).[0m
+2025-12-22 17:27:46.728813 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/937760da94a0d58aa289e693270cc48c8692539696ea071ef9ab8f45a5e2a484-primary.xml.zst.[0m
+2025-12-22 17:27:46.728822 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          31,537 100%   30.08MB/s    0:00:00            31,537 100%   30.08MB/s    0:00:00 (xfr#3, to-chk=211/217).[0m
+2025-12-22 17:27:46.728830 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.[0m
+2025-12-22 17:27:46.728839 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           1,563 100%    1.49MB/s    0:00:00             1,563 100%    1.49MB/s    0:00:00 (xfr#4, to-chk=210/217).[0m
+2025-12-22 17:27:46.728845 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.asc.[0m
+2025-12-22 17:27:46.728854 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m             228 100%  222.66kB/s    0:00:00               228 100%  222.66kB/s    0:00:00 (xfr#5, to-chk=209/217).[0m
+2025-12-22 17:27:46.728860 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.metalink.[0m
+2025-12-22 17:27:46.728868 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           2,100  74%    2.00MB/s    0:00:00             2,824 100%    2.69MB/s    0:00:00 (xfr#6, to-chk=208/217).[0m
+2025-12-22 17:27:46.728875 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-4.3.0-1.1.fc41.noarch.rpm.[0m
+2025-12-22 17:27:46.728884 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          13,101 100%   12.49MB/s    0:00:00            13,101 100%   12.49MB/s    0:00:00 (xfr#7, to-chk=25/217).[0m
+2025-12-22 17:27:46.728891 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-4.3.0-1.1.fc41.src.rpm.[0m
+2025-12-22 17:27:46.730335 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          32,768  12%   31.25MB/s    0:00:00           252,978 100%  241.26MB/s    0:00:00 (xfr#8, to-chk=24/217).[0m
+2025-12-22 17:27:46.730373 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-4.3.0-1.1.fc41.x86_64.buildinfo.[0m
+2025-12-22 17:27:46.730384 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           7,448 100%    7.10MB/s    0:00:00             7,448 100%    7.10MB/s    0:00:00 (xfr#9, to-chk=23/217).[0m
+2025-12-22 17:27:46.730392 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-docs-4.3.0-1.1.fc41.noarch.rpm.[0m
+2025-12-22 17:27:46.730450 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          32,768  30%   31.25MB/s    0:00:00           107,125 100%  102.16MB/s    0:00:00 (xfr#10, to-chk=22/217).[0m
+2025-12-22 17:27:46.730459 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-license-4.3.0-1.1.fc41.noarch.rpm.[0m
+2025-12-22 17:27:46.730541 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          13,306 100%   12.69MB/s    0:00:00            13,306 100%   12.69MB/s    0:00:00 (xfr#11, to-chk=21/217).[0m
+2025-12-22 17:27:46.730573 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-receiver-4.3.0-1.1.fc41.noarch.rpm.[0m
+2025-12-22 17:27:46.730609 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          21,757 100%   10.37MB/s    0:00:00            21,757 100%   10.37MB/s    0:00:00 (xfr#12, to-chk=20/217).[0m
+2025-12-22 17:27:46.730652 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-video-companion-sender-4.3.0-1.1.fc41.noarch.rpm.[0m
+2025-12-22 17:27:46.730689 +0000 build-fedora-devel: .[38;5;246m17:27:46 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          23,802 100%   11.35MB/s    0:00:00            23,802 100%   11.35MB/s    0:00:00 (xfr#13, to-chk=19/217).[0m
+2025-12-22 17:27:47.658953 +0000 build-fedora-devel: .[38;5;246m17:27:47 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 17:27:47.659013 +0000 > closing log
