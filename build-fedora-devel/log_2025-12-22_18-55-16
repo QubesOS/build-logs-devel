@@ -1,0 +1,43 @@
+2025-12-22 18:55:16.500370 +0000 > starting log
+2025-12-22 18:55:16.500546 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 18:55:16.500559 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 18:55:16.500566 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 18:55:16.500572 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 18:55:16.500577 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>>   repo-templates.[0m
+2025-12-22 18:55:16.500583 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>>     commit-hash: 0dd66557f2aa5962f23fcd19ca744200507d0df4.[0m
+2025-12-22 18:55:16.500591 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>>     source-hash: 2fc3d4f316a33e1cfdb32a52327dd836a14ed0951703ee3bc7e0b81ffa706be209c209b06198fb2319d536db0077c005eeacbc68163a7df838d13fccd07c9001.[0m
+2025-12-22 18:55:16.500596 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 18:55:16.500603 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-22 18:55:16.500607 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb] .[0mRunning stages: upload.[0m
+2025-12-22 18:55:16.500614 +0000 build-fedora-devel: .[38;5;246m18:55:16 .[96m[qb.fetch.repo-templates] .[0mrepo-templates: source already fetched. Updating..[0m
+2025-12-22 18:55:17.971352 +0000 build-fedora-devel: .[38;5;246m18:55:18 .[96m[qb.fetch.repo-templates.fetch] .[0mUsing executor qubes:disp1819..[0m
+2025-12-22 18:55:17.971503 +0000 build-fedora-devel: .[38;5;246m18:55:18 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1819 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-repo-templates.git /builder/repo-templates /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 18:55:20.139643 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 18:55:20.139719 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m---> Good tag b6ab66c0d6881020ebdf2c42037165c2996e6acf..[0m
+2025-12-22 18:55:20.139743 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m---> Good tag 6d1f51a5840c3f2e2fecc226f36cd330ded35c8e..[0m
+2025-12-22 18:55:20.139762 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m---> Good tag daf8ad9673da2e1eb4a5d5375892812371db10e3..[0m
+2025-12-22 18:55:20.139781 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 18:55:20.139805 +0000 build-fedora-devel: .[38;5;246m18:55:20 .[96m[qb.fetch.repo-templates.fetch] .[38;5;246m--> Merging....[0m
+2025-12-22 18:55:21.885555 +0000 build-fedora-devel: .[38;5;246m18:55:21 .[96m[qb.fetch.repo-templates] .[0mLog file: /home/user/builder-host/logs/20251222T185313-repo-templates.log.[0m
+2025-12-22 18:55:21.900872 +0000 build-fedora-devel: .[38;5;246m18:55:21 .[96m[qb.upload.vm-fc41.upload] .[38;5;246mUsing executor local:/tmp/130040268783968af187ab9/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-host/repository-publish/rpm/devel/current-testing/vm/fc41/ yum.qubes-os.org:/pub/qubes/repo/yum/devel/current-testing/vm/fc41/']'..[0m
+2025-12-22 18:55:23.455534 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246msending incremental file list.[0m
+2025-12-22 18:55:23.621813 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/30cafe259f840e897208caf1bb6b562cb478d8ac1e6e4142437d3a8be43c805b-primary.xml.zst.[0m
+2025-12-22 18:55:23.621896 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          32,768  92%    0.00kB/s    0:00:00            35,363 100%    2.47MB/s    0:00:00 (xfr#1, to-chk=237/241).[0m
+2025-12-22 18:55:23.621925 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/b5fe51f3c51eb48f377a374fa8a7d9b3b1502ca67ce45ee9be6e1dc7793144c6-filelists.xml.zst.[0m
+2025-12-22 18:55:23.621946 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          32,768  44%   31.25MB/s    0:00:00            74,183 100%   70.75MB/s    0:00:00 (xfr#2, to-chk=236/241).[0m
+2025-12-22 18:55:23.621965 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ repodata/e6d5ace0c142d531194be2685199c3dfae907de2b909520e223f94ef99f37353-other.xml.zst.[0m
+2025-12-22 18:55:23.621983 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          16,622 100%   15.85MB/s    0:00:00            16,622 100%   15.85MB/s    0:00:00 (xfr#3, to-chk=235/241).[0m
+2025-12-22 18:55:23.622130 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.[0m
+2025-12-22 18:55:23.622152 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           1,564 100%    1.49MB/s    0:00:00             1,564 100%    1.49MB/s    0:00:00 (xfr#4, to-chk=234/241).[0m
+2025-12-22 18:55:23.622166 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.asc.[0m
+2025-12-22 18:55:23.622185 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m             228 100%  222.66kB/s    0:00:00               228 100%  222.66kB/s    0:00:00 (xfr#5, to-chk=233/241).[0m
+2025-12-22 18:55:23.622199 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.metalink.[0m
+2025-12-22 18:55:23.622216 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           2,100  74%    2.00MB/s    0:00:00             2,824 100%    2.69MB/s    0:00:00 (xfr#6, to-chk=232/241).[0m
+2025-12-22 18:55:23.622231 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-repo-templates-4.3.2-1.1.fc41.noarch.rpm.[0m
+2025-12-22 18:55:23.622248 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          11,366 100%   10.84MB/s    0:00:00            11,366 100%   10.84MB/s    0:00:00 (xfr#7, to-chk=66/241).[0m
+2025-12-22 18:55:23.622263 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-repo-templates-4.3.2-1.1.fc41.src.rpm.[0m
+2025-12-22 18:55:23.622280 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m          18,898 100%   18.02MB/s    0:00:00            18,898 100%   18.02MB/s    0:00:00 (xfr#8, to-chk=65/241).[0m
+2025-12-22 18:55:23.622295 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m<f+++++++++ rpm/qubes-repo-templates-4.3.2-1.1.fc41.x86_64.buildinfo.[0m
+2025-12-22 18:55:23.622339 +0000 build-fedora-devel: .[38;5;246m18:55:23 .[96m[qb.upload.vm-fc41.upload] .[38;5;246m           6,159 100%    5.87MB/s    0:00:00             6,159 100%    5.87MB/s    0:00:00 (xfr#9, to-chk=64/241).[0m
+2025-12-22 18:55:24.175344 +0000 build-fedora-devel: .[38;5;246m18:55:24 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 18:55:24.175455 +0000 > closing log
