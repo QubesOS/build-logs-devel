@@ -1,0 +1,107 @@
+2025-12-22 10:57:53.159291 +0000 > starting log
+2025-12-22 10:57:53.159584 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 10:57:53.159599 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 10:57:53.159608 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 10:57:53.159615 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 10:57:53.159622 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>>   xorg-x11-server.[0m
+2025-12-22 10:57:53.159628 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 10:57:53.159635 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-22 10:57:53.159641 +0000 build-fedora-devel: .[38;5;246m10:57:53 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 10:57:55.418886 +0000 build-fedora-devel: .[38;5;246m10:57:55 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp6040..[0m
+2025-12-22 10:57:55.418959 +0000 build-fedora-devel: .[38;5;246m10:57:55 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6040 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-xorg-x11-server.git /builder/xorg-x11-server /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 10:57:58.352556 +0000 build-fedora-devel: .[38;5;246m10:57:58 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 10:57:58.352632 +0000 build-fedora-devel: .[38;5;246m10:57:58 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m---> Good tag fda7fdc13c583a9e8a41b87b0e77ada7ce6dab43..[0m
+2025-12-22 10:57:58.352645 +0000 build-fedora-devel: .[38;5;246m10:57:58 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 10:57:58.352663 +0000 build-fedora-devel: .[38;5;246m10:57:58 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 10:57:59.773980 +0000 build-fedora-devel: .[38;5;246m10:57:59 .[96m[qb.fetch.xorg-x11-server] .[0mLog file: /home/user/builder-fedora/logs/20251222T105753-xorg-x11-server.log.[0m
+2025-12-22 10:58:12.885922 +0000 build-fedora-devel: .[38;5;246m10:58:12 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp9032..[0m
+2025-12-22 10:58:12.886065 +0000 build-fedora-devel: .[38;5;246m10:58:12 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9032 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'.[0m
+2025-12-22 10:58:13.044593 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 10:58:13.044748 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:13.048440 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.21.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'\'' --'.[0m
+2025-12-22 10:58:13.048526 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.21.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz'\'' --'.[0m
+2025-12-22 10:58:13.048541 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.21.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz --.[0m
+2025-12-22 10:58:13.048550 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 10:58:13.048557 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:13.048589 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/xorg-x11-server.[0m
+2025-12-22 10:58:13.048595 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048602 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048608 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 10:58:13.048615 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:13.048659 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:13.048665 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048671 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048727 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 10:58:13.048734 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:13.048741 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_URL=https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:13.048819 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048825 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048831 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 10:58:13.048836 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:13.048886 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:13.048892 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 10:58:13.048924 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:13.048972 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 10:58:13.049001 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:13.049010 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:13.049066 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /builder/xorg-x11-server ']'.[0m
+2025-12-22 10:58:13.049072 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /builder/xorg-x11-server.[0m
+2025-12-22 10:58:13.049970 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ cd /builder/xorg-x11-server.[0m
+2025-12-22 10:58:13.050002 +0000 build-fedora-devel: .[38;5;246m10:58:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_xorg-server-21.1.21.tar.xz -- https://www.x.org/pub/individual/xserver/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:18.322972 +0000 build-fedora-devel: .[38;5;246m10:58:18 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 10:58:18.323191 +0000 build-fedora-devel: .[38;5;246m10:58:18 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:19.644376 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mUsing executor local:/tmp/1377515284325761210c169/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmp0nvqyinl --untrusted-file /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512']'..[0m
+2025-12-22 10:58:19.646009 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 10:58:19.646142 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmp0nvqyinl --untrusted-file /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:19.647916 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmp0nvqyinl'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512'\'' --'.[0m
+2025-12-22 10:58:19.647992 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmp0nvqyinl'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512'\'' --'.[0m
+2025-12-22 10:58:19.648057 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmp0nvqyinl --untrusted-file /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 --.[0m
+2025-12-22 10:58:19.649817 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 10:58:19.649851 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 10:58:19.649876 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:19.649925 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmp0nvqyinl.[0m
+2025-12-22 10:58:19.649950 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.649972 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.649995 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 10:58:19.650035 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:19.651708 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:19.651741 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.651766 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.651788 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 10:58:19.651812 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:19.651837 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 10:58:19.651859 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.651881 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.651904 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 10:58:19.651925 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:19.651958 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:19.651981 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.652003 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.652050 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 10:58:19.653651 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 10:58:19.653673 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 10:58:19.653696 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 10:58:19.653738 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz ']'.[0m
+2025-12-22 10:58:19.653767 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmp0nvqyinl ']'.[0m
+2025-12-22 10:58:19.653795 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmp0nvqyinl.[0m
+2025-12-22 10:58:19.653827 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:19.653855 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:19.655442 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:19.655471 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:19.655504 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:19.655536 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:19.655559 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:19.655582 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 10:58:19.655604 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:19.655626 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 10:58:19.657226 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512 ']'.[0m
+2025-12-22 10:58:19.657249 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 10:58:19.657288 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 10:58:19.657320 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/xorg-x11-server/xorg-server-21.1.21.tar.xz.sha512.[0m
+2025-12-22 10:58:19.657357 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ printf '%s  -\n' bb2eb4e6756eb9e38b61bd47c017da44bcf5f45f2b7a906b4bb3a56b3d791cec64abb9bf37b224efe1e4fab9cc296f3672c9b2f8e00e1cdfc54337bef63cd16c.[0m
+2025-12-22 10:58:19.659093 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmp0nvqyinl/untrusted_xorg-server-21.1.21.tar.xz /home/user/builder-fedora/tmp/tmp0nvqyinl/xorg-server-21.1.21.tar.xz.[0m
+2025-12-22 10:58:19.665390 +0000 build-fedora-devel: .[38;5;246m10:58:19 .[96m[qb.fetch.xorg-x11-server] .[38;5;246m['cd -- /builder', "git -C /builder/xorg-x11-server rev-parse 'HEAD^{}' >> hash", "git -C /builder/xorg-x11-server tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 10:58:24.092158 +0000 build-fedora-devel: .[38;5;246m10:58:24 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp9509..[0m
+2025-12-22 10:58:24.092265 +0000 build-fedora-devel: .[38;5;246m10:58:24 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9509 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/xorg-x11-server rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/xorg-x11-server tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 10:58:26.505082 +0000 build-fedora-devel: .[38;5;246m10:58:26 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 10:58:26.505173 +0000 > closing log
