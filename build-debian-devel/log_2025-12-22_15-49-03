@@ -1,0 +1,109 @@
+2025-12-22 15:49:03.894575 +0000 > starting log
+2025-12-22 15:49:03.894788 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:49:03.894801 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:49:03.894809 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:49:03.894815 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:49:03.894820 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>>   initial-setup.[0m
+2025-12-22 15:49:03.894825 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:49:03.894832 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 15:49:03.894837 +0000 build-debian-devel: .[38;5;246m15:49:02 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:49:13.190882 +0000 build-debian-devel: .[38;5;246m15:49:11 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp7179..[0m
+2025-12-22 15:49:13.190988 +0000 build-debian-devel: .[38;5;246m15:49:11 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7179 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-initial-setup.git /builder/initial-setup /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:49:18.243496 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:49:18.243605 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 941607b36290a72c6e64f50e8a19a3f13131c440..[0m
+2025-12-22 15:49:18.243627 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 0ef7baa4c7562c96b6fc619bd89fea5dafb89f3d..[0m
+2025-12-22 15:49:18.243640 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag fdf6683dc25f01275a999f2e147014f9a468d77c..[0m
+2025-12-22 15:49:18.243653 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:49:18.243668 +0000 build-debian-devel: .[38;5;246m15:49:16 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:49:19.678453 +0000 build-debian-devel: .[38;5;246m15:49:18 .[96m[qb.fetch.initial-setup] .[0mLog file: /home/user/builder-devel/logs/20251222T154902-initial-setup.log.[0m
+2025-12-22 15:49:20.974833 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp518..[0m
+2025-12-22 15:49:20.974912 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp518 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'.[0m
+2025-12-22 15:49:21.076544 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:49:21.076613 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:21.078772 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2025-12-22 15:49:21.078841 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2025-12-22 15:49:21.078854 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz --.[0m
+2025-12-22 15:49:21.078870 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:49:21.078876 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:21.078885 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/initial-setup.[0m
+2025-12-22 15:49:21.078892 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.078898 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.078904 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:49:21.079100 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:21.079131 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:21.079141 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.079147 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.079153 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:49:21.079159 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:21.079167 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:21.079173 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.079179 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.079185 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:49:21.079191 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:21.079220 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:21.079227 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:49:21.079256 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-22 15:49:21.079274 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:49:21.079280 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-22 15:49:21.079287 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:21.079293 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /builder/initial-setup ']'.[0m
+2025-12-22 15:49:21.079299 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /builder/initial-setup.[0m
+2025-12-22 15:49:21.079308 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ cd /builder/initial-setup.[0m
+2025-12-22 15:49:21.079317 +0000 build-debian-devel: .[38;5;246m15:49:19 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_initial-setup-0.3.101.tar.gz -- https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:24.413973 +0000 build-debian-devel: .[38;5;246m15:49:22 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:49:24.414064 +0000 build-debian-devel: .[38;5;246m15:49:22 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:49:25.858292 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mUsing executor local:/tmp/130567589012416f888c32f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp4jkqonpn --untrusted-file /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512']'..[0m
+2025-12-22 15:49:25.862703 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:49:25.863337 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp4jkqonpn --untrusted-file /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-22 15:49:25.867526 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp4jkqonpn'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:49:25.867587 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp4jkqonpn'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:49:25.867634 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp4jkqonpn --untrusted-file /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 --.[0m
+2025-12-22 15:49:25.867642 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:49:25.867648 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:49:25.867654 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:25.867660 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp4jkqonpn.[0m
+2025-12-22 15:49:25.867666 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867672 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867677 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:49:25.867683 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:25.867690 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:25.867696 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867717 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867723 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:49:25.867728 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:25.867734 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 15:49:25.867741 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867747 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867757 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:49:25.867763 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:25.867771 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-22 15:49:25.867800 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867882 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.867961 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:49:25.868037 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:49:25.868141 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:49:25.868199 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:49:25.868293 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-22 15:49:25.868414 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp4jkqonpn ']'.[0m
+2025-12-22 15:49:25.868504 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp4jkqonpn.[0m
+2025-12-22 15:49:25.869761 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:25.874273 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:25.874285 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:25.874293 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-22 15:49:25.874300 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-22 15:49:25.874307 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-22 15:49:25.874313 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:49:25.874319 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:49:25.874324 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:49:25.874330 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:49:25.874337 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-22 15:49:25.874342 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 15:49:25.874348 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 15:49:25.874355 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-22 15:49:25.875596 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ printf '%s  -\n' 0114874aa13bda4600a18033c37d3d5095799335179e1a776565507e16a7e5a96a803be00d6a7401775f9c1f529ad503c266670f30dd359ce570c706a36611f5.[0m
+2025-12-22 15:49:25.879039 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp4jkqonpn/untrusted_initial-setup-0.3.101.tar.gz /home/user/builder-devel/tmp/tmp4jkqonpn/initial-setup-0.3.101.tar.gz.[0m
+2025-12-22 15:49:25.884899 +0000 build-debian-devel: .[38;5;246m15:49:24 .[96m[qb.fetch.initial-setup] .[38;5;246m['cd -- /builder', "git -C /builder/initial-setup rev-parse 'HEAD^{}' >> hash", "git -C /builder/initial-setup tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:49:38.864912 +0000 build-debian-devel: .[38;5;246m15:49:37 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp7956..[0m
+2025-12-22 15:49:38.865071 +0000 build-debian-devel: .[38;5;246m15:49:37 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7956 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/initial-setup rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/initial-setup tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:49:41.005364 +0000 build-debian-devel: .[38;5;246m15:49:39 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:49:41.005448 +0000 > closing log
