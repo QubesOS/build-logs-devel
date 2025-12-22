@@ -1,0 +1,137 @@
+2025-12-22 15:00:56.332889 +0000 > starting log
+2025-12-22 15:00:56.333288 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:00:56.333306 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:00:56.333316 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:00:56.333322 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:00:56.333331 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>>   grub2.[0m
+2025-12-22 15:00:56.333337 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:00:56.333345 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-22 15:00:56.333351 +0000 build-fedora-devel: .[38;5;246m15:00:56 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:00:59.103129 +0000 build-fedora-devel: .[38;5;246m15:00:59 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp9164..[0m
+2025-12-22 15:00:59.103202 +0000 build-fedora-devel: .[38;5;246m15:00:59 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9164 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-grub2.git /builder/grub2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:01:15.199253 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:01:15.199337 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246m---> Good tag 21fd1ecf54ed95ec95168cef9b1f0637c180145f..[0m
+2025-12-22 15:01:15.199349 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246m---> Good tag 4a8943d9418c683133f51a97f5c960c514bb8d74..[0m
+2025-12-22 15:01:15.199356 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246m---> Good tag 73ce6757e59966310149cc4e0473a4cd014d4bb5..[0m
+2025-12-22 15:01:15.199362 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:01:15.199369 +0000 build-fedora-devel: .[38;5;246m15:01:15 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:01:16.789480 +0000 build-fedora-devel: .[38;5;246m15:01:16 .[96m[qb.fetch.grub2] .[0mLog file: /home/user/builder-fedora/logs/20251222T150056-grub2.log.[0m
+2025-12-22 15:01:18.827475 +0000 build-fedora-devel: .[38;5;246m15:01:18 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp8756..[0m
+2025-12-22 15:01:18.827559 +0000 build-fedora-devel: .[38;5;246m15:01:18 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8756 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'.[0m
+2025-12-22 15:01:19.612167 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:01:19.612313 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:19.614113 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.06.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'\'' --'.[0m
+2025-12-22 15:01:19.614217 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.06.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'\'' --'.[0m
+2025-12-22 15:01:19.614232 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig --.[0m
+2025-12-22 15:01:19.614241 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:01:19.614249 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:19.614367 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/grub2.[0m
+2025-12-22 15:01:19.614376 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614402 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614427 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:01:19.614438 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:19.614463 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.06.tar.xz.[0m
+2025-12-22 15:01:19.614470 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614476 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614499 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:01:19.614506 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:19.614529 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_URL=https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.[0m
+2025-12-22 15:01:19.614536 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614542 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614565 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:01:19.614572 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:19.614584 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_URL=https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:19.614598 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614604 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614611 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:01:19.614617 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:19.614623 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:19.614628 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:01:19.614645 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz ']'.[0m
+2025-12-22 15:01:19.614674 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:01:19.614684 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z grub-2.06.tar.xz ']'.[0m
+2025-12-22 15:01:19.614725 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.06.tar.xz.[0m
+2025-12-22 15:01:19.614733 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /builder/grub2 ']'.[0m
+2025-12-22 15:01:19.614740 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /builder/grub2.[0m
+2025-12-22 15:01:19.615578 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ cd /builder/grub2.[0m
+2025-12-22 15:01:19.615618 +0000 build-fedora-devel: .[38;5;246m15:01:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.06.tar.xz -- https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.[0m
+2025-12-22 15:01:25.598777 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:01:25.598836 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:25.598845 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:25.600336 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:25.601410 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:25.601446 +0000 build-fedora-devel: .[38;5;246m15:01:25 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.06.tar.xz.sig https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.182539 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246mUsing executor local:/tmp/1313889592701606859619f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmpawxgn1p1 --untrusted-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-fedora/sources/grub2/grub2-key.asc']'..[0m
+2025-12-22 15:01:28.185732 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:01:28.185995 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmpawxgn1p1 --untrusted-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-fedora/sources/grub2/grub2-key.asc.[0m
+2025-12-22 15:01:28.187087 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmpawxgn1p1'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-fedora/sources/grub2/grub2-key.asc'\'' --'.[0m
+2025-12-22 15:01:28.187128 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmpawxgn1p1'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-fedora/sources/grub2/grub2-key.asc'\'' --'.[0m
+2025-12-22 15:01:28.187143 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmpawxgn1p1 --untrusted-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-fedora/sources/grub2/grub2-key.asc --.[0m
+2025-12-22 15:01:28.187151 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:01:28.187157 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:01:28.187163 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:28.187169 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmpawxgn1p1.[0m
+2025-12-22 15:01:28.187174 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187180 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187206 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:01:28.187213 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:28.187220 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.187226 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187231 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187237 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:01:28.187243 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:28.187251 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.187257 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187263 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187269 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:01:28.187275 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:28.187281 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2025-12-22 15:01:28.187289 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187300 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187306 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:01:28.187312 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:01:28.187317 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:01:28.187323 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:01:28.187331 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz ']'.[0m
+2025-12-22 15:01:28.187337 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpawxgn1p1 ']'.[0m
+2025-12-22 15:01:28.187343 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmpawxgn1p1.[0m
+2025-12-22 15:01:28.188113 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.190825 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.190854 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.190862 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:01:28.190868 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:28.190874 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:01:28.190880 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:28.190886 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/grub2/grub2-key.asc ']'.[0m
+2025-12-22 15:01:28.190893 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:28.190899 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:28.190928 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-fedora/sources/grub2/grub2-key.asc ']'.[0m
+2025-12-22 15:01:28.190934 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:01:28.190941 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2025-12-22 15:01:28.190947 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/grub2/grub2-key.asc ']'.[0m
+2025-12-22 15:01:28.191480 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.192548 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.192580 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.192746 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ mktemp -d.[0m
+2025-12-22 15:01:28.194676 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.dlpeQeqA6Y.[0m
+2025-12-22 15:01:28.194724 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2025-12-22 15:01:28.220111 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.dlpeQeqA6Y/keyring /home/user/builder-fedora/sources/grub2/grub2-key.asc.[0m
+2025-12-22 15:01:28.237374 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.dlpeQeqA6Y/keyring.gpg /tmp/tmp.dlpeQeqA6Y/keyring.[0m
+2025-12-22 15:01:28.245100 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ sqv --version.[0m
+2025-12-22 15:01:28.251920 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2025-12-22 15:01:28.252238 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2025-12-22 15:01:28.252287 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sort -VC.[0m
+2025-12-22 15:01:28.254824 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2025-12-22 15:01:28.255915 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2025-12-22 15:01:28.255931 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2025-12-22 15:01:28.255940 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2025-12-22 15:01:28.255950 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.dlpeQeqA6Y/keyring /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.265075 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246mBE5C23209ACDDACEB20DB0A28C8189F1988C2166.[0m
+2025-12-22 15:01:28.265153 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz.sig /home/user/builder-fedora/tmp/tmpawxgn1p1/grub-2.06.tar.xz.sig.[0m
+2025-12-22 15:01:28.266434 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ rm -rf /tmp/tmp.dlpeQeqA6Y.[0m
+2025-12-22 15:01:28.268084 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmpawxgn1p1/untrusted_grub-2.06.tar.xz /home/user/builder-fedora/tmp/tmpawxgn1p1/grub-2.06.tar.xz.[0m
+2025-12-22 15:01:28.288337 +0000 build-fedora-devel: .[38;5;246m15:01:28 .[96m[qb.fetch.grub2] .[38;5;246m['cd -- /builder', "git -C /builder/grub2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/grub2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:01:36.426191 +0000 build-fedora-devel: .[38;5;246m15:01:36 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp8633..[0m
+2025-12-22 15:01:36.426287 +0000 build-fedora-devel: .[38;5;246m15:01:36 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8633 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/grub2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/grub2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:01:39.067329 +0000 build-fedora-devel: .[38;5;246m15:01:39 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:01:39.067449 +0000 > closing log
