@@ -1,0 +1,107 @@
+2025-12-22 01:18:55.116854 +0000 > starting log
+2025-12-22 01:18:55.117191 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 01:18:55.117215 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 01:18:55.117234 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 01:18:55.117248 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 01:18:55.117263 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>>   desktop-linux-i3.[0m
+2025-12-22 01:18:55.117278 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 01:18:55.117297 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 01:18:55.117313 +0000 build-debian-devel: .[38;5;246m01:18:55 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 01:18:57.401253 +0000 build-debian-devel: .[38;5;246m01:18:57 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp933..[0m
+2025-12-22 01:18:57.401372 +0000 build-debian-devel: .[38;5;246m01:18:57 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp933 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-desktop-linux-i3.git /builder/desktop-linux-i3 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 01:19:00.501937 +0000 build-debian-devel: .[38;5;246m01:19:00 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 01:19:00.502141 +0000 build-debian-devel: .[38;5;246m01:19:00 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m---> Good tag c2627c5cfee8459b8fe3b78e3aae872c0d7c7a0a..[0m
+2025-12-22 01:19:00.502240 +0000 build-debian-devel: .[38;5;246m01:19:00 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 01:19:00.502315 +0000 build-debian-devel: .[38;5;246m01:19:00 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 01:19:01.849809 +0000 build-debian-devel: .[38;5;246m01:19:01 .[96m[qb.fetch.desktop-linux-i3] .[0mLog file: /home/user/builder-devel/logs/20251222T011854-desktop-linux-i3.log.[0m
+2025-12-22 01:19:04.550427 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp3328..[0m
+2025-12-22 01:19:04.550547 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3328 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz'.[0m
+2025-12-22 01:19:04.607454 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 01:19:04.608056 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 01:19:04.610366 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.24.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.24.tar.xz'\'' --'.[0m
+2025-12-22 01:19:04.610389 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.24.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.24.tar.xz'\'' --'.[0m
+2025-12-22 01:19:04.610442 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz --.[0m
+2025-12-22 01:19:04.610457 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 01:19:04.610468 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:04.610481 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/desktop-linux-i3.[0m
+2025-12-22 01:19:04.610493 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610506 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610517 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 01:19:04.610530 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:04.610542 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.24.tar.xz.[0m
+2025-12-22 01:19:04.610555 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610565 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610577 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 01:19:04.610589 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:04.610601 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_URL=https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 01:19:04.610614 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610624 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610635 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 01:19:04.610646 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:04.610658 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:04.610669 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 01:19:04.610682 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z https://i3wm.org/downloads/i3-4.24.tar.xz ']'.[0m
+2025-12-22 01:19:04.610697 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 01:19:04.610708 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z i3-4.24.tar.xz ']'.[0m
+2025-12-22 01:19:04.610722 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 01:19:04.610733 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /builder/desktop-linux-i3 ']'.[0m
+2025-12-22 01:19:04.610758 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /builder/desktop-linux-i3.[0m
+2025-12-22 01:19:04.611624 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ cd /builder/desktop-linux-i3.[0m
+2025-12-22 01:19:04.611637 +0000 build-debian-devel: .[38;5;246m01:19:04 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_i3-4.24.tar.xz -- https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 01:19:06.942972 +0000 build-debian-devel: .[38;5;246m01:19:07 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 01:19:06.943231 +0000 build-debian-devel: .[38;5;246m01:19:07 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 01:19:08.179923 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mUsing executor local:/tmp/126277242774800ac52c3e5/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmplq7ukazl --untrusted-file /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512']'..[0m
+2025-12-22 01:19:08.185958 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 01:19:08.186270 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmplq7ukazl --untrusted-file /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 01:19:08.191049 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmplq7ukazl'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512'\'' --'.[0m
+2025-12-22 01:19:08.191129 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmplq7ukazl'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512'\'' --'.[0m
+2025-12-22 01:19:08.191168 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmplq7ukazl --untrusted-file /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 --.[0m
+2025-12-22 01:19:08.191187 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 01:19:08.191203 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 01:19:08.191218 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:08.191236 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmplq7ukazl.[0m
+2025-12-22 01:19:08.191271 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191285 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191298 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 01:19:08.191311 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:08.191330 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 01:19:08.191454 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191514 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191573 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 01:19:08.191587 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:08.191625 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 01:19:08.191685 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191699 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191712 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 01:19:08.191726 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:08.191744 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 01:19:08.191757 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191770 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191814 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 01:19:08.191828 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 01:19:08.191840 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 01:19:08.191853 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 01:19:08.191870 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz ']'.[0m
+2025-12-22 01:19:08.191887 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmplq7ukazl ']'.[0m
+2025-12-22 01:19:08.191903 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmplq7ukazl.[0m
+2025-12-22 01:19:08.191923 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 01:19:08.192865 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 01:19:08.192890 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.24.tar.xz.[0m
+2025-12-22 01:19:08.193014 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 01:19:08.193079 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 01:19:08.193125 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 01:19:08.193141 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 01:19:08.193287 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 01:19:08.193307 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 01:19:08.193321 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 01:19:08.193342 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 01:19:08.193381 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 01:19:08.193502 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 01:19:08.195673 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 01:19:08.197856 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ printf '%s  -\n' 0fddf0f73025ed784b82d274f147f730abb42a00e70684567943acbe941a3329919c76e9f08888c9ee71cc3aaf55e5be3104682481711a5c6aa112d53e511a23.[0m
+2025-12-22 01:19:08.211329 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmplq7ukazl/untrusted_i3-4.24.tar.xz /home/user/builder-devel/tmp/tmplq7ukazl/i3-4.24.tar.xz.[0m
+2025-12-22 01:19:08.222814 +0000 build-debian-devel: .[38;5;246m01:19:08 .[96m[qb.fetch.desktop-linux-i3] .[38;5;246m['cd -- /builder', "git -C /builder/desktop-linux-i3 rev-parse 'HEAD^{}' >> hash", "git -C /builder/desktop-linux-i3 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 01:19:13.862531 +0000 build-debian-devel: .[38;5;246m01:19:13 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp7120..[0m
+2025-12-22 01:19:13.862645 +0000 build-debian-devel: .[38;5;246m01:19:13 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7120 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/desktop-linux-i3 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/desktop-linux-i3 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 01:19:16.270501 +0000 build-debian-devel: .[38;5;246m01:19:16 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 01:19:16.270664 +0000 > closing log
