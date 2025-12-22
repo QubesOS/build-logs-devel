@@ -1,0 +1,109 @@
+2025-12-22 11:42:22.701185 +0000 > starting log
+2025-12-22 11:42:22.701825 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 11:42:22.701845 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 11:42:22.701853 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 11:42:22.701859 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 11:42:22.701868 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>>   python-objgraph.[0m
+2025-12-22 11:42:22.701873 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 11:42:22.701880 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 11:42:22.701885 +0000 build-debian-devel: .[38;5;246m11:42:22 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 11:42:24.565217 +0000 build-debian-devel: .[38;5;246m11:42:24 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp1032..[0m
+2025-12-22 11:42:24.565299 +0000 build-debian-devel: .[38;5;246m11:42:24 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1032 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-python-objgraph.git /builder/python-objgraph /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 11:42:31.962654 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 11:42:31.962707 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m---> Good tag 190b04d1c30c14b23446dde46a0a0a29b49d1601..[0m
+2025-12-22 11:42:31.962719 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m---> Good tag 8312e523b2cdafae42a16a2b39b07c79e68ced48..[0m
+2025-12-22 11:42:31.962727 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m---> Good tag d9bca9cb6bbd4483767565978608c8a1976420ee..[0m
+2025-12-22 11:42:31.962735 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 11:42:31.962742 +0000 build-debian-devel: .[38;5;246m11:42:32 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 11:42:33.300201 +0000 build-debian-devel: .[38;5;246m11:42:33 .[96m[qb.fetch.python-objgraph] .[0mLog file: /home/user/builder-devel/logs/20251222T114222-python-objgraph.log.[0m
+2025-12-22 11:42:35.697211 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp3837..[0m
+2025-12-22 11:42:35.698065 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3837 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/python-objgraph --file-name objgraph-3.6.1.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz'.[0m
+2025-12-22 11:42:35.799858 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 11:42:35.800057 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.1.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:35.801792 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.1.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz'\'' --'.[0m
+2025-12-22 11:42:35.801853 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.1.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz'\'' --'.[0m
+2025-12-22 11:42:35.801889 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.1.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz --.[0m
+2025-12-22 11:42:35.801905 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 11:42:35.801918 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:35.801935 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/python-objgraph.[0m
+2025-12-22 11:42:35.801949 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.801961 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.801972 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 11:42:35.801985 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:35.802001 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:35.802012 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.802057 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.802075 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 11:42:35.802088 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:35.802105 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:35.802121 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.802133 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.802145 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 11:42:35.802158 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:35.802169 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:35.802181 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 11:42:35.802211 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz ']'.[0m
+2025-12-22 11:42:35.802228 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 11:42:35.802241 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z objgraph-3.6.1.tar.gz ']'.[0m
+2025-12-22 11:42:35.802256 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:35.802270 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /builder/python-objgraph ']'.[0m
+2025-12-22 11:42:35.802283 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /builder/python-objgraph.[0m
+2025-12-22 11:42:35.802332 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ cd /builder/python-objgraph.[0m
+2025-12-22 11:42:35.802356 +0000 build-debian-devel: .[38;5;246m11:42:35 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_objgraph-3.6.1.tar.gz -- https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:40.829141 +0000 build-debian-devel: .[38;5;246m11:42:40 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 11:42:40.830446 +0000 build-debian-devel: .[38;5;246m11:42:40 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:42:42.097557 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mUsing executor local:/tmp/133853553829136561db408/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp03woyvcp --untrusted-file /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256']'..[0m
+2025-12-22 11:42:42.103324 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 11:42:42.103972 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp03woyvcp --untrusted-file /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256.[0m
+2025-12-22 11:42:42.107620 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp03woyvcp'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256'\'' --'.[0m
+2025-12-22 11:42:42.107718 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp03woyvcp'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256'\'' --'.[0m
+2025-12-22 11:42:42.107755 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp03woyvcp --untrusted-file /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256 --.[0m
+2025-12-22 11:42:42.107766 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 11:42:42.107775 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 11:42:42.107783 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:42.107793 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp03woyvcp.[0m
+2025-12-22 11:42:42.107801 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107809 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107817 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 11:42:42.107824 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:42.107834 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:42.107842 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107850 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107858 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 11:42:42.107865 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:42.107873 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2025-12-22 11:42:42.107880 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107887 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107895 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 11:42:42.107902 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:42.107912 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256.[0m
+2025-12-22 11:42:42.107919 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107926 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107933 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 11:42:42.107943 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:42:42.107951 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:42:42.107959 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 11:42:42.107972 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz ']'.[0m
+2025-12-22 11:42:42.107982 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp03woyvcp ']'.[0m
+2025-12-22 11:42:42.107991 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp03woyvcp.[0m
+2025-12-22 11:42:42.111288 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:42.114720 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:42.114758 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:42.114785 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256 ']'.[0m
+2025-12-22 11:42:42.114809 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256 ']'.[0m
+2025-12-22 11:42:42.114833 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256 ']'.[0m
+2025-12-22 11:42:42.114850 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:42:42.114862 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 11:42:42.114872 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:42:42.114881 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:42:42.114894 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256 ']'.[0m
+2025-12-22 11:42:42.114903 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2025-12-22 11:42:42.116752 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2025-12-22 11:42:42.116793 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.1.tar.gz.sha256.[0m
+2025-12-22 11:42:42.119638 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ printf '%s  -\n' fe96c74147bbcaae8665b396e5388bdcc3197deebba4e6381f05202ee5b453a7.[0m
+2025-12-22 11:42:42.122921 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp03woyvcp/untrusted_objgraph-3.6.1.tar.gz /home/user/builder-devel/tmp/tmp03woyvcp/objgraph-3.6.1.tar.gz.[0m
+2025-12-22 11:42:42.135373 +0000 build-debian-devel: .[38;5;246m11:42:42 .[96m[qb.fetch.python-objgraph] .[38;5;246m['cd -- /builder', "git -C /builder/python-objgraph rev-parse 'HEAD^{}' >> hash", "git -C /builder/python-objgraph tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 11:42:43.827818 +0000 build-debian-devel: .[38;5;246m11:42:43 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp6983..[0m
+2025-12-22 11:42:43.827916 +0000 build-debian-devel: .[38;5;246m11:42:43 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6983 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/python-objgraph rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/python-objgraph tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 11:42:46.258235 +0000 build-debian-devel: .[38;5;246m11:42:46 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 11:42:46.258643 +0000 > closing log
