@@ -1,0 +1,195 @@
+2025-12-22 15:46:09.820084 +0000 > starting log
+2025-12-22 15:46:09.820537 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 15:46:09.820552 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 15:46:09.820560 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 15:46:09.820567 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 15:46:09.820572 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>>   blivet.[0m
+2025-12-22 15:46:09.820578 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 15:46:09.820584 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 15:46:09.820589 +0000 build-debian-devel: .[38;5;246m15:46:08 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 15:46:12.660663 +0000 build-debian-devel: .[38;5;246m15:46:11 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp758..[0m
+2025-12-22 15:46:12.660735 +0000 build-debian-devel: .[38;5;246m15:46:11 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp758 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-blivet.git /builder/blivet /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 15:46:23.508949 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 15:46:23.509153 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 03dd8a1d7e010b21020169dbc4e9feb02c6f86e5..[0m
+2025-12-22 15:46:23.509232 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 183c13b7430a28f5a034492153034282780e4a0c..[0m
+2025-12-22 15:46:23.509325 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 39c660ce740023d0d5c7bad1d814e7c45723c82d..[0m
+2025-12-22 15:46:23.509395 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 15:46:23.509524 +0000 build-debian-devel: .[38;5;246m15:46:21 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 15:46:25.469962 +0000 build-debian-devel: .[38;5;246m15:46:23 .[96m[qb.fetch.blivet] .[0mLog file: /home/user/builder-devel/logs/20251222T154608-blivet.log.[0m
+2025-12-22 15:46:26.572600 +0000 build-debian-devel: .[38;5;246m15:46:24 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp7036..[0m
+2025-12-22 15:46:26.572668 +0000 build-debian-devel: .[38;5;246m15:46:24 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7036 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'.[0m
+2025-12-22 15:46:26.662974 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:46:26.663190 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:26.666853 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2025-12-22 15:46:26.666970 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2025-12-22 15:46:26.667001 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz --.[0m
+2025-12-22 15:46:26.667114 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:46:26.667130 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:26.667148 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2025-12-22 15:46:26.667162 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667176 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667191 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:46:26.667206 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:26.667223 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:26.667237 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667249 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667261 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:46:26.667274 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:26.667291 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:26.667304 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667316 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667329 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:46:26.667342 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:26.667354 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:26.667367 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:46:26.667384 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 15:46:26.667401 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:46:26.667425 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 15:46:26.667441 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:26.667464 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2025-12-22 15:46:26.667478 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2025-12-22 15:46:26.667492 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2025-12-22 15:46:26.667516 +0000 build-debian-devel: .[38;5;246m15:46:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1-tests.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:28.749851 +0000 build-debian-devel: .[38;5;246m15:46:27 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:46:28.749913 +0000 build-debian-devel: .[38;5;246m15:46:27 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:30.290799 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/126250610648336cf422626/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp_lvzlep3 --untrusted-file /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512']'..[0m
+2025-12-22 15:46:30.295775 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:46:30.296496 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp_lvzlep3 --untrusted-file /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 15:46:30.298185 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp_lvzlep3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:46:30.298400 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp_lvzlep3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:46:30.298581 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp_lvzlep3 --untrusted-file /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 --.[0m
+2025-12-22 15:46:30.298664 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:46:30.298758 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:46:30.298834 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:30.298909 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp_lvzlep3.[0m
+2025-12-22 15:46:30.298975 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.299041 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.299107 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:46:30.299171 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:30.299248 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:30.299332 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.299400 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.299466 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:46:30.299529 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:30.299594 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 15:46:30.299658 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.300105 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.300113 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:46:30.300118 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:30.300126 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 15:46:30.300131 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.300137 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.300142 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:46:30.300148 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:30.300154 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:30.300160 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:46:30.300167 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 15:46:30.300173 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp_lvzlep3 ']'.[0m
+2025-12-22 15:46:30.300179 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp_lvzlep3.[0m
+2025-12-22 15:46:30.300526 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:30.303048 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:30.303085 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:30.303096 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:30.303105 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:30.303113 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:30.303119 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:30.303125 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:46:30.303131 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:30.303137 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:30.303144 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:30.303150 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 15:46:30.303157 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 15:46:30.303646 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 15:46:30.305389 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' bd9dfc02ff6e3371f59c697377543a6104f744527b710bc139838f351d2cbc01f04ac4839a9b74872cf02cae34a96cbd453c953d28f1047d669909ac5177a971.[0m
+2025-12-22 15:46:30.306929 +0000 build-debian-devel: .[38;5;246m15:46:28 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp_lvzlep3/untrusted_blivet-3.10.1-tests.tar.gz /home/user/builder-devel/tmp/tmp_lvzlep3/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 15:46:32.336604 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp9769..[0m
+2025-12-22 15:46:32.336675 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9769 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'.[0m
+2025-12-22 15:46:32.437819 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 15:46:32.437978 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:32.439922 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2025-12-22 15:46:32.439988 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2025-12-22 15:46:32.440003 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz --.[0m
+2025-12-22 15:46:32.441431 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:46:32.441492 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:32.441514 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2025-12-22 15:46:32.441531 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.441614 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.441653 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:46:32.441690 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:32.441728 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:32.441823 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.441842 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.441862 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:46:32.441879 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:32.441901 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:32.441918 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.442012 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.442057 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:46:32.442077 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:32.442093 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:32.442106 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:46:32.442261 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 15:46:32.442282 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 15:46:32.442298 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 15:46:32.442314 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:32.442358 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2025-12-22 15:46:32.442392 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2025-12-22 15:46:32.442593 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2025-12-22 15:46:32.442630 +0000 build-debian-devel: .[38;5;246m15:46:30 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:35.818454 +0000 build-debian-devel: .[38;5;246m15:46:34 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 15:46:35.819329 +0000 build-debian-devel: .[38;5;246m15:46:34 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:37.294454 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/126250610129680db2f7fa1/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpsyc652o0 --untrusted-file /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512']'..[0m
+2025-12-22 15:46:37.299772 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 15:46:37.299955 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpsyc652o0 --untrusted-file /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 15:46:37.302472 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpsyc652o0'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:46:37.302649 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpsyc652o0'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2025-12-22 15:46:37.302687 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpsyc652o0 --untrusted-file /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 --.[0m
+2025-12-22 15:46:37.302708 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 15:46:37.302737 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 15:46:37.302756 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:37.302777 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpsyc652o0.[0m
+2025-12-22 15:46:37.302844 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302852 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302859 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 15:46:37.302866 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:37.302875 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:37.302883 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302889 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302896 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 15:46:37.302902 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:37.302910 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 15:46:37.302916 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302922 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302929 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 15:46:37.302935 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:37.302944 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 15:46:37.302951 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302957 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302964 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 15:46:37.302971 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 15:46:37.302977 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 15:46:37.302983 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 15:46:37.302992 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 15:46:37.303000 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsyc652o0 ']'.[0m
+2025-12-22 15:46:37.303007 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpsyc652o0.[0m
+2025-12-22 15:46:37.303082 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:37.304736 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:37.304821 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:37.304903 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:37.305359 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:37.306081 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:37.306143 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:37.306162 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 15:46:37.306177 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:37.306194 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 15:46:37.306213 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 15:46:37.306229 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 15:46:37.306245 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 15:46:37.306288 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 15:46:37.307386 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' de4c95a9b8afe59fc8e51f48ecd2916891e3294f8c584852035102a9e0f7f61d34cdbff6156adad6f0ba465d54e9e236a12a01bc0a9b3030cb1b8922f967aaf2.[0m
+2025-12-22 15:46:37.310525 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpsyc652o0/untrusted_blivet-3.10.1.tar.gz /home/user/builder-devel/tmp/tmpsyc652o0/blivet-3.10.1.tar.gz.[0m
+2025-12-22 15:46:37.315383 +0000 build-debian-devel: .[38;5;246m15:46:35 .[96m[qb.fetch.blivet] .[38;5;246m['cd -- /builder', "git -C /builder/blivet rev-parse 'HEAD^{}' >> hash", "git -C /builder/blivet tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 15:46:44.487306 +0000 build-debian-devel: .[38;5;246m15:46:42 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp1514..[0m
+2025-12-22 15:46:44.487424 +0000 build-debian-devel: .[38;5;246m15:46:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1514 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/blivet rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/blivet tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 15:46:46.582458 +0000 build-debian-devel: .[38;5;246m15:46:44 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 15:46:46.582854 +0000 > closing log
