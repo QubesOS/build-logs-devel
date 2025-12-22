@@ -1,0 +1,64 @@
+2025-12-22 13:57:26.929763 +0000 > starting log
+2025-12-22 13:57:26.930110 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 13:57:26.930128 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 13:57:26.930136 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 13:57:26.930142 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 13:57:26.930148 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>>   salt.[0m
+2025-12-22 13:57:26.930154 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>>     commit-hash: bab2e67cdcded74926475361e9874e414043c5d4.[0m
+2025-12-22 13:57:26.930163 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>>     source-hash: 9450a52be44e52712d26205cf1fcff95f84d75a7f2349affde8091f1495442dc927c5854b427397775af7bf0a8037b4bf2bc6cc76528ee6ef3c6b5aba18a00a1.[0m
+2025-12-22 13:57:26.930168 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 13:57:26.930175 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 13:57:26.930181 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb] .[0mRunning stages: upload.[0m
+2025-12-22 13:57:26.930187 +0000 build-debian-devel: .[38;5;246m13:57:26 .[96m[qb.fetch.salt] .[0msalt: source already fetched. Updating..[0m
+2025-12-22 13:57:29.366370 +0000 build-debian-devel: .[38;5;246m13:57:29 .[96m[qb.fetch.salt.fetch] .[0mUsing executor qubes:disp7409..[0m
+2025-12-22 13:57:29.366455 +0000 build-debian-devel: .[38;5;246m13:57:29 .[96m[qb.fetch.salt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7409 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-salt.git /builder/salt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 13:57:30.762707 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 13:57:30.762820 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag ee55dcdccbeafb40e2d661113751c2e20ab4d6d3..[0m
+2025-12-22 13:57:30.762850 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag 95b00a2a550563b364dbe93ba68af54fbec91d07..[0m
+2025-12-22 13:57:30.762873 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag 343c0a0aa69dc18b34c464bb277f1783204bc315..[0m
+2025-12-22 13:57:30.762896 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 13:57:30.762942 +0000 build-debian-devel: .[38;5;246m13:57:30 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Merging....[0m
+2025-12-22 13:57:33.222377 +0000 build-debian-devel: .[38;5;246m13:57:33 .[96m[qb.fetch.salt] .[0mLog file: /home/user/builder-devel/logs/20251222T133945-salt.log.[0m
+2025-12-22 13:57:33.224149 +0000 build-debian-devel: .[38;5;246m13:57:33 .[96m[qb.fetch.salt] .[0msalt: file salt-3007.8.tar.gz already downloaded. Skipping..[0m
+2025-12-22 13:57:33.236455 +0000 build-debian-devel: .[38;5;246m13:57:33 .[96m[qb.upload.vm-trixie.upload] .[38;5;246mUsing executor local:/tmp/12953193516027286c337d3/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-devel/repository-publish/deb/devel/vm/pool/ deb.qubes-os.org:/pub/qubes/repo/deb/devel/vm/pool/']'..[0m
+2025-12-22 13:57:37.514799 +0000 build-debian-devel: .[38;5;246m13:57:37 .[96m[qb.upload.vm-trixie.upload] .[38;5;246msending incremental file list.[0m
+2025-12-22 13:57:38.002613 +0000 build-debian-devel: .[38;5;246m13:57:38 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-api_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:38.002821 +0000 build-debian-devel: .[38;5;246m13:57:38 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          20,620 100%    0.00kB/s    0:00:00            20,620 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=53/306).[0m
+2025-12-22 13:57:38.002839 +0000 build-debian-devel: .[38;5;246m13:57:38 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-cloud_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:38.002853 +0000 build-debian-devel: .[38;5;246m13:57:38 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          22,092 100%   21.07MB/s    0:00:00            22,092 100%   21.07MB/s    0:00:00 (xfr#2, to-chk=51/306).[0m
+2025-12-22 13:57:38.002865 +0000 build-debian-devel: .[38;5;246m13:57:38 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-common_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:41.187938 +0000 build-debian-devel: .[38;5;246m13:57:41 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          32,768   0%   31.25MB/s    0:00:00         2,392,064  63%    2.00MB/s    0:00:00         3,145,728  82%    1.22MB/s    0:00:00         3,796,092 100%    1.14MB/s    0:00:03 (xfr#3, to-chk=49/306).[0m
+2025-12-22 13:57:41.188052 +0000 build-debian-devel: .[38;5;246m13:57:41 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-doc_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.946764 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          32,768   0%   37.56kB/s    0:04:49           163,840   1%  151.37kB/s    0:01:10         1,048,576   9%  456.94kB/s    0:00:21         2,031,616  18%  598.85kB/s    0:00:14         3,080,192  28%  689.12kB/s    0:00:11         4,096,000  37%  877.31kB/s    0:00:07         5,308,416  48%  982.99kB/s    0:00:05         6,488,064  59%    1.02MB/s    0:00:04         7,995,392  73%    1.12MB/s    0:00:02         9,601,024  88%    1.25MB/s    0:00:01        10,910,016 100% 1015.76kB/s    0:00:10 (xfr#4, to-chk=47/306).[0m
+2025-12-22 13:57:50.946864 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-master_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.946893 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          32,768  67%   37.04kB/s    0:00:00            48,688 100%   55.03kB/s    0:00:00 (xfr#5, to-chk=45/306).[0m
+2025-12-22 13:57:50.946914 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-minion_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.980791 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          32,768  96%   35.63kB/s    0:00:00            33,824 100%   36.78kB/s    0:00:00 (xfr#6, to-chk=43/306).[0m
+2025-12-22 13:57:50.980896 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-proxy_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.980923 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          18,964 100%   20.62kB/s    0:00:00            18,964 100%   20.62kB/s    0:00:00 (xfr#7, to-chk=41/306).[0m
+2025-12-22 13:57:50.980943 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-ssh_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.980975 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          21,552 100%   23.44kB/s    0:00:00            21,552 100%   23.44kB/s    0:00:00 (xfr#8, to-chk=39/306).[0m
+2025-12-22 13:57:50.980995 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-syndic_3007.8-1+deb13u1+devel1_all.deb.[0m
+2025-12-22 13:57:50.981064 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          20,824 100%   22.65kB/s    0:00:00            20,824 100%   22.65kB/s    0:00:00 (xfr#9, to-chk=37/306).[0m
+2025-12-22 13:57:50.981106 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.8-1+deb13u1+devel1.debian.tar.xz.[0m
+2025-12-22 13:57:51.061661 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          32,768  73%   32.72kB/s    0:00:00            44,728 100%   44.66kB/s    0:00:00 (xfr#10, to-chk=33/306).[0m
+2025-12-22 13:57:51.061716 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.8-1+deb13u1+devel1.dsc.[0m
+2025-12-22 13:57:51.061737 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m           4,154 100%    4.15kB/s    0:00:00             4,154 100%    4.15kB/s    0:00:00 (xfr#11, to-chk=32/306).[0m
+2025-12-22 13:57:51.061753 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.8-1+deb13u1+devel1_amd64.buildinfo.[0m
+2025-12-22 13:57:51.061771 +0000 build-debian-devel: .[38;5;246m13:57:51 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          15,911 100%   15.89kB/s    0:00:00            15,911 100%   15.89kB/s    0:00:00 (xfr#12, to-chk=31/306).[0m
+2025-12-22 13:57:53.322327 +0000 build-debian-devel: .[38;5;246m13:57:53 .[96m[qb.upload.vm-trixie.upload] .[38;5;246mUsing executor local:/tmp/12953193516027286c337d3/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-devel/repository-publish/deb/devel/vm/dists/trixie-testing/ deb.qubes-os.org:/pub/qubes/repo/deb/devel/vm/dists/trixie-testing/']'..[0m
+2025-12-22 13:57:56.485905 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246msending incremental file list.[0m
+2025-12-22 13:57:56.744839 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f..t...... InRelease.[0m
+2025-12-22 13:57:56.744927 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m           4,152 100%    0.00kB/s    0:00:00             4,152 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=15/17).[0m
+2025-12-22 13:57:56.744936 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f..t...... Release.[0m
+2025-12-22 13:57:56.744943 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m           3,875 100%    3.70MB/s    0:00:00             3,875 100%    3.70MB/s    0:00:00 (xfr#2, to-chk=14/17).[0m
+2025-12-22 13:57:56.744949 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f..t...... Release.gpg.[0m
+2025-12-22 13:57:56.744957 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m             228 100%  222.66kB/s    0:00:00               228 100%  222.66kB/s    0:00:00 (xfr#3, to-chk=13/17).[0m
+2025-12-22 13:57:56.744964 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f.st...... main/binary-amd64/Packages.[0m
+2025-12-22 13:57:56.744984 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m             700   1%  683.59kB/s    0:00:00            52,894 100%   50.44MB/s    0:00:00 (xfr#4, to-chk=8/17).[0m
+2025-12-22 13:57:56.745001 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f.st...... main/binary-amd64/Packages.gz.[0m
+2025-12-22 13:57:56.745009 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m          16,550 100%   15.78MB/s    0:00:00            16,550 100%   15.78MB/s    0:00:00 (xfr#5, to-chk=7/17).[0m
+2025-12-22 13:57:56.745032 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m<f.st...... main/source/Sources.gz.[0m
+2025-12-22 13:57:56.745058 +0000 build-debian-devel: .[38;5;246m13:57:56 .[96m[qb.upload.vm-trixie.upload] .[38;5;246m           7,769 100%    7.41MB/s    0:00:00             7,769 100%    7.41MB/s    0:00:00 (xfr#6, to-chk=0/17).[0m
+2025-12-22 13:57:58.023609 +0000 build-debian-devel: .[38;5;246m13:57:58 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 13:57:58.023739 +0000 > closing log
