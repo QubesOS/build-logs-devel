@@ -1,0 +1,195 @@
+2025-12-22 23:53:29.185786 +0000 > starting log
+2025-12-22 23:53:29.186021 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 23:53:29.186036 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 23:53:29.186044 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 23:53:29.186051 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 23:53:29.186057 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>>   blivet.[0m
+2025-12-22 23:53:29.186062 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 23:53:29.186071 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-22 23:53:29.186077 +0000 build-fedora-devel: .[38;5;246m23:53:29 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 23:53:33.969578 +0000 build-fedora-devel: .[38;5;246m23:53:34 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp1654..[0m
+2025-12-22 23:53:33.969649 +0000 build-fedora-devel: .[38;5;246m23:53:34 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1654 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-blivet.git /builder/blivet /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 23:53:38.927095 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 23:53:38.927728 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 03dd8a1d7e010b21020169dbc4e9feb02c6f86e5..[0m
+2025-12-22 23:53:38.927793 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 183c13b7430a28f5a034492153034282780e4a0c..[0m
+2025-12-22 23:53:38.927883 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 39c660ce740023d0d5c7bad1d814e7c45723c82d..[0m
+2025-12-22 23:53:38.927964 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 23:53:38.928433 +0000 build-fedora-devel: .[38;5;246m23:53:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 23:53:40.717910 +0000 build-fedora-devel: .[38;5;246m23:53:40 .[96m[qb.fetch.blivet] .[0mLog file: /home/user/builder-host/logs/20251222T235329-blivet.log.[0m
+2025-12-22 23:53:42.244746 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp2478..[0m
+2025-12-22 23:53:42.244823 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2478 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'.[0m
+2025-12-22 23:53:42.413976 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 23:53:42.414497 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:42.416043 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2025-12-22 23:53:42.416100 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2025-12-22 23:53:42.416223 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz --.[0m
+2025-12-22 23:53:42.416231 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:53:42.416270 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:42.416294 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2025-12-22 23:53:42.416301 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416346 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416356 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:53:42.416373 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:42.416394 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:42.416417 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416437 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416461 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:53:42.416482 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:42.416535 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:42.416543 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416548 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416563 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:53:42.416575 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:42.416610 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:42.416631 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:53:42.416653 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 23:53:42.416662 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 23:53:42.416695 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 23:53:42.416702 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:42.416729 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2025-12-22 23:53:42.416754 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2025-12-22 23:53:42.416810 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2025-12-22 23:53:42.416954 +0000 build-fedora-devel: .[38;5;246m23:53:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1-tests.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:45.650572 +0000 build-fedora-devel: .[38;5;246m23:53:45 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 23:53:45.650631 +0000 build-fedora-devel: .[38;5;246m23:53:45 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:47.501067 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/124488529814800915c04b6/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmp7v7jisfs --untrusted-file /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512']'..[0m
+2025-12-22 23:53:47.503463 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 23:53:47.503644 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmp7v7jisfs --untrusted-file /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 23:53:47.506359 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmp7v7jisfs'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2025-12-22 23:53:47.506383 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmp7v7jisfs'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2025-12-22 23:53:47.506398 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmp7v7jisfs --untrusted-file /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 --.[0m
+2025-12-22 23:53:47.506405 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 23:53:47.506411 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:53:47.506417 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:47.506441 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmp7v7jisfs.[0m
+2025-12-22 23:53:47.506447 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506453 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506459 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:53:47.506465 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:47.506472 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:47.506478 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506483 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506489 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:53:47.506494 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:47.506500 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 23:53:47.506505 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506510 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506516 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:53:47.506521 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:47.506528 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 23:53:47.506533 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506538 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506543 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:53:47.506548 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:47.506553 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:47.506559 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:53:47.506565 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz ']'.[0m
+2025-12-22 23:53:47.506571 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmp7v7jisfs ']'.[0m
+2025-12-22 23:53:47.506577 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmp7v7jisfs.[0m
+2025-12-22 23:53:47.506584 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:47.506590 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:47.506599 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:47.506610 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:47.506617 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:47.506625 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:47.506630 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:47.506635 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 23:53:47.506641 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:47.506646 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:47.507363 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:47.507392 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 23:53:47.507403 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 23:53:47.507426 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-host/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2025-12-22 23:53:47.508285 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' bd9dfc02ff6e3371f59c697377543a6104f744527b710bc139838f351d2cbc01f04ac4839a9b74872cf02cae34a96cbd453c953d28f1047d669909ac5177a971.[0m
+2025-12-22 23:53:47.509106 +0000 build-fedora-devel: .[38;5;246m23:53:47 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmp7v7jisfs/untrusted_blivet-3.10.1-tests.tar.gz /home/user/builder-host/tmp/tmp7v7jisfs/blivet-3.10.1-tests.tar.gz.[0m
+2025-12-22 23:53:52.511317 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp5015..[0m
+2025-12-22 23:53:52.511424 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5015 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'.[0m
+2025-12-22 23:53:52.596915 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 23:53:52.597195 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:52.599556 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2025-12-22 23:53:52.599607 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2025-12-22 23:53:52.599657 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz --.[0m
+2025-12-22 23:53:52.599685 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:53:52.599693 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:52.599700 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2025-12-22 23:53:52.599728 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.599753 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.599761 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:53:52.599799 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:52.599841 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:52.599976 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.599996 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.600014 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:53:52.600116 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:52.600125 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:52.600147 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.600186 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.600194 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:53:52.600224 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:52.600235 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:52.600241 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:53:52.600260 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 23:53:52.600303 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 23:53:52.600363 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 23:53:52.600387 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:52.600409 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2025-12-22 23:53:52.600444 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2025-12-22 23:53:52.601048 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2025-12-22 23:53:52.601187 +0000 build-fedora-devel: .[38;5;246m23:53:52 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:56.097234 +0000 build-fedora-devel: .[38;5;246m23:53:56 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 23:53:56.097299 +0000 build-fedora-devel: .[38;5;246m23:53:56 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:57.809364 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/124488531442128721a64e9/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmpxxk4fg8y --untrusted-file /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512']'..[0m
+2025-12-22 23:53:57.818507 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 23:53:57.819217 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmpxxk4fg8y --untrusted-file /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 23:53:57.822567 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmpxxk4fg8y'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2025-12-22 23:53:57.822624 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmpxxk4fg8y'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2025-12-22 23:53:57.822777 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmpxxk4fg8y --untrusted-file /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512 --.[0m
+2025-12-22 23:53:57.822793 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 23:53:57.822874 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:53:57.822984 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:57.823002 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmpxxk4fg8y.[0m
+2025-12-22 23:53:57.823078 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823093 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823129 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:53:57.823188 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:57.823270 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:57.823307 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823320 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823782 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:53:57.823795 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:57.823809 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 23:53:57.823820 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823832 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823845 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:53:57.823857 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:57.823875 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 23:53:57.823886 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823898 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823910 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:53:57.823922 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:53:57.823933 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:53:57.823945 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:53:57.823962 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz ']'.[0m
+2025-12-22 23:53:57.823976 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmpxxk4fg8y ']'.[0m
+2025-12-22 23:53:57.823991 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmpxxk4fg8y.[0m
+2025-12-22 23:53:57.827007 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:57.827883 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:57.827897 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:57.827913 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:57.827935 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:57.827952 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:57.827964 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:57.827976 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 23:53:57.827988 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:57.828001 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:53:57.828017 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2025-12-22 23:53:57.828030 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 23:53:57.829113 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 23:53:57.829130 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-host/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2025-12-22 23:53:57.829299 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' de4c95a9b8afe59fc8e51f48ecd2916891e3294f8c584852035102a9e0f7f61d34cdbff6156adad6f0ba465d54e9e236a12a01bc0a9b3030cb1b8922f967aaf2.[0m
+2025-12-22 23:53:57.831369 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmpxxk4fg8y/untrusted_blivet-3.10.1.tar.gz /home/user/builder-host/tmp/tmpxxk4fg8y/blivet-3.10.1.tar.gz.[0m
+2025-12-22 23:53:57.835008 +0000 build-fedora-devel: .[38;5;246m23:53:57 .[96m[qb.fetch.blivet] .[38;5;246m['cd -- /builder', "git -C /builder/blivet rev-parse 'HEAD^{}' >> hash", "git -C /builder/blivet tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 23:54:00.825032 +0000 build-fedora-devel: .[38;5;246m23:54:00 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp2151..[0m
+2025-12-22 23:54:00.825100 +0000 build-fedora-devel: .[38;5;246m23:54:00 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2151 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/blivet rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/blivet tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 23:54:03.103549 +0000 build-fedora-devel: .[38;5;246m23:54:03 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 23:54:03.103609 +0000 > closing log
