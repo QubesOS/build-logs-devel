@@ -1,0 +1,107 @@
+2025-12-22 02:15:11.322858 +0000 > starting log
+2025-12-22 02:15:11.323250 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 02:15:11.323275 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 02:15:11.323287 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 02:15:11.323293 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 02:15:11.323305 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>>   desktop-linux-i3.[0m
+2025-12-22 02:15:11.323313 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 02:15:11.323322 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-22 02:15:11.323332 +0000 build-fedora-devel: .[38;5;246m02:15:11 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 02:15:19.609887 +0000 build-fedora-devel: .[38;5;246m02:15:19 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp3167..[0m
+2025-12-22 02:15:19.611335 +0000 build-fedora-devel: .[38;5;246m02:15:19 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3167 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-desktop-linux-i3.git /builder/desktop-linux-i3 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 02:15:23.871861 +0000 build-fedora-devel: .[38;5;246m02:15:23 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 02:15:23.871968 +0000 build-fedora-devel: .[38;5;246m02:15:23 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m---> Good tag c2627c5cfee8459b8fe3b78e3aae872c0d7c7a0a..[0m
+2025-12-22 02:15:23.871993 +0000 build-fedora-devel: .[38;5;246m02:15:23 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 02:15:23.872334 +0000 build-fedora-devel: .[38;5;246m02:15:23 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 02:15:25.482302 +0000 build-fedora-devel: .[38;5;246m02:15:25 .[96m[qb.fetch.desktop-linux-i3] .[0mLog file: /home/user/builder-fedora/logs/20251222T021511-desktop-linux-i3.log.[0m
+2025-12-22 02:15:35.583383 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp2172..[0m
+2025-12-22 02:15:35.583506 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2172 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz'.[0m
+2025-12-22 02:15:35.768564 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 02:15:35.768677 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 02:15:35.770237 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.24.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.24.tar.xz'\'' --'.[0m
+2025-12-22 02:15:35.770275 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.24.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.24.tar.xz'\'' --'.[0m
+2025-12-22 02:15:35.772584 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.24.tar.xz --file-url https://i3wm.org/downloads/i3-4.24.tar.xz --.[0m
+2025-12-22 02:15:35.772647 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 02:15:35.772660 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:35.772671 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/desktop-linux-i3.[0m
+2025-12-22 02:15:35.772679 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772688 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772695 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 02:15:35.772702 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:35.772710 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.24.tar.xz.[0m
+2025-12-22 02:15:35.772718 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772724 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772731 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 02:15:35.772741 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:35.772749 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_URL=https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 02:15:35.772755 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772760 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772765 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 02:15:35.772770 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:35.772776 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:35.772783 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 02:15:35.772796 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z https://i3wm.org/downloads/i3-4.24.tar.xz ']'.[0m
+2025-12-22 02:15:35.772806 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 02:15:35.772814 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z i3-4.24.tar.xz ']'.[0m
+2025-12-22 02:15:35.772823 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 02:15:35.772829 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /builder/desktop-linux-i3 ']'.[0m
+2025-12-22 02:15:35.772850 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /builder/desktop-linux-i3.[0m
+2025-12-22 02:15:35.774335 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ cd /builder/desktop-linux-i3.[0m
+2025-12-22 02:15:35.774442 +0000 build-fedora-devel: .[38;5;246m02:15:35 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_i3-4.24.tar.xz -- https://i3wm.org/downloads/i3-4.24.tar.xz.[0m
+2025-12-22 02:15:40.780890 +0000 build-fedora-devel: .[38;5;246m02:15:40 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 02:15:40.780952 +0000 build-fedora-devel: .[38;5;246m02:15:40 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 02:15:42.345009 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mUsing executor local:/tmp/138803492431120cd9afa64/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmpc_q5etj5 --untrusted-file /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512']'..[0m
+2025-12-22 02:15:42.347937 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 02:15:42.348229 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmpc_q5etj5 --untrusted-file /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 02:15:42.350244 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmpc_q5etj5'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512'\'' --'.[0m
+2025-12-22 02:15:42.350368 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmpc_q5etj5'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512'\'' --'.[0m
+2025-12-22 02:15:42.350453 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmpc_q5etj5 --untrusted-file /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 --.[0m
+2025-12-22 02:15:42.350496 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 02:15:42.350561 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 02:15:42.350599 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:42.350683 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmpc_q5etj5.[0m
+2025-12-22 02:15:42.350722 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.350762 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.350826 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 02:15:42.350865 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:42.350901 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 02:15:42.350916 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.350954 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.350969 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 02:15:42.351009 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:42.351048 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-22 02:15:42.351088 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.351101 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.351141 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 02:15:42.351155 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:42.351176 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 02:15:42.351191 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.351204 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.351218 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 02:15:42.351231 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 02:15:42.351245 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 02:15:42.351259 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 02:15:42.351283 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz ']'.[0m
+2025-12-22 02:15:42.351300 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpc_q5etj5 ']'.[0m
+2025-12-22 02:15:42.351317 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmpc_q5etj5.[0m
+2025-12-22 02:15:42.351335 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 02:15:42.351970 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.24.tar.xz.[0m
+2025-12-22 02:15:42.351986 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.24.tar.xz.[0m
+2025-12-22 02:15:42.352004 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 02:15:42.352023 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 02:15:42.352041 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 02:15:42.352075 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 02:15:42.352089 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 02:15:42.352103 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 02:15:42.352116 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 02:15:42.352134 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512 ']'.[0m
+2025-12-22 02:15:42.352175 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-22 02:15:42.352190 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-22 02:15:42.352518 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/desktop-linux-i3/i3-4.24.tar.xz.sha512.[0m
+2025-12-22 02:15:42.353430 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ printf '%s  -\n' 0fddf0f73025ed784b82d274f147f730abb42a00e70684567943acbe941a3329919c76e9f08888c9ee71cc3aaf55e5be3104682481711a5c6aa112d53e511a23.[0m
+2025-12-22 02:15:42.356552 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmpc_q5etj5/untrusted_i3-4.24.tar.xz /home/user/builder-fedora/tmp/tmpc_q5etj5/i3-4.24.tar.xz.[0m
+2025-12-22 02:15:42.363823 +0000 build-fedora-devel: .[38;5;246m02:15:42 .[96m[qb.fetch.desktop-linux-i3] .[38;5;246m['cd -- /builder', "git -C /builder/desktop-linux-i3 rev-parse 'HEAD^{}' >> hash", "git -C /builder/desktop-linux-i3 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 02:15:51.868945 +0000 build-fedora-devel: .[38;5;246m02:15:51 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp718..[0m
+2025-12-22 02:15:51.869037 +0000 build-fedora-devel: .[38;5;246m02:15:51 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp718 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/desktop-linux-i3 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/desktop-linux-i3 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 02:15:53.759308 +0000 build-fedora-devel: .[38;5;246m02:15:53 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 02:15:53.759382 +0000 > closing log
