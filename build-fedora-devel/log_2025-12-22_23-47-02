@@ -1,0 +1,109 @@
+2025-12-22 23:47:02.089942 +0000 > starting log
+2025-12-22 23:47:02.091596 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 23:47:02.091643 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 23:47:02.091688 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 23:47:02.091730 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 23:47:02.091752 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>>   linux-scrypt.[0m
+2025-12-22 23:47:02.091768 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 23:47:02.091785 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-22 23:47:02.091799 +0000 build-fedora-devel: .[38;5;246m23:47:02 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 23:47:03.707824 +0000 build-fedora-devel: .[38;5;246m23:47:03 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp4897..[0m
+2025-12-22 23:47:03.707933 +0000 build-fedora-devel: .[38;5;246m23:47:03 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4897 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-scrypt.git /builder/linux-scrypt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 23:47:06.733085 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 23:47:06.733330 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m---> Good tag 5598fa68984791365d3e957b2346a754436a0118..[0m
+2025-12-22 23:47:06.733400 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m---> Good tag 430130da75b9e4be53a1e0c313eb78ea921274bf..[0m
+2025-12-22 23:47:06.733451 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m---> Good tag 3a2ebde5e07a7c36c37c98a8f68a0d6d6dbed3ec..[0m
+2025-12-22 23:47:06.733503 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 23:47:06.733550 +0000 build-fedora-devel: .[38;5;246m23:47:06 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 23:47:08.651405 +0000 build-fedora-devel: .[38;5;246m23:47:08 .[96m[qb.fetch.linux-scrypt] .[0mLog file: /home/user/builder-fedora/logs/20251222T234702-linux-scrypt.log.[0m
+2025-12-22 23:47:12.032514 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp2049..[0m
+2025-12-22 23:47:12.032581 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2049 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-scrypt --file-name scrypt-1.3.2.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz'.[0m
+2025-12-22 23:47:12.132416 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 23:47:12.132909 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-scrypt --file-name scrypt-1.3.2.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:12.136231 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-scrypt'\'' --file-name '\''scrypt-1.3.2.tgz'\'' --file-url '\''https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz'\'' --'.[0m
+2025-12-22 23:47:12.136363 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-scrypt'\'' --file-name '\''scrypt-1.3.2.tgz'\'' --file-url '\''https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz'\'' --'.[0m
+2025-12-22 23:47:12.136403 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-scrypt --file-name scrypt-1.3.2.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz --.[0m
+2025-12-22 23:47:12.136428 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:47:12.136460 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:12.136698 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-scrypt.[0m
+2025-12-22 23:47:12.136803 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137228 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137286 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:47:12.137312 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:12.137339 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_NAME=scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:12.137364 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137387 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137408 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:47:12.137429 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:12.137454 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_URL=https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:12.137477 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137745 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137793 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:47:12.137818 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:12.137840 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:12.137863 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:47:12.137889 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz ']'.[0m
+2025-12-22 23:47:12.137919 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 23:47:12.137946 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z scrypt-1.3.2.tgz ']'.[0m
+2025-12-22 23:47:12.137973 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:12.138048 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /builder/linux-scrypt ']'.[0m
+2025-12-22 23:47:12.138105 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mkdir -p /builder/linux-scrypt.[0m
+2025-12-22 23:47:12.138464 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ cd /builder/linux-scrypt.[0m
+2025-12-22 23:47:12.138570 +0000 build-fedora-devel: .[38;5;246m23:47:12 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_scrypt-1.3.2.tgz -- https://www.tarsnap.com/scrypt/scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:21.154594 +0000 build-fedora-devel: .[38;5;246m23:47:21 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 23:47:21.154678 +0000 build-fedora-devel: .[38;5;246m23:47:21 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:47:23.195725 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246mUsing executor local:/tmp/12518452547713680a9946f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmpcxq58f_d --untrusted-file /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256']'..[0m
+2025-12-22 23:47:23.205236 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 23:47:23.205465 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmpcxq58f_d --untrusted-file /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256.[0m
+2025-12-22 23:47:23.205820 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmpcxq58f_d'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256'\'' --'.[0m
+2025-12-22 23:47:23.206621 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmpcxq58f_d'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256'\'' --'.[0m
+2025-12-22 23:47:23.206727 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmpcxq58f_d --untrusted-file /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256 --.[0m
+2025-12-22 23:47:23.206796 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 23:47:23.206860 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:47:23.206890 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:23.208495 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmpcxq58f_d.[0m
+2025-12-22 23:47:23.208544 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.208595 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.208645 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:47:23.208680 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:23.208723 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:23.208749 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.208765 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.208780 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:47:23.208799 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:23.208963 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2025-12-22 23:47:23.208997 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.209010 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.209043 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:47:23.209075 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:23.209092 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256.[0m
+2025-12-22 23:47:23.209131 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.209155 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.209222 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:47:23.209259 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:47:23.209318 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:47:23.209340 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:47:23.209372 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz ']'.[0m
+2025-12-22 23:47:23.209400 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpcxq58f_d ']'.[0m
+2025-12-22 23:47:23.209419 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmpcxq58f_d.[0m
+2025-12-22 23:47:23.210883 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:23.211824 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:23.211859 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_NAME=scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:23.211890 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256 ']'.[0m
+2025-12-22 23:47:23.211918 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256 ']'.[0m
+2025-12-22 23:47:23.211952 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256 ']'.[0m
+2025-12-22 23:47:23.211978 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:47:23.212000 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 23:47:23.212024 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:47:23.212047 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:47:23.212074 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256 ']'.[0m
+2025-12-22 23:47:23.212098 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2025-12-22 23:47:23.212123 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2025-12-22 23:47:23.212248 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/linux-scrypt/scrypt-1.3.2.tgz.sha256.[0m
+2025-12-22 23:47:23.212869 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ printf '%s  -\n' d632c1193420ac6faebf9482e65e33d3a5664eccd643b09a509d21d1c1f29be2.[0m
+2025-12-22 23:47:23.214651 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmpcxq58f_d/untrusted_scrypt-1.3.2.tgz /home/user/builder-fedora/tmp/tmpcxq58f_d/scrypt-1.3.2.tgz.[0m
+2025-12-22 23:47:23.218931 +0000 build-fedora-devel: .[38;5;246m23:47:23 .[96m[qb.fetch.linux-scrypt] .[38;5;246m['cd -- /builder', "git -C /builder/linux-scrypt rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-scrypt tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 23:47:24.206480 +0000 build-fedora-devel: .[38;5;246m23:47:24 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp8067..[0m
+2025-12-22 23:47:24.206578 +0000 build-fedora-devel: .[38;5;246m23:47:24 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8067 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-scrypt rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-scrypt tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 23:47:26.976904 +0000 build-fedora-devel: .[38;5;246m23:47:27 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 23:47:26.976973 +0000 > closing log
