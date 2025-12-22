@@ -1,0 +1,137 @@
+2025-12-22 23:30:31.279708 +0000 > starting log
+2025-12-22 23:30:31.280177 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 23:30:31.280201 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 23:30:31.280212 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 23:30:31.280223 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 23:30:31.280231 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>>   zfs.[0m
+2025-12-22 23:30:31.280240 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 23:30:31.281373 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-22 23:30:31.281469 +0000 build-fedora-devel: .[38;5;246m23:30:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 23:30:32.834570 +0000 build-fedora-devel: .[38;5;246m23:30:32 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp550..[0m
+2025-12-22 23:30:32.834691 +0000 build-fedora-devel: .[38;5;246m23:30:32 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp550 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-zfs.git /builder/zfs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 23:30:39.976810 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 23:30:39.976868 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246m---> Good tag 3a4a50cb0e64a305f4d7f984454dea2dca20232d..[0m
+2025-12-22 23:30:39.976879 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246m---> Good tag 618e9b6136ecc38e985b0ae16396cc2a16199b6e..[0m
+2025-12-22 23:30:39.976885 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246m---> Good tag 1697802b5449e45771377b624ef80dab8cc8a0f7..[0m
+2025-12-22 23:30:39.976892 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 23:30:39.976898 +0000 build-fedora-devel: .[38;5;246m23:30:40 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 23:30:41.443748 +0000 build-fedora-devel: .[38;5;246m23:30:41 .[96m[qb.fetch.zfs] .[0mLog file: /home/user/builder-host/logs/20251222T233031-zfs.log.[0m
+2025-12-22 23:30:43.103727 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp4633..[0m
+2025-12-22 23:30:43.103810 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4633 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/zfs --file-name zfs-2.3.5.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc'.[0m
+2025-12-22 23:30:43.823819 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 23:30:43.823938 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/zfs --file-name zfs-2.3.5.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:30:43.826508 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/zfs'\'' --file-name '\''zfs-2.3.5.tar.gz'\'' --file-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz'\'' --signature-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc'\'' --'.[0m
+2025-12-22 23:30:43.826555 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/zfs'\'' --file-name '\''zfs-2.3.5.tar.gz'\'' --file-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz'\'' --signature-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc'\'' --'.[0m
+2025-12-22 23:30:43.826572 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ set -- --output-dir /builder/zfs --file-name zfs-2.3.5.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc --.[0m
+2025-12-22 23:30:43.826580 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:30:43.826586 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:30:43.826595 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/zfs.[0m
+2025-12-22 23:30:43.826600 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826606 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826611 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:30:43.826617 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:30:43.826624 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_NAME=zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:30:43.826629 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826634 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826639 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:30:43.826645 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:30:43.826652 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_URL=https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:30:43.826658 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826664 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826669 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:30:43.826674 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:30:43.826681 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_URL=https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:30:43.826702 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826707 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826713 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:30:43.826718 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:30:43.826723 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:30:43.826728 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:30:43.826735 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz ']'.[0m
+2025-12-22 23:30:43.826742 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 23:30:43.826788 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z zfs-2.3.5.tar.gz ']'.[0m
+2025-12-22 23:30:43.826796 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:30:43.826802 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /builder/zfs ']'.[0m
+2025-12-22 23:30:43.826807 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mkdir -p /builder/zfs.[0m
+2025-12-22 23:30:43.827883 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ cd /builder/zfs.[0m
+2025-12-22 23:30:43.827916 +0000 build-fedora-devel: .[38;5;246m23:30:43 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_zfs-2.3.5.tar.gz -- https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:30:58.016635 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 23:30:58.016757 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:30:58.017869 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:30:58.019031 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:30:58.019073 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:30:58.019094 +0000 build-fedora-devel: .[38;5;246m23:30:58 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_zfs-2.3.5.tar.gz.asc https://github.com/openzfs/zfs/releases/download/zfs-2.3.5/zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.488264 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246mUsing executor local:/tmp/1327338973210400cca801f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmp6489_zck --untrusted-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz --untrusted-signature-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc --pubkey-file /home/user/builder-host/sources/zfs/zfs-key.asc']'..[0m
+2025-12-22 23:31:01.490570 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 23:31:01.490928 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmp6489_zck --untrusted-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz --untrusted-signature-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc --pubkey-file /home/user/builder-host/sources/zfs/zfs-key.asc.[0m
+2025-12-22 23:31:01.492563 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmp6489_zck'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-host/sources/zfs/zfs-key.asc'\'' --'.[0m
+2025-12-22 23:31:01.492680 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmp6489_zck'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-host/sources/zfs/zfs-key.asc'\'' --'.[0m
+2025-12-22 23:31:01.492768 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmp6489_zck --untrusted-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz --untrusted-signature-file /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc --pubkey-file /home/user/builder-host/sources/zfs/zfs-key.asc --.[0m
+2025-12-22 23:31:01.492805 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 23:31:01.492840 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 23:31:01.492874 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:31:01.492912 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmp6489_zck.[0m
+2025-12-22 23:31:01.492945 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493089 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493124 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 23:31:01.493198 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:31:01.493259 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.493292 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493348 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493385 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 23:31:01.493418 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:31:01.493462 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.493496 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493527 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493559 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 23:31:01.493591 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:31:01.493625 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2025-12-22 23:31:01.493657 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493688 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493720 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 23:31:01.493753 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 23:31:01.493784 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 23:31:01.493816 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 23:31:01.493981 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz ']'.[0m
+2025-12-22 23:31:01.494029 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmp6489_zck ']'.[0m
+2025-12-22 23:31:01.494067 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmp6489_zck.[0m
+2025-12-22 23:31:01.494109 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.494147 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.494234 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_NAME=zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.494272 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 23:31:01.494314 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:31:01.494346 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:31:01.494479 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:31:01.494531 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/zfs/zfs-key.asc ']'.[0m
+2025-12-22 23:31:01.494574 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:31:01.494632 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:31:01.494751 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-host/sources/zfs/zfs-key.asc ']'.[0m
+2025-12-22 23:31:01.494802 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 23:31:01.494845 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc ']'.[0m
+2025-12-22 23:31:01.494883 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/zfs/zfs-key.asc ']'.[0m
+2025-12-22 23:31:01.494924 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.494976 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.495014 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.495047 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ mktemp -d.[0m
+2025-12-22 23:31:01.495890 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.7dTh8kfAQ3.[0m
+2025-12-22 23:31:01.495939 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2025-12-22 23:31:01.501249 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.7dTh8kfAQ3/keyring /home/user/builder-host/sources/zfs/zfs-key.asc.[0m
+2025-12-22 23:31:01.508908 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.7dTh8kfAQ3/keyring.gpg /tmp/tmp.7dTh8kfAQ3/keyring.[0m
+2025-12-22 23:31:01.515032 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ sqv --version.[0m
+2025-12-22 23:31:01.517290 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2025-12-22 23:31:01.517371 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sort -VC.[0m
+2025-12-22 23:31:01.517445 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2025-12-22 23:31:01.519291 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2025-12-22 23:31:01.519423 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2025-12-22 23:31:01.519437 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2025-12-22 23:31:01.519446 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2025-12-22 23:31:01.519456 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.7dTh8kfAQ3/keyring /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.556543 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m4F3BA9AB6D1F8D683DC2DFB56AD860EED4598027.[0m
+2025-12-22 23:31:01.556603 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz.asc /home/user/builder-host/tmp/tmp6489_zck/zfs-2.3.5.tar.gz.asc.[0m
+2025-12-22 23:31:01.558158 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ rm -rf /tmp/tmp.7dTh8kfAQ3.[0m
+2025-12-22 23:31:01.560009 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmp6489_zck/untrusted_zfs-2.3.5.tar.gz /home/user/builder-host/tmp/tmp6489_zck/zfs-2.3.5.tar.gz.[0m
+2025-12-22 23:31:01.590812 +0000 build-fedora-devel: .[38;5;246m23:31:01 .[96m[qb.fetch.zfs] .[38;5;246m['cd -- /builder', "git -C /builder/zfs rev-parse 'HEAD^{}' >> hash", "git -C /builder/zfs tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 23:31:03.085319 +0000 build-fedora-devel: .[38;5;246m23:31:03 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp9881..[0m
+2025-12-22 23:31:03.085389 +0000 build-fedora-devel: .[38;5;246m23:31:03 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9881 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/zfs rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/zfs tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 23:31:05.608468 +0000 build-fedora-devel: .[38;5;246m23:31:05 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 23:31:05.608544 +0000 > closing log
