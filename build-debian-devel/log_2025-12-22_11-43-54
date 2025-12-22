@@ -1,0 +1,107 @@
+2025-12-22 11:43:54.935408 +0000 > starting log
+2025-12-22 11:43:54.935697 +0000 build-debian-devel: .[38;5;246m11:43:54 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 11:43:54.935712 +0000 build-debian-devel: .[38;5;246m11:43:54 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 11:43:54.935721 +0000 build-debian-devel: .[38;5;246m11:43:54 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 11:43:54.935727 +0000 build-debian-devel: .[38;5;246m11:43:54 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 11:43:54.935734 +0000 build-debian-devel: .[38;5;246m11:43:54 .[96m[qb] .[38;5;246m>>   python-panflute.[0m
+2025-12-22 11:43:54.935739 +0000 build-debian-devel: .[38;5;246m11:43:55 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 11:43:54.935747 +0000 build-debian-devel: .[38;5;246m11:43:55 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 11:43:54.935753 +0000 build-debian-devel: .[38;5;246m11:43:55 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-22 11:44:03.745329 +0000 build-debian-devel: .[38;5;246m11:44:03 .[96m[qb.fetch.python-panflute.fetch] .[0mUsing executor qubes:disp6413..[0m
+2025-12-22 11:44:03.745477 +0000 build-debian-devel: .[38;5;246m11:44:03 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6413 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-python-panflute.git /builder/python-panflute /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 11:44:08.039771 +0000 build-debian-devel: .[38;5;246m11:44:08 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 11:44:08.039894 +0000 build-debian-devel: .[38;5;246m11:44:08 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m---> Good tag e34ee5d2dd0fcb4e941bb39cdc9c841657a143d4..[0m
+2025-12-22 11:44:08.039919 +0000 build-debian-devel: .[38;5;246m11:44:08 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 11:44:08.039967 +0000 build-debian-devel: .[38;5;246m11:44:08 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-22 11:44:09.700166 +0000 build-debian-devel: .[38;5;246m11:44:09 .[96m[qb.fetch.python-panflute] .[0mLog file: /home/user/builder-devel/logs/20251222T114354-python-panflute.log.[0m
+2025-12-22 11:44:18.791374 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[0mUsing executor qubes:disp3749..[0m
+2025-12-22 11:44:18.791491 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3749 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/python-panflute --file-name panflute-1.12.5.tar.gz --file-url https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz'.[0m
+2025-12-22 11:44:18.825068 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-22 11:44:18.825993 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/python-panflute --file-name panflute-1.12.5.tar.gz --file-url https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:18.828663 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/python-panflute'\'' --file-name '\''panflute-1.12.5.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz'\'' --'.[0m
+2025-12-22 11:44:18.828882 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/python-panflute'\'' --file-name '\''panflute-1.12.5.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz'\'' --'.[0m
+2025-12-22 11:44:18.829000 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ set -- --output-dir /builder/python-panflute --file-name panflute-1.12.5.tar.gz --file-url https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz --.[0m
+2025-12-22 11:44:18.829092 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 11:44:18.829135 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:18.829152 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/python-panflute.[0m
+2025-12-22 11:44:18.829216 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829231 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829295 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 11:44:18.829310 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:18.829325 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ FILE_NAME=panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:18.829338 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829351 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829389 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 11:44:18.829402 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:18.829428 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:18.829467 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829480 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829494 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 11:44:18.829568 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:18.829609 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:18.829628 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 11:44:18.829677 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz ']'.[0m
+2025-12-22 11:44:18.829696 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-22 11:44:18.829719 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z panflute-1.12.5.tar.gz ']'.[0m
+2025-12-22 11:44:18.829735 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:18.829751 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n /builder/python-panflute ']'.[0m
+2025-12-22 11:44:18.829769 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ mkdir -p /builder/python-panflute.[0m
+2025-12-22 11:44:18.829995 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ cd /builder/python-panflute.[0m
+2025-12-22 11:44:18.830045 +0000 build-debian-devel: .[38;5;246m11:44:18 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_panflute-1.12.5.tar.gz -- https://files.pythonhosted.org/packages/source/p/panflute/panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:19.918763 +0000 build-debian-devel: .[38;5;246m11:44:20 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-22 11:44:19.918839 +0000 build-debian-devel: .[38;5;246m11:44:20 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:44:21.441242 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246mUsing executor local:/tmp/136822078645520b1edea76/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpvfzfly40 --untrusted-file /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256']'..[0m
+2025-12-22 11:44:21.446709 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-22 11:44:21.448365 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpvfzfly40 --untrusted-file /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256.[0m
+2025-12-22 11:44:21.450749 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpvfzfly40'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256'\'' --'.[0m
+2025-12-22 11:44:21.450890 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpvfzfly40'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256'\'' --'.[0m
+2025-12-22 11:44:21.450925 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpvfzfly40 --untrusted-file /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256 --.[0m
+2025-12-22 11:44:21.450963 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-22 11:44:21.450972 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-22 11:44:21.450978 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:21.450987 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpvfzfly40.[0m
+2025-12-22 11:44:21.450994 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451001 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451007 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-22 11:44:21.451014 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:21.451043 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:21.451058 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451066 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451072 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-22 11:44:21.451079 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:21.451086 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2025-12-22 11:44:21.451093 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451099 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451106 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-22 11:44:21.451114 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:21.451122 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256.[0m
+2025-12-22 11:44:21.451129 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451135 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451142 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-22 11:44:21.451148 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-22 11:44:21.451154 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ shift.[0m
+2025-12-22 11:44:21.451161 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-22 11:44:21.451169 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz ']'.[0m
+2025-12-22 11:44:21.451180 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpvfzfly40 ']'.[0m
+2025-12-22 11:44:21.451188 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpvfzfly40.[0m
+2025-12-22 11:44:21.452003 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:21.453893 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:21.454271 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ FILE_NAME=panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:21.455317 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256 ']'.[0m
+2025-12-22 11:44:21.455865 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256 ']'.[0m
+2025-12-22 11:44:21.456522 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256 ']'.[0m
+2025-12-22 11:44:21.457242 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:44:21.457351 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-22 11:44:21.457390 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:44:21.457421 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-22 11:44:21.457461 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256 ']'.[0m
+2025-12-22 11:44:21.457493 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2025-12-22 11:44:21.457527 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2025-12-22 11:44:21.459247 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/python-panflute/panflute-1.12.5.tar.gz.sha256.[0m
+2025-12-22 11:44:21.462354 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m++ printf '%s  -\n' 8b89507c02fde97650441d50169958b50cb13000edcc7f061390ea6fc313775c.[0m
+2025-12-22 11:44:21.467796 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpvfzfly40/untrusted_panflute-1.12.5.tar.gz /home/user/builder-devel/tmp/tmpvfzfly40/panflute-1.12.5.tar.gz.[0m
+2025-12-22 11:44:21.474124 +0000 build-debian-devel: .[38;5;246m11:44:21 .[96m[qb.fetch.python-panflute] .[38;5;246m['cd -- /builder', "git -C /builder/python-panflute rev-parse 'HEAD^{}' >> hash", "git -C /builder/python-panflute tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-22 11:44:33.624175 +0000 build-debian-devel: .[38;5;246m11:44:33 .[96m[qb.fetch.python-panflute.fetch] .[0mUsing executor qubes:disp2738..[0m
+2025-12-22 11:44:33.624247 +0000 build-debian-devel: .[38;5;246m11:44:33 .[96m[qb.fetch.python-panflute.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2738 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/python-panflute rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/python-panflute tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-22 11:44:36.264065 +0000 build-debian-devel: .[38;5;246m11:44:36 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 11:44:36.264152 +0000 > closing log
