@@ -1,0 +1,815 @@
+2025-12-22 14:25:15.158939 +0000 > starting log
+2025-12-22 14:25:15.159595 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-22 14:25:15.159618 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-22 14:25:15.159636 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-22 14:25:15.159647 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-22 14:25:15.159669 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>>   ansible.[0m
+2025-12-22 14:25:15.159678 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>>     commit-hash: ca6748f948b009b2a3115f03ea17ad0bb1026c20.[0m
+2025-12-22 14:25:15.159691 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>>     source-hash: e4b87e94b1b62d6c4eb95536ec038e9457f6edcca191655ce67e8aaa530ce8378d0932c64291ceee83c194af2b5521811a518f5e78aa38181d78125adea3412b.[0m
+2025-12-22 14:25:15.159699 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-22 14:25:15.159712 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2025-12-22 14:25:15.159719 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb] .[0mRunning stages: prep, build, sign, publish.[0m
+2025-12-22 14:25:15.159730 +0000 build-debian-devel: .[38;5;246m14:25:15 .[96m[qb.fetch.ansible] .[0mansible: source already fetched. Updating..[0m
+2025-12-22 14:25:16.570817 +0000 build-debian-devel: .[38;5;246m14:25:16 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp4799..[0m
+2025-12-22 14:25:16.570919 +0000 build-debian-devel: .[38;5;246m14:25:16 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4799 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-ansible.git /builder/ansible /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-22 14:25:18.595170 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-22 14:25:18.595271 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag 0d541f9988dfc8c554626082eb95f114d563a897..[0m
+2025-12-22 14:25:18.595284 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag 0f967c27be023ddace1cfe83a38b6643dec918ec..[0m
+2025-12-22 14:25:18.595291 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag 309cceb09735c7ff8954fa31c43ee8836e1fb919..[0m
+2025-12-22 14:25:18.595299 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-22 14:25:18.595306 +0000 build-debian-devel: .[38;5;246m14:25:18 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Merging....[0m
+2025-12-22 14:25:20.327711 +0000 build-debian-devel: .[38;5;246m14:25:20 .[96m[qb.fetch.ansible] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible.log.[0m
+2025-12-22 14:25:20.346149 +0000 build-debian-devel: .[38;5;246m14:25:20 .[96m[qb.chroot_deb.vm-bookworm] .[0mvm-debian-12.amd64: Re-using existing cache. Use --force to force cleanup and recreation..[0m
+2025-12-22 14:25:20.346209 +0000 build-debian-devel: .[38;5;246m14:25:20 .[96m[qb.publish_deb.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-vm-bookworm.log.[0m
+2025-12-22 14:25:20.350123 +0000 build-debian-devel: .[38;5;246m14:25:20 .[96m[qb.source_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:25:22.698295 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[0mUsing executor qubes:disp2015..[0m
+2025-12-22 14:25:22.698420 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m/usr/bin/qvm-run-vm -- disp2015 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen DIST=bookworm LC_ALL=C DEBFULLNAME=Builder DEBEMAIL=user@localhost bash -c '/builder/plugins/source_deb/scripts/modify-changelog-for-build /builder/ansible debian bookworm deb12u 1 && /builder/plugins/source_deb/scripts/get-source-info /builder/ansible debian'.[0m
+2025-12-22 14:25:22.752012 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ test 5 -lt 4.[0m
+2025-12-22 14:25:22.752248 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SOURCE_DIR=/builder/ansible.[0m
+2025-12-22 14:25:22.752263 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DEBIAN_DIRECTORY=debian.[0m
+2025-12-22 14:25:22.752273 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIST_NAME=bookworm.[0m
+2025-12-22 14:25:22.752281 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIST_TAG=deb12u.[0m
+2025-12-22 14:25:22.752288 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DEVEL_VERSION=1.[0m
+2025-12-22 14:25:22.752299 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ dirname /builder/plugins/source_deb/scripts/modify-changelog-for-build.[0m
+2025-12-22 14:25:22.752341 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SCRIPTS_DIR=/builder/plugins/source_deb/scripts.[0m
+2025-12-22 14:25:22.752352 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ cd /builder/ansible.[0m
+2025-12-22 14:25:22.752361 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ '[' 01 -gt 0 ']'.[0m
+2025-12-22 14:25:22.752455 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export DIST_TAG.[0m
+2025-12-22 14:25:22.752561 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export DEVEL_VERSION.[0m
+2025-12-22 14:25:22.752716 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export INCREMENT_DEVEL_VERSIONS=1.[0m
+2025-12-22 14:25:22.752912 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ INCREMENT_DEVEL_VERSIONS=1.[0m
+2025-12-22 14:25:22.753080 +0000 build-debian-devel: .[38;5;246m14:25:22 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ /builder/plugins/source_deb/scripts/debian-changelog.[0m
+2025-12-22 14:25:23.063111 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mlibdistro-info-perl is not installed, Debian release names are not known..[0m
+2025-12-22 14:25:23.063360 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mlibdistro-info-perl is not installed, Ubuntu release names are not known..[0m
+2025-12-22 14:25:23.090711 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ test 2 -ne 2.[0m
+2025-12-22 14:25:23.090848 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SOURCE_DIR=/builder/ansible.[0m
+2025-12-22 14:25:23.091366 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DEBIAN_DIRECTORY=debian.[0m
+2025-12-22 14:25:23.092602 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ basename debian.[0m
+2025-12-22 14:25:23.097755 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIRECTORY_BN=debian.[0m
+2025-12-22 14:25:23.097934 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIRECTORY_MANGLE_PATH=debian.[0m
+2025-12-22 14:25:23.097997 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIRECTORY_MANGLE_PATH=debian.[0m
+2025-12-22 14:25:23.098669 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ dirname /builder/plugins/source_deb/scripts/get-source-info.[0m
+2025-12-22 14:25:23.101818 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SCRIPTS_DIR=/builder/plugins/source_deb/scripts.[0m
+2025-12-22 14:25:23.102091 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ /builder/plugins/source_deb/scripts/debian-parser changelog --package-release-name /builder/ansible/debian/changelog.[0m
+2025-12-22 14:25:23.192407 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ /builder/plugins/source_deb/scripts/debian-parser changelog --package-release-name-full /builder/ansible/debian/changelog.[0m
+2025-12-22 14:25:23.231714 +0000 build-debian-devel: .[38;5;246m14:25:23 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ grep -Po '(?<=^3.0 \()\w+'.[0m
+2025-12-22 14:25:35.532982 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[0mUsing executor qubes:disp941..[0m
+2025-12-22 14:25:35.533276 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m/usr/bin/qvm-run-vm -- disp941 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen DIST=bookworm LC_ALL=C DEBFULLNAME=Builder DEBEMAIL=user@localhost bash -c '/builder/plugins/fetch/scripts/create-archive /builder/ansible qubes-ansible-vm_1.2.7.orig.tar.gz && mv /builder/ansible/qubes-ansible-vm_1.2.7.orig.tar.gz /builder && /builder/plugins/source_deb/scripts/modify-changelog-for-build /builder/ansible debian bookworm deb12u 1 && mkdir -p /builder/build && cd /builder/build && cp -a /builder/ansible/debian . && chmod -R -- u+rwX,g+rX-w,o+rX-w . && chmod +x debian/rules && dpkg-source -b . && /builder/plugins/source_deb/scripts/debian-get-packages-list /builder/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc >/builder/debian_packages.list'.[0m
+2025-12-22 14:25:35.589347 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ tar --version.[0m
+2025-12-22 14:25:35.589430 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ head -1.[0m
+2025-12-22 14:25:35.589450 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ awk '{print $4}'.[0m
+2025-12-22 14:25:35.600291 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2025-12-22 14:25:35.600370 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ readlink -f /builder/ansible.[0m
+2025-12-22 14:25:35.600706 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/ansible.[0m
+2025-12-22 14:25:35.600767 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2025-12-22 14:25:35.600787 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_TARBALL_NAME=qubes-ansible-vm_1.2.7.orig.tar.[0m
+2025-12-22 14:25:35.600802 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ '[' x '!=' x ']'.[0m
+2025-12-22 14:25:35.600937 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_PREFIX=qubes-ansible-vm_1.2.7.orig.tar.[0m
+2025-12-22 14:25:35.600953 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_PREFIX=qubes-ansible-vm_1.2.7.orig.[0m
+2025-12-22 14:25:35.600968 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_PREFIX=qubes-ansible-vm_1.2.7.[0m
+2025-12-22 14:25:35.601002 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ GIT_ARCHIVE_PREFIX=qubes-ansible-vm_1.2.7/.[0m
+2025-12-22 14:25:35.601041 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ pushd /builder/ansible.[0m
+2025-12-22 14:25:35.601057 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m/builder/ansible ~.[0m
+2025-12-22 14:25:35.601070 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ git log -1 --format=%ct.[0m
+2025-12-22 14:25:35.619277 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SOURCE_DATE_EPOCH=1764123909.[0m
+2025-12-22 14:25:35.620985 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2025-12-22 14:25:35.621441 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ sort -V.[0m
+2025-12-22 14:25:35.621651 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ head -n1.[0m
+2025-12-22 14:25:35.625413 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2025-12-22 14:25:35.625728 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ tar --sort=name --mtime=@1764123909 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%qubes-ansible-vm_1.2.7/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude qubes-ansible-vm_1.2.7.orig.tar -cf qubes-ansible-vm_1.2.7.orig.tar ..[0m
+2025-12-22 14:25:35.628181 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2025-12-22 14:25:35.628362 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ gzip -fn qubes-ansible-vm_1.2.7.orig.tar.[0m
+2025-12-22 14:25:35.639333 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ popd.[0m
+2025-12-22 14:25:35.639979 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m~.[0m
+2025-12-22 14:25:35.640220 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ test 5 -lt 4.[0m
+2025-12-22 14:25:35.640345 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SOURCE_DIR=/builder/ansible.[0m
+2025-12-22 14:25:35.640469 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DEBIAN_DIRECTORY=debian.[0m
+2025-12-22 14:25:35.640588 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIST_NAME=bookworm.[0m
+2025-12-22 14:25:35.640704 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DIST_TAG=deb12u.[0m
+2025-12-22 14:25:35.640792 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ DEVEL_VERSION=1.[0m
+2025-12-22 14:25:35.641300 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m++ dirname /builder/plugins/source_deb/scripts/modify-changelog-for-build.[0m
+2025-12-22 14:25:35.641476 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ SCRIPTS_DIR=/builder/plugins/source_deb/scripts.[0m
+2025-12-22 14:25:35.641576 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ cd /builder/ansible.[0m
+2025-12-22 14:25:35.641658 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ '[' 01 -gt 0 ']'.[0m
+2025-12-22 14:25:35.641682 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export DIST_TAG.[0m
+2025-12-22 14:25:35.641703 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export DEVEL_VERSION.[0m
+2025-12-22 14:25:35.641725 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ export INCREMENT_DEVEL_VERSIONS=1.[0m
+2025-12-22 14:25:35.641746 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ INCREMENT_DEVEL_VERSIONS=1.[0m
+2025-12-22 14:25:35.641771 +0000 build-debian-devel: .[38;5;246m14:25:35 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246m+ /builder/plugins/source_deb/scripts/debian-changelog.[0m
+2025-12-22 14:25:35.988427 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mlibdistro-info-perl is not installed, Debian release names are not known..[0m
+2025-12-22 14:25:35.988551 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mlibdistro-info-perl is not installed, Ubuntu release names are not known..[0m
+2025-12-22 14:25:36.190219 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: info: using source format '3.0 (quilt)'.[0m
+2025-12-22 14:25:36.190338 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: info: building qubes-ansible-vm using existing ./qubes-ansible-vm_1.2.7.orig.tar.gz.[0m
+2025-12-22 14:25:36.202945 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file Makefile, use --include-removal to override.[0m
+2025-12-22 14:25:36.202996 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file EXAMPLES.md, use --include-removal to override.[0m
+2025-12-22 14:25:36.203108 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file .gitlab-ci.yml, use --include-removal to override.[0m
+2025-12-22 14:25:36.203118 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file README.md, use --include-removal to override.[0m
+2025-12-22 14:25:36.203127 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file rel, use --include-removal to override.[0m
+2025-12-22 14:25:36.203138 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file LICENSE, use --include-removal to override.[0m
+2025-12-22 14:25:36.203146 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file version, use --include-removal to override.[0m
+2025-12-22 14:25:36.203196 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file update-ansible-default-strategy, use --include-removal to override.[0m
+2025-12-22 14:25:36.203207 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file .qubesbuilder, use --include-removal to override.[0m
+2025-12-22 14:25:36.203214 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory plugins.[0m
+2025-12-22 14:25:36.203222 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory plugins/modules.[0m
+2025-12-22 14:25:36.203232 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file plugins/modules/qubesos.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203243 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory plugins/strategy.[0m
+2025-12-22 14:25:36.203252 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file plugins/strategy/qubes_proxy.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203259 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory plugins/connection.[0m
+2025-12-22 14:25:36.203268 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file plugins/connection/qubes.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203300 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory plugins/callback.[0m
+2025-12-22 14:25:36.203313 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file plugins/callback/qubesos_strategy_guard.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203322 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory ci.[0m
+2025-12-22 14:25:36.203333 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file ci/codecov-wrapper, use --include-removal to override.[0m
+2025-12-22 14:25:36.203341 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file ci/coveragerc, use --include-removal to override.[0m
+2025-12-22 14:25:36.203349 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file ci/codecov-keys.asc, use --include-removal to override.[0m
+2025-12-22 14:25:36.203357 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file ci/install_ansible_vm.sh, use --include-removal to override.[0m
+2025-12-22 14:25:36.203363 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory rpm_spec.[0m
+2025-12-22 14:25:36.203372 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file rpm_spec/qubes-ansible.spec.in, use --include-removal to override.[0m
+2025-12-22 14:25:36.203413 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory archlinux.[0m
+2025-12-22 14:25:36.203421 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file archlinux/PKGBUILD.in, use --include-removal to override.[0m
+2025-12-22 14:25:36.203429 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory qubes-rpc.[0m
+2025-12-22 14:25:36.203438 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file qubes-rpc/qubes.AnsibleVM, use --include-removal to override.[0m
+2025-12-22 14:25:36.203445 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory tests.[0m
+2025-12-22 14:25:36.203454 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/ansible_guard_quiet.cfg, use --include-removal to override.[0m
+2025-12-22 14:25:36.203462 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/ansible_linear_strategy.cfg, use --include-removal to override.[0m
+2025-12-22 14:25:36.203552 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/ansible_proxy_strategy.cfg, use --include-removal to override.[0m
+2025-12-22 14:25:36.203561 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/ansible_guard_off.cfg, use --include-removal to override.[0m
+2025-12-22 14:25:36.203568 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of directory tests/qubes.[0m
+2025-12-22 14:25:36.203637 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/qubes/test_module.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203645 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/qubes/conftest.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203653 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/qubes/test_cli.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.203661 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: warning: ignoring deletion of file tests/qubes/test_proxy.py, use --include-removal to override.[0m
+2025-12-22 14:25:36.204930 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: info: building qubes-ansible-vm in qubes-ansible-vm_1.2.7-1+deb12u1+devel1.debian.tar.xz.[0m
+2025-12-22 14:25:36.217864 +0000 build-debian-devel: .[38;5;246m14:25:36 .[96m[qb.source_deb.ansible.vm-bookworm.prep] .[38;5;246mdpkg-source: info: building qubes-ansible-vm in qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc.[0m
+2025-12-22 14:25:38.106991 +0000 build-debian-devel: .[38;5;246m14:25:38 .[96m[qb.source_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:25:38.117766 +0000 build-debian-devel: .[38;5;246m14:25:38 .[96m[qb.source_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64: Source hash is the same than already prepared source. Skipping..[0m
+2025-12-22 14:25:38.117817 +0000 build-debian-devel: .[38;5;246m14:25:38 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:25:38.120721 +0000 build-debian-devel: .[38;5;246m14:25:38 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mdependency 'ansible' (commit hash: ca6748f948b009b2a3115f03ea17ad0bb1026c20).[0m
+2025-12-22 14:25:44.382396 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[0mUsing executor qubes:disp2951..[0m
+2025-12-22 14:25:44.382540 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m/usr/bin/qvm-run-vm -- disp2951 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'mkdir -p /builder/cache/aptcache && /builder/plugins/build_deb/scripts/create-local-repo /builder/repository debian bookworm && sudo -E pbuilder update --distribution bookworm --configfile /builder/pbuilder/pbuilderrc --othermirror "deb [trusted=yes] file:///tmp/qubes-deb bookworm main" && sudo -E pbuilder build --override-config --distribution bookworm --configfile /builder/pbuilder/pbuilderrc --othermirror "deb [trusted=yes] file:///tmp/qubes-deb bookworm main" /builder/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc && /builder/plugins/build_deb/scripts/patch-changes /builder/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc /builder/pbuilder/results/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo /builder/pbuilder/results/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes'.[0m
+2025-12-22 14:25:44.418361 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ '[' 3 -lt 2 ']'.[0m
+2025-12-22 14:25:44.418421 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ REPO_DIR=/builder/repository.[0m
+2025-12-22 14:25:44.418445 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ DISTRIBUTION=debian.[0m
+2025-12-22 14:25:44.418464 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ SUITE=bookworm.[0m
+2025-12-22 14:25:44.418483 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ mkdir -p /builder/repository/conf.[0m
+2025-12-22 14:25:44.420675 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ mkdir -p /builder/repository/conf.[0m
+2025-12-22 14:25:44.422293 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ cd /builder/repository.[0m
+2025-12-22 14:25:44.422920 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ LC_ALL=C.[0m
+2025-12-22 14:25:44.422938 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ reprepro --version.[0m
+2025-12-22 14:25:44.433707 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro_version='reprepro: This is reprepro version 5.4.4'.[0m
+2025-12-22 14:25:44.433751 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro_version=5.4.4.[0m
+2025-12-22 14:25:44.433775 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ append_components=.[0m
+2025-12-22 14:25:44.433795 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ printf '%s\n' 5.4.4 5.4.0.[0m
+2025-12-22 14:25:44.433814 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ head -n1.[0m
+2025-12-22 14:25:44.433909 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ sort -V.[0m
+2025-12-22 14:25:44.437291 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ '[' 5.4.0 = 5.4.0 ']'.[0m
+2025-12-22 14:25:44.437330 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ append_components='.[0m
+2025-12-22 14:25:44.437355 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mDDebComponents: main'.[0m
+2025-12-22 14:25:44.437376 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ cat.[0m
+2025-12-22 14:25:44.438568 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ mkdir -p dists/bookworm/main/binary-amd64.[0m
+2025-12-22 14:25:44.440124 +0000 build-debian-devel: .[38;5;246m14:25:44 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ dpkg-scanpackages --multiversion ..[0m
+2025-12-22 14:25:45.729481 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-scanpackages: info: Wrote 63 entries to output Packages file..[0m
+2025-12-22 14:25:45.730750 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ gzip -9c dists/bookworm/main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.737823 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ LC_ALL=C.[0m
+2025-12-22 14:25:45.738013 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ date -u '+%a, %d %b %Y %H:%M:%S %Z'.[0m
+2025-12-22 14:25:45.740073 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ DATE='Mon, 22 Dec 2025 14:25:44 UTC'.[0m
+2025-12-22 14:25:45.740176 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ cat.[0m
+2025-12-22 14:25:45.744138 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ calc_sha1 main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.744268 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ f=dists/bookworm/main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.744387 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n ' '.[0m
+2025-12-22 14:25:45.748824 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ cut '-d ' -f 1.[0m
+2025-12-22 14:25:45.748846 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ sha256sum dists/bookworm/main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.760634 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n 15abae4cb2e25002de2892f7982eba0a58b25a1816df46b275bb0d345b0fb0f3 ''.[0m
+2025-12-22 14:25:45.761487 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ stat -c %s dists/bookworm/main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.770568 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n 55735 ''.[0m
+2025-12-22 14:25:45.770636 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo main/binary-amd64/Packages.[0m
+2025-12-22 14:25:45.770664 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ calc_sha1 main/binary-amd64/Packages.gz.[0m
+2025-12-22 14:25:45.770696 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ f=dists/bookworm/main/binary-amd64/Packages.gz.[0m
+2025-12-22 14:25:45.770768 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n ' '.[0m
+2025-12-22 14:25:45.775065 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ sha256sum dists/bookworm/main/binary-amd64/Packages.gz.[0m
+2025-12-22 14:25:45.775139 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ cut '-d ' -f 1.[0m
+2025-12-22 14:25:45.781415 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n ba950f0d6ae5d1b3b73a0b31c26ba2cc98850a9bfa4aa28bea127ec99d832e6b ''.[0m
+2025-12-22 14:25:45.782933 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ stat -c %s dists/bookworm/main/binary-amd64/Packages.gz.[0m
+2025-12-22 14:25:45.791910 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo -n 15454 ''.[0m
+2025-12-22 14:25:45.791971 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ echo main/binary-amd64/Packages.gz.[0m
+2025-12-22 14:25:45.792356 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ mapfile -d '' changes_files.[0m
+2025-12-22 14:25:45.794644 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m++ find /builder/repository -name '*.changes' -not -path /builder/repository/dists -not -path /builder/repository/pool -print0.[0m
+2025-12-22 14:25:45.818561 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:45.818635 +0000 build-debian-devel: .[38;5;246m14:25:45 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/mgmt-salt-base_4.3.1/qubes-mgmt-salt-base_4.3.1-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.008855 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'qubes-mgmt-salt-base_4.3.1-1+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:46.008921 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:46.034137 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.034211 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.034359 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-thunderbird_2.0.8/thunderbird-qubes_2.0.8-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.071394 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.071588 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.071619 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-pdf-converter_2.1.25/qubes-pdf-converter_2.1.25-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.116100 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.116608 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-snapd-helper_1.0.4/qubes-snapd-helper_1.0.4-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.117455 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.156147 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.156216 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.156237 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-u2f_2.0.6/qubes-ctap_2.0.6+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.169315 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'qubes-ctap_2.0.6+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:46.169396 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:46.195674 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.195773 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.195808 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/meta-packages_4.3.7/qubes-meta-packages_4.3.7-1+deb12u1+devel2_amd64.changes.[0m
+2025-12-22 14:25:46.247224 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.247971 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.248009 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/gui-common_4.3.1/qubes-gui-common_4.3.1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.311525 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.312412 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.313174 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-split-gpg2_1.1.12/split-gpg2_1.1.12+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.365253 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.365549 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.365790 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/video-companion_4.3.0/qubes-video-companion_4.3.0-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.379373 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'qubes-video-companion_4.3.0-1+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:46.379464 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:46.405639 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.406741 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.407375 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/desktop-linux-i3_4.24/i3-wm_4.24-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:46.559917 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:46.559978 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:46.559995 +0000 build-debian-devel: .[38;5;246m14:25:46 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/artwork_4.3.9/qubes-artwork_4.3.9-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.021133 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.021244 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.021336 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-img-converter_1.2.19/qubes-img-converter_1.2.19-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.063471 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.064958 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.065302 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/vmm-xen-guest_5.0.4/xen-guest_5.0.4-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.115002 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.115719 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.115988 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/salt_3007.8/salt_3007.8-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.148519 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'salt_3007.8-1+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:48.148913 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:48.560648 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.561213 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.561274 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/mgmt-salt_4.2.3/qubes-mgmt-salt_4.2.3-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.578402 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'qubes-mgmt-salt_4.2.3-1+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:48.578490 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:48.613169 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.613303 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.613346 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/linux-utils_4.3.13/qubes-utils_4.3.13+deb12u1+devel2_amd64.changes.[0m
+2025-12-22 14:25:48.695114 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.696036 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.696078 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-gpg-sign_1.0.0/qubes-gpg-sign_1.0.0-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.753011 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.755025 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.755085 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/python-looseversion_1.3.0/python-looseversion_1.3.0-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.817101 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.817654 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.817706 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-split-gpg_2.0.81/qubes-gpg-split_2.0.81-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.876824 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.878599 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.878656 +0000 build-debian-devel: .[38;5;246m14:25:48 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-usb-proxy_4.3.2/qubes-usb-proxy_4.3.2+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.917314 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.918847 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.919095 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/mgmt-salt-base-topd_4.3.2/qubes-mgmt-salt-base-topd_4.3.2-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.932893 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m'qubes-mgmt-salt-base-topd_4.3.2-1+deb12u1+devel1_amd64.buildinfo' looks like architecture 'amd64', but this is not listed in the Architecture-Header!.[0m
+2025-12-22 14:25:48.933014 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgnoring as --ignore=surprisingarch given..[0m
+2025-12-22 14:25:48.954247 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.954682 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.954960 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-linux-input-proxy_1.0.45/qubes-input-proxy_1.0.45-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:48.997179 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:48.997217 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:48.997763 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/core-admin-client_4.3.25/qubes-core-admin-client_4.3.25-1+deb12u1+devel2_amd64.changes.[0m
+2025-12-22 14:25:49.039049 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:49.039267 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ for changes in "${changes_files[@]}".[0m
+2025-12-22 14:25:49.039310 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m+ reprepro -b /builder/repository --ignore=surprisingbinary --ignore=surprisingarch include bookworm /builder/repository/vm-bookworm/app-shutdown-idle_1.0.13/qubes-app-shutdown-idle_1.0.13-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:25:49.073930 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mExporting indices....[0m
+2025-12-22 14:25:49.114675 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: /root/.pbuilderrc does not exist.[0m
+2025-12-22 14:25:49.159340 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: libeatmydata is not installed on the host, not using it..[0m
+2025-12-22 14:25:49.184969 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-query: no packages found matching systemd.[0m
+2025-12-22 14:25:49.191079 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: cgroups are not available on the host, not using them..[0m
+2025-12-22 14:25:49.198466 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Current time: Mon Dec 22 14:25:47 UTC 2025.[0m
+2025-12-22 14:25:49.200988 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: pbuilder-time-stamp: 1766413547.[0m
+2025-12-22 14:25:49.202832 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Building the build Environment.[0m
+2025-12-22 14:25:49.204426 +0000 build-debian-devel: .[38;5;246m14:25:49 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: extracting base tarball [/builder/pbuilder/base.tgz].[0m
+2025-12-22 14:25:52.434585 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying local configuration.[0m
+2025-12-22 14:25:52.444520 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: No local /etc/hostname to copy, relying on /builder/pbuilder/build/2169/etc/hostname to be correct.[0m
+2025-12-22 14:25:52.444667 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: No local /etc/mailname to copy, relying on /builder/pbuilder/build/2169/etc/mailname to be correct.[0m
+2025-12-22 14:25:52.485597 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: --override-config is not set; not updating apt.conf Read the manpage for details..[0m
+2025-12-22 14:25:52.485762 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /proc filesystem.[0m
+2025-12-22 14:25:52.502908 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /sys filesystem.[0m
+2025-12-22 14:25:52.517816 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: creating /{dev,run}/shm.[0m
+2025-12-22 14:25:52.533356 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /dev/pts filesystem.[0m
+2025-12-22 14:25:52.548953 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: redirecting /dev/ptmx to /dev/pts/ptmx.[0m
+2025-12-22 14:25:52.554985 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting selinux filesystem.[0m
+2025-12-22 14:25:52.557398 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Mounting /builder/repository to /tmp/qubes-deb.[0m
+2025-12-22 14:25:52.558445 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: policy-rc.d already exists.[0m
+2025-12-22 14:25:52.562189 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Refreshing the base.tgz.[0m
+2025-12-22 14:25:52.562241 +0000 build-debian-devel: .[38;5;246m14:25:52 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: upgrading packages.[0m
+2025-12-22 14:25:53.087254 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mHit:1 https://deb.debian.org/debian bookworm InRelease.[0m
+2025-12-22 14:25:53.624328 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:25:53.660410 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Obtaining the cached apt archive contents.[0m
+2025-12-22 14:25:53.678861 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:25:53.785004 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:25:53.785084 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:25:53.844318 +0000 build-debian-devel: .[38;5;246m14:25:53 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mCalculating upgrade....[0m
+2025-12-22 14:25:53.925564 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2025-12-22 14:25:53.939906 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:25:54.102146 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:25:54.102561 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:25:54.262134 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2025-12-22 14:25:54.277440 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:25:54.420687 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:25:54.420777 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:25:54.549979 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mbuild-essential is already the newest version (12.9)..[0m
+2025-12-22 14:25:54.550150 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-dev is already the newest version (1.21.22)..[0m
+2025-12-22 14:25:54.550186 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246maptitude is already the newest version (0.8.13-5)..[0m
+2025-12-22 14:25:54.550377 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2025-12-22 14:25:54.550446 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Copying back the cached apt archive contents.[0m
+2025-12-22 14:25:54.552667 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: user script /builder/pbuilder/build/2169/tmp/hooks/E30origin starting.[0m
+2025-12-22 14:25:54.556899 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: user script /builder/pbuilder/build/2169/tmp/hooks/E30origin finished.[0m
+2025-12-22 14:25:54.556967 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting /tmp/qubes-deb filesystem.[0m
+2025-12-22 14:25:54.562228 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting /sys/fs/selinux filesystem.[0m
+2025-12-22 14:25:54.571141 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/ptmx filesystem.[0m
+2025-12-22 14:25:54.574538 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/pts filesystem.[0m
+2025-12-22 14:25:54.577168 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/shm filesystem.[0m
+2025-12-22 14:25:54.578457 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting proc filesystem.[0m
+2025-12-22 14:25:54.579968 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting sys filesystem.[0m
+2025-12-22 14:25:54.602781 +0000 build-debian-devel: .[38;5;246m14:25:54 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: creating base tarball [/builder/pbuilder/base.tgz].[0m
+2025-12-22 14:26:14.127588 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: cleaning the build env.[0m
+2025-12-22 14:26:14.127656 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: removing directory /builder/pbuilder/build/2169 and its subdirectories.[0m
+2025-12-22 14:26:14.689928 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: /root/.pbuilderrc does not exist.[0m
+2025-12-22 14:26:14.716373 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: libeatmydata is not installed on the host, not using it..[0m
+2025-12-22 14:26:14.720947 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-query: no packages found matching systemd.[0m
+2025-12-22 14:26:14.721767 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: cgroups are not available on the host, not using them..[0m
+2025-12-22 14:26:14.788562 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: pbuilder: network access will be disabled during build.[0m
+2025-12-22 14:26:14.789165 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Current time: Mon Dec 22 14:26:13 UTC 2025.[0m
+2025-12-22 14:26:14.789651 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: pbuilder-time-stamp: 1766413573.[0m
+2025-12-22 14:26:14.789815 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Building the build Environment.[0m
+2025-12-22 14:26:14.790206 +0000 build-debian-devel: .[38;5;246m14:26:14 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: extracting base tarball [/builder/pbuilder/base.tgz].[0m
+2025-12-22 14:26:19.108477 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying local configuration.[0m
+2025-12-22 14:26:19.111372 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: No local /etc/hostname to copy, relying on /builder/pbuilder/build/2389/etc/hostname to be correct.[0m
+2025-12-22 14:26:19.111823 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mW: No local /etc/mailname to copy, relying on /builder/pbuilder/build/2389/etc/mailname to be correct.[0m
+2025-12-22 14:26:19.117090 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Installing apt-lines.[0m
+2025-12-22 14:26:19.207525 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /proc filesystem.[0m
+2025-12-22 14:26:19.216000 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /sys filesystem.[0m
+2025-12-22 14:26:19.225690 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: creating /{dev,run}/shm.[0m
+2025-12-22 14:26:19.236173 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting /dev/pts filesystem.[0m
+2025-12-22 14:26:19.243792 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: redirecting /dev/ptmx to /dev/pts/ptmx.[0m
+2025-12-22 14:26:19.259874 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: mounting selinux filesystem.[0m
+2025-12-22 14:26:19.269918 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Mounting /builder/repository to /tmp/qubes-deb.[0m
+2025-12-22 14:26:19.273964 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: policy-rc.d already exists.[0m
+2025-12-22 14:26:19.285220 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: created buildresult dir: /builder/pbuilder/results.[0m
+2025-12-22 14:26:19.285292 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Obtaining the cached apt archive contents.[0m
+2025-12-22 14:26:19.329143 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Copying source file.[0m
+2025-12-22 14:26:19.345900 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying [/builder/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc].[0m
+2025-12-22 14:26:19.352549 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying [/builder/build/qubes-ansible-vm_1.2.7.orig.tar.gz].[0m
+2025-12-22 14:26:19.359425 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying [/builder/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.debian.tar.xz].[0m
+2025-12-22 14:26:19.384158 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Extracting source.[0m
+2025-12-22 14:26:19.528571 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: warning: extracting unsigned source package (qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc).[0m
+2025-12-22 14:26:19.532889 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: extracting qubes-ansible-vm in qubes-ansible-vm-1.2.7.[0m
+2025-12-22 14:26:19.533308 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: unpacking qubes-ansible-vm_1.2.7.orig.tar.gz.[0m
+2025-12-22 14:26:19.595865 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: unpacking qubes-ansible-vm_1.2.7-1+deb12u1+devel1.debian.tar.xz.[0m
+2025-12-22 14:26:19.743338 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: using fakeroot in build..[0m
+2025-12-22 14:26:19.743446 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Installing the build-deps.[0m
+2025-12-22 14:26:19.743489 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: user script /builder/pbuilder/build/2389/tmp/hooks/D30update starting.[0m
+2025-12-22 14:26:19.863317 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:1 file:/tmp/qubes-deb bookworm InRelease.[0m
+2025-12-22 14:26:19.863396 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgn:1 file:/tmp/qubes-deb bookworm InRelease.[0m
+2025-12-22 14:26:19.863421 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:2 file:/tmp/qubes-deb bookworm Release [3851 B].[0m
+2025-12-22 14:26:19.893296 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:2 file:/tmp/qubes-deb bookworm Release [3851 B].[0m
+2025-12-22 14:26:19.895171 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:3 file:/tmp/qubes-deb bookworm Release.gpg.[0m
+2025-12-22 14:26:19.897130 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mIgn:3 file:/tmp/qubes-deb bookworm Release.gpg.[0m
+2025-12-22 14:26:19.898080 +0000 build-debian-devel: .[38;5;246m14:26:19 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:4 file:/tmp/qubes-deb bookworm/main amd64 Packages [20.1 kB].[0m
+2025-12-22 14:26:20.360913 +0000 build-debian-devel: .[38;5;246m14:26:20 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mHit:5 https://deb.debian.org/debian bookworm InRelease.[0m
+2025-12-22 14:26:20.939273 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:26:20.992830 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: user script /builder/pbuilder/build/2389/tmp/hooks/D30update finished.[0m
+2025-12-22 14:26:21.036462 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m -> Attempting to satisfy build-dependencies.[0m
+2025-12-22 14:26:21.084189 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m -> Creating pbuilder-satisfydepends-dummy package.[0m
+2025-12-22 14:26:21.087455 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPackage: pbuilder-satisfydepends-dummy.[0m
+2025-12-22 14:26:21.087606 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mVersion: 0.invalid.0.[0m
+2025-12-22 14:26:21.087675 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mArchitecture: amd64.[0m
+2025-12-22 14:26:21.087743 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mMaintainer: Debian Pbuilder Team <pbuilder-maint@lists.alioth.debian.org>.[0m
+2025-12-22 14:26:21.087785 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mDescription: Dummy package to satisfy dependencies with aptitude - created by pbuilder.[0m
+2025-12-22 14:26:21.087871 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m This package was created automatically by pbuilder to satisfy the.[0m
+2025-12-22 14:26:21.087920 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m build-dependencies of the package being currently built..[0m
+2025-12-22 14:26:21.087954 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mDepends: debhelper-compat (= 13).[0m
+2025-12-22 14:26:21.088185 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-deb: building package 'pbuilder-satisfydepends-dummy' in '/tmp/satisfydepends-aptitude/pbuilder-satisfydepends-dummy.deb'..[0m
+2025-12-22 14:26:21.113564 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package pbuilder-satisfydepends-dummy..[0m
+2025-12-22 14:26:21.117755 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m(Reading database ... 12913 files and directories currently installed.).[0m
+2025-12-22 14:26:21.118089 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../pbuilder-satisfydepends-dummy.deb ....[0m
+2025-12-22 14:26:21.123240 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking pbuilder-satisfydepends-dummy (0.invalid.0) ....[0m
+2025-12-22 14:26:21.137469 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg: pbuilder-satisfydepends-dummy: dependency problems, but configuring anyway as you requested:.[0m
+2025-12-22 14:26:21.137564 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m pbuilder-satisfydepends-dummy depends on debhelper-compat (= 13); however:.[0m
+2025-12-22 14:26:21.137608 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  Package debhelper-compat is not installed..[0m
+2025-12-22 14:26:21.137635 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m.[0m
+2025-12-22 14:26:21.137657 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up pbuilder-satisfydepends-dummy (0.invalid.0) ....[0m
+2025-12-22 14:26:21.255182 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:26:21.410723 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:26:21.410872 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:26:21.441775 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mInitializing package states....[0m
+2025-12-22 14:26:21.560290 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mWriting extended state information....[0m
+2025-12-22 14:26:21.668283 +0000 build-debian-devel: .[38;5;246m14:26:21 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding tag database....[0m
+2025-12-22 14:26:22.514464 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mpbuilder-satisfydepends-dummy is already installed at the requested version (0.invalid.0).[0m
+2025-12-22 14:26:22.514552 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mpbuilder-satisfydepends-dummy is already installed at the requested version (0.invalid.0).[0m
+2025-12-22 14:26:22.514598 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mThe following NEW packages will be installed:.[0m
+2025-12-22 14:26:22.514639 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  autoconf{a} automake{a} autopoint{a} autotools-dev{a} bsdextrautils{a} debhelper{a} dh-autoreconf{a} dh-strip-nondeterminism{a} dwz{a} file{a} gettext{a} gettext-base{a} groff-base{a} intltool-debian{a} libarchive-zip-perl{a} libdebhelper-perl{a} libelf1{a} libfile-stripnondeterminism-perl{a} libicu72{a} libmagic-mgc{a} libmagic1{a} libpipeline1{a} libsub-override-perl{a} libtool{a} libuchardet0{a} libxml2{a} m4{a} man-db{a} po-debconf{a} sensible-utils{a}.[0m
+2025-12-22 14:26:22.514656 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mThe following packages are RECOMMENDED but will NOT be installed:.[0m
+2025-12-22 14:26:22.514673 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  curl libarchive-cpio-perl libltdl-dev libmail-sendmail-perl lynx wget.[0m
+2025-12-22 14:26:22.514688 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m0 packages upgraded, 30 newly installed, 0 to remove and 0 not upgraded..[0m
+2025-12-22 14:26:22.514702 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mNeed to get 18.7 MB of archives. After unpacking 72.4 MB will be used..[0m
+2025-12-22 14:26:22.514714 +0000 build-debian-devel: .[38;5;246m14:26:22 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mWriting extended state information....[0m
+2025-12-22 14:26:23.007472 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 1 https://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB].[0m
+2025-12-22 14:26:23.200889 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 2 https://deb.debian.org/debian bookworm/main amd64 libmagic-mgc amd64 1:5.44-3 [305 kB].[0m
+2025-12-22 14:26:23.551717 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 3 https://deb.debian.org/debian bookworm/main amd64 libmagic1 amd64 1:5.44-3 [104 kB].[0m
+2025-12-22 14:26:23.616595 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 4 https://deb.debian.org/debian bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB].[0m
+2025-12-22 14:26:23.647538 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 5 https://deb.debian.org/debian bookworm/main amd64 gettext-base amd64 0.21-12 [160 kB].[0m
+2025-12-22 14:26:23.729914 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 6 https://deb.debian.org/debian bookworm/main amd64 libuchardet0 amd64 0.0.7-1 [67.8 kB].[0m
+2025-12-22 14:26:23.763598 +0000 build-debian-devel: .[38;5;246m14:26:23 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 7 https://deb.debian.org/debian bookworm/main amd64 groff-base amd64 1.22.4-10 [916 kB].[0m
+2025-12-22 14:26:24.205136 +0000 build-debian-devel: .[38;5;246m14:26:24 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 8 https://deb.debian.org/debian bookworm/main amd64 bsdextrautils amd64 2.38.1-5+deb12u3 [87.0 kB].[0m
+2025-12-22 14:26:24.259290 +0000 build-debian-devel: .[38;5;246m14:26:24 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 9 https://deb.debian.org/debian bookworm/main amd64 libpipeline1 amd64 1.5.7-1 [38.5 kB].[0m
+2025-12-22 14:26:24.259799 +0000 build-debian-devel: .[38;5;246m14:26:24 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 10 https://deb.debian.org/debian bookworm/main amd64 man-db amd64 2.11.2-2 [1386 kB].[0m
+2025-12-22 14:26:24.785456 +0000 build-debian-devel: .[38;5;246m14:26:24 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 11 https://deb.debian.org/debian bookworm/main amd64 m4 amd64 1.4.19-3 [287 kB].[0m
+2025-12-22 14:26:24.860815 +0000 build-debian-devel: .[38;5;246m14:26:24 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 12 https://deb.debian.org/debian bookworm/main amd64 autoconf all 2.71-3 [332 kB].[0m
+2025-12-22 14:26:24.973700 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 13 https://deb.debian.org/debian bookworm/main amd64 autotools-dev all 20220109.1 [51.6 kB].[0m
+2025-12-22 14:26:24.989337 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 14 https://deb.debian.org/debian bookworm/main amd64 automake all 1:1.16.5-1.3 [823 kB].[0m
+2025-12-22 14:26:25.255511 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 15 https://deb.debian.org/debian bookworm/main amd64 autopoint all 0.21-12 [495 kB].[0m
+2025-12-22 14:26:25.366814 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 16 https://deb.debian.org/debian bookworm/main amd64 libdebhelper-perl all 13.11.4 [81.2 kB].[0m
+2025-12-22 14:26:25.409172 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 17 https://deb.debian.org/debian bookworm/main amd64 libtool all 2.4.7-7~deb12u1 [517 kB].[0m
+2025-12-22 14:26:25.524765 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 18 https://deb.debian.org/debian bookworm/main amd64 dh-autoreconf all 20 [17.1 kB].[0m
+2025-12-22 14:26:25.534831 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 19 https://deb.debian.org/debian bookworm/main amd64 libarchive-zip-perl all 1.68-1 [104 kB].[0m
+2025-12-22 14:26:25.551097 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 20 https://deb.debian.org/debian bookworm/main amd64 libsub-override-perl all 0.09-4 [9304 B].[0m
+2025-12-22 14:26:25.552121 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 21 https://deb.debian.org/debian bookworm/main amd64 libfile-stripnondeterminism-perl all 1.13.1-1 [19.4 kB].[0m
+2025-12-22 14:26:25.552672 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 22 https://deb.debian.org/debian bookworm/main amd64 dh-strip-nondeterminism all 1.13.1-1 [8620 B].[0m
+2025-12-22 14:26:25.553111 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 23 https://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB].[0m
+2025-12-22 14:26:25.609157 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 24 https://deb.debian.org/debian bookworm/main amd64 dwz amd64 0.15-1 [109 kB].[0m
+2025-12-22 14:26:25.619683 +0000 build-debian-devel: .[38;5;246m14:26:25 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 25 https://deb.debian.org/debian bookworm/main amd64 libicu72 amd64 72.1-3+deb12u1 [9376 kB].[0m
+2025-12-22 14:26:28.223332 +0000 build-debian-devel: .[38;5;246m14:26:28 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 26 https://deb.debian.org/debian bookworm/main amd64 libxml2 amd64 2.9.14+dfsg-1.3~deb12u4 [687 kB].[0m
+2025-12-22 14:26:28.390528 +0000 build-debian-devel: .[38;5;246m14:26:28 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 27 https://deb.debian.org/debian bookworm/main amd64 gettext amd64 0.21-12 [1300 kB].[0m
+2025-12-22 14:26:28.704544 +0000 build-debian-devel: .[38;5;246m14:26:28 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 28 https://deb.debian.org/debian bookworm/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB].[0m
+2025-12-22 14:26:28.704674 +0000 build-debian-devel: .[38;5;246m14:26:28 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 29 https://deb.debian.org/debian bookworm/main amd64 po-debconf all 1.0.21+nmu1 [248 kB].[0m
+2025-12-22 14:26:28.770202 +0000 build-debian-devel: .[38;5;246m14:26:28 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet: 30 https://deb.debian.org/debian bookworm/main amd64 debhelper all 13.11.4 [942 kB].[0m
+2025-12-22 14:26:29.042708 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mFetched 18.7 MB in 6s (2887 kB/s).[0m
+2025-12-22 14:26:29.129245 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdebconf: delaying package configuration, since apt-utils is not installed.[0m
+2025-12-22 14:26:29.159144 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package sensible-utils..[0m
+2025-12-22 14:26:29.164594 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m(Reading database ...  (Reading database ... 5% (Reading database ... 10% (Reading database ... 15% (Reading database ... 20% (Reading database ... 25% (Reading database ... 30% (Reading database ... 35% (Reading database ... 40% (Reading database ... 45% (Reading database ... 50% (Reading database ... 55% (Reading database ... 60% (Reading database ... 65% (Reading database ... 70% (Reading database ... 75% (Reading database ... 80% (Reading database ... 85% (Reading database ... 90% (Reading database ... 95% (Reading database ... 100% (Reading database ... 12913 files and directories currently installed.).[0m
+2025-12-22 14:26:29.164909 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../00-sensible-utils_0.0.17+nmu1_all.deb ....[0m
+2025-12-22 14:26:29.169918 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking sensible-utils (0.0.17+nmu1) ....[0m
+2025-12-22 14:26:29.216227 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libmagic-mgc..[0m
+2025-12-22 14:26:29.216308 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../01-libmagic-mgc_1%3a5.44-3_amd64.deb ....[0m
+2025-12-22 14:26:29.219773 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libmagic-mgc (1:5.44-3) ....[0m
+2025-12-22 14:26:29.289217 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libmagic1:amd64..[0m
+2025-12-22 14:26:29.289309 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../02-libmagic1_1%3a5.44-3_amd64.deb ....[0m
+2025-12-22 14:26:29.294081 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libmagic1:amd64 (1:5.44-3) ....[0m
+2025-12-22 14:26:29.333892 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package file..[0m
+2025-12-22 14:26:29.333960 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../03-file_1%3a5.44-3_amd64.deb ....[0m
+2025-12-22 14:26:29.337182 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking file (1:5.44-3) ....[0m
+2025-12-22 14:26:29.371540 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package gettext-base..[0m
+2025-12-22 14:26:29.371600 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../04-gettext-base_0.21-12_amd64.deb ....[0m
+2025-12-22 14:26:29.373647 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking gettext-base (0.21-12) ....[0m
+2025-12-22 14:26:29.447485 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libuchardet0:amd64..[0m
+2025-12-22 14:26:29.448009 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../05-libuchardet0_0.0.7-1_amd64.deb ....[0m
+2025-12-22 14:26:29.453655 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libuchardet0:amd64 (0.0.7-1) ....[0m
+2025-12-22 14:26:29.493811 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package groff-base..[0m
+2025-12-22 14:26:29.493881 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../06-groff-base_1.22.4-10_amd64.deb ....[0m
+2025-12-22 14:26:29.497092 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking groff-base (1.22.4-10) ....[0m
+2025-12-22 14:26:29.669245 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package bsdextrautils..[0m
+2025-12-22 14:26:29.669978 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../07-bsdextrautils_2.38.1-5+deb12u3_amd64.deb ....[0m
+2025-12-22 14:26:29.675561 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking bsdextrautils (2.38.1-5+deb12u3) ....[0m
+2025-12-22 14:26:29.719992 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libpipeline1:amd64..[0m
+2025-12-22 14:26:29.720067 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../08-libpipeline1_1.5.7-1_amd64.deb ....[0m
+2025-12-22 14:26:29.728306 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libpipeline1:amd64 (1.5.7-1) ....[0m
+2025-12-22 14:26:29.782116 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package man-db..[0m
+2025-12-22 14:26:29.782506 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../09-man-db_2.11.2-2_amd64.deb ....[0m
+2025-12-22 14:26:29.786589 +0000 build-debian-devel: .[38;5;246m14:26:29 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking man-db (2.11.2-2) ....[0m
+2025-12-22 14:26:30.002399 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package m4..[0m
+2025-12-22 14:26:30.003382 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../10-m4_1.4.19-3_amd64.deb ....[0m
+2025-12-22 14:26:30.005692 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking m4 (1.4.19-3) ....[0m
+2025-12-22 14:26:30.089362 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package autoconf..[0m
+2025-12-22 14:26:30.090188 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../11-autoconf_2.71-3_all.deb ....[0m
+2025-12-22 14:26:30.091174 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking autoconf (2.71-3) ....[0m
+2025-12-22 14:26:30.169468 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package autotools-dev..[0m
+2025-12-22 14:26:30.169559 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../12-autotools-dev_20220109.1_all.deb ....[0m
+2025-12-22 14:26:30.172877 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking autotools-dev (20220109.1) ....[0m
+2025-12-22 14:26:30.240827 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package automake..[0m
+2025-12-22 14:26:30.244888 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../13-automake_1%3a1.16.5-1.3_all.deb ....[0m
+2025-12-22 14:26:30.245488 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking automake (1:1.16.5-1.3) ....[0m
+2025-12-22 14:26:30.350080 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package autopoint..[0m
+2025-12-22 14:26:30.350749 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../14-autopoint_0.21-12_all.deb ....[0m
+2025-12-22 14:26:30.354226 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking autopoint (0.21-12) ....[0m
+2025-12-22 14:26:30.399534 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libdebhelper-perl..[0m
+2025-12-22 14:26:30.418185 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../15-libdebhelper-perl_13.11.4_all.deb ....[0m
+2025-12-22 14:26:30.426858 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libdebhelper-perl (13.11.4) ....[0m
+2025-12-22 14:26:30.569922 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libtool..[0m
+2025-12-22 14:26:30.570315 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../16-libtool_2.4.7-7~deb12u1_all.deb ....[0m
+2025-12-22 14:26:30.575137 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libtool (2.4.7-7~deb12u1) ....[0m
+2025-12-22 14:26:30.690327 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package dh-autoreconf..[0m
+2025-12-22 14:26:30.691423 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../17-dh-autoreconf_20_all.deb ....[0m
+2025-12-22 14:26:30.694308 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking dh-autoreconf (20) ....[0m
+2025-12-22 14:26:30.720608 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libarchive-zip-perl..[0m
+2025-12-22 14:26:30.720739 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../18-libarchive-zip-perl_1.68-1_all.deb ....[0m
+2025-12-22 14:26:30.724423 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libarchive-zip-perl (1.68-1) ....[0m
+2025-12-22 14:26:30.774557 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libsub-override-perl..[0m
+2025-12-22 14:26:30.774625 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../19-libsub-override-perl_0.09-4_all.deb ....[0m
+2025-12-22 14:26:30.777620 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libsub-override-perl (0.09-4) ....[0m
+2025-12-22 14:26:30.812741 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libfile-stripnondeterminism-perl..[0m
+2025-12-22 14:26:30.812931 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../20-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ....[0m
+2025-12-22 14:26:30.817006 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libfile-stripnondeterminism-perl (1.13.1-1) ....[0m
+2025-12-22 14:26:30.851584 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package dh-strip-nondeterminism..[0m
+2025-12-22 14:26:30.851761 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../21-dh-strip-nondeterminism_1.13.1-1_all.deb ....[0m
+2025-12-22 14:26:30.854890 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking dh-strip-nondeterminism (1.13.1-1) ....[0m
+2025-12-22 14:26:30.891641 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libelf1:amd64..[0m
+2025-12-22 14:26:30.891773 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../22-libelf1_0.188-2.1_amd64.deb ....[0m
+2025-12-22 14:26:30.895194 +0000 build-debian-devel: .[38;5;246m14:26:30 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libelf1:amd64 (0.188-2.1) ....[0m
+2025-12-22 14:26:30.937823 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package dwz..[0m
+2025-12-22 14:26:30.937884 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../23-dwz_0.15-1_amd64.deb ....[0m
+2025-12-22 14:26:30.941837 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking dwz (0.15-1) ....[0m
+2025-12-22 14:26:30.987979 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libicu72:amd64..[0m
+2025-12-22 14:26:30.988123 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../24-libicu72_72.1-3+deb12u1_amd64.deb ....[0m
+2025-12-22 14:26:30.991520 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libicu72:amd64 (72.1-3+deb12u1) ....[0m
+2025-12-22 14:26:31.477394 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libxml2:amd64..[0m
+2025-12-22 14:26:31.481266 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../25-libxml2_2.9.14+dfsg-1.3~deb12u4_amd64.deb ....[0m
+2025-12-22 14:26:31.488090 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libxml2:amd64 (2.9.14+dfsg-1.3~deb12u4) ....[0m
+2025-12-22 14:26:31.607997 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package gettext..[0m
+2025-12-22 14:26:31.609772 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../26-gettext_0.21-12_amd64.deb ....[0m
+2025-12-22 14:26:31.617436 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking gettext (0.21-12) ....[0m
+2025-12-22 14:26:31.852565 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package intltool-debian..[0m
+2025-12-22 14:26:31.852602 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../27-intltool-debian_0.35.0+20060710.6_all.deb ....[0m
+2025-12-22 14:26:31.855080 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking intltool-debian (0.35.0+20060710.6) ....[0m
+2025-12-22 14:26:31.890908 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package po-debconf..[0m
+2025-12-22 14:26:31.891144 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../28-po-debconf_1.0.21+nmu1_all.deb ....[0m
+2025-12-22 14:26:31.898310 +0000 build-debian-devel: .[38;5;246m14:26:31 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking po-debconf (1.0.21+nmu1) ....[0m
+2025-12-22 14:26:31.957919 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package debhelper..[0m
+2025-12-22 14:26:31.957974 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../29-debhelper_13.11.4_all.deb ....[0m
+2025-12-22 14:26:31.963555 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking debhelper (13.11.4) ....[0m
+2025-12-22 14:26:32.243187 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libpipeline1:amd64 (1.5.7-1) ....[0m
+2025-12-22 14:26:32.256146 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libicu72:amd64 (72.1-3+deb12u1) ....[0m
+2025-12-22 14:26:32.265248 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up bsdextrautils (2.38.1-5+deb12u3) ....[0m
+2025-12-22 14:26:32.277957 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libmagic-mgc (1:5.44-3) ....[0m
+2025-12-22 14:26:32.290906 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libarchive-zip-perl (1.68-1) ....[0m
+2025-12-22 14:26:32.308738 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libdebhelper-perl (13.11.4) ....[0m
+2025-12-22 14:26:32.334407 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libmagic1:amd64 (1:5.44-3) ....[0m
+2025-12-22 14:26:32.348964 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up gettext-base (0.21-12) ....[0m
+2025-12-22 14:26:32.355533 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up m4 (1.4.19-3) ....[0m
+2025-12-22 14:26:32.367818 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up file (1:5.44-3) ....[0m
+2025-12-22 14:26:32.378077 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up autotools-dev (20220109.1) ....[0m
+2025-12-22 14:26:32.383007 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up autopoint (0.21-12) ....[0m
+2025-12-22 14:26:32.390941 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up autoconf (2.71-3) ....[0m
+2025-12-22 14:26:32.404970 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up sensible-utils (0.0.17+nmu1) ....[0m
+2025-12-22 14:26:32.422329 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libuchardet0:amd64 (0.0.7-1) ....[0m
+2025-12-22 14:26:32.443327 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libsub-override-perl (0.09-4) ....[0m
+2025-12-22 14:26:32.460852 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libelf1:amd64 (0.188-2.1) ....[0m
+2025-12-22 14:26:32.461894 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libxml2:amd64 (2.9.14+dfsg-1.3~deb12u4) ....[0m
+2025-12-22 14:26:32.470486 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up automake (1:1.16.5-1.3) ....[0m
+2025-12-22 14:26:32.476271 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mupdate-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode.[0m
+2025-12-22 14:26:32.481225 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libfile-stripnondeterminism-perl (1.13.1-1) ....[0m
+2025-12-22 14:26:32.491091 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up gettext (0.21-12) ....[0m
+2025-12-22 14:26:32.498006 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libtool (2.4.7-7~deb12u1) ....[0m
+2025-12-22 14:26:32.507137 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up intltool-debian (0.35.0+20060710.6) ....[0m
+2025-12-22 14:26:32.520203 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up dh-autoreconf (20) ....[0m
+2025-12-22 14:26:32.529793 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up dh-strip-nondeterminism (1.13.1-1) ....[0m
+2025-12-22 14:26:32.549554 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up dwz (0.15-1) ....[0m
+2025-12-22 14:26:32.570823 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up groff-base (1.22.4-10) ....[0m
+2025-12-22 14:26:32.583620 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up po-debconf (1.0.21+nmu1) ....[0m
+2025-12-22 14:26:32.609262 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up man-db (2.11.2-2) ....[0m
+2025-12-22 14:26:32.731518 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mNot building database; man-db/auto-update is not 'true'..[0m
+2025-12-22 14:26:32.833524 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up debhelper (13.11.4) ....[0m
+2025-12-22 14:26:32.847208 +0000 build-debian-devel: .[38;5;246m14:26:32 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mProcessing triggers for libc-bin (2.36-9+deb12u13) ....[0m
+2025-12-22 14:26:33.076077 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:26:33.339778 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:26:33.339877 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:26:33.441333 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading extended state information....[0m
+2025-12-22 14:26:33.461744 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mInitializing package states....[0m
+2025-12-22 14:26:33.756230 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mWriting extended state information....[0m
+2025-12-22 14:26:33.861311 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding tag database....[0m
+2025-12-22 14:26:33.898196 +0000 build-debian-devel: .[38;5;246m14:26:33 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m -> Finished parsing the build-deps.[0m
+2025-12-22 14:26:33.913887 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading package lists....[0m
+2025-12-22 14:26:34.071281 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mBuilding dependency tree....[0m
+2025-12-22 14:26:34.071403 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mReading state information....[0m
+2025-12-22 14:26:34.196217 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mThe following additional packages will be installed:.[0m
+2025-12-22 14:26:34.196393 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  libfakeroot.[0m
+2025-12-22 14:26:34.204934 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mThe following NEW packages will be installed:.[0m
+2025-12-22 14:26:34.205085 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  fakeroot libfakeroot.[0m
+2025-12-22 14:26:34.674750 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded..[0m
+2025-12-22 14:26:34.674808 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mNeed to get 95.2 kB of archives..[0m
+2025-12-22 14:26:34.674818 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mAfter this operation, 360 kB of additional disk space will be used..[0m
+2025-12-22 14:26:34.674826 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:1 https://deb.debian.org/debian bookworm/main amd64 libfakeroot amd64 1.31-1.2 [28.3 kB].[0m
+2025-12-22 14:26:34.820796 +0000 build-debian-devel: .[38;5;246m14:26:34 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mGet:2 https://deb.debian.org/debian bookworm/main amd64 fakeroot amd64 1.31-1.2 [66.9 kB].[0m
+2025-12-22 14:26:34.908188 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdebconf: delaying package configuration, since apt-utils is not installed.[0m
+2025-12-22 14:26:34.921373 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mFetched 95.2 kB in 1s (150 kB/s).[0m
+2025-12-22 14:26:34.953011 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package libfakeroot:amd64..[0m
+2025-12-22 14:26:34.961954 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m(Reading database ...  (Reading database ... 5% (Reading database ... 10% (Reading database ... 15% (Reading database ... 20% (Reading database ... 25% (Reading database ... 30% (Reading database ... 35% (Reading database ... 40% (Reading database ... 45% (Reading database ... 50% (Reading database ... 55% (Reading database ... 60% (Reading database ... 65% (Reading database ... 70% (Reading database ... 75% (Reading database ... 80% (Reading database ... 85% (Reading database ... 90% (Reading database ... 95% (Reading database ... 100% (Reading database ... 14831 files and directories currently installed.).[0m
+2025-12-22 14:26:34.962432 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../libfakeroot_1.31-1.2_amd64.deb ....[0m
+2025-12-22 14:26:34.971812 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking libfakeroot:amd64 (1.31-1.2) ....[0m
+2025-12-22 14:26:35.019214 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSelecting previously unselected package fakeroot..[0m
+2025-12-22 14:26:35.019936 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mPreparing to unpack .../fakeroot_1.31-1.2_amd64.deb ....[0m
+2025-12-22 14:26:35.023406 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mUnpacking fakeroot (1.31-1.2) ....[0m
+2025-12-22 14:26:35.081237 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up libfakeroot:amd64 (1.31-1.2) ....[0m
+2025-12-22 14:26:35.098274 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mSetting up fakeroot (1.31-1.2) ....[0m
+2025-12-22 14:26:35.109256 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mupdate-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode.[0m
+2025-12-22 14:26:35.127191 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mProcessing triggers for man-db (2.11.2-2) ....[0m
+2025-12-22 14:26:35.131861 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mNot building database; man-db/auto-update is not 'true'..[0m
+2025-12-22 14:26:35.136148 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mProcessing triggers for libc-bin (2.36-9+deb12u13) ....[0m
+2025-12-22 14:26:35.217780 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Copying back the cached apt archive contents.[0m
+2025-12-22 14:26:35.221073 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'groff-base_1.22.4-10_amd64.deb' added.[0m
+2025-12-22 14:26:35.222841 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'bsdextrautils_2.38.1-5+deb12u3_amd64.deb' added.[0m
+2025-12-22 14:26:35.225087 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libpipeline1_1.5.7-1_amd64.deb' added.[0m
+2025-12-22 14:26:35.227922 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'gettext_0.21-12_amd64.deb' added.[0m
+2025-12-22 14:26:35.230094 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libdebhelper-perl_13.11.4_all.deb' added.[0m
+2025-12-22 14:26:35.232026 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'autopoint_0.21-12_all.deb' added.[0m
+2025-12-22 14:26:35.234243 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libmagic-mgc_1%3a5.44-3_amd64.deb' added.[0m
+2025-12-22 14:26:35.236579 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'po-debconf_1.0.21+nmu1_all.deb' added.[0m
+2025-12-22 14:26:35.238761 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libfakeroot_1.31-1.2_amd64.deb' added.[0m
+2025-12-22 14:26:35.241444 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'm4_1.4.19-3_amd64.deb' added.[0m
+2025-12-22 14:26:35.243758 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'file_1%3a5.44-3_amd64.deb' added.[0m
+2025-12-22 14:26:35.246612 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'autotools-dev_20220109.1_all.deb' added.[0m
+2025-12-22 14:26:35.248684 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libfile-stripnondeterminism-perl_1.13.1-1_all.deb' added.[0m
+2025-12-22 14:26:35.250772 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'sensible-utils_0.0.17+nmu1_all.deb' added.[0m
+2025-12-22 14:26:35.253081 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libmagic1_1%3a5.44-3_amd64.deb' added.[0m
+2025-12-22 14:26:35.255082 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'intltool-debian_0.35.0+20060710.6_all.deb' added.[0m
+2025-12-22 14:26:35.257317 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'debhelper_13.11.4_all.deb' added.[0m
+2025-12-22 14:26:35.260060 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libarchive-zip-perl_1.68-1_all.deb' added.[0m
+2025-12-22 14:26:35.262608 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'gettext-base_0.21-12_amd64.deb' added.[0m
+2025-12-22 14:26:35.265832 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'dh-autoreconf_20_all.deb' added.[0m
+2025-12-22 14:26:35.267881 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'autoconf_2.71-3_all.deb' added.[0m
+2025-12-22 14:26:35.270663 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'man-db_2.11.2-2_amd64.deb' added.[0m
+2025-12-22 14:26:35.272992 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libelf1_0.188-2.1_amd64.deb' added.[0m
+2025-12-22 14:26:35.275330 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'dh-strip-nondeterminism_1.13.1-1_all.deb' added.[0m
+2025-12-22 14:26:35.277834 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libuchardet0_0.0.7-1_amd64.deb' added.[0m
+2025-12-22 14:26:35.280851 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libsub-override-perl_0.09-4_all.deb' added.[0m
+2025-12-22 14:26:35.284357 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libtool_2.4.7-7~deb12u1_all.deb' added.[0m
+2025-12-22 14:26:35.286981 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libicu72_72.1-3+deb12u1_amd64.deb' added.[0m
+2025-12-22 14:26:35.289800 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'fakeroot_1.31-1.2_amd64.deb' added.[0m
+2025-12-22 14:26:35.292976 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'libxml2_2.9.14+dfsg-1.3~deb12u4_amd64.deb' added.[0m
+2025-12-22 14:26:35.294897 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'dwz_0.15-1_amd64.deb' added.[0m
+2025-12-22 14:26:35.297637 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: new cache content 'automake_1%3a1.16.5-1.3_all.deb' added.[0m
+2025-12-22 14:26:35.303279 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Building the package.[0m
+2025-12-22 14:26:35.310361 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Running cd /build/qubes-ansible-vm-1.2.7/ && env PATH="/usr/sbin:/usr/bin:/sbin:/bin" HOME="/nonexistent" dpkg-buildpackage -us -uc -sa.[0m
+2025-12-22 14:26:35.369120 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: source package qubes-ansible-vm.[0m
+2025-12-22 14:26:35.369253 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: source version 1.2.7-1+deb12u1+devel1.[0m
+2025-12-22 14:26:35.369313 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: source distribution bookworm.[0m
+2025-12-22 14:26:35.369366 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: source changed by Builder <user@localhost>.[0m
+2025-12-22 14:26:35.391332 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m dpkg-source --before-build ..[0m
+2025-12-22 14:26:35.391772 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: host architecture amd64.[0m
+2025-12-22 14:26:35.512490 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m fakeroot debian/rules clean.[0m
+2025-12-22 14:26:35.521645 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdh clean.[0m
+2025-12-22 14:26:35.569576 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_auto_clean.[0m
+2025-12-22 14:26:35.629340 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_clean.[0m
+2025-12-22 14:26:35.689594 +0000 build-debian-devel: .[38;5;246m14:26:35 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m dpkg-source -b ..[0m
+2025-12-22 14:26:35.926288 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: using source format '3.0 (quilt)'.[0m
+2025-12-22 14:26:35.926475 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: building qubes-ansible-vm using existing ./qubes-ansible-vm_1.2.7.orig.tar.gz.[0m
+2025-12-22 14:26:35.971785 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: building qubes-ansible-vm in qubes-ansible-vm_1.2.7-1+deb12u1+devel1.debian.tar.xz.[0m
+2025-12-22 14:26:35.994003 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-source: info: building qubes-ansible-vm in qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc.[0m
+2025-12-22 14:26:35.997814 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m debian/rules build.[0m
+2025-12-22 14:26:35.999416 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdh build.[0m
+2025-12-22 14:26:36.050447 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_update_autotools_config.[0m
+2025-12-22 14:26:36.087875 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_autoreconf.[0m
+2025-12-22 14:26:36.114557 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_auto_configure.[0m
+2025-12-22 14:26:36.136699 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_auto_build.[0m
+2025-12-22 14:26:36.162888 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m.make -j2 "INSTALL=install --strip-program=true".[0m
+2025-12-22 14:26:36.166847 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[1]: Entering directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.170297 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmkdir -p /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/connection.[0m
+2025-12-22 14:26:36.174379 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmkdir -p /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/modules.[0m
+2025-12-22 14:26:36.175348 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246minstall -m 644 plugins/modules/qubesos.py /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/modules/qubesos.py.[0m
+2025-12-22 14:26:36.176267 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246minstall -m 644 plugins/connection/qubes.py /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/connection/qubes.py.[0m
+2025-12-22 14:26:36.178077 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[1]: Leaving directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.185545 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_auto_test.[0m
+2025-12-22 14:26:36.259213 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   create-stamp debian/debhelper-build-stamp.[0m
+2025-12-22 14:26:36.273165 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m fakeroot debian/rules binary.[0m
+2025-12-22 14:26:36.332532 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdh binary.[0m
+2025-12-22 14:26:36.386639 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_testroot.[0m
+2025-12-22 14:26:36.409433 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_prep.[0m
+2025-12-22 14:26:36.437279 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   debian/rules override_dh_auto_install.[0m
+2025-12-22 14:26:36.439261 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[1]: Entering directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.439314 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake install-common.[0m
+2025-12-22 14:26:36.696255 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[2]: Entering directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.696447 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmkdir -p /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/connection.[0m
+2025-12-22 14:26:36.697393 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmkdir -p /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/modules.[0m
+2025-12-22 14:26:36.698149 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246minstall -m 644 plugins/modules/qubesos.py /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/modules/qubesos.py.[0m
+2025-12-22 14:26:36.699010 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246minstall -m 644 plugins/connection/qubes.py /build/qubes-ansible-vm-1.2.7/debian/tmp/usr/share/ansible/plugins/connection/qubes.py.[0m
+2025-12-22 14:26:36.699796 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[2]: Leaving directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.699997 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake install-vm.[0m
+2025-12-22 14:26:36.701455 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[2]: Entering directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.702434 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmkdir -p /build/qubes-ansible-vm-1.2.7/debian/tmp/etc/qubes-rpc/.[0m
+2025-12-22 14:26:36.703253 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246minstall -m 755 qubes-rpc/qubes.AnsibleVM /build/qubes-ansible-vm-1.2.7/debian/tmp/etc/qubes-rpc/qubes.AnsibleVM.[0m
+2025-12-22 14:26:36.704178 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[2]: Leaving directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.704364 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mmake[1]: Leaving directory '/build/qubes-ansible-vm-1.2.7'.[0m
+2025-12-22 14:26:36.704972 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_install.[0m
+2025-12-22 14:26:36.739135 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_installdocs.[0m
+2025-12-22 14:26:36.757203 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_installchangelogs.[0m
+2025-12-22 14:26:36.806738 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_perl.[0m
+2025-12-22 14:26:36.842432 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_link.[0m
+2025-12-22 14:26:36.865311 +0000 build-debian-devel: .[38;5;246m14:26:36 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_strip_nondeterminism.[0m
+2025-12-22 14:26:36.932436 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_compress.[0m
+2025-12-22 14:26:36.964941 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_fixperms.[0m
+2025-12-22 14:26:37.014214 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_missing.[0m
+2025-12-22 14:26:37.032185 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_dwz -a.[0m
+2025-12-22 14:26:37.049539 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_strip -a.[0m
+2025-12-22 14:26:37.068777 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_makeshlibs -a.[0m
+2025-12-22 14:26:37.089686 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_shlibdeps -a.[0m
+2025-12-22 14:26:37.115008 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_installdeb.[0m
+2025-12-22 14:26:37.139759 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_gencontrol.[0m
+2025-12-22 14:26:37.200529 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-gencontrol: warning: Depends field of package qubes-ansible-vm: substitution variable ${python3:Depends} used, but is not defined.[0m
+2025-12-22 14:26:37.205566 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_md5sums.[0m
+2025-12-22 14:26:37.232205 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m   dh_builddeb.[0m
+2025-12-22 14:26:37.246144 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-deb: building package 'qubes-ansible-vm' in '../qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.deb'..[0m
+2025-12-22 14:26:37.292787 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m dpkg-genbuildinfo -O../qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo.[0m
+2025-12-22 14:26:37.350613 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m dpkg-genchanges -sa -O../qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:26:37.391628 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-genchanges: info: including full source code in upload.[0m
+2025-12-22 14:26:37.393695 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m dpkg-source --after-build ..[0m
+2025-12-22 14:26:37.454344 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mdpkg-buildpackage: info: full upload (original source is included).[0m
+2025-12-22 14:26:37.457821 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: copying local configuration.[0m
+2025-12-22 14:26:37.497814 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Copying back the cached apt archive contents.[0m
+2025-12-22 14:26:37.580469 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting /tmp/qubes-deb filesystem.[0m
+2025-12-22 14:26:37.594959 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting /sys/fs/selinux filesystem.[0m
+2025-12-22 14:26:37.607428 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/ptmx filesystem.[0m
+2025-12-22 14:26:37.610127 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/pts filesystem.[0m
+2025-12-22 14:26:37.613121 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting dev/shm filesystem.[0m
+2025-12-22 14:26:37.615198 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting proc filesystem.[0m
+2025-12-22 14:26:37.617028 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: unmounting sys filesystem.[0m
+2025-12-22 14:26:37.621811 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: cleaning the build env.[0m
+2025-12-22 14:26:37.621866 +0000 build-debian-devel: .[38;5;246m14:26:37 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: removing directory /builder/pbuilder/build/2389 and its subdirectories.[0m
+2025-12-22 14:26:38.204485 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: Current time: Mon Dec 22 14:26:36 UTC 2025.[0m
+2025-12-22 14:26:38.209170 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mI: pbuilder-time-stamp: 1766413596.[0m
+2025-12-22 14:26:38.397987 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mqfile-agent: Fatal error: stat qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.deb (error type: No such file or directory).[0m
+2025-12-22 14:26:38.441440 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mTraceback (most recent call last):.[0m
+2025-12-22 14:26:38.445289 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 48, in <module>.[0m
+2025-12-22 14:26:38.445362 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    main().[0m
+2025-12-22 14:26:38.445387 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    ~~~~^^.[0m
+2025-12-22 14:26:38.445410 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 44, in main.[0m
+2025-12-22 14:26:38.445430 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    subprocess.run(["/usr/lib/qubes/qfile-agent", str(src)], check=True).[0m
+2025-12-22 14:26:38.445446 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.[0m
+2025-12-22 14:26:38.445462 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/lib64/python3.13/subprocess.py", line 577, in run.[0m
+2025-12-22 14:26:38.445477 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    raise CalledProcessError(retcode, process.args,.[0m
+2025-12-22 14:26:38.445493 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m                             output=stdout, stderr=stderr).[0m
+2025-12-22 14:26:38.445518 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246msubprocess.CalledProcessError: Command '['/usr/lib/qubes/qfile-agent', '/builder/pbuilder/results/qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.deb']' returned non-zero exit status 1..[0m
+2025-12-22 14:26:38.451585 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mEOF.[0m
+2025-12-22 14:26:38.459681 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mwrite status: Broken pipe.[0m
+2025-12-22 14:26:38.459844 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mwrite status ext: Broken pipe.[0m
+2025-12-22 14:26:38.462787 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mFile not found inside container: /builder/pbuilder/results/qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.deb..[0m
+2025-12-22 14:26:38.717341 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mqfile-agent: Fatal error: stat qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.ddeb (error type: No such file or directory).[0m
+2025-12-22 14:26:38.745855 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mTraceback (most recent call last):.[0m
+2025-12-22 14:26:38.745923 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 48, in <module>.[0m
+2025-12-22 14:26:38.746122 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    main().[0m
+2025-12-22 14:26:38.746143 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    ~~~~^^.[0m
+2025-12-22 14:26:38.746166 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 44, in main.[0m
+2025-12-22 14:26:38.746189 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    subprocess.run(["/usr/lib/qubes/qfile-agent", str(src)], check=True).[0m
+2025-12-22 14:26:38.746209 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.[0m
+2025-12-22 14:26:38.746228 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m  File "/usr/lib64/python3.13/subprocess.py", line 577, in run.[0m
+2025-12-22 14:26:38.746248 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m    raise CalledProcessError(retcode, process.args,.[0m
+2025-12-22 14:26:38.746301 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246m                             output=stdout, stderr=stderr).[0m
+2025-12-22 14:26:38.746334 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246msubprocess.CalledProcessError: Command '['/usr/lib/qubes/qfile-agent', '/builder/pbuilder/results/qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.ddeb']' returned non-zero exit status 1..[0m
+2025-12-22 14:26:38.751986 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mEOF.[0m
+2025-12-22 14:26:38.754502 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mwrite status: Broken pipe.[0m
+2025-12-22 14:26:38.754618 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mwrite status ext: Broken pipe.[0m
+2025-12-22 14:26:38.756719 +0000 build-debian-devel: .[38;5;246m14:26:38 .[96m[qb.build_deb.ansible.vm-bookworm.build] .[38;5;246mFile not found inside container: /builder/pbuilder/results/qubes-ansible-vm-dbgsym_1.2.7-1+deb12u1+devel1_amd64.ddeb..[0m
+2025-12-22 14:26:40.192295 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64:debian: Provisioning local repository '/home/user/builder-devel/repository/vm-bookworm'..[0m
+2025-12-22 14:26:40.195945 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:26:40.198152 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mdependency 'ansible' (commit hash: ca6748f948b009b2a3115f03ea17ad0bb1026c20).[0m
+2025-12-22 14:26:40.208757 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.build_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64: Source hash is the same than already built source. Skipping..[0m
+2025-12-22 14:26:40.208810 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:26:40.210555 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm] .[0mdependency 'ansible' (commit hash: ca6748f948b009b2a3115f03ea17ad0bb1026c20).[0m
+2025-12-22 14:26:40.218726 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mUsing executor local:/tmp/1300794896172328736fe75/builder to run '['bash', '-c', 'qubes-gpg-client-wrapper --armor --export BA9DEE012C07CF872F3CA5D40AB1373A9542E635 > /tmp/tmpls7rz_h8/BA9DEE012C07CF872F3CA5D40AB1373A9542E635.asc&&gpg2 --homedir /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring --import /tmp/tmpls7rz_h8/BA9DEE012C07CF872F3CA5D40AB1373A9542E635.asc']'..[0m
+2025-12-22 14:26:40.277625 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mgpg: keybox '/home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring/pubring.kbx' created.[0m
+2025-12-22 14:26:40.282087 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mgpg: /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring/trustdb.gpg: trustdb created.[0m
+2025-12-22 14:26:40.282172 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mgpg: key 0AB1373A9542E635: public key "Qubes OS Devel Debian Packages Signing Key" imported.[0m
+2025-12-22 14:26:40.291747 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mgpg: Total number processed: 1.[0m
+2025-12-22 14:26:40.291846 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mgpg:               imported: 1.[0m
+2025-12-22 14:26:40.295780 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64:debian: Signing from 'qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes' info..[0m
+2025-12-22 14:26:40.296167 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mUsing executor local:/tmp/1300794896172328736fe75/builder to run '['bash', '-c', 'debsign -kBA9DEE012C07CF872F3CA5D40AB1373A9542E635 -pqubes-gpg-client-wrapper --no-re-sign /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes']'..[0m
+2025-12-22 14:26:40.337222 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m signfile dsc /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.409142 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m.[0m
+2025-12-22 14:26:40.435680 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m fixup_buildinfo /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo.[0m
+2025-12-22 14:26:40.438825 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m signfile buildinfo /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.475972 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m.[0m
+2025-12-22 14:26:40.491637 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m fixup_changes dsc /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:26:40.508981 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m fixup_changes buildinfo /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes.[0m
+2025-12-22 14:26:40.510665 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m signfile changes /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.542215 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246m.[0m
+2025-12-22 14:26:40.545778 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm.sign] .[38;5;246mSuccessfully signed dsc, buildinfo, changes files.[0m
+2025-12-22 14:26:40.547964 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.sign_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64:debian: Provisioning local repository '/home/user/builder-devel/repository/vm-bookworm'..[0m
+2025-12-22 14:26:40.548542 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mLog file: /home/user/builder-devel/logs/20251222T142446-ansible-vm-bookworm.log.[0m
+2025-12-22 14:26:40.551681 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mdependency 'ansible' (commit hash: ca6748f948b009b2a3115f03ea17ad0bb1026c20).[0m
+2025-12-22 14:26:40.561845 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mUsing executor local:/tmp/130079488191248a290e58d/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/publish_deb/scripts/create-skeleton devel debian /home/user/builder-devel/repository-publish/deb']'..[0m
+2025-12-22 14:26:40.597100 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64:debian: Publishing packages..[0m
+2025-12-22 14:26:40.597200 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64:debian: Verifying signatures..[0m
+2025-12-22 14:26:40.597422 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mUsing executor local:/tmp/130079489615952b9ded3cd/builder to run '['bash', '-c', 'gpg2 -q --homedir /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring --verify /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1.dsc&&gpg2 -q --homedir /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring --verify /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes&&gpg2 -q --homedir /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/sign/keyring --verify /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.buildinfo']'..[0m
+2025-12-22 14:26:40.603714 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Signature made Mon Dec 22 14:26:40 2025 UTC.[0m
+2025-12-22 14:26:40.603806 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:                using EDDSA key BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.603824 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Good signature from "Qubes OS Devel Debian Packages Signing Key" [unknown].[0m
+2025-12-22 14:26:40.603837 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: WARNING: This key is not certified with a trusted signature!.[0m
+2025-12-22 14:26:40.603850 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:          There is no indication that the signature belongs to the owner..[0m
+2025-12-22 14:26:40.603908 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mPrimary key fingerprint: BA9D EE01 2C07 CF87 2F3C  A5D4 0AB1 373A 9542 E635.[0m
+2025-12-22 14:26:40.606514 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Signature made Mon Dec 22 14:26:40 2025 UTC.[0m
+2025-12-22 14:26:40.606594 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:                using EDDSA key BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.609665 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Good signature from "Qubes OS Devel Debian Packages Signing Key" [unknown].[0m
+2025-12-22 14:26:40.610344 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: WARNING: This key is not certified with a trusted signature!.[0m
+2025-12-22 14:26:40.610355 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:          There is no indication that the signature belongs to the owner..[0m
+2025-12-22 14:26:40.610362 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mPrimary key fingerprint: BA9D EE01 2C07 CF87 2F3C  A5D4 0AB1 373A 9542 E635.[0m
+2025-12-22 14:26:40.614459 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Signature made Mon Dec 22 14:26:40 2025 UTC.[0m
+2025-12-22 14:26:40.614505 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:                using EDDSA key BA9DEE012C07CF872F3CA5D40AB1373A9542E635.[0m
+2025-12-22 14:26:40.614516 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: Good signature from "Qubes OS Devel Debian Packages Signing Key" [unknown].[0m
+2025-12-22 14:26:40.614525 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg: WARNING: This key is not certified with a trusted signature!.[0m
+2025-12-22 14:26:40.614588 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mgpg:          There is no indication that the signature belongs to the owner..[0m
+2025-12-22 14:26:40.614631 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mPrimary key fingerprint: BA9D EE01 2C07 CF87 2F3C  A5D4 0AB1 373A 9542 E635.[0m
+2025-12-22 14:26:40.615418 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mUsing executor local:/tmp/130079489615952b9ded3cd/builder to run '['bash', '-c', 'reprepro --ignore=surprisingbinary --ignore=surprisingarch --keepunreferencedfiles -b /home/user/builder-devel/repository-publish/deb/devel/vm include bookworm-testing /home/user/builder-devel/components/ansible/1.2.7-1.1/vm-bookworm/build/qubes-ansible-vm_1.2.7-1+deb12u1+devel1_amd64.changes']'..[0m
+2025-12-22 14:26:40.660760 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mExporting indices....[0m
+2025-12-22 14:26:40.662496 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64: Signing metadata (Release.gpg)..[0m
+2025-12-22 14:26:40.662533 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mUsing executor local:/tmp/130079489054992f6cd114f/builder to run '['bash', '-c', 'qubes-gpg-client-wrapper --detach-sign --armor --local-user BA9DEE012C07CF872F3CA5D40AB1373A9542E635 --batch --no-tty --output /home/user/builder-devel/repository-publish/deb/devel/vm/dists/bookworm-testing/Release.gpg /home/user/builder-devel/repository-publish/deb/devel/vm/dists/bookworm-testing/Release']'..[0m
+2025-12-22 14:26:40.707801 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm] .[0mansible:vm-debian-12.amd64: Signing metadata (InRelease)..[0m
+2025-12-22 14:26:40.708648 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb.publish_deb.ansible.vm-bookworm.publish] .[38;5;246mUsing executor local:/tmp/130079486576576554844a3/builder to run '['bash', '-c', 'qubes-gpg-client-wrapper --clearsign --armor --local-user BA9DEE012C07CF872F3CA5D40AB1373A9542E635 --batch --no-tty --output /home/user/builder-devel/repository-publish/deb/devel/vm/dists/bookworm-testing/InRelease /home/user/builder-devel/repository-publish/deb/devel/vm/dists/bookworm-testing/Release']'..[0m
+2025-12-22 14:26:40.778205 +0000 build-debian-devel: .[38;5;246m14:26:40 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-22 14:26:40.778350 +0000 > closing log
