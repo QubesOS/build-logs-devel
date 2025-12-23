@@ -1,0 +1,109 @@
+2025-12-23 00:12:55.041610 +0000 > starting log
+2025-12-23 00:12:55.041795 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-23 00:12:55.041807 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-23 00:12:55.041814 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-23 00:12:55.041819 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-23 00:12:55.041824 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>>   initial-setup.[0m
+2025-12-23 00:12:55.041828 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-23 00:12:55.041834 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2025-12-23 00:12:55.041839 +0000 build-fedora-devel: .[38;5;246m00:12:55 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-23 00:12:56.331812 +0000 build-fedora-devel: .[38;5;246m00:12:56 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp1798..[0m
+2025-12-23 00:12:56.331961 +0000 build-fedora-devel: .[38;5;246m00:12:56 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1798 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-initial-setup.git /builder/initial-setup /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-23 00:12:59.919586 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-23 00:12:59.919649 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 941607b36290a72c6e64f50e8a19a3f13131c440..[0m
+2025-12-23 00:12:59.919660 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 0ef7baa4c7562c96b6fc619bd89fea5dafb89f3d..[0m
+2025-12-23 00:12:59.919668 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag fdf6683dc25f01275a999f2e147014f9a468d77c..[0m
+2025-12-23 00:12:59.919675 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-23 00:12:59.919681 +0000 build-fedora-devel: .[38;5;246m00:13:00 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-23 00:13:01.445467 +0000 build-fedora-devel: .[38;5;246m00:13:01 .[96m[qb.fetch.initial-setup] .[0mLog file: /home/user/builder-host/logs/20251223T001255-initial-setup.log.[0m
+2025-12-23 00:13:02.650600 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp2317..[0m
+2025-12-23 00:13:02.650688 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2317 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'.[0m
+2025-12-23 00:13:02.821021 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-23 00:13:02.821147 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:02.822737 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2025-12-23 00:13:02.822805 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2025-12-23 00:13:02.822827 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz --.[0m
+2025-12-23 00:13:02.822861 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-23 00:13:02.822869 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:02.822950 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/initial-setup.[0m
+2025-12-23 00:13:02.822959 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823029 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823037 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-23 00:13:02.823114 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:02.823140 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:02.823273 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823290 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823331 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-23 00:13:02.823380 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:02.823428 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:02.823478 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823487 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823531 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-23 00:13:02.823661 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:02.823707 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:02.823770 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-23 00:13:02.823781 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-23 00:13:02.823839 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-23 00:13:02.823850 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-23 00:13:02.823873 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:02.823881 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /builder/initial-setup ']'.[0m
+2025-12-23 00:13:02.823889 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /builder/initial-setup.[0m
+2025-12-23 00:13:02.825254 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ cd /builder/initial-setup.[0m
+2025-12-23 00:13:02.825287 +0000 build-fedora-devel: .[38;5;246m00:13:02 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_initial-setup-0.3.101.tar.gz -- https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:06.068126 +0000 build-fedora-devel: .[38;5;246m00:13:06 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-23 00:13:06.068209 +0000 build-fedora-devel: .[38;5;246m00:13:06 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:13:07.935522 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mUsing executor local:/tmp/13516031260358451211f6d/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmpv_e5_8l3 --untrusted-file /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512']'..[0m
+2025-12-23 00:13:07.937459 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-23 00:13:07.937551 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmpv_e5_8l3 --untrusted-file /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-23 00:13:07.938943 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmpv_e5_8l3'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2025-12-23 00:13:07.938971 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmpv_e5_8l3'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2025-12-23 00:13:07.939005 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmpv_e5_8l3 --untrusted-file /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 --.[0m
+2025-12-23 00:13:07.939013 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-23 00:13:07.939020 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-23 00:13:07.939027 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:07.939034 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmpv_e5_8l3.[0m
+2025-12-23 00:13:07.939041 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939047 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939054 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-23 00:13:07.939060 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:07.939068 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:07.939074 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939079 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939085 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-23 00:13:07.939090 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:07.939096 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-23 00:13:07.939102 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939108 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939113 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-23 00:13:07.939119 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:07.939126 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-23 00:13:07.939131 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939136 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939141 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-23 00:13:07.939146 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:13:07.939154 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:13:07.939181 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-23 00:13:07.939189 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz ']'.[0m
+2025-12-23 00:13:07.939195 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmpv_e5_8l3 ']'.[0m
+2025-12-23 00:13:07.939201 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmpv_e5_8l3.[0m
+2025-12-23 00:13:07.939414 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:07.940530 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:07.940539 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:07.940546 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-23 00:13:07.940553 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-23 00:13:07.940560 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -e /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-23 00:13:07.940566 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:13:07.940571 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-23 00:13:07.940577 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:13:07.940582 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:13:07.940588 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2025-12-23 00:13:07.941473 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-23 00:13:07.941484 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-23 00:13:07.941493 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+++ cat /home/user/builder-host/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2025-12-23 00:13:07.941579 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ printf '%s  -\n' 0114874aa13bda4600a18033c37d3d5095799335179e1a776565507e16a7e5a96a803be00d6a7401775f9c1f529ad503c266670f30dd359ce570c706a36611f5.[0m
+2025-12-23 00:13:07.943599 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmpv_e5_8l3/untrusted_initial-setup-0.3.101.tar.gz /home/user/builder-host/tmp/tmpv_e5_8l3/initial-setup-0.3.101.tar.gz.[0m
+2025-12-23 00:13:07.945435 +0000 build-fedora-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.initial-setup] .[38;5;246m['cd -- /builder', "git -C /builder/initial-setup rev-parse 'HEAD^{}' >> hash", "git -C /builder/initial-setup tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-23 00:13:14.137557 +0000 build-fedora-devel: .[38;5;246m00:13:14 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp6041..[0m
+2025-12-23 00:13:14.137626 +0000 build-fedora-devel: .[38;5;246m00:13:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6041 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/initial-setup rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/initial-setup tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-23 00:13:16.564824 +0000 build-fedora-devel: .[38;5;246m00:13:16 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-23 00:13:16.564946 +0000 > closing log
