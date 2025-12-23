@@ -1,0 +1,109 @@
+2025-12-23 00:00:30.281880 +0000 > starting log
+2025-12-23 00:00:30.282359 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-23 00:00:30.282405 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-23 00:00:30.282417 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-23 00:00:30.282427 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-23 00:00:30.282441 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>>   anaconda.[0m
+2025-12-23 00:00:30.282453 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-23 00:00:30.282462 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-23 00:00:30.282471 +0000 build-fedora-devel: .[38;5;246m00:00:30 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-12-23 00:00:31.470596 +0000 build-fedora-devel: .[38;5;246m00:00:31 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp684..[0m
+2025-12-23 00:00:31.470673 +0000 build-fedora-devel: .[38;5;246m00:00:31 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp684 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-anaconda.git /builder/anaconda /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-23 00:00:52.014547 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-23 00:00:52.014617 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag caaf92640e24de0731cc02c6e21cefd8e1ef0572..[0m
+2025-12-23 00:00:52.014627 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag 0b76f017fd3cfda65bdfb735e2f3d4c5179bde64..[0m
+2025-12-23 00:00:52.014633 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m---> Good tag 8336b4ca36516f68022d37a66580fc4781af7a22..[0m
+2025-12-23 00:00:52.014640 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-23 00:00:52.014646 +0000 build-fedora-devel: .[38;5;246m00:00:52 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2025-12-23 00:00:53.815789 +0000 build-fedora-devel: .[38;5;246m00:00:53 .[96m[qb.fetch.anaconda] .[0mLog file: /home/user/builder-fedora/logs/20251223T000030-anaconda.log.[0m
+2025-12-23 00:00:55.507063 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp1693..[0m
+2025-12-23 00:00:55.507137 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1693 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'.[0m
+2025-12-23 00:00:55.605391 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2025-12-23 00:00:55.605494 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:00:55.606720 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/anaconda'\'' --file-name '\''anaconda-41.28.tar.bz2'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'\'' --'.[0m
+2025-12-23 00:00:55.606784 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/anaconda'\'' --file-name '\''anaconda-41.28.tar.bz2'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2'\'' --'.[0m
+2025-12-23 00:00:55.606806 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ set -- --output-dir /builder/anaconda --file-name anaconda-41.28.tar.bz2 --file-url https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2 --.[0m
+2025-12-23 00:00:55.606824 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-23 00:00:55.606840 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:00:55.606849 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/anaconda.[0m
+2025-12-23 00:00:55.606855 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.606903 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.606911 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-23 00:00:55.606933 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:00:55.606949 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_NAME=anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:00:55.606956 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.606962 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.606981 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-23 00:00:55.606987 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:00:55.607017 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:00:55.607035 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.607041 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.607112 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-23 00:00:55.607132 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:00:55.607138 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:00:55.607153 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-23 00:00:55.607181 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-23 00:00:55.607240 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2025-12-23 00:00:55.607247 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-23 00:00:55.607253 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:00:55.607268 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /builder/anaconda ']'.[0m
+2025-12-23 00:00:55.607273 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mkdir -p /builder/anaconda.[0m
+2025-12-23 00:00:55.607824 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ cd /builder/anaconda.[0m
+2025-12-23 00:00:55.607952 +0000 build-fedora-devel: .[38;5;246m00:00:55 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_anaconda-41.28.tar.bz2 -- https://ftp.qubes-os.org/distfiles/anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:01.554764 +0000 build-fedora-devel: .[38;5;246m00:01:01 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2025-12-23 00:01:01.554840 +0000 build-fedora-devel: .[38;5;246m00:01:01 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:01:03.148021 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246mUsing executor local:/tmp/13935269459688001dd3a9f/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmp6xl1fy42 --untrusted-file /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512']'..[0m
+2025-12-23 00:01:03.151684 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2025-12-23 00:01:03.152354 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmp6xl1fy42 --untrusted-file /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-23 00:01:03.154038 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmp6xl1fy42'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512'\'' --'.[0m
+2025-12-23 00:01:03.154085 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmp6xl1fy42'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512'\'' --'.[0m
+2025-12-23 00:01:03.154121 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmp6xl1fy42 --untrusted-file /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512 --.[0m
+2025-12-23 00:01:03.154136 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2025-12-23 00:01:03.154150 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2025-12-23 00:01:03.154189 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:01:03.154227 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmp6xl1fy42.[0m
+2025-12-23 00:01:03.154242 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.154254 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.154267 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2025-12-23 00:01:03.154281 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:01:03.154976 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:03.155014 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155027 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155040 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2025-12-23 00:01:03.155053 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:01:03.155067 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2025-12-23 00:01:03.155079 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155091 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155105 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2025-12-23 00:01:03.155118 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:01:03.155136 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-23 00:01:03.155152 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155182 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155391 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2025-12-23 00:01:03.155404 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ case "$1" in.[0m
+2025-12-23 00:01:03.155416 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ shift.[0m
+2025-12-23 00:01:03.155428 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2025-12-23 00:01:03.155444 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2 ']'.[0m
+2025-12-23 00:01:03.155458 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmp6xl1fy42 ']'.[0m
+2025-12-23 00:01:03.155472 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmp6xl1fy42.[0m
+2025-12-23 00:01:03.155878 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:03.155954 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:03.156014 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ FILE_NAME=anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:03.156109 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-23 00:01:03.156128 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-23 00:01:03.156221 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-23 00:01:03.156258 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:01:03.156292 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2025-12-23 00:01:03.156305 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:01:03.156403 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2025-12-23 00:01:03.156423 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512 ']'.[0m
+2025-12-23 00:01:03.156458 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2025-12-23 00:01:03.156511 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2025-12-23 00:01:03.157254 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/anaconda/anaconda-41.28.tar.bz2.sha512.[0m
+2025-12-23 00:01:03.159396 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m++ printf '%s  -\n' 2522213a3251e34c681709925c51534357a33bc94caf5c5d0ea22c9205932a094cbd5d2a4759d5e530fdb826cf7566b9fbea6fa18c44fbbeb0e69e9015a9382e.[0m
+2025-12-23 00:01:03.163195 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmp6xl1fy42/untrusted_anaconda-41.28.tar.bz2 /home/user/builder-fedora/tmp/tmp6xl1fy42/anaconda-41.28.tar.bz2.[0m
+2025-12-23 00:01:03.172285 +0000 build-fedora-devel: .[38;5;246m00:01:03 .[96m[qb.fetch.anaconda] .[38;5;246m['cd -- /builder', "git -C /builder/anaconda rev-parse 'HEAD^{}' >> hash", "git -C /builder/anaconda tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-12-23 00:01:04.564547 +0000 build-fedora-devel: .[38;5;246m00:01:04 .[96m[qb.fetch.anaconda.fetch] .[0mUsing executor qubes:disp4818..[0m
+2025-12-23 00:01:04.564666 +0000 build-fedora-devel: .[38;5;246m00:01:04 .[96m[qb.fetch.anaconda.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4818 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/anaconda rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/anaconda tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-12-23 00:01:07.262846 +0000 build-fedora-devel: .[38;5;246m00:01:07 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-23 00:01:07.262945 +0000 > closing log
