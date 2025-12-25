@@ -1,0 +1,51 @@
+2025-12-25 18:46:50.746295 +0000 > starting log
+2025-12-25 18:46:50.746516 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-12-25 18:46:50.746532 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-12-25 18:46:50.746540 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-12-25 18:46:50.746545 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-12-25 18:46:50.746550 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>>   dummy-psu.[0m
+2025-12-25 18:46:50.746556 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>>     commit-hash: adf0747a5382ec0b92973c6d9f07253a319dfb5d.[0m
+2025-12-25 18:46:50.746564 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>>     source-hash: 2b1fa2052029bc2678664e02dfacac6a91d5d95a073f4b11c4c2d2bde9c996336e6e9527c697e884d29b269fe07d0146c5d44e9762fa5c34a726ee3de2ed4451.[0m
+2025-12-25 18:46:50.746569 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-12-25 18:46:50.746578 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2025-12-25 18:46:50.746584 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb] .[0mRunning stages: upload.[0m
+2025-12-25 18:46:50.746591 +0000 build-fedora-devel: .[38;5;246m18:46:50 .[96m[qb.fetch.dummy-psu] .[0mdummy-psu: source already fetched. Updating..[0m
+2025-12-25 18:46:52.939088 +0000 build-fedora-devel: .[38;5;246m18:46:53 .[96m[qb.fetch.dummy-psu.fetch] .[0mUsing executor qubes:disp7404..[0m
+2025-12-25 18:46:52.939199 +0000 build-fedora-devel: .[38;5;246m18:46:53 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7404 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-dummy-psu.git /builder/dummy-psu /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-12-25 18:46:54.856565 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-12-25 18:46:54.856624 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m---> Good tag d50b552dea7601cc7021a55ae2324ba2dce4a430..[0m
+2025-12-25 18:46:54.856635 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m---> Good tag cccce039a1bd039f3ddcfb6b1fc4a9ba15fd14be..[0m
+2025-12-25 18:46:54.856642 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m---> Good tag 9c607b7aa361a7a0ae0ae30c1fba009deea7dfb5..[0m
+2025-12-25 18:46:54.856650 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-12-25 18:46:54.856656 +0000 build-fedora-devel: .[38;5;246m18:46:54 .[96m[qb.fetch.dummy-psu.fetch] .[38;5;246m--> Merging....[0m
+2025-12-25 18:46:56.058459 +0000 build-fedora-devel: .[38;5;246m18:46:56 .[96m[qb.fetch.dummy-psu] .[0mLog file: /home/user/builder-fedora/logs/20251225T184254-dummy-psu.log.[0m
+2025-12-25 18:46:56.066374 +0000 build-fedora-devel: .[38;5;246m18:46:56 .[96m[qb.upload.host-fc41.upload] .[38;5;246mUsing executor local:/tmp/1329143023534888c03de1b/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-fedora/repository-publish/rpm/devel/current-testing/host/fc41/ yum.qubes-os.org:/pub/qubes/repo/yum/devel/current-testing/host/fc41/']'..[0m
+2025-12-25 18:46:59.382442 +0000 build-fedora-devel: .[38;5;246m18:46:59 .[96m[qb.upload.host-fc41.upload] .[38;5;246msending incremental file list.[0m
+2025-12-25 18:47:00.012980 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f..t...... repodata/605d93cf992facb1406274ac5f26ac53ea5c400a96dff3a92dc6865388393e1a-comps.xml.zst.[0m
+2025-12-25 18:47:00.013062 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m             700   1%    0.00kB/s    0:00:00            45,419 100%   42.65MB/s    0:00:00 (xfr#1, to-chk=568/573).[0m
+2025-12-25 18:47:00.013074 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ repodata/678f240150741ea99d462839b6fc89de4da3c1f97e010a369599291bf090fccc-filelists.xml.zst.[0m
+2025-12-25 18:47:00.016162 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          32,768   4%   31.25MB/s    0:00:00           709,442 100%  225.53MB/s    0:00:00 (xfr#2, to-chk=567/573).[0m
+2025-12-25 18:47:00.016190 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ repodata/9a78564e504c2246a411b3d2dc81f7db9be6c7767009431975da4ade9a13c7b8-primary.xml.zst.[0m
+2025-12-25 18:47:00.016455 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          32,768  24%   10.42MB/s    0:00:00           131,520 100%   41.81MB/s    0:00:00 (xfr#3, to-chk=566/573).[0m
+2025-12-25 18:47:00.016653 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ repodata/c792008fd27efe99df527ab046ae5034110fb8ea4f8e8e9aa36a48992cd688c5-other.xml.zst.[0m
+2025-12-25 18:47:00.016663 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          32,768  86%   10.42MB/s    0:00:00            38,078 100%   12.10MB/s    0:00:00 (xfr#4, to-chk=565/573).[0m
+2025-12-25 18:47:00.016670 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.[0m
+2025-12-25 18:47:00.016767 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m           2,024 100%  494.14kB/s    0:00:00             2,024 100%  494.14kB/s    0:00:00 (xfr#5, to-chk=564/573).[0m
+2025-12-25 18:47:00.017603 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.asc.[0m
+2025-12-25 18:47:00.017628 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m             228 100%   55.66kB/s    0:00:00               228 100%   55.66kB/s    0:00:00 (xfr#6, to-chk=563/573).[0m
+2025-12-25 18:47:00.017637 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f..t...... repodata/repomd.xml.metalink.[0m
+2025-12-25 18:47:00.017644 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m           2,100  73%  512.70kB/s    0:00:00             2,854 100%  696.78kB/s    0:00:00 (xfr#7, to-chk=562/573).[0m
+2025-12-25 18:47:00.017650 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-1.0.0-4.1.fc41.src.rpm.[0m
+2025-12-25 18:47:00.017658 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          32,185 100%    7.67MB/s    0:00:00            32,185 100%    7.67MB/s    0:00:00 (xfr#8, to-chk=524/573).[0m
+2025-12-25 18:47:00.017664 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-1.0.0-4.1.fc41.x86_64.buildinfo.[0m
+2025-12-25 18:47:00.018076 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m           7,336 100%    1.75MB/s    0:00:00             7,336 100%    1.75MB/s    0:00:00 (xfr#9, to-chk=523/573).[0m
+2025-12-25 18:47:00.018093 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-module-1.0.0-4.1.fc41.x86_64.rpm.[0m
+2025-12-25 18:47:00.018103 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          12,749 100%    3.04MB/s    0:00:00            12,749 100%    3.04MB/s    0:00:00 (xfr#10, to-chk=522/573).[0m
+2025-12-25 18:47:00.018119 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-receiver-1.0.0-4.1.fc41.x86_64.rpm.[0m
+2025-12-25 18:47:00.018127 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          14,952 100%    3.56MB/s    0:00:00            14,952 100%    3.56MB/s    0:00:00 (xfr#11, to-chk=521/573).[0m
+2025-12-25 18:47:00.018133 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-receiver-debuginfo-1.0.0-4.1.fc41.x86_64.rpm.[0m
+2025-12-25 18:47:00.018140 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m          19,133 100%    4.56MB/s    0:00:00            19,133 100%    4.56MB/s    0:00:00 (xfr#12, to-chk=520/573).[0m
+2025-12-25 18:47:00.018146 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m<f+++++++++ rpm/dummy-psu-sender-1.0.0-4.1.fc41.x86_64.rpm.[0m
+2025-12-25 18:47:00.018153 +0000 build-fedora-devel: .[38;5;246m18:47:00 .[96m[qb.upload.host-fc41.upload] .[38;5;246m           8,525 100%    2.03MB/s    0:00:00             8,525 100%    2.03MB/s    0:00:00 (xfr#13, to-chk=519/573).[0m
+2025-12-25 18:47:04.979243 +0000 build-fedora-devel: .[38;5;246m18:47:05 .[96m[qb] .[38;5;246m> done.[0m
+2025-12-25 18:47:04.979301 +0000 > closing log
