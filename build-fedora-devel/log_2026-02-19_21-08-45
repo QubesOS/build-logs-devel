@@ -1,0 +1,24 @@
+2026-02-19 21:08:45.594788 +0000 > starting log
+2026-02-19 21:08:45.595054 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-02-19 21:08:45.595068 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-02-19 21:08:45.595076 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-02-19 21:08:45.595082 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-02-19 21:08:45.595087 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>>   release-configs.[0m
+2026-02-19 21:08:45.595093 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>>     commit-hash: d6dc2b2968f813da7c4b325901cdb68cb32347bd.[0m
+2026-02-19 21:08:45.595102 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>>     source-hash: a2dc0d524e974ac81a5b1daa84632d4e77ec380776cc5444560d49750f9809d0d64028ea4afa008de809ab1994acec256866276ea8d0856d2d020e656a1a5399.[0m
+2026-02-19 21:08:45.595107 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-02-19 21:08:45.595114 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>].[0m
+2026-02-19 21:08:45.595119 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-02-19 21:08:45.608600 +0000 build-fedora-devel: .[38;5;246m21:08:45 .[96m[qb.fetch.release-configs] .[0mrelease-configs: source already fetched. Updating..[0m
+2026-02-19 21:08:49.616399 +0000 build-fedora-devel: .[38;5;246m21:08:49 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp5004..[0m
+2026-02-19 21:08:49.616521 +0000 build-fedora-devel: .[38;5;246m21:08:49 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5004 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-02-19 21:08:53.749547 +0000 build-fedora-devel: .[38;5;246m21:08:53 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-02-19 21:08:53.749602 +0000 build-fedora-devel: .[38;5;246m21:08:53 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m---> Good tag f22bc880125aaa9c493aaea84f9e66a52b44ed51..[0m
+2026-02-19 21:08:53.749615 +0000 build-fedora-devel: .[38;5;246m21:08:53 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-02-19 21:08:53.749623 +0000 build-fedora-devel: .[38;5;246m21:08:53 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Merging....[0m
+2026-02-19 21:08:55.285530 +0000 build-fedora-devel: .[38;5;246m21:08:55 .[96m[qb.fetch.release-configs] .[0mLog file: /home/user/builder-host/logs/20260219T210845-release-configs.log.[0m
+2026-02-19 21:08:55.309629 +0000 build-fedora-devel: .[38;5;246m21:08:55 .[96m[qb.fetch.release-configs] .[38;5;246m['cd -- /builder', "git -C /builder/release-configs rev-parse 'HEAD^{}' >> hash", "git -C /builder/release-configs tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-02-19 21:09:06.951442 +0000 build-fedora-devel: .[38;5;246m21:09:07 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp612..[0m
+2026-02-19 21:09:06.951614 +0000 build-fedora-devel: .[38;5;246m21:09:07 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp612 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/release-configs rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/release-configs tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-02-19 21:09:09.519495 +0000 build-fedora-devel: .[38;5;246m21:09:09 .[96m[qb] .[38;5;246m> done.[0m
+2026-02-19 21:09:09.519695 +0000 > closing log
