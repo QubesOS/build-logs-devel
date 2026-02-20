@@ -1,0 +1,44 @@
+2026-02-20 16:02:11.698872 +0000 > starting log
+2026-02-20 16:02:11.699749 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-02-20 16:02:11.699775 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-02-20 16:02:11.699784 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-02-20 16:02:11.699790 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-02-20 16:02:11.699796 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>>   app-linux-split-gpg2.[0m
+2026-02-20 16:02:11.699803 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>>     commit-hash: cd7279dec7f2b76728d53765a7b97c7815495428.[0m
+2026-02-20 16:02:11.699816 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>>     source-hash: ef806aa458e809996106bdb11a8fcf77fd803a51a59c6d47c2a0b8bbe69eca791ec16de200b09d6d7edac0a06e0612d95f9e5dca9124b2932ea657627b69e090.[0m
+2026-02-20 16:02:11.699823 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-02-20 16:02:11.699831 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>, <QubesDistribution vm-fedora-44.x86_64>].[0m
+2026-02-20 16:02:11.699837 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb] .[0mRunning stages: upload.[0m
+2026-02-20 16:02:11.699855 +0000 build-fedora-devel: .[38;5;246m16:02:11 .[96m[qb.fetch.app-linux-split-gpg2] .[0mapp-linux-split-gpg2: source already fetched. Updating..[0m
+2026-02-20 16:02:13.069931 +0000 build-fedora-devel: .[38;5;246m16:02:13 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[0mUsing executor qubes:disp7179..[0m
+2026-02-20 16:02:13.070052 +0000 build-fedora-devel: .[38;5;246m16:02:13 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7179 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-app-linux-split-gpg2.git /builder/app-linux-split-gpg2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-02-20 16:02:16.815728 +0000 build-fedora-devel: .[38;5;246m16:02:16 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-02-20 16:02:16.815804 +0000 build-fedora-devel: .[38;5;246m16:02:16 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246m---> Good tag 5c09b6563b1e226e9dfb65290bf71a54acc7a219..[0m
+2026-02-20 16:02:16.815830 +0000 build-fedora-devel: .[38;5;246m16:02:16 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246m---> Good tag bea6ae955d05f7258f0e982d233a1e8bb38d79c5..[0m
+2026-02-20 16:02:16.815850 +0000 build-fedora-devel: .[38;5;246m16:02:16 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-02-20 16:02:16.815865 +0000 build-fedora-devel: .[38;5;246m16:02:16 .[96m[qb.fetch.app-linux-split-gpg2.fetch] .[38;5;246m--> Merging....[0m
+2026-02-20 16:02:17.978546 +0000 build-fedora-devel: .[38;5;246m16:02:18 .[96m[qb.fetch.app-linux-split-gpg2] .[0mLog file: /home/user/builder-host/logs/20260220T155946-app-linux-split-gpg2.log.[0m
+2026-02-20 16:02:17.994531 +0000 build-fedora-devel: .[38;5;246m16:02:18 .[96m[qb.upload.vm-fc44.upload] .[38;5;246mUsing executor local:/tmp/13559758935483238f21e69/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-host/repository-publish/rpm/devel/current-testing/vm/fc44/ yum.qubes-os.org:/pub/qubes/repo/yum/devel/current-testing/vm/fc44/']'..[0m
+2026-02-20 16:02:20.695784 +0000 build-fedora-devel: .[38;5;246m16:02:20 .[96m[qb.upload.vm-fc44.upload] .[38;5;246msending incremental file list.[0m
+2026-02-20 16:02:21.054704 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ repodata/5716b042b915442ae510295829969b194a223e13416ef013161d4fde5a935d91-other.xml.zst.[0m
+2026-02-20 16:02:21.054773 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m           8,704 100%    0.00kB/s    0:00:00             8,704 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=119/123).[0m
+2026-02-20 16:02:21.054785 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ repodata/616a9751cdd24696ac21aa477b7ad47935bb474375686dd38c0e5b3de75d3b47-primary.xml.zst.[0m
+2026-02-20 16:02:21.054794 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m          19,521 100%   18.62MB/s    0:00:00            19,521 100%   18.62MB/s    0:00:00 (xfr#2, to-chk=118/123).[0m
+2026-02-20 16:02:21.054803 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ repodata/93a05bf24fb05c451c6028b78e33204ec288633debaa117b90e483dd77794cd7-filelists.xml.zst.[0m
+2026-02-20 16:02:21.054813 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m          22,312 100%   21.28MB/s    0:00:00            22,312 100%   21.28MB/s    0:00:00 (xfr#3, to-chk=117/123).[0m
+2026-02-20 16:02:21.054820 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f..t...... repodata/repomd.xml.[0m
+2026-02-20 16:02:21.054829 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m           1,562 100%    1.49MB/s    0:00:00             1,562 100%    1.49MB/s    0:00:00 (xfr#4, to-chk=116/123).[0m
+2026-02-20 16:02:21.054837 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f..t...... repodata/repomd.xml.asc.[0m
+2026-02-20 16:02:21.054846 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m             228 100%  222.66kB/s    0:00:00               228 100%  222.66kB/s    0:00:00 (xfr#5, to-chk=115/123).[0m
+2026-02-20 16:02:21.054855 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f..t...... repodata/repomd.xml.metalink.[0m
+2026-02-20 16:02:21.054863 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m           2,100  74%    2.00MB/s    0:00:00             2,824 100%    2.69MB/s    0:00:00 (xfr#6, to-chk=114/123).[0m
+2026-02-20 16:02:21.054870 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ rpm/split-gpg2-1.1.12-1.1.fc44.noarch.rpm.[0m
+2026-02-20 16:02:21.055063 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m          32,768  33%   31.25MB/s    0:00:00            97,845 100%   93.31MB/s    0:00:00 (xfr#7, to-chk=3/123).[0m
+2026-02-20 16:02:21.055124 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ rpm/split-gpg2-1.1.12-1.1.fc44.src.rpm.[0m
+2026-02-20 16:02:21.055133 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m          32,768  39%   31.25MB/s    0:00:00            82,153 100%   78.35MB/s    0:00:00 (xfr#8, to-chk=2/123).[0m
+2026-02-20 16:02:21.055172 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ rpm/split-gpg2-1.1.12-1.1.fc44.x86_64.buildinfo.[0m
+2026-02-20 16:02:21.055180 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m           7,728 100%    7.37MB/s    0:00:00             7,728 100%    7.37MB/s    0:00:00 (xfr#9, to-chk=1/123).[0m
+2026-02-20 16:02:21.055215 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m<f+++++++++ rpm/split-gpg2-tests-1.1.12-1.1.fc44.noarch.rpm.[0m
+2026-02-20 16:02:21.055224 +0000 build-fedora-devel: .[38;5;246m16:02:21 .[96m[qb.upload.vm-fc44.upload] .[38;5;246m          20,974 100%   20.00MB/s    0:00:00            20,974 100%   20.00MB/s    0:00:00 (xfr#10, to-chk=0/123).[0m
+2026-02-20 16:02:22.669141 +0000 build-fedora-devel: .[38;5;246m16:02:22 .[96m[qb] .[38;5;246m> done.[0m
+2026-02-20 16:02:22.669203 +0000 > closing log
