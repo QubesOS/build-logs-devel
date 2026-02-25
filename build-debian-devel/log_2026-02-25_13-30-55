@@ -1,0 +1,138 @@
+2026-02-25 13:30:55.165469 +0000 > starting log
+2026-02-25 13:30:55.166092 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-02-25 13:30:55.166112 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-02-25 13:30:55.166122 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-02-25 13:30:55.166129 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-02-25 13:30:55.166135 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>>   zfs.[0m
+2026-02-25 13:30:55.166143 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>>     commit-hash: 22e562018572751d034c57e225ace8fa7ff9e3f4.[0m
+2026-02-25 13:30:55.166201 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>>     source-hash: b42ab1d93586de131ba44abb5ebb0821998471ae9d0821078d3139c999476ccc7375201e2baa8b3c5617ee33fa4ddd6b57f77eb6e3027b561d14a688f3bb3466.[0m
+2026-02-25 13:30:55.166209 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-02-25 13:30:55.166218 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-02-25 13:30:55.166224 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-02-25 13:30:55.166233 +0000 build-debian-devel: .[38;5;246m13:30:54 .[96m[qb.fetch.zfs] .[0mzfs: source already fetched. Updating..[0m
+2026-02-25 13:30:57.822831 +0000 build-debian-devel: .[38;5;246m13:30:57 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp4094..[0m
+2026-02-25 13:30:57.822935 +0000 build-debian-devel: .[38;5;246m13:30:57 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4094 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-zfs.git /builder/zfs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-02-25 13:31:00.685628 +0000 build-debian-devel: .[38;5;246m13:31:00 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-02-25 13:31:00.685751 +0000 build-debian-devel: .[38;5;246m13:31:00 .[96m[qb.fetch.zfs.fetch] .[38;5;246m---> Good tag 9d0b1b337206b809c218107c5337c5d35b3a33ae..[0m
+2026-02-25 13:31:00.685776 +0000 build-debian-devel: .[38;5;246m13:31:00 .[96m[qb.fetch.zfs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-02-25 13:31:00.687050 +0000 build-debian-devel: .[38;5;246m13:31:00 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Merging....[0m
+2026-02-25 13:31:01.821456 +0000 build-debian-devel: .[38;5;246m13:31:01 .[96m[qb.fetch.zfs] .[0mLog file: /home/user/builder-devel/logs/20260225T133054-zfs.log.[0m
+2026-02-25 13:31:14.792429 +0000 build-debian-devel: .[38;5;246m13:31:14 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp2962..[0m
+2026-02-25 13:31:14.792653 +0000 build-debian-devel: .[38;5;246m13:31:14 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2962 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/zfs --file-name zfs-2.4.1.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc'.[0m
+2026-02-25 13:31:15.017802 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-02-25 13:31:15.018089 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/zfs --file-name zfs-2.4.1.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:15.019955 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/zfs'\'' --file-name '\''zfs-2.4.1.tar.gz'\'' --file-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz'\'' --signature-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc'\'' --'.[0m
+2026-02-25 13:31:15.020007 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/zfs'\'' --file-name '\''zfs-2.4.1.tar.gz'\'' --file-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz'\'' --signature-url '\''https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc'\'' --'.[0m
+2026-02-25 13:31:15.020031 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ set -- --output-dir /builder/zfs --file-name zfs-2.4.1.tar.gz --file-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz --signature-url https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc --.[0m
+2026-02-25 13:31:15.020060 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-02-25 13:31:15.020073 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:15.020082 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/zfs.[0m
+2026-02-25 13:31:15.020089 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020097 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020104 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-02-25 13:31:15.020133 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:15.020141 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_NAME=zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:15.020148 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020155 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020162 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-02-25 13:31:15.020169 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:15.020179 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_URL=https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:15.020187 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020195 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020202 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-02-25 13:31:15.020210 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:15.020226 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_URL=https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:15.020349 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020417 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020445 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-02-25 13:31:15.020521 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:15.020556 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:15.020626 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-02-25 13:31:15.020655 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz ']'.[0m
+2026-02-25 13:31:15.020665 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-02-25 13:31:15.020694 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z zfs-2.4.1.tar.gz ']'.[0m
+2026-02-25 13:31:15.020725 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:15.020815 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /builder/zfs ']'.[0m
+2026-02-25 13:31:15.020856 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mkdir -p /builder/zfs.[0m
+2026-02-25 13:31:15.020893 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ cd /builder/zfs.[0m
+2026-02-25 13:31:15.021661 +0000 build-debian-devel: .[38;5;246m13:31:15 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_zfs-2.4.1.tar.gz -- https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:44.727237 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-02-25 13:31:44.727321 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:44.727404 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:44.730208 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:44.730230 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:44.730258 +0000 build-debian-devel: .[38;5;246m13:31:44 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_zfs-2.4.1.tar.gz.asc https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.897028 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246mUsing executor local:/tmp/1378044715607844e7d1870/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmps1slflps --untrusted-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/zfs/zfs-key.asc']'..[0m
+2026-02-25 13:31:47.907905 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-02-25 13:31:47.910253 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmps1slflps --untrusted-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/zfs/zfs-key.asc.[0m
+2026-02-25 13:31:47.913000 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmps1slflps'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/zfs/zfs-key.asc'\'' --'.[0m
+2026-02-25 13:31:47.913016 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmps1slflps'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/zfs/zfs-key.asc'\'' --'.[0m
+2026-02-25 13:31:47.913030 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmps1slflps --untrusted-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/zfs/zfs-key.asc --.[0m
+2026-02-25 13:31:47.913036 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-02-25 13:31:47.913042 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-02-25 13:31:47.913048 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:47.913054 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmps1slflps.[0m
+2026-02-25 13:31:47.913060 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913065 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913070 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-02-25 13:31:47.913075 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:47.913082 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:47.913087 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913097 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913103 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-02-25 13:31:47.913108 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:47.913115 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.913121 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913159 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913165 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-02-25 13:31:47.913185 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:47.913192 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-02-25 13:31:47.913197 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913203 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913210 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-02-25 13:31:47.913230 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-02-25 13:31:47.913346 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ shift.[0m
+2026-02-25 13:31:47.913355 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-02-25 13:31:47.913372 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz ']'.[0m
+2026-02-25 13:31:47.913397 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmps1slflps ']'.[0m
+2026-02-25 13:31:47.913471 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmps1slflps.[0m
+2026-02-25 13:31:47.915450 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:47.916849 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:47.916928 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ FILE_NAME=zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:47.916949 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-02-25 13:31:47.917134 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:47.917141 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-02-25 13:31:47.917147 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:47.917266 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/zfs/zfs-key.asc ']'.[0m
+2026-02-25 13:31:47.917311 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:47.917322 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:47.918006 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/zfs/zfs-key.asc ']'.[0m
+2026-02-25 13:31:47.918013 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-02-25 13:31:47.918019 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc ']'.[0m
+2026-02-25 13:31:47.918026 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/zfs/zfs-key.asc ']'.[0m
+2026-02-25 13:31:47.918032 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.919550 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.919558 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.919710 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-02-25 13:31:47.921103 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.eG5b5Kd9WM.[0m
+2026-02-25 13:31:47.921119 +0000 build-debian-devel: .[38;5;246m13:31:47 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-02-25 13:31:47.930289 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.eG5b5Kd9WM/keyring /home/user/builder-devel/sources/zfs/zfs-key.asc.[0m
+2026-02-25 13:31:47.939088 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.eG5b5Kd9WM/keyring.gpg /tmp/tmp.eG5b5Kd9WM/keyring.[0m
+2026-02-25 13:31:47.943596 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ sqv --version.[0m
+2026-02-25 13:31:47.945059 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-02-25 13:31:47.945067 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-02-25 13:31:47.945188 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sort -VC.[0m
+2026-02-25 13:31:47.946713 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-02-25 13:31:47.947888 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-02-25 13:31:47.947896 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-02-25 13:31:47.947904 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-02-25 13:31:47.947913 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.eG5b5Kd9WM/keyring /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:47.981447 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m4F3BA9AB6D1F8D683DC2DFB56AD860EED4598027.[0m
+2026-02-25 13:31:47.981641 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz.asc /home/user/builder-devel/tmp/tmps1slflps/zfs-2.4.1.tar.gz.asc.[0m
+2026-02-25 13:31:47.982703 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ rm -rf /tmp/tmp.eG5b5Kd9WM.[0m
+2026-02-25 13:31:47.983409 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmps1slflps/untrusted_zfs-2.4.1.tar.gz /home/user/builder-devel/tmp/tmps1slflps/zfs-2.4.1.tar.gz.[0m
+2026-02-25 13:31:48.000158 +0000 build-debian-devel: .[38;5;246m13:31:48 .[96m[qb.fetch.zfs] .[38;5;246m['cd -- /builder', "git -C /builder/zfs rev-parse 'HEAD^{}' >> hash", "git -C /builder/zfs tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-02-25 13:31:49.410757 +0000 build-debian-devel: .[38;5;246m13:31:49 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp2766..[0m
+2026-02-25 13:31:49.411117 +0000 build-debian-devel: .[38;5;246m13:31:49 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2766 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/zfs rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/zfs tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-02-25 13:31:51.416166 +0000 build-debian-devel: .[38;5;246m13:31:51 .[96m[qb] .[38;5;246m> done.[0m
+2026-02-25 13:31:51.416196 +0000 > closing log
