@@ -1,0 +1,144 @@
+2026-03-10 19:06:02.153924 +0000 > starting log
+2026-03-10 19:06:02.154256 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-03-10 19:06:02.154272 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-03-10 19:06:02.154279 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-03-10 19:06:02.154285 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-03-10 19:06:02.154290 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>>   linux-firmware.[0m
+2026-03-10 19:06:02.154297 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>>     commit-hash: b1013f1cedbf3bbdaaa3dc302c9a2dbd0b75fee1.[0m
+2026-03-10 19:06:02.154305 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>>     source-hash: 4cb6cdd8c65b3a33a9e9e58a2a4005d820a32c75359ebb0146516b995cb2873575fd49fcc450a8c738653f025ad630eafdf3dce4b318f2ae2c164f6bb553db15.[0m
+2026-03-10 19:06:02.154310 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-03-10 19:06:02.154316 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-03-10 19:06:02.154321 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-03-10 19:06:02.156918 +0000 build-debian-devel: .[38;5;246m19:06:02 .[96m[qb.fetch.linux-firmware] .[0mlinux-firmware: source already fetched. Updating..[0m
+2026-03-10 19:06:05.065268 +0000 build-debian-devel: .[38;5;246m19:06:05 .[96m[qb.fetch.linux-firmware.fetch] .[0mUsing executor qubes:disp1984..[0m
+2026-03-10 19:06:05.065393 +0000 build-debian-devel: .[38;5;246m19:06:05 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1984 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-firmware.git /builder/linux-firmware /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-03-10 19:06:06.848064 +0000 build-debian-devel: .[38;5;246m19:06:06 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-03-10 19:06:06.848137 +0000 build-debian-devel: .[38;5;246m19:06:06 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m---> Good tag 57a9f1c49c9e78191d2379d5e04afa45ee7fb048..[0m
+2026-03-10 19:06:06.848430 +0000 build-debian-devel: .[38;5;246m19:06:06 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-03-10 19:06:06.848520 +0000 build-debian-devel: .[38;5;246m19:06:06 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m--> Merging....[0m
+2026-03-10 19:06:08.532152 +0000 build-debian-devel: .[38;5;246m19:06:08 .[96m[qb.fetch.linux-firmware] .[0mLog file: /home/user/builder-devel/logs/20260310T190602-linux-firmware.log.[0m
+2026-03-10 19:06:21.485465 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[0mUsing executor qubes:disp2839..[0m
+2026-03-10 19:06:21.485731 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2839 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-firmware --file-name linux-firmware-20260309.tar.xz --file-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz --signature-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign --uncompress'.[0m
+2026-03-10 19:06:21.609741 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-03-10 19:06:21.610292 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-firmware --file-name linux-firmware-20260309.tar.xz --file-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz --signature-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign --uncompress.[0m
+2026-03-10 19:06:21.611559 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-firmware'\'' --file-name '\''linux-firmware-20260309.tar.xz'\'' --file-url '\''https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz'\'' --signature-url '\''https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign'\'' --uncompress --'.[0m
+2026-03-10 19:06:21.612082 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-firmware'\'' --file-name '\''linux-firmware-20260309.tar.xz'\'' --file-url '\''https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz'\'' --signature-url '\''https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign'\'' --uncompress --'.[0m
+2026-03-10 19:06:21.613213 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-firmware --file-name linux-firmware-20260309.tar.xz --file-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz --signature-url https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign --uncompress --.[0m
+2026-03-10 19:06:21.613285 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 10 -gt 0 ]].[0m
+2026-03-10 19:06:21.613312 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:06:21.613335 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-firmware.[0m
+2026-03-10 19:06:21.613353 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.613368 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.613384 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 8 -gt 0 ]].[0m
+2026-03-10 19:06:21.613403 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:06:21.613420 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ FILE_NAME=linux-firmware-20260309.tar.xz.[0m
+2026-03-10 19:06:21.613724 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.614011 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.614108 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 6 -gt 0 ]].[0m
+2026-03-10 19:06:21.614202 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:06:21.614367 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ FILE_URL=https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz.[0m
+2026-03-10 19:06:21.614444 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.614477 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.614567 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 4 -gt 0 ]].[0m
+2026-03-10 19:06:21.614705 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:06:21.614875 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ SIGNATURE_URL=https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:06:21.614895 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.615297 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.615373 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 2 -gt 0 ]].[0m
+2026-03-10 19:06:21.615430 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:06:21.615448 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNCOMPRESS=1.[0m
+2026-03-10 19:06:21.615496 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.615578 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:06:21.615647 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-03-10 19:06:21.615697 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz ']'.[0m
+2026-03-10 19:06:21.615791 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-03-10 19:06:21.615838 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z linux-firmware-20260309.tar.xz ']'.[0m
+2026-03-10 19:06:21.615921 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-firmware-20260309.tar.xz.[0m
+2026-03-10 19:06:21.616029 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /builder/linux-firmware ']'.[0m
+2026-03-10 19:06:21.616049 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ mkdir -p /builder/linux-firmware.[0m
+2026-03-10 19:06:21.622361 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ cd /builder/linux-firmware.[0m
+2026-03-10 19:06:21.622444 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-firmware-20260309.tar.xz -- https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.xz.[0m
+2026-03-10 19:11:34.942385 +0000 build-debian-devel: .[38;5;246m19:11:35 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' 1 == 1 ']'.[0m
+2026-03-10 19:11:34.942444 +0000 build-debian-devel: .[38;5;246m19:11:35 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' linux-firmware-20260309.tar.xz '!=' linux-firmware-20260309.tar.xz ']'.[0m
+2026-03-10 19:11:34.942454 +0000 build-debian-devel: .[38;5;246m19:11:35 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' linux-firmware-20260309.tar '!=' linux-firmware-20260309.tar.xz ']'.[0m
+2026-03-10 19:11:34.942461 +0000 build-debian-devel: .[38;5;246m19:11:35 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ unxz untrusted_linux-firmware-20260309.tar.xz.[0m
+2026-03-10 19:11:44.467783 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:44.468699 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:44.476946 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ basename https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:44.483139 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:44.483515 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:44.484807 +0000 build-debian-devel: .[38;5;246m19:11:44 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-firmware-20260309.tar.sign https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:54.919093 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246mUsing executor local:/tmp/1342955884976648a32c36e/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpsria4kfy --untrusted-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc']'..[0m
+2026-03-10 19:11:54.921486 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-03-10 19:11:54.921600 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpsria4kfy --untrusted-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc.[0m
+2026-03-10 19:11:54.922914 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpsria4kfy'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc'\'' --'.[0m
+2026-03-10 19:11:54.922983 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpsria4kfy'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc'\'' --'.[0m
+2026-03-10 19:11:54.923032 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpsria4kfy --untrusted-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc --.[0m
+2026-03-10 19:11:54.923072 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-03-10 19:11:54.923090 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-03-10 19:11:54.923107 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:11:54.923126 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpsria4kfy.[0m
+2026-03-10 19:11:54.923143 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923158 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923174 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-03-10 19:11:54.923189 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:11:54.923211 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:54.923227 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923242 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923258 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-03-10 19:11:54.923273 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:11:54.923296 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:54.923312 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923327 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923342 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-03-10 19:11:54.923357 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:11:54.923372 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-03-10 19:11:54.923388 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923403 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923418 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-03-10 19:11:54.923433 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-03-10 19:11:54.923448 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ shift.[0m
+2026-03-10 19:11:54.923464 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-03-10 19:11:54.923489 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar ']'.[0m
+2026-03-10 19:11:54.923507 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsria4kfy ']'.[0m
+2026-03-10 19:11:54.923534 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpsria4kfy.[0m
+2026-03-10 19:11:54.924876 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:54.926867 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:54.926910 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ FILE_NAME=linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:54.926935 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-03-10 19:11:54.926961 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:54.926979 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-03-10 19:11:54.927002 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:54.927024 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc ']'.[0m
+2026-03-10 19:11:54.927049 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:54.927072 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:54.927094 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc ']'.[0m
+2026-03-10 19:11:54.927112 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-03-10 19:11:54.927134 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign ']'.[0m
+2026-03-10 19:11:54.927155 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc ']'.[0m
+2026-03-10 19:11:54.927179 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:54.928448 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:54.928480 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:54.928921 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-03-10 19:11:54.930467 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.2F7lUASQnB.[0m
+2026-03-10 19:11:54.930505 +0000 build-debian-devel: .[38;5;246m19:11:54 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-03-10 19:11:54.936063 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.2F7lUASQnB/keyring /home/user/builder-devel/sources/linux-firmware/firmware-1-key.asc.[0m
+2026-03-10 19:11:54.944846 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.2F7lUASQnB/keyring.gpg /tmp/tmp.2F7lUASQnB/keyring.[0m
+2026-03-10 19:11:54.951109 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ sqv --version.[0m
+2026-03-10 19:11:54.953084 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-03-10 19:11:54.953227 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-03-10 19:11:54.953518 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sort -VC.[0m
+2026-03-10 19:11:54.954531 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-03-10 19:11:54.955351 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-03-10 19:11:54.955372 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-03-10 19:11:54.955391 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-03-10 19:11:54.955417 +0000 build-debian-devel: .[38;5;246m19:11:55 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.2F7lUASQnB/keyring /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:57.589699 +0000 build-debian-devel: .[38;5;246m19:11:57 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m4CDE8575E547BF835FE15807A31B6BD72486CFD6.[0m
+2026-03-10 19:11:57.589850 +0000 build-debian-devel: .[38;5;246m19:11:57 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar.sign /home/user/builder-devel/tmp/tmpsria4kfy/linux-firmware-20260309.tar.sign.[0m
+2026-03-10 19:11:57.591166 +0000 build-debian-devel: .[38;5;246m19:11:57 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ rm -rf /tmp/tmp.2F7lUASQnB.[0m
+2026-03-10 19:11:57.592047 +0000 build-debian-devel: .[38;5;246m19:11:57 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpsria4kfy/untrusted_linux-firmware-20260309.tar /home/user/builder-devel/tmp/tmpsria4kfy/linux-firmware-20260309.tar.[0m
+2026-03-10 19:11:59.076553 +0000 build-debian-devel: .[38;5;246m19:11:59 .[96m[qb.fetch.linux-firmware] .[38;5;246m['cd -- /builder', "git -C /builder/linux-firmware rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-firmware tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-03-10 19:12:00.830157 +0000 build-debian-devel: .[38;5;246m19:12:00 .[96m[qb.fetch.linux-firmware.fetch] .[0mUsing executor qubes:disp3625..[0m
+2026-03-10 19:12:00.830289 +0000 build-debian-devel: .[38;5;246m19:12:00 .[96m[qb.fetch.linux-firmware.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3625 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-firmware rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-firmware tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-03-10 19:12:02.814047 +0000 build-debian-devel: .[38;5;246m19:12:02 .[96m[qb] .[38;5;246m> done.[0m
+2026-03-10 19:12:02.814196 +0000 > closing log
