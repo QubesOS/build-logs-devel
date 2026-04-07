@@ -1,0 +1,24 @@
+2026-04-07 15:02:59.979772 +0000 > starting log
+2026-04-07 15:02:59.980005 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-07 15:02:59.980021 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-07 15:02:59.980029 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-07 15:02:59.980034 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-07 15:02:59.980040 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>>   core-admin-client.[0m
+2026-04-07 15:02:59.980046 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>>     commit-hash: 386de45afce572d2501ab99089818e6b251cd86f.[0m
+2026-04-07 15:02:59.980055 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>>     source-hash: d843c5700994d4b4680ae5df3accc4a991184d0e3ff03a28b7dcf37e21713e69481f3a59529aa3fbf564fa43af1b0289b306da852200f8bf6d972764115c3761.[0m
+2026-04-07 15:02:59.980060 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-07 15:02:59.980066 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-04-07 15:02:59.980071 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-04-07 15:02:59.980078 +0000 build-debian-devel: .[38;5;246m15:02:59 .[96m[qb.fetch.core-admin-client] .[0mcore-admin-client: source already fetched. Updating..[0m
+2026-04-07 15:03:09.436249 +0000 build-debian-devel: .[38;5;246m15:03:09 .[96m[qb.fetch.core-admin-client.fetch] .[0mUsing executor qubes:disp6392..[0m
+2026-04-07 15:03:09.436338 +0000 build-debian-devel: .[38;5;246m15:03:09 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6392 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-core-admin-client.git /builder/core-admin-client /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-07 15:03:12.090683 +0000 build-debian-devel: .[38;5;246m15:03:12 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-07 15:03:12.090751 +0000 build-debian-devel: .[38;5;246m15:03:12 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246m---> Good tag ab5f488b6ef4e030016f7925ae83ccf06090a0ea..[0m
+2026-04-07 15:03:12.090764 +0000 build-debian-devel: .[38;5;246m15:03:12 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-07 15:03:12.090772 +0000 build-debian-devel: .[38;5;246m15:03:12 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246m--> Merging....[0m
+2026-04-07 15:03:14.215224 +0000 build-debian-devel: .[38;5;246m15:03:14 .[96m[qb.fetch.core-admin-client] .[0mLog file: /home/user/builder-devel/logs/20260407T150259-core-admin-client.log.[0m
+2026-04-07 15:03:14.223409 +0000 build-debian-devel: .[38;5;246m15:03:14 .[96m[qb.fetch.core-admin-client] .[38;5;246m['cd -- /builder', "git -C /builder/core-admin-client rev-parse 'HEAD^{}' >> hash", "git -C /builder/core-admin-client tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-04-07 15:03:16.532477 +0000 build-debian-devel: .[38;5;246m15:03:16 .[96m[qb.fetch.core-admin-client.fetch] .[0mUsing executor qubes:disp446..[0m
+2026-04-07 15:03:16.532576 +0000 build-debian-devel: .[38;5;246m15:03:16 .[96m[qb.fetch.core-admin-client.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp446 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/core-admin-client rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/core-admin-client tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-04-07 15:03:19.109183 +0000 build-debian-devel: .[38;5;246m15:03:19 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-07 15:03:19.109378 +0000 > closing log
