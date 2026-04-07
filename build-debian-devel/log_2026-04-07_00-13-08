@@ -1,0 +1,24 @@
+2026-04-07 00:13:08.653248 +0000 > starting log
+2026-04-07 00:13:08.653597 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-07 00:13:08.653641 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-07 00:13:08.653651 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-07 00:13:08.653689 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-07 00:13:08.653697 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>>   core-agent-linux.[0m
+2026-04-07 00:13:08.653705 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>>     commit-hash: 6dcb08360b5b26fca07dba6c5e433fc8b469bc1f.[0m
+2026-04-07 00:13:08.653714 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>>     source-hash: d09d29daad12297f188220c9e0ae532a8794a787dcf169382058eb820ce5660a596cbdf4762fd7c9857f21cefb5523a45828b497a61eda1ef979922471236263.[0m
+2026-04-07 00:13:08.653720 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-07 00:13:08.653728 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-04-07 00:13:08.653741 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-04-07 00:13:08.653747 +0000 build-debian-devel: .[38;5;246m00:13:08 .[96m[qb.fetch.core-agent-linux] .[0mcore-agent-linux: source already fetched. Updating..[0m
+2026-04-07 00:13:09.681484 +0000 build-debian-devel: .[38;5;246m00:13:09 .[96m[qb.fetch.core-agent-linux.fetch] .[0mUsing executor qubes:disp2707..[0m
+2026-04-07 00:13:09.681664 +0000 build-debian-devel: .[38;5;246m00:13:09 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2707 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-core-agent-linux.git /builder/core-agent-linux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-07 00:13:12.473379 +0000 build-debian-devel: .[38;5;246m00:13:12 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-07 00:13:12.473511 +0000 build-debian-devel: .[38;5;246m00:13:12 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m---> Good tag 690cec3f96ee83c5986ec16813f33cd4adf10600..[0m
+2026-04-07 00:13:12.473723 +0000 build-debian-devel: .[38;5;246m00:13:12 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-07 00:13:12.473927 +0000 build-debian-devel: .[38;5;246m00:13:12 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m--> Merging....[0m
+2026-04-07 00:13:15.017323 +0000 build-debian-devel: .[38;5;246m00:13:15 .[96m[qb.fetch.core-agent-linux] .[0mLog file: /home/user/builder-devel/logs/20260407T001308-core-agent-linux.log.[0m
+2026-04-07 00:13:15.031776 +0000 build-debian-devel: .[38;5;246m00:13:15 .[96m[qb.fetch.core-agent-linux] .[38;5;246m['cd -- /builder', "git -C /builder/core-agent-linux rev-parse 'HEAD^{}' >> hash", "git -C /builder/core-agent-linux tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-04-07 00:13:15.854662 +0000 build-debian-devel: .[38;5;246m00:13:15 .[96m[qb.fetch.core-agent-linux.fetch] .[0mUsing executor qubes:disp4880..[0m
+2026-04-07 00:13:15.854781 +0000 build-debian-devel: .[38;5;246m00:13:15 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4880 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/core-agent-linux rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/core-agent-linux tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-04-07 00:13:17.703104 +0000 build-debian-devel: .[38;5;246m00:13:17 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-07 00:13:17.703174 +0000 > closing log
