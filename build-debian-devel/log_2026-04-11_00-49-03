@@ -1,0 +1,62 @@
+2026-04-11 00:49:03.872945 +0000 > starting log
+2026-04-11 00:49:03.873140 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-11 00:49:03.873156 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-11 00:49:03.873164 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-11 00:49:03.873169 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-11 00:49:03.873174 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>>   salt.[0m
+2026-04-11 00:49:03.873180 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>>     commit-hash: 16140fdd37255f9550ebe7daf68d2c9bfa35d3b7.[0m
+2026-04-11 00:49:03.873188 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>>     source-hash: d6b2697af91ffd0b3de51b3635b2c3c98cd2894ee6eddefaa8528de9c3a37c497b218724d3342e27da8fbe5cf80eec7f9e83aa2f6c90209286588ce411dc0024.[0m
+2026-04-11 00:49:03.873193 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-11 00:49:03.873199 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-04-11 00:49:03.873204 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb] .[0mRunning stages: upload.[0m
+2026-04-11 00:49:03.885585 +0000 build-debian-devel: .[38;5;246m00:49:03 .[96m[qb.fetch.salt] .[0msalt: source already fetched. Updating..[0m
+2026-04-11 00:49:05.183435 +0000 build-debian-devel: .[38;5;246m00:49:05 .[96m[qb.fetch.salt.fetch] .[0mUsing executor qubes:disp9126..[0m
+2026-04-11 00:49:05.183574 +0000 build-debian-devel: .[38;5;246m00:49:05 .[96m[qb.fetch.salt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9126 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-salt.git /builder/salt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-11 00:49:07.800948 +0000 build-debian-devel: .[38;5;246m00:49:07 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-11 00:49:07.801049 +0000 build-debian-devel: .[38;5;246m00:49:07 .[96m[qb.fetch.salt.fetch] .[38;5;246m---> Good tag 95ad1f04a373b0774dc40df195e5f4315a0d2fca..[0m
+2026-04-11 00:49:07.801077 +0000 build-debian-devel: .[38;5;246m00:49:07 .[96m[qb.fetch.salt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-11 00:49:07.801094 +0000 build-debian-devel: .[38;5;246m00:49:07 .[96m[qb.fetch.salt.fetch] .[38;5;246m--> Merging....[0m
+2026-04-11 00:49:09.868498 +0000 build-debian-devel: .[38;5;246m00:49:09 .[96m[qb.fetch.salt] .[0mLog file: /home/user/builder-devel/logs/20260411T003720-salt.log.[0m
+2026-04-11 00:49:09.871760 +0000 build-debian-devel: .[38;5;246m00:49:09 .[96m[qb.fetch.salt] .[0msalt: file salt-3007.13.tar.gz already downloaded. Skipping..[0m
+2026-04-11 00:49:09.887891 +0000 build-debian-devel: .[38;5;246m00:49:09 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246mUsing executor local:/tmp/140674293739008584c69fc/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-devel/repository-publish/deb/devel/vm/pool/ deb.qubes-os.org:/pub/qubes/repo/deb/devel/vm/pool/']'..[0m
+2026-04-11 00:49:10.679581 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246msending incremental file list.[0m
+2026-04-11 00:49:10.928044 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-api_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:10.928151 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          21,348 100%    0.00kB/s    0:00:00            21,348 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=128/1422).[0m
+2026-04-11 00:49:10.928206 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-cloud_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:10.928216 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          22,824 100%   21.77MB/s    0:00:00            22,824 100%   21.77MB/s    0:00:00 (xfr#2, to-chk=123/1422).[0m
+2026-04-11 00:49:10.928223 +0000 build-debian-devel: .[38;5;246m00:49:10 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-common_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:11.275449 +0000 build-debian-devel: .[38;5;246m00:49:11 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          32,768   0%   31.25MB/s    0:00:00         3,809,964 100%   10.41MB/s    0:00:00 (xfr#3, to-chk=118/1422).[0m
+2026-04-11 00:49:11.275512 +0000 build-debian-devel: .[38;5;246m00:49:11 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-doc_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.434617 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          32,768   0%   91.69kB/s    0:01:22         4,423,680  58%    4.21MB/s    0:00:00         7,559,216 100%    4.78MB/s    0:00:01 (xfr#4, to-chk=113/1422).[0m
+2026-04-11 00:49:12.434743 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-master_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.434758 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          32,768  66%   63.24kB/s    0:00:00            49,636 100%   95.80kB/s    0:00:00 (xfr#5, to-chk=108/1422).[0m
+2026-04-11 00:49:12.434770 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-minion_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.463867 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          32,768  94%   59.81kB/s    0:00:00            34,764 100%   63.46kB/s    0:00:00 (xfr#6, to-chk=103/1422).[0m
+2026-04-11 00:49:12.463936 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-proxy_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.463948 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          19,712 100%   35.98kB/s    0:00:00            19,712 100%   35.98kB/s    0:00:00 (xfr#7, to-chk=98/1422).[0m
+2026-04-11 00:49:12.463986 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-ssh_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.463997 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          22,260 100%   40.63kB/s    0:00:00            22,260 100%   40.63kB/s    0:00:00 (xfr#8, to-chk=93/1422).[0m
+2026-04-11 00:49:12.464004 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt-syndic_3007.13-2+deb12u1+devel3_all.deb.[0m
+2026-04-11 00:49:12.464095 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          21,792 100%   39.78kB/s    0:00:00            21,792 100%   39.78kB/s    0:00:00 (xfr#9, to-chk=88/1422).[0m
+2026-04-11 00:49:12.464159 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.13-2+deb12u1+devel3.debian.tar.xz.[0m
+2026-04-11 00:49:12.476283 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          32,768  71%   58.39kB/s    0:00:00            45,768 100%   81.56kB/s    0:00:00 (xfr#10, to-chk=79/1422).[0m
+2026-04-11 00:49:12.476405 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.13-2+deb12u1+devel3.dsc.[0m
+2026-04-11 00:49:12.476417 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m           4,161 100%    7.42kB/s    0:00:00             4,161 100%    7.42kB/s    0:00:00 (xfr#11, to-chk=78/1422).[0m
+2026-04-11 00:49:12.476426 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f+++++++++ main/s/salt/salt_3007.13-2+deb12u1+devel3_amd64.buildinfo.[0m
+2026-04-11 00:49:12.476499 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m          15,986 100%   28.49kB/s    0:00:00            15,986 100%   28.49kB/s    0:00:00 (xfr#12, to-chk=77/1422).[0m
+2026-04-11 00:49:12.919233 +0000 build-debian-devel: .[38;5;246m00:49:12 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246mUsing executor local:/tmp/140674293739008584c69fc/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-devel/repository-publish/deb/devel/vm/dists/bookworm-testing/ deb.qubes-os.org:/pub/qubes/repo/deb/devel/vm/dists/bookworm-testing/']'..[0m
+2026-04-11 00:49:13.136048 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246msending incremental file list.[0m
+2026-04-11 00:49:13.263998 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f..t...... InRelease.[0m
+2026-04-11 00:49:13.264130 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m           4,164 100%    0.00kB/s    0:00:00             4,164 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=15/17).[0m
+2026-04-11 00:49:13.264161 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f..t...... Release.[0m
+2026-04-11 00:49:13.264182 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m           3,887 100%    3.71MB/s    0:00:00             3,887 100%    3.71MB/s    0:00:00 (xfr#2, to-chk=14/17).[0m
+2026-04-11 00:49:13.264203 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f..t...... Release.gpg.[0m
+2026-04-11 00:49:13.264231 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m             228 100%  222.66kB/s    0:00:00               228 100%  222.66kB/s    0:00:00 (xfr#3, to-chk=13/17).[0m
+2026-04-11 00:49:13.264281 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f..t...... main/binary-amd64/Packages.[0m
+2026-04-11 00:49:13.264335 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m             700   0%  683.59kB/s    0:00:00           125,567 100%  119.75MB/s    0:00:00 (xfr#4, to-chk=8/17).[0m
+2026-04-11 00:49:13.264355 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f.st...... main/binary-amd64/Packages.gz.[0m
+2026-04-11 00:49:13.264377 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m             700   1%  683.59kB/s    0:00:00            39,582 100%   37.75MB/s    0:00:00 (xfr#5, to-chk=7/17).[0m
+2026-04-11 00:49:13.264404 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m<f.st...... main/source/Sources.gz.[0m
+2026-04-11 00:49:13.264425 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb.upload.vm-bookworm.upload] .[38;5;246m             700   3%  683.59kB/s    0:00:00            18,822 100%   17.95MB/s    0:00:00 (xfr#6, to-chk=0/17).[0m
+2026-04-11 00:49:13.466768 +0000 build-debian-devel: .[38;5;246m00:49:13 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-11 00:49:13.466888 +0000 > closing log
