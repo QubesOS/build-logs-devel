@@ -1,0 +1,107 @@
+2026-04-24 10:41:20.249279 +0000 > starting log
+2026-04-24 10:41:20.249591 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-24 10:41:20.249622 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-24 10:41:20.249631 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-24 10:41:20.249638 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-24 10:41:20.249644 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>>   linux-scrypt.[0m
+2026-04-24 10:41:20.249650 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-24 10:41:20.249656 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-04-24 10:41:20.249662 +0000 build-archlinux-devel: .[38;5;246m10:41:19 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-04-24 10:41:22.097856 +0000 build-archlinux-devel: .[38;5;246m10:41:21 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp4378..[0m
+2026-04-24 10:41:22.098018 +0000 build-archlinux-devel: .[38;5;246m10:41:21 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4378 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-scrypt.git /builder/linux-scrypt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-24 10:41:23.940071 +0000 build-archlinux-devel: .[38;5;246m10:41:22 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-24 10:41:23.940167 +0000 build-archlinux-devel: .[38;5;246m10:41:22 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m---> Good tag 570b13b8c4b23cdd20d0a64af8f679f2f55ee775..[0m
+2026-04-24 10:41:23.940192 +0000 build-archlinux-devel: .[38;5;246m10:41:22 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-24 10:41:23.940209 +0000 build-archlinux-devel: .[38;5;246m10:41:22 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-04-24 10:41:26.823726 +0000 build-archlinux-devel: .[38;5;246m10:41:25 .[96m[qb.fetch.linux-scrypt] .[0mLog file: /home/user/builder-devel/logs/20260424T104118-linux-scrypt.log.[0m
+2026-04-24 10:41:33.282343 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp6091..[0m
+2026-04-24 10:41:33.282444 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6091 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-scrypt --file-name scrypt-1.3.3.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz'.[0m
+2026-04-24 10:41:33.582614 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-04-24 10:41:33.582737 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-scrypt --file-name scrypt-1.3.3.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:33.585206 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-scrypt'\'' --file-name '\''scrypt-1.3.3.tgz'\'' --file-url '\''https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz'\'' --'.[0m
+2026-04-24 10:41:33.585284 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-scrypt'\'' --file-name '\''scrypt-1.3.3.tgz'\'' --file-url '\''https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz'\'' --'.[0m
+2026-04-24 10:41:33.585381 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-scrypt --file-name scrypt-1.3.3.tgz --file-url https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz --.[0m
+2026-04-24 10:41:33.585394 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-04-24 10:41:33.585402 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:33.585410 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-scrypt.[0m
+2026-04-24 10:41:33.585417 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585426 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585433 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-04-24 10:41:33.585440 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:33.585447 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_NAME=scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:33.585454 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585463 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585470 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-04-24 10:41:33.585477 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:33.585485 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_URL=https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:33.585492 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585498 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585505 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-04-24 10:41:33.585511 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:33.585519 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:33.585526 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-04-24 10:41:33.585545 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz ']'.[0m
+2026-04-24 10:41:33.585554 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-04-24 10:41:33.585561 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z scrypt-1.3.3.tgz ']'.[0m
+2026-04-24 10:41:33.585569 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:33.585576 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /builder/linux-scrypt ']'.[0m
+2026-04-24 10:41:33.585593 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mkdir -p /builder/linux-scrypt.[0m
+2026-04-24 10:41:33.585996 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ cd /builder/linux-scrypt.[0m
+2026-04-24 10:41:33.586047 +0000 build-archlinux-devel: .[38;5;246m10:41:32 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_scrypt-1.3.3.tgz -- https://www.tarsnap.com/scrypt/scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:34.950480 +0000 build-archlinux-devel: .[38;5;246m10:41:33 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-04-24 10:41:34.950551 +0000 build-archlinux-devel: .[38;5;246m10:41:33 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-24 10:41:36.987128 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246mUsing executor local:/tmp/140329280340720878a5482/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpzz73qb1b --untrusted-file /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256']'..[0m
+2026-04-24 10:41:36.991021 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-04-24 10:41:36.991106 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpzz73qb1b --untrusted-file /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256.[0m
+2026-04-24 10:41:36.992037 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpzz73qb1b'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256'\'' --'.[0m
+2026-04-24 10:41:36.992090 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpzz73qb1b'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256'\'' --'.[0m
+2026-04-24 10:41:36.992107 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpzz73qb1b --untrusted-file /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256 --.[0m
+2026-04-24 10:41:36.992122 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-04-24 10:41:36.992130 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-04-24 10:41:36.992137 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:36.992145 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpzz73qb1b.[0m
+2026-04-24 10:41:36.992178 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992185 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992191 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-04-24 10:41:36.992197 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:36.992205 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:36.992216 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992222 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992229 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-04-24 10:41:36.992237 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:36.992243 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2026-04-24 10:41:36.992249 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992255 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992261 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-04-24 10:41:36.992267 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:36.992275 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256.[0m
+2026-04-24 10:41:36.992281 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992287 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992293 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-04-24 10:41:36.992299 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-24 10:41:36.992305 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ shift.[0m
+2026-04-24 10:41:36.992344 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-04-24 10:41:36.992354 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz ']'.[0m
+2026-04-24 10:41:36.992362 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpzz73qb1b ']'.[0m
+2026-04-24 10:41:36.992369 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpzz73qb1b.[0m
+2026-04-24 10:41:36.992376 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:36.992807 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:36.992852 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ FILE_NAME=scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:36.992917 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256 ']'.[0m
+2026-04-24 10:41:36.992946 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256 ']'.[0m
+2026-04-24 10:41:36.992958 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256 ']'.[0m
+2026-04-24 10:41:36.992965 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-24 10:41:36.993135 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-04-24 10:41:36.993156 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-24 10:41:36.993166 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-24 10:41:36.993175 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256 ']'.[0m
+2026-04-24 10:41:36.993186 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2026-04-24 10:41:36.994703 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2026-04-24 10:41:36.994760 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/linux-scrypt/scrypt-1.3.3.tgz.sha256.[0m
+2026-04-24 10:41:36.994786 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m++ printf '%s  -\n' 1c2710517e998eaac2e97db11f092e37139e69886b21a1b2661f64e130215ae9.[0m
+2026-04-24 10:41:36.995548 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpzz73qb1b/untrusted_scrypt-1.3.3.tgz /home/user/builder-devel/tmp/tmpzz73qb1b/scrypt-1.3.3.tgz.[0m
+2026-04-24 10:41:36.998812 +0000 build-archlinux-devel: .[38;5;246m10:41:35 .[96m[qb.fetch.linux-scrypt] .[38;5;246m['cd -- /builder', "git -C /builder/linux-scrypt rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-scrypt tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-04-24 10:41:38.104067 +0000 build-archlinux-devel: .[38;5;246m10:41:37 .[96m[qb.fetch.linux-scrypt.fetch] .[0mUsing executor qubes:disp9798..[0m
+2026-04-24 10:41:38.104188 +0000 build-archlinux-devel: .[38;5;246m10:41:37 .[96m[qb.fetch.linux-scrypt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9798 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-scrypt rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-scrypt tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-04-24 10:41:39.917077 +0000 build-archlinux-devel: .[38;5;246m10:41:38 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-24 10:41:39.917146 +0000 > closing log
