@@ -1,0 +1,144 @@
+2026-04-28 14:01:31.248744 +0000 > starting log
+2026-04-28 14:01:31.249268 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-28 14:01:31.249284 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-28 14:01:31.249292 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-28 14:01:31.249298 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-28 14:01:31.249303 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>>   core-libvirt.[0m
+2026-04-28 14:01:31.249309 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>>     commit-hash: f65e56a5538027551091ec557a394159dd22540a.[0m
+2026-04-28 14:01:31.249318 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>>     source-hash: dcba620d8545c5fa8e43c73b83bf446c7904ecb459949240d81e50fee6d7222e1318d3d4fc13cb40c6e09afad72704c196855aaa22fcd18d6d57da21f3778ff3.[0m
+2026-04-28 14:01:31.249323 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-28 14:01:31.249330 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-04-28 14:01:31.249334 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-04-28 14:01:31.249343 +0000 build-debian-devel: .[38;5;246m14:01:31 .[96m[qb.fetch.core-libvirt] .[0mcore-libvirt: source already fetched. Updating..[0m
+2026-04-28 14:01:32.706473 +0000 build-debian-devel: .[38;5;246m14:01:32 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp1409..[0m
+2026-04-28 14:01:32.706548 +0000 build-debian-devel: .[38;5;246m14:01:32 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1409 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-core-libvirt.git /builder/core-libvirt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-28 14:01:34.750796 +0000 build-debian-devel: .[38;5;246m14:01:34 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-28 14:01:34.750883 +0000 build-debian-devel: .[38;5;246m14:01:34 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m---> Good tag 3f6aa15a9dad71ca5b1abd8ca53f0b7e6d67df43..[0m
+2026-04-28 14:01:34.750910 +0000 build-debian-devel: .[38;5;246m14:01:34 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-28 14:01:34.750924 +0000 build-debian-devel: .[38;5;246m14:01:34 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m--> Merging....[0m
+2026-04-28 14:01:37.322038 +0000 build-debian-devel: .[38;5;246m14:01:37 .[96m[qb.fetch.core-libvirt] .[0mLog file: /home/user/builder-devel/logs/20260428T140131-core-libvirt.log.[0m
+2026-04-28 14:01:37.324373 +0000 build-debian-devel: .[38;5;246m14:01:37 .[96m[qb.fetch.core-libvirt] .[0mcore-libvirt: file libvirt-10.5.0.tar.xz already downloaded. Skipping..[0m
+2026-04-28 14:01:49.905108 +0000 build-debian-devel: .[38;5;246m14:01:49 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp1103..[0m
+2026-04-28 14:01:49.905208 +0000 build-debian-devel: .[38;5;246m14:01:49 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1103 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/core-libvirt --file-name libvirt-python-10.5.0.tar.gz --file-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc'.[0m
+2026-04-28 14:01:50.066454 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-04-28 14:01:50.066624 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/core-libvirt --file-name libvirt-python-10.5.0.tar.gz --file-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:50.068007 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt-python-10.5.0.tar.gz'\'' --file-url '\''https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz'\'' --signature-url '\''https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc'\'' --'.[0m
+2026-04-28 14:01:50.068050 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt-python-10.5.0.tar.gz'\'' --file-url '\''https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz'\'' --signature-url '\''https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc'\'' --'.[0m
+2026-04-28 14:01:50.068071 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /builder/core-libvirt --file-name libvirt-python-10.5.0.tar.gz --file-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc --.[0m
+2026-04-28 14:01:50.068289 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-04-28 14:01:50.068356 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:50.068369 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/core-libvirt.[0m
+2026-04-28 14:01:50.068376 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068383 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068400 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-04-28 14:01:50.068407 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:50.068475 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:50.068484 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068524 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068580 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-04-28 14:01:50.068633 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:50.068683 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_URL=https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:50.068732 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068760 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068831 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-04-28 14:01:50.068880 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:50.068907 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_URL=https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:50.068918 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.068957 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.069072 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-04-28 14:01:50.069079 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:50.069133 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:50.069160 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-04-28 14:01:50.069457 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz ']'.[0m
+2026-04-28 14:01:50.069485 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-04-28 14:01:50.069504 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z libvirt-python-10.5.0.tar.gz ']'.[0m
+2026-04-28 14:01:50.069525 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:50.069544 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /builder/core-libvirt ']'.[0m
+2026-04-28 14:01:50.069552 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /builder/core-libvirt.[0m
+2026-04-28 14:01:50.070861 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ cd /builder/core-libvirt.[0m
+2026-04-28 14:01:50.070889 +0000 build-debian-devel: .[38;5;246m14:01:50 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt-python-10.5.0.tar.gz -- https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:52.570947 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-04-28 14:01:52.571014 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:52.571175 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:52.572150 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:52.572182 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:52.572195 +0000 build-debian-devel: .[38;5;246m14:01:52 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt-python-10.5.0.tar.gz.asc https://download.libvirt.org/python/libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.669508 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246mUsing executor local:/tmp/1353011055002407f041682/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpkn1hz4vv --untrusted-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc']'..[0m
+2026-04-28 14:01:54.673377 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-04-28 14:01:54.673702 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpkn1hz4vv --untrusted-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-04-28 14:01:54.680002 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpkn1hz4vv'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-04-28 14:01:54.680166 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpkn1hz4vv'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-04-28 14:01:54.680206 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpkn1hz4vv --untrusted-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc --.[0m
+2026-04-28 14:01:54.680218 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-04-28 14:01:54.680229 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-04-28 14:01:54.680245 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.680259 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpkn1hz4vv.[0m
+2026-04-28 14:01:54.680305 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.680323 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.680333 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-04-28 14:01:54.680341 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.680355 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.680368 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.680378 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.680389 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-04-28 14:01:54.680401 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.680414 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.680433 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.682999 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.684259 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-04-28 14:01:54.686637 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.686698 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-04-28 14:01:54.686750 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.689953 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.690015 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-04-28 14:01:54.690043 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.690449 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-04-28 14:01:54.692300 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.692404 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.692611 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-04-28 14:01:54.695354 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-04-28 14:01:54.695430 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-04-28 14:01:54.697375 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-04-28 14:01:54.697477 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz ']'.[0m
+2026-04-28 14:01:54.698566 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpkn1hz4vv ']'.[0m
+2026-04-28 14:01:54.698755 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpkn1hz4vv.[0m
+2026-04-28 14:01:54.699323 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.699372 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.699392 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.699414 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-04-28 14:01:54.699436 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:54.699587 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-28 14:01:54.699648 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:54.699698 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-04-28 14:01:54.700452 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:54.700558 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:54.700613 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-04-28 14:01:54.700667 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-04-28 14:01:54.700702 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc ']'.[0m
+2026-04-28 14:01:54.700757 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-04-28 14:01:54.700800 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.700840 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.700877 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.700924 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-04-28 14:01:54.700951 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.Oszx7N1psF.[0m
+2026-04-28 14:01:54.701033 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-04-28 14:01:54.784368 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.Oszx7N1psF/keyring /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-04-28 14:01:54.816332 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.Oszx7N1psF/keyring.gpg /tmp/tmp.Oszx7N1psF/keyring.[0m
+2026-04-28 14:01:54.831053 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ sqv --version.[0m
+2026-04-28 14:01:54.840811 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-04-28 14:01:54.840882 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sort -VC.[0m
+2026-04-28 14:01:54.840894 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.0.0, using OpenSSL)'.[0m
+2026-04-28 14:01:54.841005 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-04-28 14:01:54.842900 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-04-28 14:01:54.843168 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-04-28 14:01:54.843486 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-04-28 14:01:54.843701 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.Oszx7N1psF/keyring /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.853180 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m453B65310595562855471199CA68BE8010084C9C.[0m
+2026-04-28 14:01:54.853554 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz.asc /home/user/builder-devel/tmp/tmpkn1hz4vv/libvirt-python-10.5.0.tar.gz.asc.[0m
+2026-04-28 14:01:54.855073 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ rm -rf /tmp/tmp.Oszx7N1psF.[0m
+2026-04-28 14:01:54.855988 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpkn1hz4vv/untrusted_libvirt-python-10.5.0.tar.gz /home/user/builder-devel/tmp/tmpkn1hz4vv/libvirt-python-10.5.0.tar.gz.[0m
+2026-04-28 14:01:54.859633 +0000 build-debian-devel: .[38;5;246m14:01:54 .[96m[qb.fetch.core-libvirt] .[38;5;246m['cd -- /builder', "git -C /builder/core-libvirt rev-parse 'HEAD^{}' >> hash", "git -C /builder/core-libvirt tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-04-28 14:01:58.739014 +0000 build-debian-devel: .[38;5;246m14:01:58 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp4270..[0m
+2026-04-28 14:01:58.739125 +0000 build-debian-devel: .[38;5;246m14:01:58 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4270 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/core-libvirt rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/core-libvirt tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-04-28 14:02:02.215531 +0000 build-debian-devel: .[38;5;246m14:02:02 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-28 14:02:02.215661 +0000 > closing log
