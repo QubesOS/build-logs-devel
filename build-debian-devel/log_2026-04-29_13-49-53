@@ -1,0 +1,24 @@
+2026-04-29 13:49:53.766136 +0000 > starting log
+2026-04-29 13:49:53.767095 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-04-29 13:49:53.767149 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-04-29 13:49:53.767174 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-04-29 13:49:53.767181 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-04-29 13:49:53.767188 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>>   desktop-linux-manager.[0m
+2026-04-29 13:49:53.767194 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>>     commit-hash: 3134d0cf22635eb9799eddd6a90634dc20246232.[0m
+2026-04-29 13:49:53.767203 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>>     source-hash: 155f2f6b04ca635f2ddf2e461a14663b46b81aa540ae295e019cd619f0f9aac0ebe71eed25ce58443beb9ca84f1a56519c516d47ce84032275e386f0f9f02c66.[0m
+2026-04-29 13:49:53.767209 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-04-29 13:49:53.767216 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-04-29 13:49:53.767221 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-04-29 13:49:53.767232 +0000 build-debian-devel: .[38;5;246m13:49:53 .[96m[qb.fetch.desktop-linux-manager] .[0mdesktop-linux-manager: source already fetched. Updating..[0m
+2026-04-29 13:49:56.025500 +0000 build-debian-devel: .[38;5;246m13:49:56 .[96m[qb.fetch.desktop-linux-manager.fetch] .[0mUsing executor qubes:disp5321..[0m
+2026-04-29 13:49:56.025585 +0000 build-debian-devel: .[38;5;246m13:49:56 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5321 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-desktop-linux-manager.git /builder/desktop-linux-manager /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-04-29 13:49:57.236821 +0000 build-debian-devel: .[38;5;246m13:49:57 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-04-29 13:49:57.236891 +0000 build-debian-devel: .[38;5;246m13:49:57 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246m---> Good tag 56267c0a571699e2c554a653ae2eceac15007bc9..[0m
+2026-04-29 13:49:57.236903 +0000 build-debian-devel: .[38;5;246m13:49:57 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-04-29 13:49:57.236912 +0000 build-debian-devel: .[38;5;246m13:49:57 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246m--> Merging....[0m
+2026-04-29 13:50:00.297402 +0000 build-debian-devel: .[38;5;246m13:50:00 .[96m[qb.fetch.desktop-linux-manager] .[0mLog file: /home/user/builder-devel/logs/20260429T134953-desktop-linux-manager.log.[0m
+2026-04-29 13:50:00.319941 +0000 build-debian-devel: .[38;5;246m13:50:00 .[96m[qb.fetch.desktop-linux-manager] .[38;5;246m['cd -- /builder', "git -C /builder/desktop-linux-manager rev-parse 'HEAD^{}' >> hash", "git -C /builder/desktop-linux-manager tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-04-29 13:50:05.661227 +0000 build-debian-devel: .[38;5;246m13:50:05 .[96m[qb.fetch.desktop-linux-manager.fetch] .[0mUsing executor qubes:disp9986..[0m
+2026-04-29 13:50:05.661306 +0000 build-debian-devel: .[38;5;246m13:50:05 .[96m[qb.fetch.desktop-linux-manager.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9986 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/desktop-linux-manager rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/desktop-linux-manager tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-04-29 13:50:09.263233 +0000 build-debian-devel: .[38;5;246m13:50:09 .[96m[qb] .[38;5;246m> done.[0m
+2026-04-29 13:50:09.263386 +0000 > closing log
