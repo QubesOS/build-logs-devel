@@ -1,0 +1,30 @@
+2026-05-02 21:05:53.536705 +0000 > starting log
+2026-05-02 21:05:53.536992 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-05-02 21:05:53.537006 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-05-02 21:05:53.537014 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-05-02 21:05:53.537020 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-05-02 21:05:53.537026 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>>   ansible.[0m
+2026-05-02 21:05:53.537031 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-05-02 21:05:53.537036 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-05-02 21:05:53.537042 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-05-02 21:05:53.537047 +0000 build-ubuntu-devel: .[38;5;246m21:05:53 .[96m[qb.fetch.ansible] .[0mansible: source already fetched. Updating..[0m
+2026-05-02 21:05:56.322286 +0000 build-ubuntu-devel: .[38;5;246m21:05:56 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp3504..[0m
+2026-05-02 21:05:56.322658 +0000 build-ubuntu-devel: .[38;5;246m21:05:56 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3504 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-ansible.git /builder/ansible /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-05-02 21:06:01.651805 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-05-02 21:06:01.651946 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag c9d383987602aa1d968746524ef1abb4f2770345..[0m
+2026-05-02 21:06:01.651979 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-05-02 21:06:01.652006 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-05-02 21:06:01.707448 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m2026-05-02 21:06:01.704 qrexec-client-vm[39911]: remote.c:59:handle_remote_data_v2: write: Broken pipe.[0m
+2026-05-02 21:06:01.707518 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246mqfile-agent: Fatal error: Cannot verify that link at "/usr/share/ansible/collections/ansible_collections/qubesos/security/plugins/strategy/qubes_proxy.py" would not be broken by copy (error type: Link has been severed).[0m
+2026-05-02 21:06:01.754163 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246mTraceback (most recent call last):.[0m
+2026-05-02 21:06:01.756746 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 48, in <module>.[0m
+2026-05-02 21:06:01.756896 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    main().[0m
+2026-05-02 21:06:01.756941 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~^^.[0m
+2026-05-02 21:06:01.756981 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 44, in main.[0m
+2026-05-02 21:06:01.757018 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    subprocess.run(["/usr/lib/qubes/qfile-agent", str(src)], check=True).[0m
+2026-05-02 21:06:01.757055 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.[0m
+2026-05-02 21:06:01.757090 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/lib64/python3.14/subprocess.py", line 578, in run.[0m
+2026-05-02 21:06:01.757125 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    raise CalledProcessError(retcode, process.args,.[0m
+2026-05-02 21:06:01.757167 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246m                             output=stdout, stderr=stderr).[0m
+2026-05-02 21:06:01.757211 +0000 build-ubuntu-devel: .[38;5;246m21:06:01 .[96m[qb.fetch.ansible.fetch] .[38;5;246msubprocess.CalledProcessError: Command '['/usr/lib/qubes/qfile-agent', '/builder/ansible']' returned non-zero exit status 1..[0m
+2026-05-02 21:06:04.281347 +0000 > closing log
