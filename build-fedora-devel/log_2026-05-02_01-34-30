@@ -1,0 +1,29 @@
+2026-05-02 01:34:30.845521 +0000 > starting log
+2026-05-02 01:34:30.846649 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-05-02 01:34:30.846668 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-05-02 01:34:30.846677 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-05-02 01:34:30.846683 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-05-02 01:34:30.846688 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>>   ansible.[0m
+2026-05-02 01:34:30.846693 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-05-02 01:34:30.846701 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-41.x86_64>, <QubesDistribution vm-fedora-42.x86_64>, <QubesDistribution vm-fedora-43.x86_64>, <QubesDistribution vm-fedora-44.x86_64>].[0m
+2026-05-02 01:34:30.846707 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-05-02 01:34:30.846712 +0000 build-fedora-devel: .[38;5;246m01:34:30 .[96m[qb.fetch.ansible] .[0mansible: source already fetched. Updating..[0m
+2026-05-02 01:34:40.361302 +0000 build-fedora-devel: .[38;5;246m01:34:40 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp4785..[0m
+2026-05-02 01:34:40.361525 +0000 build-fedora-devel: .[38;5;246m01:34:40 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4785 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-ansible.git /builder/ansible /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-05-02 01:34:42.388136 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-05-02 01:34:42.388373 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag e0c03db231722f1e9e0ad253b17149139ae1b246..[0m
+2026-05-02 01:34:42.388414 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-05-02 01:34:42.388441 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-05-02 01:34:42.553022 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246mqfile-agent: Fatal error: Cannot verify that link at "/usr/share/ansible/collections/ansible_collections/qubesos/security/plugins/strategy/qubes_proxy.py" would not be broken by copy (error type: Link has been severed).[0m
+2026-05-02 01:34:42.636267 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246mTraceback (most recent call last):.[0m
+2026-05-02 01:34:42.636313 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 48, in <module>.[0m
+2026-05-02 01:34:42.636331 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    main().[0m
+2026-05-02 01:34:42.636345 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~^^.[0m
+2026-05-02 01:34:42.636353 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 44, in main.[0m
+2026-05-02 01:34:42.636360 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    subprocess.run(["/usr/lib/qubes/qfile-agent", str(src)], check=True).[0m
+2026-05-02 01:34:42.636367 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.[0m
+2026-05-02 01:34:42.636373 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/lib64/python3.14/subprocess.py", line 578, in run.[0m
+2026-05-02 01:34:42.636379 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    raise CalledProcessError(retcode, process.args,.[0m
+2026-05-02 01:34:42.636387 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246m                             output=stdout, stderr=stderr).[0m
+2026-05-02 01:34:42.636395 +0000 build-fedora-devel: .[38;5;246m01:34:42 .[96m[qb.fetch.ansible.fetch] .[38;5;246msubprocess.CalledProcessError: Command '['/usr/lib/qubes/qfile-agent', '/builder/ansible']' returned non-zero exit status 1..[0m
+2026-05-02 01:34:43.726440 +0000 > closing log
