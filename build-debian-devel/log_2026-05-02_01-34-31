@@ -1,0 +1,29 @@
+2026-05-02 01:34:31.308881 +0000 > starting log
+2026-05-02 01:34:31.309259 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-05-02 01:34:31.309279 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-05-02 01:34:31.309290 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-05-02 01:34:31.309296 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-05-02 01:34:31.309303 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>>   ansible.[0m
+2026-05-02 01:34:31.309309 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-05-02 01:34:31.309316 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-05-02 01:34:31.309332 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-05-02 01:34:31.309339 +0000 build-debian-devel: .[38;5;246m01:34:31 .[96m[qb.fetch.ansible] .[0mansible: source already fetched. Updating..[0m
+2026-05-02 01:34:43.266442 +0000 build-debian-devel: .[38;5;246m01:34:43 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp4518..[0m
+2026-05-02 01:34:43.266538 +0000 build-debian-devel: .[38;5;246m01:34:43 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4518 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-ansible.git /builder/ansible /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-05-02 01:34:46.528275 +0000 build-debian-devel: .[38;5;246m01:34:46 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-05-02 01:34:46.528380 +0000 build-debian-devel: .[38;5;246m01:34:46 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag e0c03db231722f1e9e0ad253b17149139ae1b246..[0m
+2026-05-02 01:34:46.528405 +0000 build-debian-devel: .[38;5;246m01:34:46 .[96m[qb.fetch.ansible.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-05-02 01:34:46.528423 +0000 build-debian-devel: .[38;5;246m01:34:46 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-05-02 01:34:46.712900 +0000 build-debian-devel: .[38;5;246m01:34:46 .[96m[qb.fetch.ansible.fetch] .[38;5;246mqfile-agent: Fatal error: Cannot verify that link at "/usr/share/ansible/collections/ansible_collections/qubesos/security/plugins/strategy/qubes_proxy.py" would not be broken by copy (error type: Link has been severed).[0m
+2026-05-02 01:34:46.817763 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246mTraceback (most recent call last):.[0m
+2026-05-02 01:34:46.817908 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 48, in <module>.[0m
+2026-05-02 01:34:46.817951 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    main().[0m
+2026-05-02 01:34:46.817979 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~^^.[0m
+2026-05-02 01:34:46.818004 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/local/etc/qubes-rpc/qubesbuilder.FileCopyOut", line 44, in main.[0m
+2026-05-02 01:34:46.818027 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    subprocess.run(["/usr/lib/qubes/qfile-agent", str(src)], check=True).[0m
+2026-05-02 01:34:46.818050 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.[0m
+2026-05-02 01:34:46.818072 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m  File "/usr/lib64/python3.14/subprocess.py", line 578, in run.[0m
+2026-05-02 01:34:46.818095 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m    raise CalledProcessError(retcode, process.args,.[0m
+2026-05-02 01:34:46.818117 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246m                             output=stdout, stderr=stderr).[0m
+2026-05-02 01:34:46.818147 +0000 build-debian-devel: .[38;5;246m01:34:47 .[96m[qb.fetch.ansible.fetch] .[38;5;246msubprocess.CalledProcessError: Command '['/usr/lib/qubes/qfile-agent', '/builder/ansible']' returned non-zero exit status 1..[0m
+2026-05-02 01:34:48.355632 +0000 > closing log
