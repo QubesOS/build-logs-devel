@@ -1,0 +1,110 @@
+2026-05-12 22:58:27.613962 +0000 > starting log
+2026-05-12 22:58:27.614508 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-05-12 22:58:27.614528 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-05-12 22:58:27.614539 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-05-12 22:58:27.614557 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-05-12 22:58:27.614564 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>>   intel-microcode.[0m
+2026-05-12 22:58:27.614571 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>>     commit-hash: 7df7a5f5c60599c843d9c8adc15d9fe98ee68809.[0m
+2026-05-12 22:58:27.614580 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>>     source-hash: b711bc5254ef9091a41759c00c9110b23713119b6f877d0a2385faed3cfc4400337ceebe5007c9c69c9ff69ed8b676a35d91dfb856e1a9f8583dd47268df9bde.[0m
+2026-05-12 22:58:27.614587 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-05-12 22:58:27.614593 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2026-05-12 22:58:27.614612 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-05-12 22:58:27.614619 +0000 build-fedora-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.intel-microcode] .[0mintel-microcode: source already fetched. Updating..[0m
+2026-05-12 22:58:33.223265 +0000 build-fedora-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp6899..[0m
+2026-05-12 22:58:33.223339 +0000 build-fedora-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6899 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-intel-microcode.git /builder/intel-microcode /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-05-12 22:58:34.895687 +0000 build-fedora-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-05-12 22:58:34.895796 +0000 build-fedora-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m---> Good tag 99352cfcf00e83d3cdbee6d1b534b03a9cb2717c..[0m
+2026-05-12 22:58:34.895810 +0000 build-fedora-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-05-12 22:58:34.895818 +0000 build-fedora-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m--> Merging....[0m
+2026-05-12 22:58:37.840813 +0000 build-fedora-devel: .[38;5;246m22:58:37 .[96m[qb.fetch.intel-microcode] .[0mLog file: /home/user/builder-host/logs/20260512T225827-intel-microcode.log.[0m
+2026-05-12 22:58:44.471247 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp5305..[0m
+2026-05-12 22:58:44.471395 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5305 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/intel-microcode --file-name microcode-20260512.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz'.[0m
+2026-05-12 22:58:44.701979 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-05-12 22:58:44.702067 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/intel-microcode --file-name microcode-20260512.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:44.702944 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/intel-microcode'\'' --file-name '\''microcode-20260512.tar.gz'\'' --file-url '\''https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz'\'' --'.[0m
+2026-05-12 22:58:44.702983 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/intel-microcode'\'' --file-name '\''microcode-20260512.tar.gz'\'' --file-url '\''https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz'\'' --'.[0m
+2026-05-12 22:58:44.703003 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ set -- --output-dir /builder/intel-microcode --file-name microcode-20260512.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz --.[0m
+2026-05-12 22:58:44.703057 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-05-12 22:58:44.703089 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:44.703184 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/intel-microcode.[0m
+2026-05-12 22:58:44.703193 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.703371 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.703408 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-05-12 22:58:44.704039 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:44.704063 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_NAME=microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:44.704073 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.704080 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.704087 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-05-12 22:58:44.704094 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:44.704103 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_URL=https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:44.704111 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.704119 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.704125 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-05-12 22:58:44.704131 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:44.704138 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:44.704144 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-05-12 22:58:44.704152 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz ']'.[0m
+2026-05-12 22:58:44.704161 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-05-12 22:58:44.704168 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z microcode-20260512.tar.gz ']'.[0m
+2026-05-12 22:58:44.704176 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:44.704183 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /builder/intel-microcode ']'.[0m
+2026-05-12 22:58:44.704189 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mkdir -p /builder/intel-microcode.[0m
+2026-05-12 22:58:44.710423 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ cd /builder/intel-microcode.[0m
+2026-05-12 22:58:44.710498 +0000 build-fedora-devel: .[38;5;246m22:58:44 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_microcode-20260512.tar.gz -- https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:51.428388 +0000 build-fedora-devel: .[38;5;246m22:58:51 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-05-12 22:58:51.428458 +0000 build-fedora-devel: .[38;5;246m22:58:51 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-05-12 22:58:53.658095 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246mUsing executor local:/tmp/124052863564304a53053fd/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmpfi_u25yp --untrusted-file /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512']'..[0m
+2026-05-12 22:58:53.667628 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-05-12 22:58:53.667738 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmpfi_u25yp --untrusted-file /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512.[0m
+2026-05-12 22:58:53.672813 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmpfi_u25yp'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512'\'' --'.[0m
+2026-05-12 22:58:53.672914 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmpfi_u25yp'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512'\'' --'.[0m
+2026-05-12 22:58:53.672940 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmpfi_u25yp --untrusted-file /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512 --.[0m
+2026-05-12 22:58:53.672952 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-05-12 22:58:53.672966 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-05-12 22:58:53.672977 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:53.672986 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmpfi_u25yp.[0m
+2026-05-12 22:58:53.672993 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.673002 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.673010 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-05-12 22:58:53.673016 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:53.673667 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:53.673734 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.673791 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.673843 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-05-12 22:58:53.673893 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:53.673946 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-05-12 22:58:53.673999 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.674051 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.674102 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-05-12 22:58:53.674153 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:53.674210 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512.[0m
+2026-05-12 22:58:53.674261 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.674315 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.674724 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-05-12 22:58:53.674772 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-05-12 22:58:53.674805 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-05-12 22:58:53.674817 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-05-12 22:58:53.674874 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz ']'.[0m
+2026-05-12 22:58:53.674925 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmpfi_u25yp ']'.[0m
+2026-05-12 22:58:53.674977 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmpfi_u25yp.[0m
+2026-05-12 22:58:53.675119 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:53.677467 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:53.677505 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_NAME=microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:53.677514 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512 ']'.[0m
+2026-05-12 22:58:53.677523 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512 ']'.[0m
+2026-05-12 22:58:53.677531 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -e /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512 ']'.[0m
+2026-05-12 22:58:53.677554 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-05-12 22:58:53.677561 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-05-12 22:58:53.677568 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-05-12 22:58:53.677574 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-05-12 22:58:53.677581 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512 ']'.[0m
+2026-05-12 22:58:53.677588 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-05-12 22:58:53.677595 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-05-12 22:58:53.677602 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+++ cat /home/user/builder-host/sources/intel-microcode/microcode-20260512.tar.gz.sha512.[0m
+2026-05-12 22:58:53.677754 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ printf '%s  -\n' b6e2e9fb3fe19cd46fcbcd639d16e2348b812eac2bcc535fb839d226218e1cbc724fc49c0d81acf606a22b719ff43ed5b46304fba65ef0ba663290df822649b8.[0m
+2026-05-12 22:58:53.700781 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmpfi_u25yp/untrusted_microcode-20260512.tar.gz /home/user/builder-host/tmp/tmpfi_u25yp/microcode-20260512.tar.gz.[0m
+2026-05-12 22:58:53.710685 +0000 build-fedora-devel: .[38;5;246m22:58:53 .[96m[qb.fetch.intel-microcode] .[38;5;246m['cd -- /builder', "git -C /builder/intel-microcode rev-parse 'HEAD^{}' >> hash", "git -C /builder/intel-microcode tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-05-12 22:58:56.676378 +0000 build-fedora-devel: .[38;5;246m22:58:56 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp8518..[0m
+2026-05-12 22:58:56.676468 +0000 build-fedora-devel: .[38;5;246m22:58:56 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8518 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/intel-microcode rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/intel-microcode tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-05-12 22:59:00.651229 +0000 build-fedora-devel: .[38;5;246m22:59:00 .[96m[qb] .[38;5;246m> done.[0m
+2026-05-12 22:59:00.651324 +0000 > closing log
