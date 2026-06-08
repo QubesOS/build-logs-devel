@@ -1,0 +1,135 @@
+2026-06-08 14:50:16.840722 +0000 > starting log
+2026-06-08 14:50:16.841146 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-08 14:50:16.841163 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-08 14:50:16.841173 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-08 14:50:16.841180 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-08 14:50:16.841190 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>>   grub2.[0m
+2026-06-08 14:50:16.841196 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-08 14:50:16.841203 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-06-08 14:50:16.841209 +0000 build-archlinux-devel: .[38;5;246m14:50:16 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-06-08 14:50:19.383190 +0000 build-archlinux-devel: .[38;5;246m14:50:19 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp2330..[0m
+2026-06-08 14:50:19.383268 +0000 build-archlinux-devel: .[38;5;246m14:50:19 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2330 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-grub2.git /builder/grub2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-06-08 14:51:43.094947 +0000 build-archlinux-devel: .[38;5;246m14:51:43 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-06-08 14:51:43.094987 +0000 build-archlinux-devel: .[38;5;246m14:51:43 .[96m[qb.fetch.grub2.fetch] .[38;5;246m---> Good tag 36b5e770b7897ce6de5ff5c97bc8c522f7bdcf73..[0m
+2026-06-08 14:51:43.094997 +0000 build-archlinux-devel: .[38;5;246m14:51:43 .[96m[qb.fetch.grub2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-06-08 14:51:43.095005 +0000 build-archlinux-devel: .[38;5;246m14:51:43 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-06-08 14:51:44.448373 +0000 build-archlinux-devel: .[38;5;246m14:51:44 .[96m[qb.fetch.grub2] .[0mLog file: /home/user/builder-devel/logs/20260608T145016-grub2.log.[0m
+2026-06-08 14:51:45.940637 +0000 build-archlinux-devel: .[38;5;246m14:51:45 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp9252..[0m
+2026-06-08 14:51:45.940720 +0000 build-archlinux-devel: .[38;5;246m14:51:45 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9252 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'.[0m
+2026-06-08 14:51:46.092731 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-06-08 14:51:46.092959 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:46.096961 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.06.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'\'' --'.[0m
+2026-06-08 14:51:46.097046 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.06.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig'\'' --'.[0m
+2026-06-08 14:51:46.097664 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /builder/grub2 --file-name grub-2.06.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig --.[0m
+2026-06-08 14:51:46.097685 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-06-08 14:51:46.097715 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:46.097723 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/grub2.[0m
+2026-06-08 14:51:46.097790 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.097831 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.097851 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-08 14:51:46.097885 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:46.097895 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.06.tar.xz.[0m
+2026-06-08 14:51:46.097929 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.097935 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.097941 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-08 14:51:46.097977 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:46.097984 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_URL=https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.[0m
+2026-06-08 14:51:46.098018 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.098027 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.098033 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-08 14:51:46.098078 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:46.098101 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_URL=https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:46.098108 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.098115 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.098135 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-08 14:51:46.098178 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:46.098185 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:46.098207 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-08 14:51:46.098244 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz ']'.[0m
+2026-06-08 14:51:46.098253 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-06-08 14:51:46.098278 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z grub-2.06.tar.xz ']'.[0m
+2026-06-08 14:51:46.098333 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.06.tar.xz.[0m
+2026-06-08 14:51:46.098341 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /builder/grub2 ']'.[0m
+2026-06-08 14:51:46.098364 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /builder/grub2.[0m
+2026-06-08 14:51:46.098419 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ cd /builder/grub2.[0m
+2026-06-08 14:51:46.098428 +0000 build-archlinux-devel: .[38;5;246m14:51:46 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.06.tar.xz -- https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.[0m
+2026-06-08 14:51:51.366799 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-06-08 14:51:51.366927 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:51.366938 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:51.367205 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:51.367235 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:51.367246 +0000 build-archlinux-devel: .[38;5;246m14:51:51 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.06.tar.xz.sig https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.240616 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246mUsing executor local:/tmp/1352312639629925ed7e43d/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp1o2tym9z --untrusted-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc']'..[0m
+2026-06-08 14:51:53.246620 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-06-08 14:51:53.246703 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp1o2tym9z --untrusted-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc.[0m
+2026-06-08 14:51:53.248474 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp1o2tym9z'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-devel/sources/grub2/grub2-key.asc'\'' --'.[0m
+2026-06-08 14:51:53.248603 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp1o2tym9z'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-devel/sources/grub2/grub2-key.asc'\'' --'.[0m
+2026-06-08 14:51:53.248657 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp1o2tym9z --untrusted-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc --.[0m
+2026-06-08 14:51:53.248680 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-06-08 14:51:53.248707 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-06-08 14:51:53.248725 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:53.248799 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp1o2tym9z.[0m
+2026-06-08 14:51:53.248821 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.248842 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.248954 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-08 14:51:53.248975 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:53.249001 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.249026 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249046 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249067 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-08 14:51:53.249086 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:53.249111 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.249130 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249149 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249168 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-08 14:51:53.249191 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:53.249210 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-06-08 14:51:53.249229 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249245 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.249264 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-08 14:51:53.249285 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-08 14:51:53.249299 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-06-08 14:51:53.250021 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-08 14:51:53.250104 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz ']'.[0m
+2026-06-08 14:51:53.250656 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp1o2tym9z ']'.[0m
+2026-06-08 14:51:53.250674 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp1o2tym9z.[0m
+2026-06-08 14:51:53.250708 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.252526 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.252563 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.252575 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-06-08 14:51:53.252583 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:53.252623 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-08 14:51:53.252635 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:53.252651 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-06-08 14:51:53.252668 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:53.252683 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:53.252743 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-06-08 14:51:53.252761 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-08 14:51:53.253452 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig ']'.[0m
+2026-06-08 14:51:53.253673 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-06-08 14:51:53.253822 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.256047 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.256103 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.256124 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-06-08 14:51:53.257355 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.4CrUhIlMDT.[0m
+2026-06-08 14:51:53.257409 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-06-08 14:51:53.275303 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.4CrUhIlMDT/keyring /home/user/builder-devel/sources/grub2/grub2-key.asc.[0m
+2026-06-08 14:51:53.310055 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.4CrUhIlMDT/keyring.gpg /tmp/tmp.4CrUhIlMDT/keyring.[0m
+2026-06-08 14:51:53.325036 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ sqv --version.[0m
+2026-06-08 14:51:53.338728 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.1.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-06-08 14:51:53.338930 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.1.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-06-08 14:51:53.338990 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sort -VC.[0m
+2026-06-08 14:51:53.341082 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-06-08 14:51:53.341511 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-06-08 14:51:53.343796 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-06-08 14:51:53.343876 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-06-08 14:51:53.343919 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.4CrUhIlMDT/keyring /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.361269 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246mBE5C23209ACDDACEB20DB0A28C8189F1988C2166.[0m
+2026-06-08 14:51:53.364107 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz.sig /home/user/builder-devel/tmp/tmp1o2tym9z/grub-2.06.tar.xz.sig.[0m
+2026-06-08 14:51:53.365729 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ rm -rf /tmp/tmp.4CrUhIlMDT.[0m
+2026-06-08 14:51:53.367936 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp1o2tym9z/untrusted_grub-2.06.tar.xz /home/user/builder-devel/tmp/tmp1o2tym9z/grub-2.06.tar.xz.[0m
+2026-06-08 14:51:53.397474 +0000 build-archlinux-devel: .[38;5;246m14:51:53 .[96m[qb.fetch.grub2] .[38;5;246m['cd -- /builder', "git -C /builder/grub2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/grub2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-06-08 14:51:54.960126 +0000 build-archlinux-devel: .[38;5;246m14:51:54 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp2258..[0m
+2026-06-08 14:51:54.960195 +0000 build-archlinux-devel: .[38;5;246m14:51:54 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2258 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/grub2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/grub2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-06-08 14:51:56.697682 +0000 build-archlinux-devel: .[38;5;246m14:51:56 .[96m[qb] .[38;5;246m> done.[0m
+2026-06-08 14:51:56.699064 +0000 > closing log
