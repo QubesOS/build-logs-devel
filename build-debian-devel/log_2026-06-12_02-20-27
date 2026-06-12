@@ -1,0 +1,24 @@
+2026-06-12 02:20:27.329059 +0000 > starting log
+2026-06-12 02:20:27.330340 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-12 02:20:27.330429 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-12 02:20:27.330445 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-12 02:20:27.330452 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-12 02:20:27.330459 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>>   ansible.[0m
+2026-06-12 02:20:27.330467 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>>     commit-hash: 6b09471b06c5d89fe8020e1a4e01eddda55e40d4.[0m
+2026-06-12 02:20:27.330477 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>>     source-hash: 61dae21cf2eab1b14c3bce6d663fa11400fefb5c51f9a53810dc03b7d50ee159416e16ce2c589344f9892d905c9d4ddfc84d24d9bf55cfea76dbca5d7b2d15d5.[0m
+2026-06-12 02:20:27.330484 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-12 02:20:27.330492 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>].[0m
+2026-06-12 02:20:27.330513 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-06-12 02:20:27.330521 +0000 build-debian-devel: .[38;5;246m02:20:27 .[96m[qb.fetch.ansible] .[0mansible: source already fetched. Updating..[0m
+2026-06-12 02:20:30.028295 +0000 build-debian-devel: .[38;5;246m02:20:30 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp5595..[0m
+2026-06-12 02:20:30.028382 +0000 build-debian-devel: .[38;5;246m02:20:30 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5595 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-ansible.git /builder/ansible /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-06-12 02:20:32.408111 +0000 build-debian-devel: .[38;5;246m02:20:32 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-06-12 02:20:32.408219 +0000 build-debian-devel: .[38;5;246m02:20:32 .[96m[qb.fetch.ansible.fetch] .[38;5;246m---> Good tag d468a86f312172bbb59c81a41b5d22b6f113d895..[0m
+2026-06-12 02:20:32.408249 +0000 build-debian-devel: .[38;5;246m02:20:32 .[96m[qb.fetch.ansible.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-06-12 02:20:32.408267 +0000 build-debian-devel: .[38;5;246m02:20:32 .[96m[qb.fetch.ansible.fetch] .[38;5;246m--> Merging....[0m
+2026-06-12 02:20:34.488533 +0000 build-debian-devel: .[38;5;246m02:20:34 .[96m[qb.fetch.ansible] .[0mLog file: /home/user/builder-devel/logs/20260612T022027-ansible.log.[0m
+2026-06-12 02:20:34.491789 +0000 build-debian-devel: .[38;5;246m02:20:34 .[96m[qb.fetch.ansible] .[38;5;246m['cd -- /builder', "git -C /builder/ansible rev-parse 'HEAD^{}' >> hash", "git -C /builder/ansible tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-06-12 02:20:43.919163 +0000 build-debian-devel: .[38;5;246m02:20:44 .[96m[qb.fetch.ansible.fetch] .[0mUsing executor qubes:disp576..[0m
+2026-06-12 02:20:43.919300 +0000 build-debian-devel: .[38;5;246m02:20:44 .[96m[qb.fetch.ansible.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp576 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/ansible rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/ansible tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-06-12 02:20:48.681218 +0000 build-debian-devel: .[38;5;246m02:20:48 .[96m[qb] .[38;5;246m> done.[0m
+2026-06-12 02:20:48.681288 +0000 > closing log
