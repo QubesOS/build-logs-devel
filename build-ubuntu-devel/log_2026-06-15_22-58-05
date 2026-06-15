@@ -1,0 +1,107 @@
+2026-06-15 22:58:05.811095 +0000 > starting log
+2026-06-15 22:58:05.812032 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-15 22:58:05.812051 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-15 22:58:05.812060 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-15 22:58:05.812067 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-15 22:58:05.812073 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>>   desktop-linux-xfce4-xfwm4.[0m
+2026-06-15 22:58:05.812080 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-15 22:58:05.812093 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-06-15 22:58:05.812100 +0000 build-ubuntu-devel: .[38;5;246m22:58:05 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-06-15 22:58:14.706573 +0000 build-ubuntu-devel: .[38;5;246m22:58:14 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[0mUsing executor qubes:disp525..[0m
+2026-06-15 22:58:14.706704 +0000 build-ubuntu-devel: .[38;5;246m22:58:14 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp525 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-desktop-linux-xfce4-xfwm4.git /builder/desktop-linux-xfce4-xfwm4 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-06-15 22:58:17.912141 +0000 build-ubuntu-devel: .[38;5;246m22:58:17 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-06-15 22:58:17.912245 +0000 build-ubuntu-devel: .[38;5;246m22:58:17 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m---> Good tag 633732c6773e378aebfbefc238920c1d158a274f..[0m
+2026-06-15 22:58:17.912258 +0000 build-ubuntu-devel: .[38;5;246m22:58:17 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-06-15 22:58:17.912266 +0000 build-ubuntu-devel: .[38;5;246m22:58:17 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-06-15 22:58:20.408565 +0000 build-ubuntu-devel: .[38;5;246m22:58:20 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4] .[0mLog file: /home/user/builder-devel/logs/20260615T225805-desktop-linux-xfce4-xfwm4.log.[0m
+2026-06-15 22:58:27.499790 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[0mUsing executor qubes:disp6435..[0m
+2026-06-15 22:58:27.499856 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6435 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/desktop-linux-xfce4-xfwm4 --file-name xfwm4-4.18.0.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2'.[0m
+2026-06-15 22:58:27.720744 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-06-15 22:58:27.720887 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/desktop-linux-xfce4-xfwm4 --file-name xfwm4-4.18.0.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:27.723338 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/desktop-linux-xfce4-xfwm4'\'' --file-name '\''xfwm4-4.18.0.tar.bz2'\'' --file-url '\''https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2'\'' --'.[0m
+2026-06-15 22:58:27.723406 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/desktop-linux-xfce4-xfwm4'\'' --file-name '\''xfwm4-4.18.0.tar.bz2'\'' --file-url '\''https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2'\'' --'.[0m
+2026-06-15 22:58:27.723421 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ set -- --output-dir /builder/desktop-linux-xfce4-xfwm4 --file-name xfwm4-4.18.0.tar.bz2 --file-url https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2 --.[0m
+2026-06-15 22:58:27.723430 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-15 22:58:27.723438 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:27.723447 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/desktop-linux-xfce4-xfwm4.[0m
+2026-06-15 22:58:27.723456 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723467 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723474 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-15 22:58:27.723480 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:27.723487 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ FILE_NAME=xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:27.723495 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723501 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723508 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-15 22:58:27.723514 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:27.723521 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ FILE_URL=https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:27.723527 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723534 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723544 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-15 22:58:27.723551 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:27.723558 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:27.723564 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-15 22:58:27.723571 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2 ']'.[0m
+2026-06-15 22:58:27.723579 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-06-15 22:58:27.723586 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z xfwm4-4.18.0.tar.bz2 ']'.[0m
+2026-06-15 22:58:27.723593 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:27.723600 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n /builder/desktop-linux-xfce4-xfwm4 ']'.[0m
+2026-06-15 22:58:27.723607 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ mkdir -p /builder/desktop-linux-xfce4-xfwm4.[0m
+2026-06-15 22:58:27.725494 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ cd /builder/desktop-linux-xfce4-xfwm4.[0m
+2026-06-15 22:58:27.725518 +0000 build-ubuntu-devel: .[38;5;246m22:58:27 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_xfwm4-4.18.0.tar.bz2 -- https://archive.xfce.org/src/xfce/xfwm4/4.18/xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:31.872099 +0000 build-ubuntu-devel: .[38;5;246m22:58:31 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-06-15 22:58:31.872246 +0000 build-ubuntu-devel: .[38;5;246m22:58:31 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-15 22:58:33.360745 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246mUsing executor local:/tmp/128323840882880db1e7e65/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpylndum4s --untrusted-file /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512']'..[0m
+2026-06-15 22:58:33.363727 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-06-15 22:58:33.363817 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpylndum4s --untrusted-file /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512.[0m
+2026-06-15 22:58:33.364239 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpylndum4s'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512'\'' --'.[0m
+2026-06-15 22:58:33.364278 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpylndum4s'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512'\'' --'.[0m
+2026-06-15 22:58:33.364305 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpylndum4s --untrusted-file /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2 --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512 --.[0m
+2026-06-15 22:58:33.364322 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-06-15 22:58:33.364337 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-06-15 22:58:33.364349 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:33.364363 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpylndum4s.[0m
+2026-06-15 22:58:33.364378 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364421 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364433 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-15 22:58:33.364445 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:33.364460 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:33.364683 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364696 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364707 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-15 22:58:33.364719 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:33.364731 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-06-15 22:58:33.364742 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364753 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364765 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-15 22:58:33.364777 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:33.364793 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512.[0m
+2026-06-15 22:58:33.364805 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364816 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364827 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-15 22:58:33.364838 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-15 22:58:33.364849 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ shift.[0m
+2026-06-15 22:58:33.364860 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-15 22:58:33.364874 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2 ']'.[0m
+2026-06-15 22:58:33.364888 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpylndum4s ']'.[0m
+2026-06-15 22:58:33.364928 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpylndum4s.[0m
+2026-06-15 22:58:33.365634 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:33.366143 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:33.366194 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ FILE_NAME=xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:33.366258 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512 ']'.[0m
+2026-06-15 22:58:33.366278 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512 ']'.[0m
+2026-06-15 22:58:33.366337 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512 ']'.[0m
+2026-06-15 22:58:33.366420 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-15 22:58:33.366454 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-06-15 22:58:33.366466 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-15 22:58:33.366499 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-15 22:58:33.366518 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512 ']'.[0m
+2026-06-15 22:58:33.366530 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-06-15 22:58:33.367006 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-06-15 22:58:33.367023 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/desktop-linux-xfce4-xfwm4/xfwm4-4.18.0.tar.bz2.sha512.[0m
+2026-06-15 22:58:33.367738 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m++ printf '%s  -\n' 1003bb1ca5254221a5d56ffcb51c12cdef1b17b9d252622c6b18f3d3fbcf9d6e0e66b5f61e0f6eae6601ea3e50a70be98320e60d6738b04e44879e6f4e6da34d.[0m
+2026-06-15 22:58:33.371146 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpylndum4s/untrusted_xfwm4-4.18.0.tar.bz2 /home/user/builder-devel/tmp/tmpylndum4s/xfwm4-4.18.0.tar.bz2.[0m
+2026-06-15 22:58:33.375905 +0000 build-ubuntu-devel: .[38;5;246m22:58:33 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4] .[38;5;246m['cd -- /builder', "git -C /builder/desktop-linux-xfce4-xfwm4 rev-parse 'HEAD^{}' >> hash", "git -C /builder/desktop-linux-xfce4-xfwm4 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-06-15 22:58:34.247134 +0000 build-ubuntu-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[0mUsing executor qubes:disp1251..[0m
+2026-06-15 22:58:34.247208 +0000 build-ubuntu-devel: .[38;5;246m22:58:34 .[96m[qb.fetch.desktop-linux-xfce4-xfwm4.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1251 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/desktop-linux-xfce4-xfwm4 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/desktop-linux-xfce4-xfwm4 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-06-15 22:58:35.731070 +0000 build-ubuntu-devel: .[38;5;246m22:58:35 .[96m[qb] .[38;5;246m> done.[0m
+2026-06-15 22:58:35.731167 +0000 > closing log
