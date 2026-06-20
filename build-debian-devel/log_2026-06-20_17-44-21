@@ -1,0 +1,181 @@
+2026-06-20 17:44:21.690736 +0000 > starting log
+2026-06-20 17:44:21.692184 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-20 17:44:21.692258 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-20 17:44:21.692376 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-20 17:44:21.692391 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-20 17:44:21.692405 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>>   vmm-xen-guest.[0m
+2026-06-20 17:44:21.692449 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>>     commit-hash: 6e817bba5dd3196bfec6b339e4fcf68399491eba.[0m
+2026-06-20 17:44:21.692469 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>>     source-hash: fe4770c60a6dc549526a7c7bd3e928f496a1c3f3a13f89edf2698a219a81fbdd1a7f52ad693de74b2e2fbbcf85dcac20370829cda73ad14034265065d054eb1a.[0m
+2026-06-20 17:44:21.692482 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-20 17:44:21.692498 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-06-20 17:44:21.692510 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb] .[0mRunning stages: prep, build, sign, publish.[0m
+2026-06-20 17:44:21.692526 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.chroot_deb.vm-forky] .[0mvm-debian-14.amd64: Re-using existing cache. Use --force to force cleanup and recreation..[0m
+2026-06-20 17:44:21.692542 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.source_deb.vmm-xen-guest.vm-forky] .[0mLog file: /home/user/builder-devel/logs/20260620T174341-vmm-xen-guest-vm-forky.log.[0m
+2026-06-20 17:44:21.692557 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.source_deb.vmm-xen-guest.vm-forky] .[0mdependency 'vmm-xen-guest' (commit hash: 6e817bba5dd3196bfec6b339e4fcf68399491eba).[0m
+2026-06-20 17:44:21.692582 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.source_deb.vmm-xen-guest.vm-forky] .[0mvmm-xen-guest:vm-debian-14.amd64: Source hash is the same than already prepared source. Skipping..[0m
+2026-06-20 17:44:21.692627 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.build_deb.vmm-xen-guest.vm-forky] .[0mLog file: /home/user/builder-devel/logs/20260620T174341-vmm-xen-guest-vm-forky.log.[0m
+2026-06-20 17:44:21.692665 +0000 build-debian-devel: .[38;5;246m17:44:21 .[96m[qb.build_deb.vmm-xen-guest.vm-forky] .[0mdependency 'vmm-xen-guest' (commit hash: 6e817bba5dd3196bfec6b339e4fcf68399491eba).[0m
+2026-06-20 17:44:25.613800 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[0mUsing executor qubes:disp4419..[0m
+2026-06-20 17:44:25.613957 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m/usr/bin/qvm-run-vm -- disp4419 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'mkdir -p /builder/cache/aptcache && /builder/plugins/build_deb/scripts/create-local-repo /builder/repository debian forky && gpg --dearmor < /builder/plugins/chroot_deb/keys/qubes-debian-r4.3.asc > /builder/pbuilder/qubes-keyring.gpg && sudo -E pbuilder update --distribution forky --configfile /builder/pbuilder/pbuilderrc --othermirror "deb [trusted=yes] file:///tmp/qubes-deb forky main|deb [arch=amd64] https://deb.qubes-os.org/r4.3/vm forky main|deb [arch=amd64] https://deb.qubes-os.org/r4.3/vm forky-testing main" && sudo -E pbuilder build --override-config --distribution forky --configfile /builder/pbuilder/pbuilderrc --othermirror "deb [trusted=yes] file:///tmp/qubes-deb forky main|deb [arch=amd64] https://deb.qubes-os.org/r4.3/vm forky main|deb [arch=amd64] https://deb.qubes-os.org/r4.3/vm forky-testing main" /builder/build/xen-guest_5.0.4-1+deb14u1+devel1.dsc && /builder/plugins/build_deb/scripts/patch-changes /builder/build/xen-guest_5.0.4-1+deb14u1+devel1.dsc /builder/pbuilder/results/xen-guest_5.0.4-1+deb14u1+devel1_amd64.buildinfo /builder/pbuilder/results/xen-guest_5.0.4-1+deb14u1+devel1_amd64.changes'.[0m
+2026-06-20 17:44:25.657461 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ '[' 3 -lt 2 ']'.[0m
+2026-06-20 17:44:25.657534 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ REPO_DIR=/builder/repository.[0m
+2026-06-20 17:44:25.657555 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ DISTRIBUTION=debian.[0m
+2026-06-20 17:44:25.657570 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ SUITE=forky.[0m
+2026-06-20 17:44:25.657582 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ mkdir -p /builder/repository/conf.[0m
+2026-06-20 17:44:25.657657 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ mkdir -p /builder/repository/conf.[0m
+2026-06-20 17:44:25.659131 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ cd /builder/repository.[0m
+2026-06-20 17:44:25.659185 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ LC_ALL=C.[0m
+2026-06-20 17:44:25.659200 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ reprepro --version.[0m
+2026-06-20 17:44:25.675480 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ reprepro_version='reprepro: This is reprepro version 5.4.4'.[0m
+2026-06-20 17:44:25.675526 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ reprepro_version=5.4.4.[0m
+2026-06-20 17:44:25.675542 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ append_components=.[0m
+2026-06-20 17:44:25.675731 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ printf '%s\n' 5.4.4 5.4.0.[0m
+2026-06-20 17:44:25.675862 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ head -n1.[0m
+2026-06-20 17:44:25.675971 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ sort -V.[0m
+2026-06-20 17:44:25.678248 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ '[' 5.4.0 = 5.4.0 ']'.[0m
+2026-06-20 17:44:25.678290 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ append_components=$'\nDDebComponents: main'.[0m
+2026-06-20 17:44:25.678353 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ cat.[0m
+2026-06-20 17:44:25.680943 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ mkdir -p dists/forky/main/binary-amd64.[0m
+2026-06-20 17:44:25.684456 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ dpkg-scanpackages --multiversion ..[0m
+2026-06-20 17:44:25.810322 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-scanpackages: info: Wrote 0 entries to output Packages file..[0m
+2026-06-20 17:44:25.812191 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ gzip -9c dists/forky/main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.815300 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ LC_ALL=C.[0m
+2026-06-20 17:44:25.815346 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ date -u '+%a, %d %b %Y %H:%M:%S %Z'.[0m
+2026-06-20 17:44:25.816406 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ DATE='Sat, 20 Jun 2026 17:44:25 UTC'.[0m
+2026-06-20 17:44:25.816456 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ cat.[0m
+2026-06-20 17:44:25.817885 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ calc_sha1 main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.817905 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ f=dists/forky/main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.817918 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n ' '.[0m
+2026-06-20 17:44:25.818600 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ sha256sum dists/forky/main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.818834 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ cut '-d ' -f 1.[0m
+2026-06-20 17:44:25.822446 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ''.[0m
+2026-06-20 17:44:25.822893 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ stat -c %s dists/forky/main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.825608 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n 0 ''.[0m
+2026-06-20 17:44:25.825624 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo main/binary-amd64/Packages.[0m
+2026-06-20 17:44:25.825636 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ calc_sha1 main/binary-amd64/Packages.gz.[0m
+2026-06-20 17:44:25.825643 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ f=dists/forky/main/binary-amd64/Packages.gz.[0m
+2026-06-20 17:44:25.825691 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n ' '.[0m
+2026-06-20 17:44:25.827410 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ sha256sum dists/forky/main/binary-amd64/Packages.gz.[0m
+2026-06-20 17:44:25.827435 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ cut '-d ' -f 1.[0m
+2026-06-20 17:44:25.828111 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n 78ca55406f3d589e82f24c2234539612bb85a5e0ce8f4214787f4c99e64f516e ''.[0m
+2026-06-20 17:44:25.828480 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ stat -c %s dists/forky/main/binary-amd64/Packages.gz.[0m
+2026-06-20 17:44:25.830381 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo -n 29 ''.[0m
+2026-06-20 17:44:25.830456 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ echo main/binary-amd64/Packages.gz.[0m
+2026-06-20 17:44:25.830467 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m+ mapfile -d '' changes_files.[0m
+2026-06-20 17:44:25.830672 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m++ find /builder/repository -name '*.changes' -not -path /builder/repository/dists -not -path /builder/repository/pool -print0.[0m
+2026-06-20 17:44:25.888066 +0000 build-debian-devel: .[38;5;246m17:44:25 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: /root/.pbuilderrc does not exist.[0m
+2026-06-20 17:44:25.932042 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: libeatmydata is not installed on the host, not using it..[0m
+2026-06-20 17:44:25.938935 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-query: no packages found matching systemd.[0m
+2026-06-20 17:44:25.940012 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: cgroups are not available on the host, not using them..[0m
+2026-06-20 17:44:25.941970 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Current time: Sat Jun 20 17:44:25 UTC 2026.[0m
+2026-06-20 17:44:25.942923 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: pbuilder-time-stamp: 1781977465.[0m
+2026-06-20 17:44:25.944925 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Building the build Environment.[0m
+2026-06-20 17:44:25.945442 +0000 build-debian-devel: .[38;5;246m17:44:26 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: extracting base tarball [/builder/pbuilder/base.tgz].[0m
+2026-06-20 17:44:29.217866 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying local configuration.[0m
+2026-06-20 17:44:29.223060 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: No local /etc/hostname to copy, relying on /builder/pbuilder/build/1399/etc/hostname to be correct.[0m
+2026-06-20 17:44:29.223082 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: No local /etc/mailname to copy, relying on /builder/pbuilder/build/1399/etc/mailname to be correct.[0m
+2026-06-20 17:44:29.227522 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: --override-config is not set; not updating apt.conf Read the manpage for details..[0m
+2026-06-20 17:44:29.227541 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /proc filesystem.[0m
+2026-06-20 17:44:29.233851 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /sys filesystem.[0m
+2026-06-20 17:44:29.236943 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: creating /{dev,run}/shm.[0m
+2026-06-20 17:44:29.241927 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /dev/pts filesystem.[0m
+2026-06-20 17:44:29.246225 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: redirecting /dev/ptmx to /dev/pts/ptmx.[0m
+2026-06-20 17:44:29.249216 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting selinux filesystem.[0m
+2026-06-20 17:44:29.251906 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Mounting /builder/repository to /tmp/qubes-deb.[0m
+2026-06-20 17:44:29.253644 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: policy-rc.d already exists.[0m
+2026-06-20 17:44:29.258160 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Refreshing the base.tgz.[0m
+2026-06-20 17:44:29.258244 +0000 build-debian-devel: .[38;5;246m17:44:29 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: upgrading packages.[0m
+2026-06-20 17:44:29.975489 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mHit:1 https://deb.debian.org/debian forky InRelease.[0m
+2026-06-20 17:44:30.373219 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading package lists....[0m
+2026-06-20 17:44:30.391401 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Obtaining the cached apt archive contents.[0m
+2026-06-20 17:44:30.401920 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading package lists....[0m
+2026-06-20 17:44:30.527212 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mBuilding dependency tree....[0m
+2026-06-20 17:44:30.527311 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading state information....[0m
+2026-06-20 17:44:30.620748 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mCalculating upgrade....[0m
+2026-06-20 17:44:30.728535 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2026-06-20 17:44:30.739754 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading package lists....[0m
+2026-06-20 17:44:30.850157 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mBuilding dependency tree....[0m
+2026-06-20 17:44:30.850231 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading state information....[0m
+2026-06-20 17:44:30.908196 +0000 build-debian-devel: .[38;5;246m17:44:30 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mSolving dependencies....[0m
+2026-06-20 17:44:31.005361 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2026-06-20 17:44:31.018674 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading package lists....[0m
+2026-06-20 17:44:31.120851 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mBuilding dependency tree....[0m
+2026-06-20 17:44:31.120907 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading state information....[0m
+2026-06-20 17:44:31.145153 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mbuild-essential is already the newest version (12.12)..[0m
+2026-06-20 17:44:31.145209 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-dev is already the newest version (1.23.7)..[0m
+2026-06-20 17:44:31.145223 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246maptitude is already the newest version (0.8.13-8.1)..[0m
+2026-06-20 17:44:31.166467 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mSolving dependencies....[0m
+2026-06-20 17:44:31.260732 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded..[0m
+2026-06-20 17:44:31.260795 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Copying back the cached apt archive contents.[0m
+2026-06-20 17:44:31.265254 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying apt key file /builder/pbuilder/qubes-keyring.gpg to /builder/pbuilder/build/1399/etc/apt/trusted.gpg.d/qubes-keyring.gpg.[0m
+2026-06-20 17:44:31.266217 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: user script /builder/pbuilder/build/1399/tmp/hooks/E30origin starting.[0m
+2026-06-20 17:44:31.269853 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: user script /builder/pbuilder/build/1399/tmp/hooks/E30origin finished.[0m
+2026-06-20 17:44:31.269878 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting /tmp/qubes-deb filesystem.[0m
+2026-06-20 17:44:31.273269 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting /sys/fs/selinux filesystem.[0m
+2026-06-20 17:44:31.279514 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/ptmx filesystem.[0m
+2026-06-20 17:44:31.282002 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/pts filesystem.[0m
+2026-06-20 17:44:31.283742 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/shm filesystem.[0m
+2026-06-20 17:44:31.285603 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting proc filesystem.[0m
+2026-06-20 17:44:31.287112 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting sys filesystem.[0m
+2026-06-20 17:44:31.305512 +0000 build-debian-devel: .[38;5;246m17:44:31 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: creating base tarball [/builder/pbuilder/base.tgz].[0m
+2026-06-20 17:44:50.555729 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: cleaning the build env.[0m
+2026-06-20 17:44:50.555832 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: removing directory /builder/pbuilder/build/1399 and its subdirectories.[0m
+2026-06-20 17:44:50.840360 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: /root/.pbuilderrc does not exist.[0m
+2026-06-20 17:44:50.888048 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: libeatmydata is not installed on the host, not using it..[0m
+2026-06-20 17:44:50.906306 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-query: no packages found matching systemd.[0m
+2026-06-20 17:44:50.911113 +0000 build-debian-devel: .[38;5;246m17:44:50 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: cgroups are not available on the host, not using them..[0m
+2026-06-20 17:44:51.011569 +0000 build-debian-devel: .[38;5;246m17:44:51 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: pbuilder: network access will be disabled during build.[0m
+2026-06-20 17:44:51.012169 +0000 build-debian-devel: .[38;5;246m17:44:51 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Current time: Sat Jun 20 17:44:50 UTC 2026.[0m
+2026-06-20 17:44:51.013721 +0000 build-debian-devel: .[38;5;246m17:44:51 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: pbuilder-time-stamp: 1781977490.[0m
+2026-06-20 17:44:51.014668 +0000 build-debian-devel: .[38;5;246m17:44:51 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Building the build Environment.[0m
+2026-06-20 17:44:51.017856 +0000 build-debian-devel: .[38;5;246m17:44:51 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: extracting base tarball [/builder/pbuilder/base.tgz].[0m
+2026-06-20 17:44:54.348549 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying local configuration.[0m
+2026-06-20 17:44:54.363007 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: No local /etc/hostname to copy, relying on /builder/pbuilder/build/1558/etc/hostname to be correct.[0m
+2026-06-20 17:44:54.363060 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mW: No local /etc/mailname to copy, relying on /builder/pbuilder/build/1558/etc/mailname to be correct.[0m
+2026-06-20 17:44:54.375009 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Installing apt-lines.[0m
+2026-06-20 17:44:54.479972 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /proc filesystem.[0m
+2026-06-20 17:44:54.485844 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /sys filesystem.[0m
+2026-06-20 17:44:54.490437 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: creating /{dev,run}/shm.[0m
+2026-06-20 17:44:54.496742 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting /dev/pts filesystem.[0m
+2026-06-20 17:44:54.500099 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: redirecting /dev/ptmx to /dev/pts/ptmx.[0m
+2026-06-20 17:44:54.504903 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: mounting selinux filesystem.[0m
+2026-06-20 17:44:54.508606 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Mounting /builder/repository to /tmp/qubes-deb.[0m
+2026-06-20 17:44:54.510070 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: policy-rc.d already exists.[0m
+2026-06-20 17:44:54.514629 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: created buildresult dir: /builder/pbuilder/results.[0m
+2026-06-20 17:44:54.514843 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Obtaining the cached apt archive contents.[0m
+2026-06-20 17:44:54.528327 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Copying source file.[0m
+2026-06-20 17:44:54.536744 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying [/builder/build/xen-guest_5.0.4-1+deb14u1+devel1.dsc].[0m
+2026-06-20 17:44:54.539024 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying [/builder/build/xen-guest_5.0.4.orig.tar.gz].[0m
+2026-06-20 17:44:54.541645 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: copying [/builder/build/xen-guest_5.0.4-1+deb14u1+devel1.debian.tar.xz].[0m
+2026-06-20 17:44:54.556892 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Extracting source.[0m
+2026-06-20 17:44:54.613419 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-source: warning: extracting unsigned source package (xen-guest_5.0.4-1+deb14u1+devel1.dsc).[0m
+2026-06-20 17:44:54.615595 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-source: info: extracting xen-guest in xen-guest-5.0.4.[0m
+2026-06-20 17:44:54.615626 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-source: info: unpacking xen-guest_5.0.4.orig.tar.gz.[0m
+2026-06-20 17:44:54.624390 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mdpkg-source: info: unpacking xen-guest_5.0.4-1+deb14u1+devel1.debian.tar.xz.[0m
+2026-06-20 17:44:54.648790 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: using fakeroot in build..[0m
+2026-06-20 17:44:54.649019 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: Installing the build-deps.[0m
+2026-06-20 17:44:54.649087 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: user script /builder/pbuilder/build/1558/tmp/hooks/D30update starting.[0m
+2026-06-20 17:44:54.680918 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mIgn:1 file:/tmp/qubes-deb forky InRelease.[0m
+2026-06-20 17:44:54.680942 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mGet:2 file:/tmp/qubes-deb forky Release [331 B].[0m
+2026-06-20 17:44:54.686551 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mGet:2 file:/tmp/qubes-deb forky Release [331 B].[0m
+2026-06-20 17:44:54.688297 +0000 build-debian-devel: .[38;5;246m17:44:54 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mIgn:3 file:/tmp/qubes-deb forky Release.gpg.[0m
+2026-06-20 17:44:55.284047 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mIgn:4 https://deb.qubes-os.org/r4.3/vm forky InRelease.[0m
+2026-06-20 17:44:55.325182 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mHit:5 https://deb.debian.org/debian forky InRelease.[0m
+2026-06-20 17:44:55.406659 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mIgn:6 https://deb.qubes-os.org/r4.3/vm forky-testing InRelease.[0m
+2026-06-20 17:44:55.621421 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mErr:7 https://deb.qubes-os.org/r4.3/vm forky Release.[0m
+2026-06-20 17:44:55.621475 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m  404  Not Found [IP: 193.219.28.150 443].[0m
+2026-06-20 17:44:55.737498 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mErr:8 https://deb.qubes-os.org/r4.3/vm forky-testing Release.[0m
+2026-06-20 17:44:55.737543 +0000 build-debian-devel: .[38;5;246m17:44:55 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246m  404  Not Found [IP: 193.219.28.150 443].[0m
+2026-06-20 17:44:56.084746 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mReading package lists....[0m
+2026-06-20 17:44:56.100208 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mE: The repository 'https://deb.qubes-os.org/r4.3/vm forky Release' does not have a Release file..[0m
+2026-06-20 17:44:56.100249 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mE: The repository 'https://deb.qubes-os.org/r4.3/vm forky-testing Release' does not have a Release file..[0m
+2026-06-20 17:44:56.101304 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting /tmp/qubes-deb filesystem.[0m
+2026-06-20 17:44:56.106013 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting /sys/fs/selinux filesystem.[0m
+2026-06-20 17:44:56.114664 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/ptmx filesystem.[0m
+2026-06-20 17:44:56.119539 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/pts filesystem.[0m
+2026-06-20 17:44:56.125394 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting dev/shm filesystem.[0m
+2026-06-20 17:44:56.137409 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting proc filesystem.[0m
+2026-06-20 17:44:56.154525 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: unmounting sys filesystem.[0m
+2026-06-20 17:44:56.177336 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: cleaning the build env.[0m
+2026-06-20 17:44:56.177397 +0000 build-debian-devel: .[38;5;246m17:44:56 .[96m[qb.build_deb.vmm-xen-guest.vm-forky.build] .[38;5;246mI: removing directory /builder/pbuilder/build/1558 and its subdirectories.[0m
+2026-06-20 17:44:57.998862 +0000 > closing log
