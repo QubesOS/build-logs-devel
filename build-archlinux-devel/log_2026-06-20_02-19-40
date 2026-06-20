@@ -1,0 +1,107 @@
+2026-06-20 02:19:40.634265 +0000 > starting log
+2026-06-20 02:19:40.634632 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-20 02:19:40.634646 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-20 02:19:40.634654 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-20 02:19:40.634660 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-20 02:19:40.634665 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>>   linux-gbulb.[0m
+2026-06-20 02:19:40.634671 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-20 02:19:40.634677 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-06-20 02:19:40.634682 +0000 build-archlinux-devel: .[38;5;246m02:19:40 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-06-20 02:19:42.011859 +0000 build-archlinux-devel: .[38;5;246m02:19:42 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp3362..[0m
+2026-06-20 02:19:42.012023 +0000 build-archlinux-devel: .[38;5;246m02:19:42 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3362 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-gbulb.git /builder/linux-gbulb /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-06-20 02:19:44.939947 +0000 build-archlinux-devel: .[38;5;246m02:19:44 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-06-20 02:19:44.940056 +0000 build-archlinux-devel: .[38;5;246m02:19:44 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m---> Good tag 84b9a5b0459ae38cf2070077c949954cd4033c64..[0m
+2026-06-20 02:19:44.940069 +0000 build-archlinux-devel: .[38;5;246m02:19:44 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-06-20 02:19:44.940078 +0000 build-archlinux-devel: .[38;5;246m02:19:44 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-06-20 02:19:47.618640 +0000 build-archlinux-devel: .[38;5;246m02:19:47 .[96m[qb.fetch.linux-gbulb] .[0mLog file: /home/user/builder-devel/logs/20260620T021940-linux-gbulb.log.[0m
+2026-06-20 02:19:53.275349 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp3746..[0m
+2026-06-20 02:19:53.275440 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3746 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'.[0m
+2026-06-20 02:19:53.456774 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-06-20 02:19:53.457015 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:53.459675 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2026-06-20 02:19:53.459815 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-gbulb'\'' --file-name '\''gbulb-0.6.6.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz'\'' --'.[0m
+2026-06-20 02:19:53.459848 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-gbulb --file-name gbulb-0.6.6.tar.gz --file-url https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz --.[0m
+2026-06-20 02:19:53.459866 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-20 02:19:53.459880 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:53.459894 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-gbulb.[0m
+2026-06-20 02:19:53.459906 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.459932 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.459945 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-20 02:19:53.459957 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:53.459969 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:53.459981 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.459993 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.460005 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-20 02:19:53.460016 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:53.460031 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:53.460167 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.460181 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.460193 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-20 02:19:53.460204 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:53.460216 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:53.460228 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-20 02:19:53.460243 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz ']'.[0m
+2026-06-20 02:19:53.460259 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-06-20 02:19:53.460272 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z gbulb-0.6.6.tar.gz ']'.[0m
+2026-06-20 02:19:53.460285 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:53.460298 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /builder/linux-gbulb ']'.[0m
+2026-06-20 02:19:53.460310 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /builder/linux-gbulb.[0m
+2026-06-20 02:19:53.461008 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ cd /builder/linux-gbulb.[0m
+2026-06-20 02:19:53.461048 +0000 build-archlinux-devel: .[38;5;246m02:19:53 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_gbulb-0.6.6.tar.gz -- https://files.pythonhosted.org/packages/source/g/gbulb/gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:55.590905 +0000 build-archlinux-devel: .[38;5;246m02:19:55 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-06-20 02:19:55.590975 +0000 build-archlinux-devel: .[38;5;246m02:19:55 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-20 02:19:57.840240 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246mUsing executor local:/tmp/128031632635760e9404b89/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpiz_taqbc --untrusted-file /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256']'..[0m
+2026-06-20 02:19:57.843606 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-06-20 02:19:57.843774 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpiz_taqbc --untrusted-file /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2026-06-20 02:19:57.848309 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpiz_taqbc'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2026-06-20 02:19:57.848372 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpiz_taqbc'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256'\'' --'.[0m
+2026-06-20 02:19:57.848390 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpiz_taqbc --untrusted-file /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 --.[0m
+2026-06-20 02:19:57.848401 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-06-20 02:19:57.848407 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-06-20 02:19:57.848412 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:57.848417 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpiz_taqbc.[0m
+2026-06-20 02:19:57.848423 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848427 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848432 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-20 02:19:57.848437 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:57.848443 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:57.848448 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848453 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848457 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-20 02:19:57.848462 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:57.848467 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2026-06-20 02:19:57.848472 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848477 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848481 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-20 02:19:57.848486 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:57.848492 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2026-06-20 02:19:57.848496 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848501 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848506 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-20 02:19:57.848510 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-20 02:19:57.848515 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ shift.[0m
+2026-06-20 02:19:57.848519 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-20 02:19:57.848525 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz ']'.[0m
+2026-06-20 02:19:57.848531 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpiz_taqbc ']'.[0m
+2026-06-20 02:19:57.848536 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpiz_taqbc.[0m
+2026-06-20 02:19:57.848913 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:57.851431 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:57.851472 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ FILE_NAME=gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:57.851483 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2026-06-20 02:19:57.851493 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2026-06-20 02:19:57.851501 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2026-06-20 02:19:57.851507 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-20 02:19:57.851544 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-06-20 02:19:57.851552 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-20 02:19:57.851563 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-20 02:19:57.851570 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256 ']'.[0m
+2026-06-20 02:19:57.851577 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2026-06-20 02:19:57.852841 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2026-06-20 02:19:57.852873 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/linux-gbulb/gbulb-0.6.6.tar.gz.sha256.[0m
+2026-06-20 02:19:57.853260 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m++ printf '%s  -\n' b66bb1637e956a605636ac2820747583983715a87742beaddeb2e41da37b5154.[0m
+2026-06-20 02:19:57.855514 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpiz_taqbc/untrusted_gbulb-0.6.6.tar.gz /home/user/builder-devel/tmp/tmpiz_taqbc/gbulb-0.6.6.tar.gz.[0m
+2026-06-20 02:19:57.864468 +0000 build-archlinux-devel: .[38;5;246m02:19:57 .[96m[qb.fetch.linux-gbulb] .[38;5;246m['cd -- /builder', "git -C /builder/linux-gbulb rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-gbulb tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-06-20 02:19:59.179537 +0000 build-archlinux-devel: .[38;5;246m02:19:59 .[96m[qb.fetch.linux-gbulb.fetch] .[0mUsing executor qubes:disp3223..[0m
+2026-06-20 02:19:59.179635 +0000 build-archlinux-devel: .[38;5;246m02:19:59 .[96m[qb.fetch.linux-gbulb.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3223 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-gbulb rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-gbulb tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-06-20 02:20:00.711694 +0000 build-archlinux-devel: .[38;5;246m02:20:00 .[96m[qb] .[38;5;246m> done.[0m
+2026-06-20 02:20:00.711784 +0000 > closing log
