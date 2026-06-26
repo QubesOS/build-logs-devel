@@ -1,0 +1,107 @@
+2026-06-26 13:04:24.100759 +0000 > starting log
+2026-06-26 13:04:24.101741 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-06-26 13:04:24.101762 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-06-26 13:04:24.101771 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-06-26 13:04:24.101776 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-06-26 13:04:24.101783 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>>   xorg-x11-server.[0m
+2026-06-26 13:04:24.101788 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-06-26 13:04:24.101794 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-06-26 13:04:24.101798 +0000 build-ubuntu-devel: .[38;5;246m13:04:24 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-06-26 13:04:26.168923 +0000 build-ubuntu-devel: .[38;5;246m13:04:26 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp6641..[0m
+2026-06-26 13:04:26.168988 +0000 build-ubuntu-devel: .[38;5;246m13:04:26 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6641 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-xorg-x11-server.git /builder/xorg-x11-server /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-06-26 13:04:29.986559 +0000 build-ubuntu-devel: .[38;5;246m13:04:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-06-26 13:04:29.986907 +0000 build-ubuntu-devel: .[38;5;246m13:04:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m---> Good tag 328c7116de145978fd2242be8c9ed0c96068c4a4..[0m
+2026-06-26 13:04:29.986961 +0000 build-ubuntu-devel: .[38;5;246m13:04:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-06-26 13:04:29.986998 +0000 build-ubuntu-devel: .[38;5;246m13:04:30 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-06-26 13:04:33.303712 +0000 build-ubuntu-devel: .[38;5;246m13:04:33 .[96m[qb.fetch.xorg-x11-server] .[0mLog file: /home/user/builder-devel/logs/20260626T130423-xorg-x11-server.log.[0m
+2026-06-26 13:04:38.447003 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp7668..[0m
+2026-06-26 13:04:38.447076 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7668 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.23.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz'.[0m
+2026-06-26 13:04:38.879826 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-06-26 13:04:38.879906 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.23.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:04:38.888826 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.23.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz'\'' --'.[0m
+2026-06-26 13:04:38.888883 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/xorg-x11-server'\'' --file-name '\''xorg-server-21.1.23.tar.xz'\'' --file-url '\''https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz'\'' --'.[0m
+2026-06-26 13:04:38.888897 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /builder/xorg-x11-server --file-name xorg-server-21.1.23.tar.xz --file-url https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz --.[0m
+2026-06-26 13:04:38.888905 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-26 13:04:38.888912 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:04:38.888919 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/xorg-x11-server.[0m
+2026-06-26 13:04:38.888924 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.888932 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.888936 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-26 13:04:38.888942 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:04:38.888989 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:04:38.889007 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.889012 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.889028 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-26 13:04:38.889033 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:04:38.889050 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_URL=https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:04:38.889056 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.889071 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.889077 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-26 13:04:38.889093 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:04:38.889098 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:04:38.889102 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-26 13:04:38.889120 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz ']'.[0m
+2026-06-26 13:04:38.889137 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-06-26 13:04:38.889143 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z xorg-server-21.1.23.tar.xz ']'.[0m
+2026-06-26 13:04:38.889164 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:04:38.889188 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /builder/xorg-x11-server ']'.[0m
+2026-06-26 13:04:38.889214 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /builder/xorg-x11-server.[0m
+2026-06-26 13:04:38.895348 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ cd /builder/xorg-x11-server.[0m
+2026-06-26 13:04:38.895387 +0000 build-ubuntu-devel: .[38;5;246m13:04:38 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_xorg-server-21.1.23.tar.xz -- https://www.x.org/pub/individual/xserver/xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:09.737075 +0000 build-ubuntu-devel: .[38;5;246m13:05:09 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-06-26 13:05:09.737190 +0000 build-ubuntu-devel: .[38;5;246m13:05:09 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-26 13:05:13.098021 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246mUsing executor local:/tmp/140285759321968a78828d4/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpy5gm_hq1 --untrusted-file /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512']'..[0m
+2026-06-26 13:05:13.103696 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-06-26 13:05:13.103782 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpy5gm_hq1 --untrusted-file /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512.[0m
+2026-06-26 13:05:13.104392 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpy5gm_hq1'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512'\'' --'.[0m
+2026-06-26 13:05:13.106339 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpy5gm_hq1'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512'\'' --'.[0m
+2026-06-26 13:05:13.106394 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpy5gm_hq1 --untrusted-file /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512 --.[0m
+2026-06-26 13:05:13.106406 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-06-26 13:05:13.106414 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-06-26 13:05:13.106420 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:05:13.106426 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpy5gm_hq1.[0m
+2026-06-26 13:05:13.106431 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106436 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106441 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-06-26 13:05:13.106446 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:05:13.106453 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:13.106458 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106463 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106468 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-06-26 13:05:13.106473 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:05:13.106480 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-06-26 13:05:13.106486 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106491 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106497 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-06-26 13:05:13.106502 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:05:13.106509 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512.[0m
+2026-06-26 13:05:13.106515 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106520 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106527 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-06-26 13:05:13.106532 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-06-26 13:05:13.106538 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ shift.[0m
+2026-06-26 13:05:13.106543 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-06-26 13:05:13.106549 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz ']'.[0m
+2026-06-26 13:05:13.106555 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpy5gm_hq1 ']'.[0m
+2026-06-26 13:05:13.106561 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpy5gm_hq1.[0m
+2026-06-26 13:05:13.114036 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:13.115931 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:13.115984 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ FILE_NAME=xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:13.116002 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512 ']'.[0m
+2026-06-26 13:05:13.116014 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512 ']'.[0m
+2026-06-26 13:05:13.116026 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512 ']'.[0m
+2026-06-26 13:05:13.116034 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-26 13:05:13.116043 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-06-26 13:05:13.116050 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-26 13:05:13.116059 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-06-26 13:05:13.116068 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512 ']'.[0m
+2026-06-26 13:05:13.116075 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-06-26 13:05:13.117372 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-06-26 13:05:13.121056 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/xorg-x11-server/xorg-server-21.1.23.tar.xz.sha512.[0m
+2026-06-26 13:05:13.124469 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m++ printf '%s  -\n' 7eae854af1b5db1f5d1e59cb9d26b86d98fa176d4f80f70935c707f17982d0446a0a8ad8d29c922edbd208435f995b027604fbb72e62a7bf3ba79f2f570aa0bb.[0m
+2026-06-26 13:05:13.149972 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpy5gm_hq1/untrusted_xorg-server-21.1.23.tar.xz /home/user/builder-devel/tmp/tmpy5gm_hq1/xorg-server-21.1.23.tar.xz.[0m
+2026-06-26 13:05:13.159450 +0000 build-ubuntu-devel: .[38;5;246m13:05:13 .[96m[qb.fetch.xorg-x11-server] .[38;5;246m['cd -- /builder', "git -C /builder/xorg-x11-server rev-parse 'HEAD^{}' >> hash", "git -C /builder/xorg-x11-server tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-06-26 13:05:18.214913 +0000 build-ubuntu-devel: .[38;5;246m13:05:18 .[96m[qb.fetch.xorg-x11-server.fetch] .[0mUsing executor qubes:disp2460..[0m
+2026-06-26 13:05:18.215010 +0000 build-ubuntu-devel: .[38;5;246m13:05:18 .[96m[qb.fetch.xorg-x11-server.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2460 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/xorg-x11-server rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/xorg-x11-server tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-06-26 13:05:20.987855 +0000 build-ubuntu-devel: .[38;5;246m13:05:21 .[96m[qb] .[38;5;246m> done.[0m
+2026-06-26 13:05:20.987907 +0000 > closing log
