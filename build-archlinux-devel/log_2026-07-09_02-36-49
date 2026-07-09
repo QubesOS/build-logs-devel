@@ -1,0 +1,135 @@
+2026-07-09 02:36:49.658435 +0000 > starting log
+2026-07-09 02:36:49.659410 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-09 02:36:49.659426 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-09 02:36:49.659435 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-09 02:36:49.659441 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-09 02:36:49.659448 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>>   fwupd.[0m
+2026-07-09 02:36:49.659453 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-09 02:36:49.659459 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-07-09 02:36:49.659466 +0000 build-archlinux-devel: .[38;5;246m02:36:49 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-09 02:36:50.342451 +0000 build-archlinux-devel: .[38;5;246m02:36:50 .[96m[qb.fetch.fwupd.fetch] .[0mUsing executor qubes:disp6031..[0m
+2026-07-09 02:36:50.342667 +0000 build-archlinux-devel: .[38;5;246m02:36:50 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6031 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-fwupd.git /builder/fwupd /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-09 02:36:55.794190 +0000 build-archlinux-devel: .[38;5;246m02:36:55 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-09 02:36:55.794291 +0000 build-archlinux-devel: .[38;5;246m02:36:55 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m---> Good tag 87c0f3793fb12f10bbddd738db930e42505912f9..[0m
+2026-07-09 02:36:55.794310 +0000 build-archlinux-devel: .[38;5;246m02:36:55 .[96m[qb.fetch.fwupd.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-09 02:36:55.794322 +0000 build-archlinux-devel: .[38;5;246m02:36:55 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-07-09 02:36:57.071132 +0000 build-archlinux-devel: .[38;5;246m02:36:57 .[96m[qb.fetch.fwupd] .[0mLog file: /home/user/builder-devel/logs/20260709T023649-fwupd.log.[0m
+2026-07-09 02:36:59.111141 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[0mUsing executor qubes:disp4443..[0m
+2026-07-09 02:36:59.111267 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4443 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/fwupd --file-name fwupd-2.0.16.tar.xz --file-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz --signature-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc'.[0m
+2026-07-09 02:36:59.283789 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-09 02:36:59.284375 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/fwupd --file-name fwupd-2.0.16.tar.xz --file-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz --signature-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:36:59.287497 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/fwupd'\'' --file-name '\''fwupd-2.0.16.tar.xz'\'' --file-url '\''https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz'\'' --signature-url '\''https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc'\'' --'.[0m
+2026-07-09 02:36:59.287744 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/fwupd'\'' --file-name '\''fwupd-2.0.16.tar.xz'\'' --file-url '\''https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz'\'' --signature-url '\''https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc'\'' --'.[0m
+2026-07-09 02:36:59.288121 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ set -- --output-dir /builder/fwupd --file-name fwupd-2.0.16.tar.xz --file-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz --signature-url https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc --.[0m
+2026-07-09 02:36:59.288305 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-09 02:36:59.288500 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:36:59.288710 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/fwupd.[0m
+2026-07-09 02:36:59.289125 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.289521 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.289583 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-09 02:36:59.289661 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:36:59.289730 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ FILE_NAME=fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:36:59.289826 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.289842 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.289911 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-09 02:36:59.289959 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:36:59.290020 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ FILE_URL=https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:36:59.290084 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.290132 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.290143 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-09 02:36:59.290190 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:36:59.290274 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ SIGNATURE_URL=https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:36:59.290307 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.290349 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.290394 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-09 02:36:59.290450 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:36:59.290492 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:36:59.290538 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-09 02:36:59.290598 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz ']'.[0m
+2026-07-09 02:36:59.290613 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-09 02:36:59.290702 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z fwupd-2.0.16.tar.xz ']'.[0m
+2026-07-09 02:36:59.290715 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:36:59.290798 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /builder/fwupd ']'.[0m
+2026-07-09 02:36:59.290811 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ mkdir -p /builder/fwupd.[0m
+2026-07-09 02:36:59.290971 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ cd /builder/fwupd.[0m
+2026-07-09 02:36:59.290993 +0000 build-archlinux-devel: .[38;5;246m02:36:59 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_fwupd-2.0.16.tar.xz -- https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:09.177389 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-09 02:37:09.177543 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:09.177589 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ basename https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:09.189857 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:09.189993 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:09.194582 +0000 build-archlinux-devel: .[38;5;246m02:37:09 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_fwupd-2.0.16.tar.xz.asc https://github.com/fwupd/fwupd/releases/download/2.0.16/fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.197881 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246mUsing executor local:/tmp/1325875235872481349267a/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmplnkk9w5t --untrusted-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/fwupd/hughsie.pub']'..[0m
+2026-07-09 02:37:13.218110 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-09 02:37:13.220596 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmplnkk9w5t --untrusted-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/fwupd/hughsie.pub.[0m
+2026-07-09 02:37:13.229933 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmplnkk9w5t'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/fwupd/hughsie.pub'\'' --'.[0m
+2026-07-09 02:37:13.230827 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmplnkk9w5t'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/fwupd/hughsie.pub'\'' --'.[0m
+2026-07-09 02:37:13.230919 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmplnkk9w5t --untrusted-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/fwupd/hughsie.pub --.[0m
+2026-07-09 02:37:13.230939 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-09 02:37:13.230956 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-09 02:37:13.230968 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:37:13.230979 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmplnkk9w5t.[0m
+2026-07-09 02:37:13.232438 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.232485 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.232507 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-09 02:37:13.232558 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:37:13.232576 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.233028 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233093 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233163 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-09 02:37:13.233182 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:37:13.233406 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.233421 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233435 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233476 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-09 02:37:13.233485 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:37:13.233496 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-07-09 02:37:13.233536 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233552 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233596 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-09 02:37:13.233612 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:37:13.233660 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:37:13.233704 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-09 02:37:13.233791 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz ']'.[0m
+2026-07-09 02:37:13.236445 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmplnkk9w5t ']'.[0m
+2026-07-09 02:37:13.236519 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmplnkk9w5t.[0m
+2026-07-09 02:37:13.237395 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.241951 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.242665 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ FILE_NAME=fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.242712 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-09 02:37:13.242729 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:13.242741 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-09 02:37:13.242752 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:13.242760 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/fwupd/hughsie.pub ']'.[0m
+2026-07-09 02:37:13.242772 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:13.242778 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:13.243309 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/fwupd/hughsie.pub ']'.[0m
+2026-07-09 02:37:13.243351 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-09 02:37:13.243366 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc ']'.[0m
+2026-07-09 02:37:13.243377 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/fwupd/hughsie.pub ']'.[0m
+2026-07-09 02:37:13.243386 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.249191 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.249308 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.249325 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-07-09 02:37:13.249348 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.6tPWyrw3k4.[0m
+2026-07-09 02:37:13.251914 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-07-09 02:37:13.300283 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.6tPWyrw3k4/keyring /home/user/builder-devel/sources/fwupd/hughsie.pub.[0m
+2026-07-09 02:37:13.344405 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.6tPWyrw3k4/keyring.gpg /tmp/tmp.6tPWyrw3k4/keyring.[0m
+2026-07-09 02:37:13.361689 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ sqv --version.[0m
+2026-07-09 02:37:13.370858 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.3.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-07-09 02:37:13.370963 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.3.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-07-09 02:37:13.370985 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sort -VC.[0m
+2026-07-09 02:37:13.376548 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-07-09 02:37:13.379064 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-07-09 02:37:13.379184 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-07-09 02:37:13.379237 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-07-09 02:37:13.379257 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.6tPWyrw3k4/keyring /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.395308 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m163EB50119225DB3DF8F49EA17ACBA8DFA970E17.[0m
+2026-07-09 02:37:13.398282 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz.asc /home/user/builder-devel/tmp/tmplnkk9w5t/fwupd-2.0.16.tar.xz.asc.[0m
+2026-07-09 02:37:13.399747 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ rm -rf /tmp/tmp.6tPWyrw3k4.[0m
+2026-07-09 02:37:13.401707 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmplnkk9w5t/untrusted_fwupd-2.0.16.tar.xz /home/user/builder-devel/tmp/tmplnkk9w5t/fwupd-2.0.16.tar.xz.[0m
+2026-07-09 02:37:13.409316 +0000 build-archlinux-devel: .[38;5;246m02:37:13 .[96m[qb.fetch.fwupd] .[38;5;246m['cd -- /builder', "git -C /builder/fwupd rev-parse 'HEAD^{}' >> hash", "git -C /builder/fwupd tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-09 02:37:14.897428 +0000 build-archlinux-devel: .[38;5;246m02:37:14 .[96m[qb.fetch.fwupd.fetch] .[0mUsing executor qubes:disp9003..[0m
+2026-07-09 02:37:14.897649 +0000 build-archlinux-devel: .[38;5;246m02:37:14 .[96m[qb.fetch.fwupd.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9003 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/fwupd rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/fwupd tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-09 02:37:16.620761 +0000 build-archlinux-devel: .[38;5;246m02:37:16 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-09 02:37:16.620991 +0000 > closing log
