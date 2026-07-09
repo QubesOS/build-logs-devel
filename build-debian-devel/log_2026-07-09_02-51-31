@@ -1,0 +1,138 @@
+2026-07-09 02:51:31.800376 +0000 > starting log
+2026-07-09 02:51:31.800616 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-09 02:51:31.800630 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-09 02:51:31.800638 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-09 02:51:31.800654 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-09 02:51:31.800660 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>>   grub2.[0m
+2026-07-09 02:51:31.800667 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>>     commit-hash: 00e34f13235d39f81fa0130500db43aa803c8a60.[0m
+2026-07-09 02:51:31.817803 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>>     source-hash: a14971392aaa8bb7def9d5bf977ae4c861a61d68f22705ebdd76d71eb57e267115b1881c0c67c58c5971a70398391c8f7b0fa8b90089f2f809de240d2d320a42.[0m
+2026-07-09 02:51:31.817853 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-09 02:51:31.817861 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-07-09 02:51:31.817869 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-09 02:51:31.835155 +0000 build-debian-devel: .[38;5;246m02:51:31 .[96m[qb.fetch.grub2] .[0mgrub2: source already fetched. Updating..[0m
+2026-07-09 02:51:33.566890 +0000 build-debian-devel: .[38;5;246m02:51:33 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp2537..[0m
+2026-07-09 02:51:33.566990 +0000 build-debian-devel: .[38;5;246m02:51:33 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2537 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-grub2.git /builder/grub2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-09 02:51:37.630189 +0000 build-debian-devel: .[38;5;246m02:51:37 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-09 02:51:37.630280 +0000 build-debian-devel: .[38;5;246m02:51:37 .[96m[qb.fetch.grub2.fetch] .[38;5;246m---> Good tag 85542f2ffa9934bee1e08ccef8ec63dce8c79764..[0m
+2026-07-09 02:51:37.630314 +0000 build-debian-devel: .[38;5;246m02:51:37 .[96m[qb.fetch.grub2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-09 02:51:37.630328 +0000 build-debian-devel: .[38;5;246m02:51:37 .[96m[qb.fetch.grub2.fetch] .[38;5;246m--> Merging....[0m
+2026-07-09 02:51:38.743005 +0000 build-debian-devel: .[38;5;246m02:51:38 .[96m[qb.fetch.grub2] .[0mLog file: /home/user/builder-devel/logs/20260709T025131-grub2.log.[0m
+2026-07-09 02:51:40.165167 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp9647..[0m
+2026-07-09 02:51:40.165247 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9647 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/grub2 --file-name grub-2.12.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig'.[0m
+2026-07-09 02:51:40.303250 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-09 02:51:40.303409 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/grub2 --file-name grub-2.12.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:51:40.305914 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.12.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig'\'' --'.[0m
+2026-07-09 02:51:40.305994 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/grub2'\'' --file-name '\''grub-2.12.tar.xz'\'' --file-url '\''https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz'\'' --signature-url '\''https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig'\'' --'.[0m
+2026-07-09 02:51:40.306034 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /builder/grub2 --file-name grub-2.12.tar.xz --file-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz --signature-url https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig --.[0m
+2026-07-09 02:51:40.306045 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-09 02:51:40.307458 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:51:40.307518 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/grub2.[0m
+2026-07-09 02:51:40.307540 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307555 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307567 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-09 02:51:40.307578 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:51:40.307588 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.12.tar.xz.[0m
+2026-07-09 02:51:40.307598 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307608 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307618 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-09 02:51:40.307628 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:51:40.307639 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_URL=https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.[0m
+2026-07-09 02:51:40.307649 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307659 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307669 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-09 02:51:40.307679 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:51:40.307692 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_URL=https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:51:40.307702 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307712 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307721 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-09 02:51:40.307737 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:51:40.307747 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:51:40.307757 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-09 02:51:40.307769 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz ']'.[0m
+2026-07-09 02:51:40.307783 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-09 02:51:40.307796 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z grub-2.12.tar.xz ']'.[0m
+2026-07-09 02:51:40.307808 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.12.tar.xz.[0m
+2026-07-09 02:51:40.307818 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /builder/grub2 ']'.[0m
+2026-07-09 02:51:40.307830 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /builder/grub2.[0m
+2026-07-09 02:51:40.308310 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ cd /builder/grub2.[0m
+2026-07-09 02:51:40.308353 +0000 build-debian-devel: .[38;5;246m02:51:40 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.12.tar.xz -- https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.[0m
+2026-07-09 02:51:58.030300 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-09 02:51:58.030384 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:51:58.030395 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:51:58.030410 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:51:58.030418 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:51:58.030478 +0000 build-debian-devel: .[38;5;246m02:51:58 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_grub-2.12.tar.xz.sig https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.094158 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246mUsing executor local:/tmp/13760807812665649eeffb8/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp59rt064b --untrusted-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc']'..[0m
+2026-07-09 02:52:00.097521 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-09 02:52:00.097595 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp59rt064b --untrusted-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc.[0m
+2026-07-09 02:52:00.098883 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp59rt064b'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-devel/sources/grub2/grub2-key.asc'\'' --'.[0m
+2026-07-09 02:52:00.098959 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp59rt064b'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig'\'' --pubkey-file '\''/home/user/builder-devel/sources/grub2/grub2-key.asc'\'' --'.[0m
+2026-07-09 02:52:00.098976 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp59rt064b --untrusted-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig --pubkey-file /home/user/builder-devel/sources/grub2/grub2-key.asc --.[0m
+2026-07-09 02:52:00.098987 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-09 02:52:00.098996 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-09 02:52:00.099003 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:52:00.099010 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp59rt064b.[0m
+2026-07-09 02:52:00.099021 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099027 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099033 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-09 02:52:00.099039 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:52:00.099047 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.099059 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099065 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099088 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-09 02:52:00.099095 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:52:00.099103 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.099110 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099117 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099130 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-09 02:52:00.099148 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:52:00.099160 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-07-09 02:52:00.099165 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099171 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099179 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-09 02:52:00.099185 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-09 02:52:00.099191 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ shift.[0m
+2026-07-09 02:52:00.099197 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-09 02:52:00.099275 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz ']'.[0m
+2026-07-09 02:52:00.099285 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp59rt064b ']'.[0m
+2026-07-09 02:52:00.099292 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp59rt064b.[0m
+2026-07-09 02:52:00.099392 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.100558 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.100614 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ FILE_NAME=grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.100676 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-09 02:52:00.100696 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:52:00.100709 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-09 02:52:00.100723 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:52:00.100741 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-07-09 02:52:00.100755 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:52:00.100807 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:52:00.100856 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-07-09 02:52:00.100884 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-09 02:52:00.100927 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig ']'.[0m
+2026-07-09 02:52:00.100975 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/grub2/grub2-key.asc ']'.[0m
+2026-07-09 02:52:00.101062 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.101859 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.101870 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.101994 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-07-09 02:52:00.103014 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.7hmhohoUQe.[0m
+2026-07-09 02:52:00.103037 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-07-09 02:52:00.113327 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.7hmhohoUQe/keyring /home/user/builder-devel/sources/grub2/grub2-key.asc.[0m
+2026-07-09 02:52:00.128533 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.7hmhohoUQe/keyring.gpg /tmp/tmp.7hmhohoUQe/keyring.[0m
+2026-07-09 02:52:00.136995 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ sqv --version.[0m
+2026-07-09 02:52:00.141005 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv_version='sqv 1.3.0 (sequoia-openpgp 2.3.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-07-09 02:52:00.141041 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.3.0 (sequoia-openpgp 2.3.0, using OpenSSL 3.5.4 30 Sep 2025)'.[0m
+2026-07-09 02:52:00.141052 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sort -VC.[0m
+2026-07-09 02:52:00.142342 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-07-09 02:52:00.143275 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-07-09 02:52:00.143288 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-07-09 02:52:00.143298 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-07-09 02:52:00.143368 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.7hmhohoUQe/keyring /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.149541 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246mBE5C23209ACDDACEB20DB0A28C8189F1988C2166.[0m
+2026-07-09 02:52:00.149751 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz.sig /home/user/builder-devel/tmp/tmp59rt064b/grub-2.12.tar.xz.sig.[0m
+2026-07-09 02:52:00.151629 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ rm -rf /tmp/tmp.7hmhohoUQe.[0m
+2026-07-09 02:52:00.152412 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp59rt064b/untrusted_grub-2.12.tar.xz /home/user/builder-devel/tmp/tmp59rt064b/grub-2.12.tar.xz.[0m
+2026-07-09 02:52:00.177897 +0000 build-debian-devel: .[38;5;246m02:52:00 .[96m[qb.fetch.grub2] .[38;5;246m['cd -- /builder', "git -C /builder/grub2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/grub2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-09 02:52:02.836001 +0000 build-debian-devel: .[38;5;246m02:52:02 .[96m[qb.fetch.grub2.fetch] .[0mUsing executor qubes:disp370..[0m
+2026-07-09 02:52:02.836158 +0000 build-debian-devel: .[38;5;246m02:52:02 .[96m[qb.fetch.grub2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp370 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/grub2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/grub2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-09 02:52:05.842095 +0000 build-debian-devel: .[38;5;246m02:52:05 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-09 02:52:05.842216 +0000 > closing log
