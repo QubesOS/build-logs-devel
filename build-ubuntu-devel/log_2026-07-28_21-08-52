@@ -1,0 +1,107 @@
+2026-07-28 21:08:52.435725 +0000 > starting log
+2026-07-28 21:08:52.435998 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-28 21:08:52.436012 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-28 21:08:52.436020 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-28 21:08:52.436026 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-28 21:08:52.436031 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>>   python-objgraph.[0m
+2026-07-28 21:08:52.436036 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-28 21:08:52.436047 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-07-28 21:08:52.436052 +0000 build-ubuntu-devel: .[38;5;246m21:08:52 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-28 21:08:54.544052 +0000 build-ubuntu-devel: .[38;5;246m21:08:54 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp305..[0m
+2026-07-28 21:08:54.544200 +0000 build-ubuntu-devel: .[38;5;246m21:08:54 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp305 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-python-objgraph.git /builder/python-objgraph /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-28 21:08:58.337190 +0000 build-ubuntu-devel: .[38;5;246m21:08:58 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-28 21:08:58.337248 +0000 build-ubuntu-devel: .[38;5;246m21:08:58 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m---> Good tag 465a7ccfaa9997b351cf017f31796c32ab666886..[0m
+2026-07-28 21:08:58.337271 +0000 build-ubuntu-devel: .[38;5;246m21:08:58 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-28 21:08:58.337280 +0000 build-ubuntu-devel: .[38;5;246m21:08:58 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-07-28 21:09:01.151411 +0000 build-ubuntu-devel: .[38;5;246m21:09:01 .[96m[qb.fetch.python-objgraph] .[0mLog file: /home/user/builder-devel/logs/20260728T210852-python-objgraph.log.[0m
+2026-07-28 21:09:11.609270 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp8173..[0m
+2026-07-28 21:09:11.609337 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8173 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'.[0m
+2026-07-28 21:09:11.814811 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-28 21:09:11.815414 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:11.816814 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.2.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'\'' --'.[0m
+2026-07-28 21:09:11.816904 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.2.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'\'' --'.[0m
+2026-07-28 21:09:11.816923 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz --.[0m
+2026-07-28 21:09:11.816934 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-28 21:09:11.816942 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:11.816950 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/python-objgraph.[0m
+2026-07-28 21:09:11.816957 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.816967 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.816974 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-28 21:09:11.816989 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:11.816997 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:11.817005 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.817314 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.817385 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-28 21:09:11.817396 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:11.817429 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:11.817482 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.817643 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.817693 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-28 21:09:11.817752 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:11.817810 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:11.818249 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-28 21:09:11.818306 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:11.818327 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-28 21:09:11.818397 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:11.818445 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:11.818503 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /builder/python-objgraph ']'.[0m
+2026-07-28 21:09:11.818552 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /builder/python-objgraph.[0m
+2026-07-28 21:09:11.821277 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ cd /builder/python-objgraph.[0m
+2026-07-28 21:09:11.821349 +0000 build-ubuntu-devel: .[38;5;246m21:09:11 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_objgraph-3.6.2.tar.gz -- https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:15.079190 +0000 build-ubuntu-devel: .[38;5;246m21:09:15 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-28 21:09:15.079273 +0000 build-ubuntu-devel: .[38;5;246m21:09:15 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.796280 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mUsing executor local:/tmp/12629023812593668acd90a/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp31vwi65s --untrusted-file /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256']'..[0m
+2026-07-28 21:09:17.799521 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-28 21:09:17.799604 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp31vwi65s --untrusted-file /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.801697 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp31vwi65s'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256'\'' --'.[0m
+2026-07-28 21:09:17.801778 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp31vwi65s'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256'\'' --'.[0m
+2026-07-28 21:09:17.801796 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp31vwi65s --untrusted-file /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 --.[0m
+2026-07-28 21:09:17.801810 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-28 21:09:17.801819 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-28 21:09:17.801826 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.801834 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp31vwi65s.[0m
+2026-07-28 21:09:17.801842 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801849 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801856 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-28 21:09:17.801862 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.801871 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.801878 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801884 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801891 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-28 21:09:17.801898 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.801906 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2026-07-28 21:09:17.801913 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801919 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801926 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-28 21:09:17.801932 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.801945 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.801953 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801960 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801966 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-28 21:09:17.801973 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.801979 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.801986 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-28 21:09:17.801994 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:17.802002 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp31vwi65s ']'.[0m
+2026-07-28 21:09:17.802009 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp31vwi65s.[0m
+2026-07-28 21:09:17.802221 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.803316 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.803344 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.803356 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.803365 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.803372 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.803377 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.803382 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-28 21:09:17.803387 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.803392 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.803398 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.803403 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2026-07-28 21:09:17.803409 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2026-07-28 21:09:17.803418 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.804351 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ printf '%s  -\n' 00b9f2f40f7422e3c7f45a61c4dafdaf81f03ff0649d6eaec866f01030e51ad8.[0m
+2026-07-28 21:09:17.808158 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp31vwi65s/untrusted_objgraph-3.6.2.tar.gz /home/user/builder-devel/tmp/tmp31vwi65s/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.813939 +0000 build-ubuntu-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph] .[38;5;246m['cd -- /builder', "git -C /builder/python-objgraph rev-parse 'HEAD^{}' >> hash", "git -C /builder/python-objgraph tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-28 21:09:23.572019 +0000 build-ubuntu-devel: .[38;5;246m21:09:23 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp6412..[0m
+2026-07-28 21:09:23.572154 +0000 build-ubuntu-devel: .[38;5;246m21:09:23 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6412 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/python-objgraph rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/python-objgraph tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-28 21:09:26.515184 +0000 build-ubuntu-devel: .[38;5;246m21:09:26 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-28 21:09:26.515292 +0000 > closing log
