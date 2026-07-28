@@ -1,0 +1,107 @@
+2026-07-28 21:08:50.651768 +0000 > starting log
+2026-07-28 21:08:50.652262 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-28 21:08:50.652277 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-28 21:08:50.652285 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-28 21:08:50.652291 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-28 21:08:50.652297 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>>   python-objgraph.[0m
+2026-07-28 21:08:50.652301 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-28 21:08:50.652307 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-07-28 21:08:50.652313 +0000 build-archlinux-devel: .[38;5;246m21:08:50 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-28 21:08:52.253138 +0000 build-archlinux-devel: .[38;5;246m21:08:52 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp7463..[0m
+2026-07-28 21:08:52.253297 +0000 build-archlinux-devel: .[38;5;246m21:08:52 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7463 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-python-objgraph.git /builder/python-objgraph /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-28 21:08:56.239656 +0000 build-archlinux-devel: .[38;5;246m21:08:56 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-28 21:08:56.239770 +0000 build-archlinux-devel: .[38;5;246m21:08:56 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m---> Good tag 465a7ccfaa9997b351cf017f31796c32ab666886..[0m
+2026-07-28 21:08:56.239783 +0000 build-archlinux-devel: .[38;5;246m21:08:56 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-28 21:08:56.239793 +0000 build-archlinux-devel: .[38;5;246m21:08:56 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-07-28 21:08:58.848218 +0000 build-archlinux-devel: .[38;5;246m21:08:58 .[96m[qb.fetch.python-objgraph] .[0mLog file: /home/user/builder-devel/logs/20260728T210850-python-objgraph.log.[0m
+2026-07-28 21:09:09.725814 +0000 build-archlinux-devel: .[38;5;246m21:09:09 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp7196..[0m
+2026-07-28 21:09:09.725923 +0000 build-archlinux-devel: .[38;5;246m21:09:09 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7196 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'.[0m
+2026-07-28 21:09:10.635745 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-28 21:09:10.635840 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:10.641321 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.2.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'\'' --'.[0m
+2026-07-28 21:09:10.641394 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/python-objgraph'\'' --file-name '\''objgraph-3.6.2.tar.gz'\'' --file-url '\''https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz'\'' --'.[0m
+2026-07-28 21:09:10.641410 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /builder/python-objgraph --file-name objgraph-3.6.2.tar.gz --file-url https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz --.[0m
+2026-07-28 21:09:10.641419 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-28 21:09:10.641425 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:10.641431 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/python-objgraph.[0m
+2026-07-28 21:09:10.641437 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641444 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641451 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-28 21:09:10.641456 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:10.641461 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:10.641467 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641471 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641477 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-28 21:09:10.641482 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:10.641489 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_URL=https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:10.641494 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641499 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641503 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-28 21:09:10.641508 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:10.641519 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:10.641524 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-28 21:09:10.641530 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:10.641536 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-28 21:09:10.641542 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:10.641548 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:10.641554 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /builder/python-objgraph ']'.[0m
+2026-07-28 21:09:10.641559 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /builder/python-objgraph.[0m
+2026-07-28 21:09:10.643840 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ cd /builder/python-objgraph.[0m
+2026-07-28 21:09:10.646076 +0000 build-archlinux-devel: .[38;5;246m21:09:10 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_objgraph-3.6.2.tar.gz -- https://files.pythonhosted.org/packages/source/o/objgraph/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:14.692724 +0000 build-archlinux-devel: .[38;5;246m21:09:14 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-28 21:09:14.692843 +0000 build-archlinux-devel: .[38;5;246m21:09:14 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.554162 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246mUsing executor local:/tmp/128550006831968f7a3f353/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp79hh4y21 --untrusted-file /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256']'..[0m
+2026-07-28 21:09:17.555707 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-28 21:09:17.555763 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp79hh4y21 --untrusted-file /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.556551 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp79hh4y21'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256'\'' --'.[0m
+2026-07-28 21:09:17.557031 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp79hh4y21'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz'\'' --checksum-cmd '\''sha256sum'\'' --checksum-file '\''/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256'\'' --'.[0m
+2026-07-28 21:09:17.557071 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp79hh4y21 --untrusted-file /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz --checksum-cmd sha256sum --checksum-file /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 --.[0m
+2026-07-28 21:09:17.557088 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-28 21:09:17.557097 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-28 21:09:17.557128 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.557136 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp79hh4y21.[0m
+2026-07-28 21:09:17.557144 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557151 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557157 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-28 21:09:17.557164 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.557172 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.557180 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557186 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557271 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-28 21:09:17.557281 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.557307 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ CHECKSUM_CMD=sha256sum.[0m
+2026-07-28 21:09:17.557314 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557338 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557345 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-28 21:09:17.557368 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.557377 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.557383 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557407 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557418 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-28 21:09:17.557440 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-28 21:09:17.557447 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ shift.[0m
+2026-07-28 21:09:17.557453 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-28 21:09:17.557478 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz ']'.[0m
+2026-07-28 21:09:17.557488 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp79hh4y21 ']'.[0m
+2026-07-28 21:09:17.557495 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp79hh4y21.[0m
+2026-07-28 21:09:17.558266 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.559440 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.559484 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ FILE_NAME=objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.559496 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.559505 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.559517 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.559524 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.560873 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-28 21:09:17.560904 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.560914 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-28 21:09:17.560922 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256 ']'.[0m
+2026-07-28 21:09:17.560930 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ '[' -z sha256sum ']'.[0m
+2026-07-28 21:09:17.560937 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ sha256sum --status -c /dev/fd/63.[0m
+2026-07-28 21:09:17.560945 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/python-objgraph/objgraph-3.6.2.tar.gz.sha256.[0m
+2026-07-28 21:09:17.561211 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m++ printf '%s  -\n' 00b9f2f40f7422e3c7f45a61c4dafdaf81f03ff0649d6eaec866f01030e51ad8.[0m
+2026-07-28 21:09:17.562488 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp79hh4y21/untrusted_objgraph-3.6.2.tar.gz /home/user/builder-devel/tmp/tmp79hh4y21/objgraph-3.6.2.tar.gz.[0m
+2026-07-28 21:09:17.570130 +0000 build-archlinux-devel: .[38;5;246m21:09:17 .[96m[qb.fetch.python-objgraph] .[38;5;246m['cd -- /builder', "git -C /builder/python-objgraph rev-parse 'HEAD^{}' >> hash", "git -C /builder/python-objgraph tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-28 21:09:18.941032 +0000 build-archlinux-devel: .[38;5;246m21:09:19 .[96m[qb.fetch.python-objgraph.fetch] .[0mUsing executor qubes:disp7443..[0m
+2026-07-28 21:09:18.941187 +0000 build-archlinux-devel: .[38;5;246m21:09:19 .[96m[qb.fetch.python-objgraph.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7443 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/python-objgraph rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/python-objgraph tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-28 21:09:23.365575 +0000 build-archlinux-devel: .[38;5;246m21:09:23 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-28 21:09:23.365680 +0000 > closing log
