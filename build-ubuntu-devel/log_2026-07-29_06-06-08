@@ -1,0 +1,195 @@
+2026-07-29 06:06:08.338315 +0000 > starting log
+2026-07-29 06:06:08.340665 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-29 06:06:08.340822 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-29 06:06:08.340884 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-29 06:06:08.340917 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-29 06:06:08.340952 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>>   blivet.[0m
+2026-07-29 06:06:08.340987 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-29 06:06:08.341025 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-07-29 06:06:08.341055 +0000 build-ubuntu-devel: .[38;5;246m06:06:08 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-29 06:06:09.832701 +0000 build-ubuntu-devel: .[38;5;246m06:06:09 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp3692..[0m
+2026-07-29 06:06:09.832807 +0000 build-ubuntu-devel: .[38;5;246m06:06:09 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3692 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-blivet.git /builder/blivet /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-29 06:06:15.085178 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-29 06:06:15.085272 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 03dd8a1d7e010b21020169dbc4e9feb02c6f86e5..[0m
+2026-07-29 06:06:15.085332 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 183c13b7430a28f5a034492153034282780e4a0c..[0m
+2026-07-29 06:06:15.085349 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246m---> Good tag 39c660ce740023d0d5c7bad1d814e7c45723c82d..[0m
+2026-07-29 06:06:15.085364 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-29 06:06:15.085379 +0000 build-ubuntu-devel: .[38;5;246m06:06:15 .[96m[qb.fetch.blivet.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-07-29 06:06:18.503576 +0000 build-ubuntu-devel: .[38;5;246m06:06:18 .[96m[qb.fetch.blivet] .[0mLog file: /home/user/builder-devel/logs/20260729T060608-blivet.log.[0m
+2026-07-29 06:06:25.406380 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp4899..[0m
+2026-07-29 06:06:25.406501 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4899 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'.[0m
+2026-07-29 06:06:25.564127 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-29 06:06:25.564268 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:25.565783 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2026-07-29 06:06:25.565817 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1-tests.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz'\'' --'.[0m
+2026-07-29 06:06:25.565932 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1-tests.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz --.[0m
+2026-07-29 06:06:25.565948 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 06:06:25.565961 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:25.565977 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2026-07-29 06:06:25.565990 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566034 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566047 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 06:06:25.566059 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:25.566072 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:25.566088 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566099 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566114 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 06:06:25.566127 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:25.566255 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:25.566385 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566413 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566420 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 06:06:25.566442 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:25.566462 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:25.566468 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 06:06:25.566476 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz ']'.[0m
+2026-07-29 06:06:25.566501 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-29 06:06:25.566508 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1-tests.tar.gz ']'.[0m
+2026-07-29 06:06:25.566516 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:25.566552 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2026-07-29 06:06:25.566562 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2026-07-29 06:06:25.566631 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2026-07-29 06:06:25.566659 +0000 build-ubuntu-devel: .[38;5;246m06:06:25 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1-tests.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:27.083503 +0000 build-ubuntu-devel: .[38;5;246m06:06:27 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-29 06:06:27.083590 +0000 build-ubuntu-devel: .[38;5;246m06:06:27 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:29.584940 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/129495535712112bb7405f3/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp4aagdd3v --untrusted-file /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512']'..[0m
+2026-07-29 06:06:29.587124 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-29 06:06:29.589065 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp4aagdd3v --untrusted-file /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2026-07-29 06:06:29.591619 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp4aagdd3v'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2026-07-29 06:06:29.591662 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp4aagdd3v'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512'\'' --'.[0m
+2026-07-29 06:06:29.591678 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp4aagdd3v --untrusted-file /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 --.[0m
+2026-07-29 06:06:29.591686 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-29 06:06:29.591692 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-29 06:06:29.591697 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:29.591702 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp4aagdd3v.[0m
+2026-07-29 06:06:29.591707 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591712 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591717 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 06:06:29.591721 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:29.591727 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:29.591732 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591737 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591742 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 06:06:29.591747 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:29.591753 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-07-29 06:06:29.591758 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591762 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591766 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 06:06:29.591771 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:29.591777 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2026-07-29 06:06:29.591782 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591791 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591795 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 06:06:29.591800 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:29.591805 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:29.591809 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 06:06:29.591815 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz ']'.[0m
+2026-07-29 06:06:29.591821 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp4aagdd3v ']'.[0m
+2026-07-29 06:06:29.591826 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp4aagdd3v.[0m
+2026-07-29 06:06:29.592070 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:29.595238 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:29.595313 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:29.595326 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:29.595338 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:29.595346 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:29.595353 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:29.595360 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-29 06:06:29.595367 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:29.595373 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:29.595382 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:29.595389 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-07-29 06:06:29.595447 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-07-29 06:06:29.595457 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/blivet/blivet-3.10.1-tests.tar.gz.sha512.[0m
+2026-07-29 06:06:29.600189 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' bd9dfc02ff6e3371f59c697377543a6104f744527b710bc139838f351d2cbc01f04ac4839a9b74872cf02cae34a96cbd453c953d28f1047d669909ac5177a971.[0m
+2026-07-29 06:06:29.602858 +0000 build-ubuntu-devel: .[38;5;246m06:06:29 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp4aagdd3v/untrusted_blivet-3.10.1-tests.tar.gz /home/user/builder-devel/tmp/tmp4aagdd3v/blivet-3.10.1-tests.tar.gz.[0m
+2026-07-29 06:06:36.677862 +0000 build-ubuntu-devel: .[38;5;246m06:06:36 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp721..[0m
+2026-07-29 06:06:36.677960 +0000 build-ubuntu-devel: .[38;5;246m06:06:36 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp721 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'.[0m
+2026-07-29 06:06:36.947405 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-29 06:06:36.947482 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:36.950632 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2026-07-29 06:06:36.950678 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/blivet'\'' --file-name '\''blivet-3.10.1.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz'\'' --'.[0m
+2026-07-29 06:06:36.950705 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /builder/blivet --file-name blivet-3.10.1.tar.gz --file-url https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz --.[0m
+2026-07-29 06:06:36.950725 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 06:06:36.950743 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:36.950761 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/blivet.[0m
+2026-07-29 06:06:36.950779 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950796 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950813 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 06:06:36.950826 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:36.950833 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:36.950839 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950845 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950854 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 06:06:36.950861 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:36.950868 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:36.950874 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950880 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950886 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 06:06:36.950892 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:36.950898 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:36.950904 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 06:06:36.950911 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz ']'.[0m
+2026-07-29 06:06:36.950931 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-29 06:06:36.950937 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z blivet-3.10.1.tar.gz ']'.[0m
+2026-07-29 06:06:36.950944 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:36.950951 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /builder/blivet ']'.[0m
+2026-07-29 06:06:36.950957 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /builder/blivet.[0m
+2026-07-29 06:06:36.950963 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ cd /builder/blivet.[0m
+2026-07-29 06:06:36.950972 +0000 build-ubuntu-devel: .[38;5;246m06:06:37 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_blivet-3.10.1.tar.gz -- https://ftp.qubes-os.org/distfiles/blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:39.618009 +0000 build-ubuntu-devel: .[38;5;246m06:06:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-29 06:06:39.618128 +0000 build-ubuntu-devel: .[38;5;246m06:06:39 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:42.094549 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246mUsing executor local:/tmp/1294955359758242df126ab/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpw01xa7tw --untrusted-file /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512']'..[0m
+2026-07-29 06:06:42.097842 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-29 06:06:42.098120 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpw01xa7tw --untrusted-file /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2026-07-29 06:06:42.100150 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpw01xa7tw'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2026-07-29 06:06:42.100587 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpw01xa7tw'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512'\'' --'.[0m
+2026-07-29 06:06:42.100709 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpw01xa7tw --untrusted-file /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 --.[0m
+2026-07-29 06:06:42.100761 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-29 06:06:42.100810 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-29 06:06:42.100845 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:42.100877 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpw01xa7tw.[0m
+2026-07-29 06:06:42.100904 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.100930 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.100956 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 06:06:42.100981 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:42.101017 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:42.101044 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101096 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101137 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 06:06:42.101167 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:42.101195 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-07-29 06:06:42.101222 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101249 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101451 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 06:06:42.101511 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:42.101547 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2026-07-29 06:06:42.101601 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101643 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101672 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 06:06:42.101700 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 06:06:42.101727 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 06:06:42.101752 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 06:06:42.101785 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz ']'.[0m
+2026-07-29 06:06:42.101815 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpw01xa7tw ']'.[0m
+2026-07-29 06:06:42.101959 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpw01xa7tw.[0m
+2026-07-29 06:06:42.102042 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:42.102075 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:42.102102 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ FILE_NAME=blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:42.102132 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:42.102162 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:42.102193 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:42.102218 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:42.102244 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-29 06:06:42.102273 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:42.102378 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 06:06:42.102411 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512 ']'.[0m
+2026-07-29 06:06:42.102438 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-07-29 06:06:42.102465 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-07-29 06:06:42.103176 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/blivet/blivet-3.10.1.tar.gz.sha512.[0m
+2026-07-29 06:06:42.103494 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m++ printf '%s  -\n' de4c95a9b8afe59fc8e51f48ecd2916891e3294f8c584852035102a9e0f7f61d34cdbff6156adad6f0ba465d54e9e236a12a01bc0a9b3030cb1b8922f967aaf2.[0m
+2026-07-29 06:06:42.105691 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpw01xa7tw/untrusted_blivet-3.10.1.tar.gz /home/user/builder-devel/tmp/tmpw01xa7tw/blivet-3.10.1.tar.gz.[0m
+2026-07-29 06:06:42.110551 +0000 build-ubuntu-devel: .[38;5;246m06:06:42 .[96m[qb.fetch.blivet] .[38;5;246m['cd -- /builder', "git -C /builder/blivet rev-parse 'HEAD^{}' >> hash", "git -C /builder/blivet tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-29 06:06:45.912738 +0000 build-ubuntu-devel: .[38;5;246m06:06:45 .[96m[qb.fetch.blivet.fetch] .[0mUsing executor qubes:disp1062..[0m
+2026-07-29 06:06:45.912979 +0000 build-ubuntu-devel: .[38;5;246m06:06:45 .[96m[qb.fetch.blivet.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1062 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/blivet rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/blivet tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-29 06:06:48.438421 +0000 build-ubuntu-devel: .[38;5;246m06:06:48 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-29 06:06:48.438479 +0000 > closing log
