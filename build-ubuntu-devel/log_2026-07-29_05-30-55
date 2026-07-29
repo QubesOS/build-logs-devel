@@ -1,0 +1,107 @@
+2026-07-29 05:30:55.760060 +0000 > starting log
+2026-07-29 05:30:55.760695 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-07-29 05:30:55.760716 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-07-29 05:30:55.760725 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-07-29 05:30:55.760732 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-07-29 05:30:55.760746 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>>   desktop-linux-i3.[0m
+2026-07-29 05:30:55.760753 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-07-29 05:30:55.760759 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-07-29 05:30:55.760766 +0000 build-ubuntu-devel: .[38;5;246m05:30:55 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-07-29 05:30:56.503306 +0000 build-ubuntu-devel: .[38;5;246m05:30:56 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp2236..[0m
+2026-07-29 05:30:56.503393 +0000 build-ubuntu-devel: .[38;5;246m05:30:56 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2236 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-desktop-linux-i3.git /builder/desktop-linux-i3 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-07-29 05:30:59.525807 +0000 build-ubuntu-devel: .[38;5;246m05:30:59 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-07-29 05:30:59.525920 +0000 build-ubuntu-devel: .[38;5;246m05:30:59 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m---> Good tag c53bcb2722dc93e6803bd9983695a03c35a52add..[0m
+2026-07-29 05:30:59.525955 +0000 build-ubuntu-devel: .[38;5;246m05:30:59 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-07-29 05:30:59.525971 +0000 build-ubuntu-devel: .[38;5;246m05:30:59 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-07-29 05:31:03.026804 +0000 build-ubuntu-devel: .[38;5;246m05:31:03 .[96m[qb.fetch.desktop-linux-i3] .[0mLog file: /home/user/builder-devel/logs/20260729T053055-desktop-linux-i3.log.[0m
+2026-07-29 05:31:09.811017 +0000 build-ubuntu-devel: .[38;5;246m05:31:09 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp6392..[0m
+2026-07-29 05:31:09.811137 +0000 build-ubuntu-devel: .[38;5;246m05:31:09 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6392 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/desktop-linux-i3 --file-name i3-4.25.1.tar.xz --file-url https://i3wm.org/downloads/i3-4.25.1.tar.xz'.[0m
+2026-07-29 05:31:10.123871 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-07-29 05:31:10.124455 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.25.1.tar.xz --file-url https://i3wm.org/downloads/i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:10.127299 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.25.1.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.25.1.tar.xz'\'' --'.[0m
+2026-07-29 05:31:10.127395 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/desktop-linux-i3'\'' --file-name '\''i3-4.25.1.tar.xz'\'' --file-url '\''https://i3wm.org/downloads/i3-4.25.1.tar.xz'\'' --'.[0m
+2026-07-29 05:31:10.127447 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /builder/desktop-linux-i3 --file-name i3-4.25.1.tar.xz --file-url https://i3wm.org/downloads/i3-4.25.1.tar.xz --.[0m
+2026-07-29 05:31:10.127459 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 05:31:10.127467 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:10.127475 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/desktop-linux-i3.[0m
+2026-07-29 05:31:10.127483 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127494 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127501 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 05:31:10.127528 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:10.127537 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:10.127548 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127555 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127562 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 05:31:10.127569 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:10.127640 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_URL=https://i3wm.org/downloads/i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:10.127649 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127656 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127663 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 05:31:10.127881 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:10.127893 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:10.127900 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 05:31:10.127908 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z https://i3wm.org/downloads/i3-4.25.1.tar.xz ']'.[0m
+2026-07-29 05:31:10.127917 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-07-29 05:31:10.127941 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z i3-4.25.1.tar.xz ']'.[0m
+2026-07-29 05:31:10.127949 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:10.128312 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /builder/desktop-linux-i3 ']'.[0m
+2026-07-29 05:31:10.128360 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /builder/desktop-linux-i3.[0m
+2026-07-29 05:31:10.129994 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ cd /builder/desktop-linux-i3.[0m
+2026-07-29 05:31:10.130037 +0000 build-ubuntu-devel: .[38;5;246m05:31:10 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_i3-4.25.1.tar.xz -- https://i3wm.org/downloads/i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:12.428451 +0000 build-ubuntu-devel: .[38;5;246m05:31:12 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-07-29 05:31:12.428586 +0000 build-ubuntu-devel: .[38;5;246m05:31:12 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 05:31:15.831008 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246mUsing executor local:/tmp/138008373180272e11c624b/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpxq5k1vn3 --untrusted-file /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512']'..[0m
+2026-07-29 05:31:15.835661 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-07-29 05:31:15.835746 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpxq5k1vn3 --untrusted-file /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512.[0m
+2026-07-29 05:31:15.837576 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpxq5k1vn3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512'\'' --'.[0m
+2026-07-29 05:31:15.837657 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpxq5k1vn3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512'\'' --'.[0m
+2026-07-29 05:31:15.837678 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpxq5k1vn3 --untrusted-file /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512 --.[0m
+2026-07-29 05:31:15.837691 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-07-29 05:31:15.837700 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-07-29 05:31:15.837709 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:15.837717 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpxq5k1vn3.[0m
+2026-07-29 05:31:15.837726 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837733 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837741 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-07-29 05:31:15.837748 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:15.837758 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:15.837766 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837773 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837780 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-07-29 05:31:15.837788 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:15.837796 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-07-29 05:31:15.837804 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837812 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837819 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-07-29 05:31:15.837826 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:15.837843 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512.[0m
+2026-07-29 05:31:15.837852 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837860 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837867 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-07-29 05:31:15.837875 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-07-29 05:31:15.837882 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ shift.[0m
+2026-07-29 05:31:15.837889 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-07-29 05:31:15.837898 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz ']'.[0m
+2026-07-29 05:31:15.837907 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpxq5k1vn3 ']'.[0m
+2026-07-29 05:31:15.837915 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpxq5k1vn3.[0m
+2026-07-29 05:31:15.838446 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:15.839398 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:15.839453 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ FILE_NAME=i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:15.839468 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512 ']'.[0m
+2026-07-29 05:31:15.839480 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512 ']'.[0m
+2026-07-29 05:31:15.840102 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512 ']'.[0m
+2026-07-29 05:31:15.840139 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 05:31:15.841392 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-07-29 05:31:15.841461 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 05:31:15.841480 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-07-29 05:31:15.841510 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512 ']'.[0m
+2026-07-29 05:31:15.841524 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-07-29 05:31:15.843187 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-07-29 05:31:15.843334 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/desktop-linux-i3/i3-4.25.1.tar.xz.sha512.[0m
+2026-07-29 05:31:15.843715 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m++ printf '%s  -\n' 10d44f7efcfb23089edf5ec9783ddd3b9dca5592f4d5b101ec7158cd75ec73d917e3025250968c1c8e2d44c64d749855000a07b16059c582c1e80b1220ac7c81.[0m
+2026-07-29 05:31:15.847101 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpxq5k1vn3/untrusted_i3-4.25.1.tar.xz /home/user/builder-devel/tmp/tmpxq5k1vn3/i3-4.25.1.tar.xz.[0m
+2026-07-29 05:31:15.853655 +0000 build-ubuntu-devel: .[38;5;246m05:31:15 .[96m[qb.fetch.desktop-linux-i3] .[38;5;246m['cd -- /builder', "git -C /builder/desktop-linux-i3 rev-parse 'HEAD^{}' >> hash", "git -C /builder/desktop-linux-i3 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-07-29 05:31:22.840216 +0000 build-ubuntu-devel: .[38;5;246m05:31:22 .[96m[qb.fetch.desktop-linux-i3.fetch] .[0mUsing executor qubes:disp3663..[0m
+2026-07-29 05:31:22.840366 +0000 build-ubuntu-devel: .[38;5;246m05:31:22 .[96m[qb.fetch.desktop-linux-i3.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3663 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/desktop-linux-i3 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/desktop-linux-i3 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-07-29 05:31:25.601510 +0000 build-ubuntu-devel: .[38;5;246m05:31:25 .[96m[qb] .[38;5;246m> done.[0m
+2026-07-29 05:31:25.601576 +0000 > closing log
