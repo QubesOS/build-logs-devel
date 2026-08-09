@@ -1,0 +1,24 @@
+2026-08-09 02:49:12.008997 +0000 > starting log
+2026-08-09 02:49:12.009840 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-08-09 02:49:12.009860 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-08-09 02:49:12.009869 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-08-09 02:49:12.009876 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-08-09 02:49:12.009882 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>>   core-agent-linux.[0m
+2026-08-09 02:49:12.009889 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>>     commit-hash: a37fac93dca6448184ea32af1c86d018aacbbe9c.[0m
+2026-08-09 02:49:12.100549 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>>     source-hash: c0d346fda92c231bc372ee28f395884ad4d8a252b892ec60a612372e889700669143c6aaf40376a17149dfc49f69094d2d99cfa23828d04d8248abc31d177b29.[0m
+2026-08-09 02:49:12.100595 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-08-09 02:49:12.100605 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2026-08-09 02:49:12.100612 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-08-09 02:49:12.116960 +0000 build-fedora-devel: .[38;5;246m02:49:12 .[96m[qb.fetch.core-agent-linux] .[0mcore-agent-linux: source already fetched. Updating..[0m
+2026-08-09 02:49:13.590156 +0000 build-fedora-devel: .[38;5;246m02:49:13 .[96m[qb.fetch.core-agent-linux.fetch] .[0mUsing executor qubes:disp3326..[0m
+2026-08-09 02:49:13.590258 +0000 build-fedora-devel: .[38;5;246m02:49:13 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3326 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-core-agent-linux.git /builder/core-agent-linux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-08-09 02:49:18.310028 +0000 build-fedora-devel: .[38;5;246m02:49:18 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-08-09 02:49:18.310110 +0000 build-fedora-devel: .[38;5;246m02:49:18 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m---> Good tag a081ab8a56dfa14ae190429082321a2d9ef0547d..[0m
+2026-08-09 02:49:18.310121 +0000 build-fedora-devel: .[38;5;246m02:49:18 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-08-09 02:49:18.310129 +0000 build-fedora-devel: .[38;5;246m02:49:18 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m--> Merging....[0m
+2026-08-09 02:49:19.631611 +0000 build-fedora-devel: .[38;5;246m02:49:19 .[96m[qb.fetch.core-agent-linux] .[0mLog file: /home/user/builder-host/logs/20260809T024911-core-agent-linux.log.[0m
+2026-08-09 02:49:19.645263 +0000 build-fedora-devel: .[38;5;246m02:49:19 .[96m[qb.fetch.core-agent-linux] .[38;5;246m['cd -- /builder', "git -C /builder/core-agent-linux rev-parse 'HEAD^{}' >> hash", "git -C /builder/core-agent-linux tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-08-09 02:49:21.100959 +0000 build-fedora-devel: .[38;5;246m02:49:21 .[96m[qb.fetch.core-agent-linux.fetch] .[0mUsing executor qubes:disp8640..[0m
+2026-08-09 02:49:21.101273 +0000 build-fedora-devel: .[38;5;246m02:49:21 .[96m[qb.fetch.core-agent-linux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8640 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/core-agent-linux rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/core-agent-linux tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-08-09 02:49:22.654050 +0000 build-fedora-devel: .[38;5;246m02:49:22 .[96m[qb] .[38;5;246m> done.[0m
+2026-08-09 02:49:22.654118 +0000 > closing log
