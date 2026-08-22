@@ -1,0 +1,25 @@
+2026-08-22 21:25:52.035809 +0000 > starting log
+2026-08-22 21:25:52.036288 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-08-22 21:25:52.036314 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-08-22 21:25:52.036328 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-08-22 21:25:52.036337 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-08-22 21:25:52.036346 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>>   zfs.[0m
+2026-08-22 21:25:52.036359 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>>     commit-hash: 837090e50e84d274f918106e66ddc1e183e6fab2.[0m
+2026-08-22 21:25:52.036372 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>>     source-hash: c90a821e34f54b8d33462d4114951aebebff414b07ea5b4197917a193430b128a24086fa216fc86e6b7d0c9b7f13dcc4f0af77c63bb836e60e600a9efbc8ae82.[0m
+2026-08-22 21:25:52.036383 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-08-22 21:25:52.036395 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-08-22 21:25:52.036405 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-08-22 21:25:52.036417 +0000 build-debian-devel: .[38;5;246m21:25:50 .[96m[qb.fetch.zfs] .[0mzfs: source already fetched. Updating..[0m
+2026-08-22 21:25:54.041312 +0000 build-debian-devel: .[38;5;246m21:25:52 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp9879..[0m
+2026-08-22 21:25:54.041396 +0000 build-debian-devel: .[38;5;246m21:25:52 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9879 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-zfs.git /builder/zfs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-08-22 21:25:56.160256 +0000 build-debian-devel: .[38;5;246m21:25:54 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-08-22 21:25:56.160327 +0000 build-debian-devel: .[38;5;246m21:25:54 .[96m[qb.fetch.zfs.fetch] .[38;5;246m---> Good tag 2c267cfbc07707445f708a9328bb14c6b17a1c84..[0m
+2026-08-22 21:25:56.160339 +0000 build-debian-devel: .[38;5;246m21:25:54 .[96m[qb.fetch.zfs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-08-22 21:25:56.160398 +0000 build-debian-devel: .[38;5;246m21:25:54 .[96m[qb.fetch.zfs.fetch] .[38;5;246m--> Merging....[0m
+2026-08-22 21:25:59.576016 +0000 build-debian-devel: .[38;5;246m21:25:58 .[96m[qb.fetch.zfs] .[0mLog file: /home/user/builder-devel/logs/20260822T212550-zfs.log.[0m
+2026-08-22 21:25:59.579686 +0000 build-debian-devel: .[38;5;246m21:25:58 .[96m[qb.fetch.zfs] .[0mzfs: file zfs-2.4.3.tar.gz already downloaded. Skipping..[0m
+2026-08-22 21:25:59.583013 +0000 build-debian-devel: .[38;5;246m21:25:58 .[96m[qb.fetch.zfs] .[38;5;246m['cd -- /builder', "git -C /builder/zfs rev-parse 'HEAD^{}' >> hash", "git -C /builder/zfs tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-08-22 21:26:09.362616 +0000 build-debian-devel: .[38;5;246m21:26:08 .[96m[qb.fetch.zfs.fetch] .[0mUsing executor qubes:disp8755..[0m
+2026-08-22 21:26:09.363231 +0000 build-debian-devel: .[38;5;246m21:26:08 .[96m[qb.fetch.zfs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8755 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/zfs rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/zfs tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-08-22 21:26:12.202239 +0000 build-debian-devel: .[38;5;246m21:26:10 .[96m[qb] .[38;5;246m> done.[0m
+2026-08-22 21:26:12.202371 +0000 > closing log
