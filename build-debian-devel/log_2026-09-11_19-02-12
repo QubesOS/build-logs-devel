@@ -1,0 +1,229 @@
+2026-09-11 19:02:12.371916 +0000 > starting log
+2026-09-11 19:02:12.372669 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-11 19:02:12.372685 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-11 19:02:12.372778 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-11 19:02:12.372790 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-11 19:02:12.372797 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>>   linux-kernel-latest.[0m
+2026-09-11 19:02:12.372805 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>>     commit-hash: f6751577133ec7389bb89366cc87a9720000542d.[0m
+2026-09-11 19:02:12.372815 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>>     source-hash: 5b8a89a45468e5f5d40be746b63a23e33dd95b714e3d43c735675b73cd15e88791969acd8fde51f9ebb18609cbf11717b04f8305e6e485b350883f234a2ab08b.[0m
+2026-09-11 19:02:12.372821 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-11 19:02:12.372832 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-09-11 19:02:12.372839 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-11 19:02:12.372845 +0000 build-debian-devel: .[38;5;246m19:02:12 .[96m[qb.fetch.linux-kernel-latest] .[0mlinux-kernel-latest: source already fetched. Updating..[0m
+2026-09-11 19:02:16.858426 +0000 build-debian-devel: .[38;5;246m19:02:16 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp5229..[0m
+2026-09-11 19:02:16.858664 +0000 build-debian-devel: .[38;5;246m19:02:16 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5229 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-kernel /builder/linux-kernel-latest /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-11 19:02:20.374401 +0000 build-debian-devel: .[38;5;246m19:02:20 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-11 19:02:20.374488 +0000 build-debian-devel: .[38;5;246m19:02:20 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m---> Good tag 6079c328185f7d1bdf95ec73e037bc5af8a430ed..[0m
+2026-09-11 19:02:20.374504 +0000 build-debian-devel: .[38;5;246m19:02:20 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-11 19:02:20.374518 +0000 build-debian-devel: .[38;5;246m19:02:20 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Merging....[0m
+2026-09-11 19:02:20.374525 +0000 build-debian-devel: .[38;5;246m19:02:20 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Updating submodules.[0m
+2026-09-11 19:02:23.030557 +0000 build-debian-devel: .[38;5;246m19:02:23 .[96m[qb.fetch.linux-kernel-latest] .[0mLog file: /home/user/builder-devel/logs/20260911T190158-linux-kernel-latest.log.[0m
+2026-09-11 19:02:27.640104 +0000 build-debian-devel: .[38;5;246m19:02:27 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp5082..[0m
+2026-09-11 19:02:27.640212 +0000 build-debian-devel: .[38;5;246m19:02:27 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5082 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-kernel-latest --file-name linux-7.2.5.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign --uncompress'.[0m
+2026-09-11 19:02:28.925409 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-09-11 19:02:28.925487 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-kernel-latest --file-name linux-7.2.5.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign --uncompress.[0m
+2026-09-11 19:02:28.927953 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.2.5.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign'\'' --uncompress --'.[0m
+2026-09-11 19:02:28.928081 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.2.5.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign'\'' --uncompress --'.[0m
+2026-09-11 19:02:28.928124 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-kernel-latest --file-name linux-7.2.5.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign --uncompress --.[0m
+2026-09-11 19:02:28.928145 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 10 -gt 0 ]].[0m
+2026-09-11 19:02:28.928154 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:02:28.928162 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-kernel-latest.[0m
+2026-09-11 19:02:28.928169 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928175 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928182 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 8 -gt 0 ]].[0m
+2026-09-11 19:02:28.928189 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:02:28.928235 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.2.5.tar.xz.[0m
+2026-09-11 19:02:28.928242 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928249 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928272 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 6 -gt 0 ]].[0m
+2026-09-11 19:02:28.928281 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:02:28.928330 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz.[0m
+2026-09-11 19:02:28.928357 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928382 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928437 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 4 -gt 0 ]].[0m
+2026-09-11 19:02:28.928463 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:02:28.928488 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign.[0m
+2026-09-11 19:02:28.928497 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928504 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928661 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 2 -gt 0 ]].[0m
+2026-09-11 19:02:28.928680 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:02:28.928690 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNCOMPRESS=1.[0m
+2026-09-11 19:02:28.928716 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928724 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:02:28.928779 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-09-11 19:02:28.928789 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz ']'.[0m
+2026-09-11 19:02:28.928817 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-09-11 19:02:28.928845 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z linux-7.2.5.tar.xz ']'.[0m
+2026-09-11 19:02:28.928854 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.2.5.tar.xz.[0m
+2026-09-11 19:02:28.928861 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /builder/linux-kernel-latest ']'.[0m
+2026-09-11 19:02:28.928871 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /builder/linux-kernel-latest.[0m
+2026-09-11 19:02:28.929793 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ cd /builder/linux-kernel-latest.[0m
+2026-09-11 19:02:28.929833 +0000 build-debian-devel: .[38;5;246m19:02:28 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.2.5.tar.xz -- https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.xz.[0m
+2026-09-11 19:05:51.891788 +0000 build-debian-devel: .[38;5;246m19:05:51 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1 == 1 ']'.[0m
+2026-09-11 19:05:51.891839 +0000 build-debian-devel: .[38;5;246m19:05:51 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.2.5.tar.xz '!=' linux-7.2.5.tar.xz ']'.[0m
+2026-09-11 19:05:51.891848 +0000 build-debian-devel: .[38;5;246m19:05:51 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.2.5.tar '!=' linux-7.2.5.tar.xz ']'.[0m
+2026-09-11 19:05:51.891855 +0000 build-debian-devel: .[38;5;246m19:05:51 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unxz untrusted_linux-7.2.5.tar.xz.[0m
+2026-09-11 19:05:58.699525 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.2.5.tar.[0m
+2026-09-11 19:05:58.699674 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:05:58.700405 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign.[0m
+2026-09-11 19:05:58.703952 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.2.5.tar.sign.[0m
+2026-09-11 19:05:58.704209 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.2.5.tar.sign.[0m
+2026-09-11 19:05:58.704345 +0000 build-debian-devel: .[38;5;246m19:05:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.2.5.tar.sign https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:13.617652 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mUsing executor local:/tmp/137133702262128ab24aebe/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpp5esl7m1 --untrusted-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc']'..[0m
+2026-09-11 19:06:13.622972 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-09-11 19:06:13.623047 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpp5esl7m1 --untrusted-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-09-11 19:06:13.625457 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpp5esl7m1'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-09-11 19:06:13.625526 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpp5esl7m1'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-09-11 19:06:13.625558 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpp5esl7m1 --untrusted-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc --.[0m
+2026-09-11 19:06:13.625571 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-09-11 19:06:13.625583 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-09-11 19:06:13.625590 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625603 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpp5esl7m1.[0m
+2026-09-11 19:06:13.625611 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625619 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625625 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-09-11 19:06:13.625636 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625646 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.[0m
+2026-09-11 19:06:13.625653 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625661 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625670 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-09-11 19:06:13.625679 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625710 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:13.625720 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625729 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625739 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-09-11 19:06:13.625747 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625754 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-09-11 19:06:13.625761 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625767 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625774 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-09-11 19:06:13.625783 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625793 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-09-11 19:06:13.625801 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625809 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625819 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-09-11 19:06:13.625827 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-11 19:06:13.625833 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-09-11 19:06:13.625842 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-09-11 19:06:13.625854 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar ']'.[0m
+2026-09-11 19:06:13.625866 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpp5esl7m1 ']'.[0m
+2026-09-11 19:06:13.625878 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpp5esl7m1.[0m
+2026-09-11 19:06:13.628925 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.[0m
+2026-09-11 19:06:13.634145 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.2.5.tar.[0m
+2026-09-11 19:06:13.634199 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.2.5.tar.[0m
+2026-09-11 19:06:13.634209 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-09-11 19:06:13.634219 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:06:13.634226 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-11 19:06:13.634234 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:06:13.634242 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-09-11 19:06:13.634253 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:06:13.634261 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:06:13.634269 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-09-11 19:06:13.634279 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-11 19:06:13.634287 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign ']'.[0m
+2026-09-11 19:06:13.634295 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-09-11 19:06:13.634303 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:13.635930 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:13.635971 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:13.635981 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-09-11 19:06:13.636629 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.DQQtV8G8X1.[0m
+2026-09-11 19:06:13.636662 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-09-11 19:06:13.704320 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.DQQtV8G8X1/keyring /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-09-11 19:06:13.761321 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.DQQtV8G8X1/keyring.gpg /tmp/tmp.DQQtV8G8X1/keyring.[0m
+2026-09-11 19:06:13.775366 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sqv --version.[0m
+2026-09-11 19:06:13.778110 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv_version='sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-09-11 19:06:13.778144 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sort -VC.[0m
+2026-09-11 19:06:13.778156 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-09-11 19:06:13.781731 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-09-11 19:06:13.783414 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-09-11 19:06:13.783458 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-09-11 19:06:13.783487 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-09-11 19:06:13.783499 +0000 build-debian-devel: .[38;5;246m19:06:13 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.DQQtV8G8X1/keyring /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.[0m
+2026-09-11 19:06:18.285775 +0000 build-debian-devel: .[38;5;246m19:06:18 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m647F28654894E3BD457199BE38DBBDC86092693E.[0m
+2026-09-11 19:06:18.286639 +0000 build-debian-devel: .[38;5;246m19:06:18 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar.sign /home/user/builder-devel/tmp/tmpp5esl7m1/linux-7.2.5.tar.sign.[0m
+2026-09-11 19:06:18.295004 +0000 build-debian-devel: .[38;5;246m19:06:18 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ rm -rf /tmp/tmp.DQQtV8G8X1.[0m
+2026-09-11 19:06:18.301855 +0000 build-debian-devel: .[38;5;246m19:06:18 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpp5esl7m1/untrusted_linux-7.2.5.tar /home/user/builder-devel/tmp/tmpp5esl7m1/linux-7.2.5.tar.[0m
+2026-09-11 19:06:21.851218 +0000 build-debian-devel: .[38;5;246m19:06:21 .[96m[qb.fetch.linux-kernel-latest] .[38;5;246m['cd -- /builder', "git -C /builder/linux-kernel-latest rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-kernel-latest tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-09-11 19:06:25.218459 +0000 build-debian-devel: .[38;5;246m19:06:25 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp4584..[0m
+2026-09-11 19:06:25.218552 +0000 build-debian-devel: .[38;5;246m19:06:25 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4584 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-kernel-latest rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-kernel-latest tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-09-11 19:06:30.660058 +0000 build-debian-devel: .[38;5;246m19:06:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp8010..[0m
+2026-09-11 19:06:30.660227 +0000 build-debian-devel: .[38;5;246m19:06:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8010 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'rm -f -- /builder/modules && cd -- /builder && git -C /builder/linux-kernel-latest/dummy-psu rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/dummy-backlight rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/v4l2loopback rev-parse HEAD >> modules'.[0m
+2026-09-11 19:06:37.826883 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp6189..[0m
+2026-09-11 19:06:37.826983 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6189 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-psu dummy-psu-4602afb3f9aeab06.tar.gz dummy-psu/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-backlight dummy-backlight-33420931ad20f1e3.tar.gz dummy-backlight/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/v4l2loopback v4l2loopback-a7e4a4dea36187ad.tar.gz v4l2loopback/'.[0m
+2026-09-11 19:06:37.912788 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-09-11 19:06:37.912858 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-09-11 19:06:37.912871 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-09-11 19:06:37.930055 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-09-11 19:06:37.930148 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-09-11 19:06:37.930181 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-psu = --no-gitignore ']'.[0m
+2026-09-11 19:06:37.931612 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-psu.[0m
+2026-09-11 19:06:37.935736 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-psu.[0m
+2026-09-11 19:06:37.935797 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-09-11 19:06:37.935817 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-09-11 19:06:37.935859 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-psu/ '!=' x ']'.[0m
+2026-09-11 19:06:37.935934 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-psu/.[0m
+2026-09-11 19:06:37.936001 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-psu.[0m
+2026-09-11 19:06:37.936067 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-09-11 19:06:37.936318 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-psu ~.[0m
+2026-09-11 19:06:37.972479 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1783647624.[0m
+2026-09-11 19:06:37.973277 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-09-11 19:06:37.973332 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-09-11 19:06:37.973346 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-09-11 19:06:37.978170 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-09-11 19:06:37.978255 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1783647624 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-psu/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-psu-4602afb3f9aeab06.tar -cf dummy-psu-4602afb3f9aeab06.tar ..[0m
+2026-09-11 19:06:37.982803 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-09-11 19:06:37.982880 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-09-11 19:06:37.988779 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-09-11 19:06:37.988857 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-09-11 19:06:37.995008 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-09-11 19:06:37.995090 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-09-11 19:06:37.995103 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-09-11 19:06:37.997809 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-09-11 19:06:37.997877 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-09-11 19:06:37.997899 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-backlight = --no-gitignore ']'.[0m
+2026-09-11 19:06:37.998213 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-09-11 19:06:38.000035 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-backlight.[0m
+2026-09-11 19:06:38.000107 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-09-11 19:06:38.000314 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-09-11 19:06:38.000369 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-backlight/ '!=' x ']'.[0m
+2026-09-11 19:06:38.000386 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-backlight/.[0m
+2026-09-11 19:06:38.000396 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-09-11 19:06:38.000465 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-backlight ~.[0m
+2026-09-11 19:06:38.000561 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-09-11 19:06:38.003548 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1600607528.[0m
+2026-09-11 19:06:38.005462 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-09-11 19:06:38.005498 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-09-11 19:06:38.005509 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-09-11 19:06:38.006129 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-09-11 19:06:38.006170 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1600607528 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-backlight/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-backlight-33420931ad20f1e3.tar -cf dummy-backlight-33420931ad20f1e3.tar ..[0m
+2026-09-11 19:06:38.008753 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-09-11 19:06:38.008800 +0000 build-debian-devel: .[38;5;246m19:06:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-09-11 19:06:38.012320 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-09-11 19:06:38.012388 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-09-11 19:06:38.018244 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-09-11 19:06:38.018313 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-09-11 19:06:38.018336 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-09-11 19:06:38.021140 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-09-11 19:06:38.021227 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-09-11 19:06:38.021259 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/v4l2loopback = --no-gitignore ']'.[0m
+2026-09-11 19:06:38.021570 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-09-11 19:06:38.022805 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/v4l2loopback.[0m
+2026-09-11 19:06:38.022890 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-09-11 19:06:38.022923 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-09-11 19:06:38.022942 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xv4l2loopback/ '!=' x ']'.[0m
+2026-09-11 19:06:38.022952 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=v4l2loopback/.[0m
+2026-09-11 19:06:38.022961 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-09-11 19:06:38.022970 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/v4l2loopback ~.[0m
+2026-09-11 19:06:38.023367 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-09-11 19:06:38.025548 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1763990111.[0m
+2026-09-11 19:06:38.027532 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-09-11 19:06:38.027586 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-09-11 19:06:38.027604 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-09-11 19:06:38.030412 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-09-11 19:06:38.030471 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1763990111 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%v4l2loopback/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude v4l2loopback-a7e4a4dea36187ad.tar -cf v4l2loopback-a7e4a4dea36187ad.tar ..[0m
+2026-09-11 19:06:38.034324 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-09-11 19:06:38.034366 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-09-11 19:06:38.066601 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-09-11 19:06:38.066682 +0000 build-debian-devel: .[38;5;246m19:06:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-09-11 19:06:41.956914 +0000 build-debian-devel: .[38;5;246m19:06:41 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-11 19:06:41.956988 +0000 > closing log
