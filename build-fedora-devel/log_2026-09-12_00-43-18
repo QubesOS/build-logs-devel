@@ -1,0 +1,24 @@
+2026-09-12 00:43:18.275726 +0000 > starting log
+2026-09-12 00:43:18.276663 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-12 00:43:18.276691 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-12 00:43:18.276700 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-12 00:43:18.276706 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-12 00:43:18.276713 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>>   qubes-release.[0m
+2026-09-12 00:43:18.276720 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>>     commit-hash: afc28addf1a6ff21d7a9a1227cb0b341d210a9e0.[0m
+2026-09-12 00:43:18.276730 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>>     source-hash: baf1018eaf48510ea6deb65cd86a2ae2f1fc60d3e5437ce4bdd751a68c9ce2f0d6cb64e40e19771c4f501bc7cd449ee753accda5060ba89a5aebbe830fe85fea.[0m
+2026-09-12 00:43:18.276740 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-12 00:43:18.276747 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>].[0m
+2026-09-12 00:43:18.276753 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-12 00:43:18.288819 +0000 build-fedora-devel: .[38;5;246m00:43:18 .[96m[qb.fetch.qubes-release] .[0mqubes-release: source already fetched. Updating..[0m
+2026-09-12 00:43:21.447399 +0000 build-fedora-devel: .[38;5;246m00:43:21 .[96m[qb.fetch.qubes-release.fetch] .[0mUsing executor qubes:disp1975..[0m
+2026-09-12 00:43:21.447481 +0000 build-fedora-devel: .[38;5;246m00:43:21 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1975 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-qubes-release.git /builder/qubes-release /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-12 00:43:25.582966 +0000 build-fedora-devel: .[38;5;246m00:43:25 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-12 00:43:25.583099 +0000 build-fedora-devel: .[38;5;246m00:43:25 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246m---> Good tag 8f8886cf3f392844ae2cd235581fbe47f32bfa4f..[0m
+2026-09-12 00:43:25.583135 +0000 build-fedora-devel: .[38;5;246m00:43:25 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-12 00:43:25.583160 +0000 build-fedora-devel: .[38;5;246m00:43:25 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246m--> Merging....[0m
+2026-09-12 00:43:27.525824 +0000 build-fedora-devel: .[38;5;246m00:43:27 .[96m[qb.fetch.qubes-release] .[0mLog file: /home/user/builder-host/logs/20260912T004317-qubes-release.log.[0m
+2026-09-12 00:43:27.532110 +0000 build-fedora-devel: .[38;5;246m00:43:27 .[96m[qb.fetch.qubes-release] .[38;5;246m['cd -- /builder', "git -C /builder/qubes-release rev-parse 'HEAD^{}' >> hash", "git -C /builder/qubes-release tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-09-12 00:43:32.386356 +0000 build-fedora-devel: .[38;5;246m00:43:32 .[96m[qb.fetch.qubes-release.fetch] .[0mUsing executor qubes:disp6817..[0m
+2026-09-12 00:43:32.386455 +0000 build-fedora-devel: .[38;5;246m00:43:32 .[96m[qb.fetch.qubes-release.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6817 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/qubes-release rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/qubes-release tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-09-12 00:43:38.060106 +0000 build-fedora-devel: .[38;5;246m00:43:38 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-12 00:43:38.060197 +0000 > closing log
