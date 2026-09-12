@@ -1,0 +1,64 @@
+2026-09-12 14:38:13.602566 +0000 > starting log
+2026-09-12 14:38:13.602846 +0000 build-fedora-devel: + keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-12 14:38:13.602861 +0000 build-fedora-devel: + scripts_dir=/usr/local/lib/qubes-builder-github
+2026-09-12 14:38:13.602870 +0000 build-fedora-devel: + '[' /usr/local/lib/qubes-builder-github/keys -nt /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-12 14:38:13.602876 +0000 build-fedora-devel: + . /usr/local/lib/qubes-builder-github/lib/functions.sh
+2026-09-12 14:38:13.602881 +0000 build-fedora-devel: ++ config_file=/home/user/.config/qubes-builder-github/builders.list
+2026-09-12 14:38:13.602887 +0000 build-fedora-devel: ++ '[' -z /home/user/builder-github-logs/1789223893-19951 ']'
+2026-09-12 14:38:13.602891 +0000 build-fedora-devel: +++ mktemp -d
+2026-09-12 14:38:13.602897 +0000 build-fedora-devel: ++ tmpdir=/tmp/tmp.bAT4lLvwf0
+2026-09-12 14:38:13.602904 +0000 build-fedora-devel: ++ trap 'rm -rf $tmpdir' EXIT
+2026-09-12 14:38:13.602908 +0000 build-fedora-devel: ++ command -v mkmetalink
+2026-09-12 14:38:13.602913 +0000 build-fedora-devel: /home/user/.local/bin/mkmetalink
+2026-09-12 14:38:13.602918 +0000 build-fedora-devel: + command_signer=
+2026-09-12 14:38:13.602925 +0000 build-fedora-devel: + read_stdin_command_and_verify_signature /usr/local/lib/qubes-builder-github /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg /tmp/tmp.bAT4lLvwf0/command command_signer
+2026-09-12 14:38:13.602931 +0000 build-fedora-devel: + local fpr python_script_path local_keyring_path local_output_file local_signer
+2026-09-12 14:38:13.602936 +0000 build-fedora-devel: + '[' 4 -ne 4 ']'
+2026-09-12 14:38:13.602941 +0000 build-fedora-devel: + python_script_path=/usr/local/lib/qubes-builder-github
+2026-09-12 14:38:13.602946 +0000 build-fedora-devel: + local_keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-12 14:38:13.602951 +0000 build-fedora-devel: + local_output_file=/tmp/tmp.bAT4lLvwf0/command
+2026-09-12 14:38:13.602955 +0000 build-fedora-devel: + local_signer=command_signer
+2026-09-12 14:38:13.602960 +0000 build-fedora-devel: + '[' -r /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-12 14:38:13.602965 +0000 build-fedora-devel: + '[' -d /tmp/tmp.bAT4lLvwf0 ']'
+2026-09-12 14:38:13.602971 +0000 build-fedora-devel: + /usr/local/lib/qubes-builder-github/utils/parse-command /tmp/tmp.bAT4lLvwf0/untrusted_command /tmp/tmp.bAT4lLvwf0/untrusted_command.sig
+2026-09-12 14:38:13.602975 +0000 build-fedora-devel: + exec
+2026-09-12 14:38:13.602981 +0000 build-fedora-devel: + '[' '!' -r /tmp/tmp.bAT4lLvwf0/untrusted_command ']'
+2026-09-12 14:38:13.602986 +0000 build-fedora-devel: + '[' '!' -r /tmp/tmp.bAT4lLvwf0/untrusted_command.sig ']'
+2026-09-12 14:38:13.603430 +0000 build-fedora-devel: ++ date --iso-8601=seconds -d tomorrow
+2026-09-12 14:38:13.603448 +0000 build-fedora-devel: + future=2026-09-13T14:38:13+00:00
+2026-09-12 14:38:13.603456 +0000 build-fedora-devel: ++ sqv --not-after 2026-09-13T14:38:13+00:00 --keyring /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg -- /tmp/tmp.bAT4lLvwf0/untrusted_command.sig /tmp/tmp.bAT4lLvwf0/untrusted_command
+2026-09-12 14:38:13.603462 +0000 build-fedora-devel: + fpr=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-12 14:38:13.603466 +0000 build-fedora-devel: + [[ 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F =~ ^[A-F0-9]{40}$ ]]
+2026-09-12 14:38:13.603471 +0000 build-fedora-devel: + '[' -n command_signer ']'
+2026-09-12 14:38:13.603475 +0000 build-fedora-devel: + eval 'command_signer=$fpr'
+2026-09-12 14:38:13.603479 +0000 build-fedora-devel: ++ command_signer=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-12 14:38:13.603484 +0000 build-fedora-devel: + rm -f /tmp/tmp.bAT4lLvwf0/gpg-status
+2026-09-12 14:38:13.603488 +0000 build-fedora-devel: + head -n 1 /tmp/tmp.bAT4lLvwf0/untrusted_command
+2026-09-12 14:38:13.603493 +0000 build-fedora-devel: + echo ''
+2026-09-12 14:38:13.603497 +0000 build-fedora-devel: + printf 'Command: '
+2026-09-12 14:38:13.603502 +0000 build-fedora-devel: Command: + cat /tmp/tmp.bAT4lLvwf0/command
+2026-09-12 14:38:13.603506 +0000 build-fedora-devel: Build-iso rdevel devel.202609121637 202609121637
+2026-09-12 14:38:13.603512 +0000 build-fedora-devel: + trap 'rc=$?; rm -rf "$tmpdir"; [ "$rc" -eq 0 ] || upload_command_log' EXIT
+2026-09-12 14:38:13.603516 +0000 build-fedora-devel: + read -r action args
+2026-09-12 14:38:13.603523 +0000 build-fedora-devel: + case "$action" in
+2026-09-12 14:38:13.603530 +0000 build-fedora-devel: + /usr/local/lib/qubes-builder-github/github-command.py dispatch --command-log /home/user/builder-github-logs/1789223893-19951.log --signer-fpr 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F Build-iso /tmp/tmp.bAT4lLvwf0/command
+2026-09-12 14:38:13.603535 +0000 build-fedora-devel: Traceback (most recent call last):
+2026-09-12 14:38:13.603540 +0000 build-fedora-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 706, in <module>
+2026-09-12 14:38:13.603544 +0000 build-fedora-devel:     main()
+2026-09-12 14:38:13.603548 +0000 build-fedora-devel:     ~~~~^^
+2026-09-12 14:38:13.603553 +0000 build-fedora-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 701, in main
+2026-09-12 14:38:13.603557 +0000 build-fedora-devel:     args.func(args)
+2026-09-12 14:38:13.603561 +0000 build-fedora-devel:     ~~~~~~~~~^^^^^^
+2026-09-12 14:38:13.603566 +0000 build-fedora-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 161, in _run_dispatch
+2026-09-12 14:38:13.603571 +0000 build-fedora-devel:     raise GithubCommandError(
+2026-09-12 14:38:13.603576 +0000 build-fedora-devel:         f"Timestamp outside of allowed range (min: {timestamp_min}, max: {timestamp_max}, current={timestamp})"
+2026-09-12 14:38:13.603580 +0000 build-fedora-devel:     )
+2026-09-12 14:38:13.603587 +0000 build-fedora-devel: GithubCommandError: Timestamp outside of allowed range (min: 2026-09-12 13:38:13.488372+00:00, max: 2026-09-12 14:43:13.488372+00:00, current=2026-09-12 16:37:00+00:00)
+2026-09-12 14:38:13.603595 +0000 build-fedora-devel: 2026-09-12 14:38:13,488 [github-command] ERROR: Timestamp outside of allowed range (min: 2026-09-12 13:38:13.488372+00:00, max: 2026-09-12 14:43:13.488372+00:00, current=2026-09-12 16:37:00+00:00)
+2026-09-12 14:38:13.603599 +0000 build-fedora-devel: + rc=1
+2026-09-12 14:38:13.603604 +0000 build-fedora-devel: + rm -rf /tmp/tmp.bAT4lLvwf0
+2026-09-12 14:38:13.603608 +0000 build-fedora-devel: + '[' 1 -eq 0 ']'
+2026-09-12 14:38:13.603613 +0000 build-fedora-devel: + upload_command_log
+2026-09-12 14:38:13.603618 +0000 build-fedora-devel: + '[' -s /home/user/builder-github-logs/1789223893-19951.log ']'
+2026-09-12 14:38:13.603623 +0000 build-fedora-devel: + qrexec-client-vm dom0 qubesbuilder.BuildLog
+2026-09-12 14:38:13.603630 +0000 > closing log
