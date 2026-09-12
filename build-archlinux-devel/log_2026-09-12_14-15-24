@@ -1,0 +1,64 @@
+2026-09-12 14:15:24.767841 +0000 > starting log
+2026-09-12 14:15:24.768215 +0000 build-archlinux-devel: + keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-12 14:15:24.768229 +0000 build-archlinux-devel: + scripts_dir=/usr/local/lib/qubes-builder-github
+2026-09-12 14:15:24.768238 +0000 build-archlinux-devel: + '[' /usr/local/lib/qubes-builder-github/keys -nt /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-12 14:15:24.768244 +0000 build-archlinux-devel: + . /usr/local/lib/qubes-builder-github/lib/functions.sh
+2026-09-12 14:15:24.768250 +0000 build-archlinux-devel: ++ config_file=/home/user/.config/qubes-builder-github/builders.list
+2026-09-12 14:15:24.768255 +0000 build-archlinux-devel: ++ '[' -z /home/user/builder-github-logs/1789222524-20888 ']'
+2026-09-12 14:15:24.768259 +0000 build-archlinux-devel: +++ mktemp -d
+2026-09-12 14:15:24.768266 +0000 build-archlinux-devel: ++ tmpdir=/tmp/tmp.RzPLxBXaWN
+2026-09-12 14:15:24.768270 +0000 build-archlinux-devel: ++ trap 'rm -rf $tmpdir' EXIT
+2026-09-12 14:15:24.768274 +0000 build-archlinux-devel: ++ command -v mkmetalink
+2026-09-12 14:15:24.768278 +0000 build-archlinux-devel: /home/user/.local/bin/mkmetalink
+2026-09-12 14:15:24.768283 +0000 build-archlinux-devel: + command_signer=
+2026-09-12 14:15:24.768290 +0000 build-archlinux-devel: + read_stdin_command_and_verify_signature /usr/local/lib/qubes-builder-github /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg /tmp/tmp.RzPLxBXaWN/command command_signer
+2026-09-12 14:15:24.768296 +0000 build-archlinux-devel: + local fpr python_script_path local_keyring_path local_output_file local_signer
+2026-09-12 14:15:24.768300 +0000 build-archlinux-devel: + '[' 4 -ne 4 ']'
+2026-09-12 14:15:24.768305 +0000 build-archlinux-devel: + python_script_path=/usr/local/lib/qubes-builder-github
+2026-09-12 14:15:24.768310 +0000 build-archlinux-devel: + local_keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-12 14:15:24.768315 +0000 build-archlinux-devel: + local_output_file=/tmp/tmp.RzPLxBXaWN/command
+2026-09-12 14:15:24.768319 +0000 build-archlinux-devel: + local_signer=command_signer
+2026-09-12 14:15:24.768324 +0000 build-archlinux-devel: + '[' -r /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-12 14:15:24.768328 +0000 build-archlinux-devel: + '[' -d /tmp/tmp.RzPLxBXaWN ']'
+2026-09-12 14:15:24.768334 +0000 build-archlinux-devel: + /usr/local/lib/qubes-builder-github/utils/parse-command /tmp/tmp.RzPLxBXaWN/untrusted_command /tmp/tmp.RzPLxBXaWN/untrusted_command.sig
+2026-09-12 14:15:24.768338 +0000 build-archlinux-devel: + exec
+2026-09-12 14:15:24.768343 +0000 build-archlinux-devel: + '[' '!' -r /tmp/tmp.RzPLxBXaWN/untrusted_command ']'
+2026-09-12 14:15:24.768348 +0000 build-archlinux-devel: + '[' '!' -r /tmp/tmp.RzPLxBXaWN/untrusted_command.sig ']'
+2026-09-12 14:15:24.768352 +0000 build-archlinux-devel: ++ date --iso-8601=seconds -d tomorrow
+2026-09-12 14:15:24.768356 +0000 build-archlinux-devel: + future=2026-09-13T14:15:24+00:00
+2026-09-12 14:15:24.768363 +0000 build-archlinux-devel: ++ sqv --not-after 2026-09-13T14:15:24+00:00 --keyring /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg -- /tmp/tmp.RzPLxBXaWN/untrusted_command.sig /tmp/tmp.RzPLxBXaWN/untrusted_command
+2026-09-12 14:15:24.768368 +0000 build-archlinux-devel: + fpr=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-12 14:15:24.768373 +0000 build-archlinux-devel: + [[ 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F =~ ^[A-F0-9]{40}$ ]]
+2026-09-12 14:15:24.768377 +0000 build-archlinux-devel: + '[' -n command_signer ']'
+2026-09-12 14:15:24.768381 +0000 build-archlinux-devel: + eval 'command_signer=$fpr'
+2026-09-12 14:15:24.768386 +0000 build-archlinux-devel: ++ command_signer=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-12 14:15:24.768390 +0000 build-archlinux-devel: + rm -f /tmp/tmp.RzPLxBXaWN/gpg-status
+2026-09-12 14:15:24.768395 +0000 build-archlinux-devel: + head -n 1 /tmp/tmp.RzPLxBXaWN/untrusted_command
+2026-09-12 14:15:24.768399 +0000 build-archlinux-devel: + echo ''
+2026-09-12 14:15:24.768403 +0000 build-archlinux-devel: + printf 'Command: '
+2026-09-12 14:15:24.768407 +0000 build-archlinux-devel: Command: + cat /tmp/tmp.RzPLxBXaWN/command
+2026-09-12 14:15:24.768412 +0000 build-archlinux-devel: Build-iso rdevel 4.4.202609121615 202609121615
+2026-09-12 14:15:24.768419 +0000 build-archlinux-devel: + trap 'rc=$?; rm -rf "$tmpdir"; [ "$rc" -eq 0 ] || upload_command_log' EXIT
+2026-09-12 14:15:24.768423 +0000 build-archlinux-devel: + read -r action args
+2026-09-12 14:15:24.768427 +0000 build-archlinux-devel: + case "$action" in
+2026-09-12 14:15:24.768435 +0000 build-archlinux-devel: + /usr/local/lib/qubes-builder-github/github-command.py dispatch --command-log /home/user/builder-github-logs/1789222524-20888.log --signer-fpr 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F Build-iso /tmp/tmp.RzPLxBXaWN/command
+2026-09-12 14:15:24.768439 +0000 build-archlinux-devel: Traceback (most recent call last):
+2026-09-12 14:15:24.768444 +0000 build-archlinux-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 706, in <module>
+2026-09-12 14:15:24.768448 +0000 build-archlinux-devel:     main()
+2026-09-12 14:15:24.768452 +0000 build-archlinux-devel:     ~~~~^^
+2026-09-12 14:15:24.768457 +0000 build-archlinux-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 701, in main
+2026-09-12 14:15:24.768461 +0000 build-archlinux-devel:     args.func(args)
+2026-09-12 14:15:24.768465 +0000 build-archlinux-devel:     ~~~~~~~~~^^^^^^
+2026-09-12 14:15:24.768470 +0000 build-archlinux-devel:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 161, in _run_dispatch
+2026-09-12 14:15:24.768474 +0000 build-archlinux-devel:     raise GithubCommandError(
+2026-09-12 14:15:24.768479 +0000 build-archlinux-devel:         f"Timestamp outside of allowed range (min: {timestamp_min}, max: {timestamp_max}, current={timestamp})"
+2026-09-12 14:15:24.768483 +0000 build-archlinux-devel:     )
+2026-09-12 14:15:24.768489 +0000 build-archlinux-devel: GithubCommandError: Timestamp outside of allowed range (min: 2026-09-12 13:15:24.692488+00:00, max: 2026-09-12 14:20:24.692488+00:00, current=2026-09-12 16:15:00+00:00)
+2026-09-12 14:15:24.768496 +0000 build-archlinux-devel: 2026-09-12 14:15:24,692 [github-command] ERROR: Timestamp outside of allowed range (min: 2026-09-12 13:15:24.692488+00:00, max: 2026-09-12 14:20:24.692488+00:00, current=2026-09-12 16:15:00+00:00)
+2026-09-12 14:15:24.768500 +0000 build-archlinux-devel: + rc=1
+2026-09-12 14:15:24.768504 +0000 build-archlinux-devel: + rm -rf /tmp/tmp.RzPLxBXaWN
+2026-09-12 14:15:24.768513 +0000 build-archlinux-devel: + '[' 1 -eq 0 ']'
+2026-09-12 14:15:24.768517 +0000 build-archlinux-devel: + upload_command_log
+2026-09-12 14:15:24.768521 +0000 build-archlinux-devel: + '[' -s /home/user/builder-github-logs/1789222524-20888.log ']'
+2026-09-12 14:15:24.768525 +0000 build-archlinux-devel: + qrexec-client-vm dom0 qubesbuilder.BuildLog
+2026-09-12 14:15:24.768531 +0000 > closing log
