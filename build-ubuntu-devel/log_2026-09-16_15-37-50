@@ -1,0 +1,109 @@
+2026-09-16 15:37:50.174785 +0000 > starting log
+2026-09-16 15:37:50.175011 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-16 15:37:50.175024 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-16 15:37:50.175031 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-16 15:37:50.175037 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-16 15:37:50.175041 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>>   initial-setup.[0m
+2026-09-16 15:37:50.175046 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-16 15:37:50.175051 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-09-16 15:37:50.175056 +0000 build-ubuntu-devel: .[38;5;246m15:37:50 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-16 15:37:51.548474 +0000 build-ubuntu-devel: .[38;5;246m15:37:51 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp3487..[0m
+2026-09-16 15:37:51.548595 +0000 build-ubuntu-devel: .[38;5;246m15:37:51 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3487 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-initial-setup.git /builder/initial-setup /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-16 15:37:58.229953 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-16 15:37:58.230081 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 941607b36290a72c6e64f50e8a19a3f13131c440..[0m
+2026-09-16 15:37:58.230095 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag 0ef7baa4c7562c96b6fc619bd89fea5dafb89f3d..[0m
+2026-09-16 15:37:58.230118 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m---> Good tag fdf6683dc25f01275a999f2e147014f9a468d77c..[0m
+2026-09-16 15:37:58.230224 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-16 15:37:58.230365 +0000 build-ubuntu-devel: .[38;5;246m15:37:58 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-09-16 15:38:02.657262 +0000 build-ubuntu-devel: .[38;5;246m15:38:02 .[96m[qb.fetch.initial-setup] .[0mLog file: /home/user/builder-devel/logs/20260916T153749-initial-setup.log.[0m
+2026-09-16 15:38:09.954597 +0000 build-ubuntu-devel: .[38;5;246m15:38:09 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp3084..[0m
+2026-09-16 15:38:09.954672 +0000 build-ubuntu-devel: .[38;5;246m15:38:09 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3084 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'.[0m
+2026-09-16 15:38:10.075235 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-09-16 15:38:10.075369 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:10.076786 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2026-09-16 15:38:10.076838 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/initial-setup'\'' --file-name '\''initial-setup-0.3.101.tar.gz'\'' --file-url '\''https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz'\'' --'.[0m
+2026-09-16 15:38:10.076857 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /builder/initial-setup --file-name initial-setup-0.3.101.tar.gz --file-url https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz --.[0m
+2026-09-16 15:38:10.076867 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-09-16 15:38:10.076919 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:10.076933 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/initial-setup.[0m
+2026-09-16 15:38:10.076941 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.076948 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.076954 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-09-16 15:38:10.076961 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:10.076968 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:10.077426 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.077522 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.077550 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-09-16 15:38:10.077569 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:10.077588 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_URL=https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:10.077603 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.077617 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.077631 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-09-16 15:38:10.077645 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:10.077679 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:10.077693 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-09-16 15:38:10.077710 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz ']'.[0m
+2026-09-16 15:38:10.077728 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-09-16 15:38:10.077742 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z initial-setup-0.3.101.tar.gz ']'.[0m
+2026-09-16 15:38:10.077758 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:10.077772 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /builder/initial-setup ']'.[0m
+2026-09-16 15:38:10.077786 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /builder/initial-setup.[0m
+2026-09-16 15:38:10.078654 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ cd /builder/initial-setup.[0m
+2026-09-16 15:38:10.079860 +0000 build-ubuntu-devel: .[38;5;246m15:38:10 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_initial-setup-0.3.101.tar.gz -- https://ftp.qubes-os.org/distfiles/initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:11.406578 +0000 build-ubuntu-devel: .[38;5;246m15:38:11 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-09-16 15:38:11.406653 +0000 build-ubuntu-devel: .[38;5;246m15:38:11 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-16 15:38:15.006540 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246mUsing executor local:/tmp/136306059506560223e6650/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmprj60u4bn --untrusted-file /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512']'..[0m
+2026-09-16 15:38:15.009637 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-09-16 15:38:15.009891 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmprj60u4bn --untrusted-file /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2026-09-16 15:38:15.012249 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmprj60u4bn'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2026-09-16 15:38:15.012296 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmprj60u4bn'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512'\'' --'.[0m
+2026-09-16 15:38:15.012319 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmprj60u4bn --untrusted-file /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 --.[0m
+2026-09-16 15:38:15.012327 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-09-16 15:38:15.012334 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-09-16 15:38:15.012341 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:15.012348 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmprj60u4bn.[0m
+2026-09-16 15:38:15.012355 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012362 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012368 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-09-16 15:38:15.012375 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:15.012383 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:15.012390 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012396 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012403 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-09-16 15:38:15.012409 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:15.012415 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-09-16 15:38:15.012427 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012434 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012463 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-09-16 15:38:15.012469 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:15.012477 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2026-09-16 15:38:15.012483 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012488 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012494 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-09-16 15:38:15.012500 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-09-16 15:38:15.012505 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ shift.[0m
+2026-09-16 15:38:15.012511 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-09-16 15:38:15.012518 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz ']'.[0m
+2026-09-16 15:38:15.012525 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmprj60u4bn ']'.[0m
+2026-09-16 15:38:15.012531 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmprj60u4bn.[0m
+2026-09-16 15:38:15.013041 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:15.013849 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:15.013884 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ FILE_NAME=initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:15.013894 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2026-09-16 15:38:15.013968 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2026-09-16 15:38:15.013994 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2026-09-16 15:38:15.014048 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-16 15:38:15.014073 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-09-16 15:38:15.014115 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-16 15:38:15.014155 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-09-16 15:38:15.014349 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512 ']'.[0m
+2026-09-16 15:38:15.014358 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-09-16 15:38:15.015668 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-09-16 15:38:15.015701 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/initial-setup/initial-setup-0.3.101.tar.gz.sha512.[0m
+2026-09-16 15:38:15.016025 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m++ printf '%s  -\n' 0114874aa13bda4600a18033c37d3d5095799335179e1a776565507e16a7e5a96a803be00d6a7401775f9c1f529ad503c266670f30dd359ce570c706a36611f5.[0m
+2026-09-16 15:38:15.018517 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmprj60u4bn/untrusted_initial-setup-0.3.101.tar.gz /home/user/builder-devel/tmp/tmprj60u4bn/initial-setup-0.3.101.tar.gz.[0m
+2026-09-16 15:38:15.021607 +0000 build-ubuntu-devel: .[38;5;246m15:38:14 .[96m[qb.fetch.initial-setup] .[38;5;246m['cd -- /builder', "git -C /builder/initial-setup rev-parse 'HEAD^{}' >> hash", "git -C /builder/initial-setup tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-09-16 15:38:24.876321 +0000 build-ubuntu-devel: .[38;5;246m15:38:24 .[96m[qb.fetch.initial-setup.fetch] .[0mUsing executor qubes:disp8126..[0m
+2026-09-16 15:38:24.876618 +0000 build-ubuntu-devel: .[38;5;246m15:38:24 .[96m[qb.fetch.initial-setup.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8126 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/initial-setup rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/initial-setup tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-09-16 15:38:28.020431 +0000 build-ubuntu-devel: .[38;5;246m15:38:27 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-16 15:38:28.020573 +0000 > closing log
