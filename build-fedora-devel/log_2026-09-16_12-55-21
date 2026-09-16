@@ -1,0 +1,201 @@
+2026-09-16 12:55:21.103200 +0000 > starting log
+2026-09-16 12:55:21.103472 +0000 build-fedora-devel: .[38;5;246m12:55:21 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-16 12:55:21.107601 +0000 build-fedora-devel: .[38;5;246m12:55:21 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2026-09-16 12:55:22.783784 +0000 build-fedora-devel: .[38;5;246m12:55:22 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp3018..[0m
+2026-09-16 12:55:22.783963 +0000 build-fedora-devel: .[38;5;246m12:55:22 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3018 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-16 12:55:26.942800 +0000 build-fedora-devel: .[38;5;246m12:55:26 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-16 12:55:26.942910 +0000 build-fedora-devel: .[38;5;246m12:55:26 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 55b7e870a2effc01a3f42f9964835009c8ed6711..[0m
+2026-09-16 12:55:26.943274 +0000 build-fedora-devel: .[38;5;246m12:55:26 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-16 12:55:26.943294 +0000 build-fedora-devel: .[38;5;246m12:55:26 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2026-09-16 12:55:28.508014 +0000 build-fedora-devel: .[38;5;246m12:55:28 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-templates-itl/logs/20260916T125414-builder-rpm.log.[0m
+2026-09-16 12:55:31.611398 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[0mUsing executor qubes:disp2361..[0m
+2026-09-16 12:55:31.611581 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/usr/bin/qvm-run-vm -- disp2361 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen DIST=fc45 DISTRIBUTION=fedora DIST_CODENAME=fc45 DIST_NAME=fedora DIST_VER=45 TEMPLATE_NAME=fedora-45-minimal TEMPLATE_VERSION=99.0.0 TEMPLATE_FLAVOR=minimal TEMPLATE_OPTIONS=minimal INSTALL_DIR=/builder/mnt ARTIFACTS_DIR=/builder/build PLUGINS_DIR=/builder/plugins PACKAGES_DIR=/builder/repository DISCARD_PREPARED_IMAGE=1 BUILDER_TURBO_MODE=1 CACHE_DIR=/builder/cache/cache_fc45 RELEASE=99.0 TEMPLATE_SCRIPTS_DIR=/builder/plugins/template/scripts TEMPLATE_ROOT_SIZE=20G TEMPLATE_ROOT_WITH_PARTITIONS=1 USE_QUBES_REPO_VERSION=devel USE_QUBES_REPO_TESTING=1 TEMPLATE_CONTENT_DIR=/builder/sources/builder-rpm/template_rpm KEYS_DIR=/builder/plugins/chroot_rpm/keys TEMPLATE_FLAVOR_DIR=+minimal:/builder/sources/builder-rpm/template_rpm/minimal TEMPLATE_TIMESTAMP=202609161250 bash -c 'make -C /builder/plugins/template prepare build-rootimg'.[0m
+2026-09-16 12:55:31.827095 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mmake: Entering directory '/builder/plugins/template'.[0m
+2026-09-16 12:55:31.836568 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mBuilding template: fedora-45-minimal (202609161250).[0m
+2026-09-16 12:55:31.836633 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mmkdir -p /builder/build.[0m
+2026-09-16 12:55:31.836813 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mecho 202609161250 > /builder/build/build_timestamp_fedora-45-minimal.[0m
+2026-09-16 12:55:31.838009 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m# Check that required env are defined.[0m
+2026-09-16 12:55:31.839551 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246msudo env -i DIST_CODENAME="fc45" DIST_NAME="fedora" DIST_VER="45" PLUGINS_DIR="/builder/plugins" ARTIFACTS_DIR="/builder/build" CACHE_DIR="/builder/cache/cache_fc45" TEMPLATE_CONTENT_DIR="/builder/sources/builder-rpm/template_rpm" TEMPLATE_NAME="fedora-45-minimal" TEMPLATE_VERSION="99.0.0" PACKAGES_DIR="/builder/repository" TEMPLATE_SCRIPTS_DIR="/builder/plugins/template/scripts" KEYS_DIR="/builder/plugins/chroot_rpm/keys" TEMPLATE_FLAVOR="minimal" TEMPLATE_OPTIONS="minimal" TEMPLATE_FLAVOR_DIR="+minimal:/builder/sources/builder-rpm/template_rpm/minimal" APPMENUS_DIR="" CONFIG_DIR="" TEMPLATE_CONF="/builder/build/template.conf" VERBOSE="1" DEBUG="1" PATH="/home/user/.local/bin:/home/user/bin:/usr/local/bin:/usr/bin" DISCARD_PREPARED_IMAGE="1" TEMPLATE_ROOT_WITH_PARTITIONS="1" TEMPLATE_ROOT_SIZE="20G" USE_QUBES_REPO_VERSION="devel" USE_QUBES_REPO_TESTING="1" BUILDER_TURBO_MODE="1" REPO_PROXY="" FEDORA_MIRROR="" CENTOS_MIRROR="" EPEL_MIRROR="" QUBES_MIRROR="" DEBIAN_MIRRORS="" GENTOO_MIRROR="" ARCHLINUX_MIRROR="" FLAVORS_DIR="" RELEASE="99.0" DIST="fc45" DISTRIBUTION="fedora" /builder/plugins/template/scripts/prepare-image /builder/build/prepared_images/fedora-45-minimal.img /builder/mnt.[0m
+2026-09-16 12:55:31.863480 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ IMG=/builder/build/prepared_images/fedora-45-minimal.img.[0m
+2026-09-16 12:55:31.863576 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ readlink -m /builder/mnt.[0m
+2026-09-16 12:55:31.863735 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ INSTALL_DIR=/builder/mnt.[0m
+2026-09-16 12:55:31.864588 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ dirname /builder/plugins/template/scripts/prepare-image.[0m
+2026-09-16 12:55:31.865232 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ BUILDER_SCRIPTS_DIR=/builder/plugins/template/scripts.[0m
+2026-09-16 12:55:31.865256 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ LC_ALL=POSIX.[0m
+2026-09-16 12:55:31.865266 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ RETCODE=0.[0m
+2026-09-16 12:55:31.865274 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ . /builder/plugins/template/scripts/builder-setup.[0m
+2026-09-16 12:55:31.865284 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ REQUIRED_ENV=(DIST_CODENAME DIST_NAME DIST_VER PLUGINS_DIR ARTIFACTS_DIR CACHE_DIR TEMPLATE_CONTENT_DIR TEMPLATE_NAME TEMPLATE_SCRIPTS_DIR KEYS_DIR).[0m
+2026-09-16 12:55:31.865296 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865305 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z fc45 ']'.[0m
+2026-09-16 12:55:31.865338 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865428 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z fedora ']'.[0m
+2026-09-16 12:55:31.865437 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865453 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z 45 ']'.[0m
+2026-09-16 12:55:31.865463 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865470 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/plugins ']'.[0m
+2026-09-16 12:55:31.865484 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865491 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/build ']'.[0m
+2026-09-16 12:55:31.865545 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865553 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/cache/cache_fc45 ']'.[0m
+2026-09-16 12:55:31.865598 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865606 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/sources/builder-rpm/template_rpm ']'.[0m
+2026-09-16 12:55:31.865631 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865642 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z fedora-45-minimal ']'.[0m
+2026-09-16 12:55:31.865665 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865672 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/plugins/template/scripts ']'.[0m
+2026-09-16 12:55:31.865679 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-09-16 12:55:31.865687 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z /builder/plugins/chroot_rpm/keys ']'.[0m
+2026-09-16 12:55:31.868704 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+++ id -ur.[0m
+2026-09-16 12:55:31.877571 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ [[ 0 != 0 ]].[0m
+2026-09-16 12:55:31.877648 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ . /builder/plugins/template/scripts/umount-kill.[0m
+2026-09-16 12:55:31.877672 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' 1 == 1 ']'.[0m
+2026-09-16 12:55:31.877692 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ set -x.[0m
+2026-09-16 12:55:31.877713 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+++ basename /builder/plugins/template/scripts/prepare-image.[0m
+2026-09-16 12:55:31.877738 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' prepare-image == umount-kill ']'.[0m
+2026-09-16 12:55:31.877759 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' 2 -ne 2 ']'.[0m
+2026-09-16 12:55:31.877780 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' -z 20G ']'.[0m
+2026-09-16 12:55:31.880115 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ mkdir -p /builder/mnt /builder/cache/cache_fc45 /builder/repository /builder/build.[0m
+2026-09-16 12:55:31.883127 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ export INSTALL_DIR LC_ALL IMG.[0m
+2026-09-16 12:55:31.883197 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ tail -1.[0m
+2026-09-16 12:55:31.883238 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ df -T /dev.[0m
+2026-09-16 12:55:31.883248 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ cut -f 1 -d ' '.[0m
+2026-09-16 12:55:31.888192 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' devtmpfs = tmpfs ']'.[0m
+2026-09-16 12:55:31.888993 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DIST_TO_STR=fc45+minimal.[0m
+2026-09-16 12:55:31.889355 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' 7 -gt 0 ']'.[0m
+2026-09-16 12:55:31.890403 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Preparing installation of fc45+minimal (options: minimal) template....[0m
+2026-09-16 12:55:31.890666 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DIST_TO_STR='fc45+minimal (options: minimal)'.[0m
+2026-09-16 12:55:31.890703 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Preparing installation of fc45+minimal (options: minimal) template...'.[0m
+2026-09-16 12:55:31.890716 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /builder/sources/builder-rpm/template_rpm/00_prepare.sh.[0m
+2026-09-16 12:55:31.893231 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++++ basename /builder/sources/builder-rpm/template_rpm/00_prepare.sh.[0m
+2026-09-16 12:55:31.896021 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+++ '[' 00_prepare.sh == umount-kill ']'.[0m
+2026-09-16 12:55:31.896086 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ info '/builder/sources/builder-rpm/template_rpm/distribution.sh imported by: /builder/sources/builder-rpm/template_rpm/00_prepare.sh'.[0m
+2026-09-16 12:55:31.896136 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ output 'INFO: /builder/sources/builder-rpm/template_rpm/distribution.sh imported by: /builder/sources/builder-rpm/template_rpm/00_prepare.sh'.[0m
+2026-09-16 12:55:31.896146 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' 01 -ge 1 ']'.[0m
+2026-09-16 12:55:31.896154 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ [[ -z '' ]].[0m
+2026-09-16 12:55:31.896163 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ [[ ehB != ehxB ]].[0m
+2026-09-16 12:55:31.896458 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF=dnf.[0m
+2026-09-16 12:55:31.896478 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z fedora ']'.[0m
+2026-09-16 12:55:31.896537 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z 45 ']'.[0m
+2026-09-16 12:55:31.896549 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF_OPTS=(-y "--releasever=${DIST_VER}" --setopt=deltarpm=False --setopt=zchunk=False --setopt=gpgcheck=1).[0m
+2026-09-16 12:55:31.896576 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -n '' ']'.[0m
+2026-09-16 12:55:31.896587 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' fedora == fedora ']'.[0m
+2026-09-16 12:55:31.896594 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -n '' ']'.[0m
+2026-09-16 12:55:31.896624 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF_OPTS+=(--setopt=updates-testing.priority=80).[0m
+2026-09-16 12:55:31.896667 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ cd /builder/repository.[0m
+2026-09-16 12:55:31.896699 +0000 build-fedora-devel: .[38;5;246m12:55:31 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ createrepo_c -g /builder/sources/builder-rpm/template_rpm/comps-qubes-template.xml ..[0m
+2026-09-16 12:55:32.021203 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDirectory walk started.[0m
+2026-09-16 12:55:32.021276 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDirectory walk done - 0 packages.[0m
+2026-09-16 12:55:32.021287 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mTemporary output repo path: ./.repodata/.[0m
+2026-09-16 12:55:32.021294 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mPool started (with 5 workers).[0m
+2026-09-16 12:55:32.021301 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mPool finished.[0m
+2026-09-16 12:55:32.023857 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ chown -R --reference=/builder/repository /builder/repository.[0m
+2026-09-16 12:55:32.025849 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' -f /builder/build/prepared_images/fedora-45-minimal.img ']'.[0m
+2026-09-16 12:55:32.025863 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Initializing empty image...'.[0m
+2026-09-16 12:55:32.025907 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Initializing empty image....[0m
+2026-09-16 12:55:32.025973 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ dirname /builder/build/prepared_images/fedora-45-minimal.img.[0m
+2026-09-16 12:55:32.027024 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ mkdir -p /builder/build/prepared_images.[0m
+2026-09-16 12:55:32.028062 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ truncate -s 20G /builder/build/prepared_images/fedora-45-minimal.img.[0m
+2026-09-16 12:55:32.029959 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' 01 -eq 1 ']'.[0m
+2026-09-16 12:55:32.029984 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Creating partition table'.[0m
+2026-09-16 12:55:32.030017 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /usr/sbin/sfdisk /builder/build/prepared_images/fedora-45-minimal.img.[0m
+2026-09-16 12:55:32.030030 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Creating partition table.[0m
+2026-09-16 12:55:32.309062 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mChecking that no-one is using this disk right now ... OK.[0m
+2026-09-16 12:55:32.309144 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m.[0m
+2026-09-16 12:55:32.309165 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDisk /builder/build/prepared_images/fedora-45-minimal.img: 20 GiB, 21474836480 bytes, 41943040 sectors.[0m
+2026-09-16 12:55:32.309174 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mUnits: sectors of 1 * 512 = 512 bytes.[0m
+2026-09-16 12:55:32.309200 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mSector size (logical/physical): 512 bytes / 512 bytes.[0m
+2026-09-16 12:55:32.309276 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mI/O size (minimum/optimal): 512 bytes / 512 bytes.[0m
+2026-09-16 12:55:32.309355 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m.[0m
+2026-09-16 12:55:32.309432 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m>>> Script header accepted..[0m
+2026-09-16 12:55:32.309474 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m>>> Script header accepted..[0m
+2026-09-16 12:55:32.309535 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m>>> Created a new GPT disklabel (GUID: F4796A2A-E377-45BD-B539-D6D49E569055)..[0m
+2026-09-16 12:55:32.309602 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img1: Created a new partition 1 of type 'EFI System' and of size 200 MiB..[0m
+2026-09-16 12:55:32.309718 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img2: Created a new partition 2 of type 'BIOS boot' and of size 2 MiB..[0m
+2026-09-16 12:55:32.309781 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img3: Created a new partition 3 of type 'Linux filesystem' and of size 19.8 GiB..[0m
+2026-09-16 12:55:32.309848 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img4: Done..[0m
+2026-09-16 12:55:32.309908 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m.[0m
+2026-09-16 12:55:32.309974 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mNew situation:.[0m
+2026-09-16 12:55:32.310087 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDisklabel type: gpt.[0m
+2026-09-16 12:55:32.310140 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDisk identifier: F4796A2A-E377-45BD-B539-D6D49E569055.[0m
+2026-09-16 12:55:32.310188 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m.[0m
+2026-09-16 12:55:32.310260 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mDevice                                                 Start      End  Sectors  Size Type.[0m
+2026-09-16 12:55:32.310330 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img1   2048   411647   409600  200M EFI System.[0m
+2026-09-16 12:55:32.310373 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img2 411648   415743     4096    2M BIOS boot.[0m
+2026-09-16 12:55:32.310478 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m/builder/build/prepared_images/fedora-45-minimal.img3 415744 41940991 41525248 19.8G Linux filesystem.[0m
+2026-09-16 12:55:32.310487 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m.[0m
+2026-09-16 12:55:32.310555 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mThe partition table has been altered..[0m
+2026-09-16 12:55:32.310743 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ /sbin/losetup -P -f --show /builder/build/prepared_images/fedora-45-minimal.img.[0m
+2026-09-16 12:55:32.334071 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ IMG_LOOP=/dev/loop0.[0m
+2026-09-16 12:55:32.334154 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ IMG_DEV=/dev/loop0p3.[0m
+2026-09-16 12:55:32.334231 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ udevadm settle --exit-if-exists=/dev/loop0p1.[0m
+2026-09-16 12:55:32.347686 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /sbin/mkfs.vfat -S 4096 -n EFI /dev/loop0p1.[0m
+2026-09-16 12:55:32.357252 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mmkfs.fat 4.2 (2021-01-31).[0m
+2026-09-16 12:55:32.357508 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ udevadm settle --exit-if-exists=/dev/loop0p3.[0m
+2026-09-16 12:55:32.367782 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Creating filesystem...'.[0m
+2026-09-16 12:55:32.367830 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /sbin/mkfs.ext4 -q -F /dev/loop0p3.[0m
+2026-09-16 12:55:32.367840 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Creating filesystem....[0m
+2026-09-16 12:55:32.421301 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ mount /dev/loop0p3 /builder/mnt.[0m
+2026-09-16 12:55:32.446521 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Bootstrapping distribution....[0m
+2026-09-16 12:55:32.446584 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ readlink -m /builder/mnt.[0m
+2026-09-16 12:55:32.446594 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ trap 'umount_kill /builder/mnt' EXIT.[0m
+2026-09-16 12:55:32.446602 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Bootstrapping distribution...'.[0m
+2026-09-16 12:55:32.446637 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /builder/sources/builder-rpm/template_rpm/01_install_core.sh.[0m
+2026-09-16 12:55:32.448549 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++++ basename /builder/sources/builder-rpm/template_rpm/01_install_core.sh.[0m
+2026-09-16 12:55:32.452425 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+++ '[' 01_install_core.sh == umount-kill ']'.[0m
+2026-09-16 12:55:32.452501 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ info '/builder/sources/builder-rpm/template_rpm/distribution.sh imported by: /builder/sources/builder-rpm/template_rpm/01_install_core.sh'.[0m
+2026-09-16 12:55:32.452534 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ output 'INFO: /builder/sources/builder-rpm/template_rpm/distribution.sh imported by: /builder/sources/builder-rpm/template_rpm/01_install_core.sh'.[0m
+2026-09-16 12:55:32.452543 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' 01 -ge 1 ']'.[0m
+2026-09-16 12:55:32.452565 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ [[ -z '' ]].[0m
+2026-09-16 12:55:32.452574 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ [[ ehB != ehxB ]].[0m
+2026-09-16 12:55:32.452624 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF=dnf.[0m
+2026-09-16 12:55:32.452632 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z fedora ']'.[0m
+2026-09-16 12:55:32.452680 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -z 45 ']'.[0m
+2026-09-16 12:55:32.452725 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF_OPTS=(-y "--releasever=${DIST_VER}" --setopt=deltarpm=False --setopt=zchunk=False --setopt=gpgcheck=1).[0m
+2026-09-16 12:55:32.452732 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -n '' ']'.[0m
+2026-09-16 12:55:32.452754 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' fedora == fedora ']'.[0m
+2026-09-16 12:55:32.452774 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ '[' -n '' ']'.[0m
+2026-09-16 12:55:32.452811 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ DNF_OPTS+=(--setopt=updates-testing.priority=80).[0m
+2026-09-16 12:55:32.452832 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ export DNF_OPTS.[0m
+2026-09-16 12:55:32.452840 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ /builder/sources/builder-rpm/template_rpm/../scripts/prepare-chroot-base /builder/mnt fedora 45 /builder/cache/cache_fc45.[0m
+2026-09-16 12:55:32.456254 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DNF_OPTS=().[0m
+2026-09-16 12:55:32.456277 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ set -o pipefail.[0m
+2026-09-16 12:55:32.456310 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ INSTALL_DIR=/builder/mnt.[0m
+2026-09-16 12:55:32.456333 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DIST_NAME=fedora.[0m
+2026-09-16 12:55:32.456340 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DIST_VER=45.[0m
+2026-09-16 12:55:32.456349 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ CACHE_DIR=/builder/cache/cache_fc45.[0m
+2026-09-16 12:55:32.462739 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+++ dirname /builder/sources/builder-rpm/template_rpm/../scripts/prepare-chroot-base.[0m
+2026-09-16 12:55:32.462796 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ readlink -f /builder/sources/builder-rpm/template_rpm/../scripts/../.[0m
+2026-09-16 12:55:32.462810 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ PLUGIN_DIR=/builder/sources/builder-rpm.[0m
+2026-09-16 12:55:32.462819 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DOWNLOAD_DIR=/builder/cache/cache_fc45/base_rpms.[0m
+2026-09-16 12:55:32.462828 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' -e /builder/sources/builder-rpm/dnf/bootstrap-dnf-fedora-45.conf ']'.[0m
+2026-09-16 12:55:32.462867 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' -e /builder/sources/builder-rpm/dnf/bootstrap-dnf-fedora.conf ']'.[0m
+2026-09-16 12:55:32.462877 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DNF_BOOTSTRAP_CONF=/builder/sources/builder-rpm/dnf/bootstrap-dnf-fedora.conf.[0m
+2026-09-16 12:55:32.462884 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DNF=dnf.[0m
+2026-09-16 12:55:32.462911 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DNF_SEC_OPTS=(--setopt=deltarpm=False --setopt=deltarpm_percentage=0 --setopt=zchunk=0).[0m
+2026-09-16 12:55:32.462921 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ DNF_OPTS+=(--releasever "$DIST_VER" --installroot="${INSTALL_DIR}" --resolve "--destdir=$DOWNLOAD_DIR" "${DNF_SEC_OPTS[@]}").[0m
+2026-09-16 12:55:32.462946 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ mkdir -p /builder/mnt.[0m
+2026-09-16 12:55:32.462954 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' -f /builder/mnt/tmp/.prepared_base ']'.[0m
+2026-09-16 12:55:32.462963 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ echo 'INFO: Initializing RPM database...'.[0m
+2026-09-16 12:55:32.462971 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ RPM_OPTS=('--define=_pkgverify_level all' '--define=_pkgverify_flags 0x0').[0m
+2026-09-16 12:55:32.463042 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Initializing RPM database....[0m
+2026-09-16 12:55:32.463611 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ getenforce.[0m
+2026-09-16 12:55:32.471506 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' Enforcing = Enforcing ']'.[0m
+2026-09-16 12:55:32.471692 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m++ rpm --eval '%{_dbpath}'.[0m
+2026-09-16 12:55:32.504413 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ dbpath=/usr/lib/sysimage/rpm.[0m
+2026-09-16 12:55:32.504501 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ mkdir -p /builder/mnt/usr/lib/sysimage/rpm.[0m
+2026-09-16 12:55:32.508324 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ setfiles -r /builder/mnt /etc/selinux/targeted/contexts/files/file_contexts /builder/mnt.[0m
+2026-09-16 12:55:32.549413 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ rpm '--define=_pkgverify_level all' '--define=_pkgverify_flags 0x0' --initdb --root=/builder/mnt.[0m
+2026-09-16 12:55:32.615659 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' fedora = fedora ']'.[0m
+2026-09-16 12:55:32.615729 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ rpm '--define=_pkgverify_level all' '--define=_pkgverify_flags 0x0' --import --root=/builder/mnt -- /builder/sources/builder-rpm/keys/RPM-GPG-KEY-fedora-45-primary.[0m
+2026-09-16 12:55:32.631695 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246merror: /builder/sources/builder-rpm/keys/RPM-GPG-KEY-fedora-45-primary: import read failed(2)..[0m
+2026-09-16 12:55:32.633301 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ umount_kill /builder/mnt.[0m
+2026-09-16 12:55:32.633362 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ '[' 01 -le 2 ']'.[0m
+2026-09-16 12:55:32.633389 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ test -o xtrace.[0m
+2026-09-16 12:55:32.633418 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ true 'umount_kill: Disabling xtrace, because variable VERBOSE (1) is lower than or equal 2...'.[0m
+2026-09-16 12:55:32.633425 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ set +x.[0m
+2026-09-16 12:55:32.654033 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: Attempting to kill any processes still running in '/builder/mnt' before un-mounting.[0m
+2026-09-16 12:55:32.708327 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mINFO: umount /builder/mnt.[0m
+2026-09-16 12:55:32.734360 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246m+ true 'umount_kill: Restoring xtrace...'.[0m
+2026-09-16 12:55:32.735607 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mmake: *** [Makefile:69: build-rootimg-prepare] Error 1.[0m
+2026-09-16 12:55:32.735635 +0000 build-fedora-devel: .[38;5;246m12:55:32 .[96m[qb.template.fedora-45-minimal.prep] .[38;5;246mmake: Leaving directory '/builder/plugins/template'.[0m
+2026-09-16 12:55:34.636107 +0000 > closing log
