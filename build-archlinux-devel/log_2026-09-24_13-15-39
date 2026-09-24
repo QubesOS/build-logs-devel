@@ -1,0 +1,24 @@
+2026-09-24 13:15:39.733438 +0000 > starting log
+2026-09-24 13:15:39.733792 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-24 13:15:39.733808 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-24 13:15:39.733844 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-24 13:15:39.733851 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-24 13:15:39.733857 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>>   builder-rpm.[0m
+2026-09-24 13:15:39.733863 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>>     commit-hash: 35c3a5746a83f65eda60a7b1f4f7c0ade155193b.[0m
+2026-09-24 13:15:39.773623 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>>     source-hash: b816fda780029b88896f7093ad6725535a75ed830b7498b13fbcad357458c15d2343652a67dbb8de4fde3ba495825c02d1ec3c1a29b21f5d40f0de93f68f6b2f.[0m
+2026-09-24 13:15:39.773732 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-24 13:15:39.774544 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-09-24 13:15:39.774627 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-24 13:15:39.794737 +0000 build-archlinux-devel: .[38;5;246m13:15:39 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2026-09-24 13:15:43.585180 +0000 build-archlinux-devel: .[38;5;246m13:15:43 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp52..[0m
+2026-09-24 13:15:43.585337 +0000 build-archlinux-devel: .[38;5;246m13:15:43 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp52 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-24 13:15:46.883984 +0000 build-archlinux-devel: .[38;5;246m13:15:46 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-24 13:15:46.884093 +0000 build-archlinux-devel: .[38;5;246m13:15:46 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 350ff6d70100e17b9965bca083c084d9d221a651..[0m
+2026-09-24 13:15:46.884106 +0000 build-archlinux-devel: .[38;5;246m13:15:46 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-24 13:15:46.884114 +0000 build-archlinux-devel: .[38;5;246m13:15:46 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2026-09-24 13:15:49.752782 +0000 build-archlinux-devel: .[38;5;246m13:15:49 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-devel/logs/20260924T131539-builder-rpm.log.[0m
+2026-09-24 13:15:49.771035 +0000 build-archlinux-devel: .[38;5;246m13:15:49 .[96m[qb.fetch.builder-rpm] .[38;5;246m['cd -- /builder', "git -C /builder/builder-rpm rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-rpm tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-09-24 13:15:56.821073 +0000 build-archlinux-devel: .[38;5;246m13:15:56 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp7811..[0m
+2026-09-24 13:15:56.821161 +0000 build-archlinux-devel: .[38;5;246m13:15:56 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7811 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-rpm rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-rpm tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-09-24 13:16:00.723132 +0000 build-archlinux-devel: .[38;5;246m13:16:00 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-24 13:16:00.723197 +0000 > closing log
