@@ -1,0 +1,110 @@
+2026-10-07 10:37:49.688066 +0000 > starting log
+2026-10-07 10:37:49.688375 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-10-07 10:37:49.688392 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-10-07 10:37:49.688401 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-10-07 10:37:49.688407 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-10-07 10:37:49.688413 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>>   intel-microcode.[0m
+2026-10-07 10:37:49.688419 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>>     commit-hash: 13c7d495abae22d31f759fdf26057a2aa5950c63.[0m
+2026-10-07 10:37:49.688428 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>>     source-hash: 7161d22a9babcda6eda4460264d165332bd7ab1151cba0f54e6690a0d02f0a90238eee3a2f01a9b4a0baee6f2c10e4ee718007b673b8e9a297c98c651fd7645b.[0m
+2026-10-07 10:37:49.688433 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-10-07 10:37:49.688441 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-10-07 10:37:49.688445 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-10-07 10:37:49.694239 +0000 build-debian-devel: .[38;5;246m10:37:49 .[96m[qb.fetch.intel-microcode] .[0mintel-microcode: source already fetched. Updating..[0m
+2026-10-07 10:37:52.951914 +0000 build-debian-devel: .[38;5;246m10:37:52 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp1490..[0m
+2026-10-07 10:37:52.952026 +0000 build-debian-devel: .[38;5;246m10:37:52 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1490 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-intel-microcode.git /builder/intel-microcode /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-10-07 10:37:56.572653 +0000 build-debian-devel: .[38;5;246m10:37:56 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-10-07 10:37:56.572717 +0000 build-debian-devel: .[38;5;246m10:37:56 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m---> Good tag 73dcc02389da14116929a75df394231245698247..[0m
+2026-10-07 10:37:56.572729 +0000 build-debian-devel: .[38;5;246m10:37:56 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-10-07 10:37:56.572737 +0000 build-debian-devel: .[38;5;246m10:37:56 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m--> Merging....[0m
+2026-10-07 10:38:00.007430 +0000 build-debian-devel: .[38;5;246m10:38:00 .[96m[qb.fetch.intel-microcode] .[0mLog file: /home/user/builder-devel/logs/20261007T103749-intel-microcode.log.[0m
+2026-10-07 10:38:10.889399 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp782..[0m
+2026-10-07 10:38:10.889516 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp782 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/intel-microcode --file-name microcode-20260925.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz'.[0m
+2026-10-07 10:38:10.922089 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-10-07 10:38:10.922803 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/intel-microcode --file-name microcode-20260925.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:10.925134 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/intel-microcode'\'' --file-name '\''microcode-20260925.tar.gz'\'' --file-url '\''https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz'\'' --'.[0m
+2026-10-07 10:38:10.925173 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/intel-microcode'\'' --file-name '\''microcode-20260925.tar.gz'\'' --file-url '\''https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz'\'' --'.[0m
+2026-10-07 10:38:10.925213 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ set -- --output-dir /builder/intel-microcode --file-name microcode-20260925.tar.gz --file-url https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz --.[0m
+2026-10-07 10:38:10.925222 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-07 10:38:10.925308 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:10.925374 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/intel-microcode.[0m
+2026-10-07 10:38:10.925406 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925415 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925422 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-07 10:38:10.925445 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:10.925455 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_NAME=microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:10.925498 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925523 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925600 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-07 10:38:10.925609 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:10.925638 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_URL=https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:10.925664 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925730 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925754 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-07 10:38:10.925779 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:10.925845 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:10.925885 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-07 10:38:10.925926 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz ']'.[0m
+2026-10-07 10:38:10.925956 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-10-07 10:38:10.925997 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z microcode-20260925.tar.gz ']'.[0m
+2026-10-07 10:38:10.926077 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:10.926088 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /builder/intel-microcode ']'.[0m
+2026-10-07 10:38:10.926194 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mkdir -p /builder/intel-microcode.[0m
+2026-10-07 10:38:10.927146 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ cd /builder/intel-microcode.[0m
+2026-10-07 10:38:10.927215 +0000 build-debian-devel: .[38;5;246m10:38:10 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_microcode-20260925.tar.gz -- https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/archive/microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:40.464779 +0000 build-debian-devel: .[38;5;246m10:38:40 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-10-07 10:38:40.464849 +0000 build-debian-devel: .[38;5;246m10:38:40 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-07 10:38:42.913083 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246mUsing executor local:/tmp/1345105128972000e9085ad/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmppbyzalfa --untrusted-file /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512']'..[0m
+2026-10-07 10:38:42.916780 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-10-07 10:38:42.917015 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmppbyzalfa --untrusted-file /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512.[0m
+2026-10-07 10:38:42.919855 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmppbyzalfa'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512'\'' --'.[0m
+2026-10-07 10:38:42.920238 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmppbyzalfa'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512'\'' --'.[0m
+2026-10-07 10:38:42.920340 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmppbyzalfa --untrusted-file /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512 --.[0m
+2026-10-07 10:38:42.920385 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-10-07 10:38:42.920458 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-10-07 10:38:42.920527 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:42.920669 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmppbyzalfa.[0m
+2026-10-07 10:38:42.920722 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.920756 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.920792 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-07 10:38:42.920829 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:42.920873 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:42.920911 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.920948 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.920980 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-07 10:38:42.921009 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:42.921042 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-10-07 10:38:42.921245 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.921359 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.921414 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-07 10:38:42.921424 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:42.921435 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512.[0m
+2026-10-07 10:38:42.921443 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.921450 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.921457 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-07 10:38:42.921463 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-07 10:38:42.921470 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ shift.[0m
+2026-10-07 10:38:42.921477 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-07 10:38:42.921486 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz ']'.[0m
+2026-10-07 10:38:42.921495 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmppbyzalfa ']'.[0m
+2026-10-07 10:38:42.921502 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmppbyzalfa.[0m
+2026-10-07 10:38:42.921559 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:42.921869 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:42.921885 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ FILE_NAME=microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:42.921894 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512 ']'.[0m
+2026-10-07 10:38:42.921903 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512 ']'.[0m
+2026-10-07 10:38:42.921912 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512 ']'.[0m
+2026-10-07 10:38:42.921919 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-07 10:38:42.921926 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-10-07 10:38:42.921934 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-07 10:38:42.921941 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-07 10:38:42.921951 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512 ']'.[0m
+2026-10-07 10:38:42.921958 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-10-07 10:38:42.921965 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-10-07 10:38:42.922076 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/intel-microcode/microcode-20260925.tar.gz.sha512.[0m
+2026-10-07 10:38:42.924548 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m++ printf '%s  -\n' ae9ce9c774fa43102ebc0161904bbdd0b0ef2a0051b615a23df3d06ceaf905669d65d6c436964b1628fb4d4985db17e374f38753029ae3c4e67576c164ab0ad5.[0m
+2026-10-07 10:38:42.948438 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmppbyzalfa/untrusted_microcode-20260925.tar.gz /home/user/builder-devel/tmp/tmppbyzalfa/microcode-20260925.tar.gz.[0m
+2026-10-07 10:38:42.959868 +0000 build-debian-devel: .[38;5;246m10:38:42 .[96m[qb.fetch.intel-microcode] .[38;5;246m['cd -- /builder', "git -C /builder/intel-microcode rev-parse 'HEAD^{}' >> hash", "git -C /builder/intel-microcode tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-10-07 10:38:49.077116 +0000 build-debian-devel: .[38;5;246m10:38:49 .[96m[qb.fetch.intel-microcode.fetch] .[0mUsing executor qubes:disp7975..[0m
+2026-10-07 10:38:49.077230 +0000 build-debian-devel: .[38;5;246m10:38:49 .[96m[qb.fetch.intel-microcode.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7975 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/intel-microcode rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/intel-microcode tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-10-07 10:38:52.077119 +0000 build-debian-devel: .[38;5;246m10:38:52 .[96m[qb] .[38;5;246m> done.[0m
+2026-10-07 10:38:52.077181 +0000 > closing log
