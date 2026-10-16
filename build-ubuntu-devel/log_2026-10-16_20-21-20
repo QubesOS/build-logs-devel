@@ -1,0 +1,262 @@
+2026-10-16 20:21:20.251171 +0000 > starting log
+2026-10-16 20:21:20.251708 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-10-16 20:21:20.251748 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-10-16 20:21:20.251768 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-10-16 20:21:20.251784 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-10-16 20:21:20.251798 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>>   core-libvirt.[0m
+2026-10-16 20:21:20.251813 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>>     commit-hash: 6075db6be6e742790b767891ac7233937d904a87.[0m
+2026-10-16 20:21:20.251851 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>>     source-hash: f095556675a1f2dca0e6a1f2d3f0158854dee4cabb66a5afe165508cc94455fe06031b4c339d2259c0fc980030bd0f81678f443f2317649ff5c0089659d133d8.[0m
+2026-10-16 20:21:20.251876 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-10-16 20:21:20.251892 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-ubuntu-24.04.amd64>].[0m
+2026-10-16 20:21:20.251916 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-10-16 20:21:20.251932 +0000 build-ubuntu-devel: .[38;5;246m20:21:20 .[96m[qb.fetch.core-libvirt] .[0mcore-libvirt: source already fetched. Updating..[0m
+2026-10-16 20:21:30.608927 +0000 build-ubuntu-devel: .[38;5;246m20:21:30 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp2855..[0m
+2026-10-16 20:21:30.609031 +0000 build-ubuntu-devel: .[38;5;246m20:21:30 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2855 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-core-libvirt.git /builder/core-libvirt /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-10-16 20:21:32.717058 +0000 build-ubuntu-devel: .[38;5;246m20:21:32 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-10-16 20:21:32.717182 +0000 build-ubuntu-devel: .[38;5;246m20:21:32 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m---> Good tag 1c89b1da1e81f9728f4d700eb404af3f0dd41a6a..[0m
+2026-10-16 20:21:32.717194 +0000 build-ubuntu-devel: .[38;5;246m20:21:32 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-10-16 20:21:32.717202 +0000 build-ubuntu-devel: .[38;5;246m20:21:32 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m--> Merging....[0m
+2026-10-16 20:21:34.255503 +0000 build-ubuntu-devel: .[38;5;246m20:21:34 .[96m[qb.fetch.core-libvirt] .[0mLog file: /home/user/builder-devel/logs/20261016T202120-core-libvirt.log.[0m
+2026-10-16 20:21:45.563343 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp4861..[0m
+2026-10-16 20:21:45.563424 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4861 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/core-libvirt --file-name libvirt-12.8.0.tar.xz --file-url https://download.libvirt.org/libvirt-12.8.0.tar.xz --signature-url https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc'.[0m
+2026-10-16 20:21:45.776973 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-10-16 20:21:45.777394 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/core-libvirt --file-name libvirt-12.8.0.tar.xz --file-url https://download.libvirt.org/libvirt-12.8.0.tar.xz --signature-url https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:45.781519 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt-12.8.0.tar.xz'\'' --file-url '\''https://download.libvirt.org/libvirt-12.8.0.tar.xz'\'' --signature-url '\''https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc'\'' --'.[0m
+2026-10-16 20:21:45.781790 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt-12.8.0.tar.xz'\'' --file-url '\''https://download.libvirt.org/libvirt-12.8.0.tar.xz'\'' --signature-url '\''https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc'\'' --'.[0m
+2026-10-16 20:21:45.781899 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /builder/core-libvirt --file-name libvirt-12.8.0.tar.xz --file-url https://download.libvirt.org/libvirt-12.8.0.tar.xz --signature-url https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc --.[0m
+2026-10-16 20:21:45.781956 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-10-16 20:21:45.782018 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:45.782193 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/core-libvirt.[0m
+2026-10-16 20:21:45.782271 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782328 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782383 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-16 20:21:45.782435 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:45.782561 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:45.782617 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782665 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782710 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-16 20:21:45.782754 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:45.782809 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_URL=https://download.libvirt.org/libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:45.782854 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782898 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.782943 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-16 20:21:45.782988 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:45.783042 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_URL=https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:45.783524 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.783600 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.783690 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-16 20:21:45.783798 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:45.783860 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:45.783913 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-16 20:21:45.783974 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z https://download.libvirt.org/libvirt-12.8.0.tar.xz ']'.[0m
+2026-10-16 20:21:45.784041 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-10-16 20:21:45.784190 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z libvirt-12.8.0.tar.xz ']'.[0m
+2026-10-16 20:21:45.784266 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:45.784325 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /builder/core-libvirt ']'.[0m
+2026-10-16 20:21:45.784380 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /builder/core-libvirt.[0m
+2026-10-16 20:21:45.784481 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ cd /builder/core-libvirt.[0m
+2026-10-16 20:21:45.784561 +0000 build-ubuntu-devel: .[38;5;246m20:21:45 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt-12.8.0.tar.xz -- https://download.libvirt.org/libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:54.288940 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-10-16 20:21:54.289028 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:54.289052 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:54.289343 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:54.289362 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:54.289382 +0000 build-ubuntu-devel: .[38;5;246m20:21:54 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt-12.8.0.tar.xz.asc https://download.libvirt.org/libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.239448 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246mUsing executor local:/tmp/1298444154940005d7f3d93/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmp21gmrqor --untrusted-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc']'..[0m
+2026-10-16 20:21:57.242318 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-10-16 20:21:57.242528 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmp21gmrqor --untrusted-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-10-16 20:21:57.244763 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmp21gmrqor'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-10-16 20:21:57.244939 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmp21gmrqor'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-10-16 20:21:57.245049 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmp21gmrqor --untrusted-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz --untrusted-signature-file /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc --.[0m
+2026-10-16 20:21:57.245189 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-10-16 20:21:57.245236 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-10-16 20:21:57.245273 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.245313 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmp21gmrqor.[0m
+2026-10-16 20:21:57.245350 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245384 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245461 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-10-16 20:21:57.245504 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.245551 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:57.245588 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245624 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245660 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-16 20:21:57.245695 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.245742 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.245778 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245845 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.245886 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-16 20:21:57.245921 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.245958 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-10-16 20:21:57.245992 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.246026 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.246060 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-16 20:21:57.246282 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.246354 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-10-16 20:21:57.246395 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.246427 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.246459 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-16 20:21:57.246491 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:21:57.246522 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:21:57.246553 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-16 20:21:57.246595 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz ']'.[0m
+2026-10-16 20:21:57.246634 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp21gmrqor ']'.[0m
+2026-10-16 20:21:57.246670 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmp21gmrqor.[0m
+2026-10-16 20:21:57.246751 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:57.246790 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:57.246824 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:57.246857 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-10-16 20:21:57.246897 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:57.246982 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-16 20:21:57.247028 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:57.247137 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:21:57.247320 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:57.247471 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:57.247490 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:21:57.247555 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-16 20:21:57.247566 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc ']'.[0m
+2026-10-16 20:21:57.247576 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:21:57.247588 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.248799 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.248884 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.248974 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-10-16 20:21:57.250172 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.SpGxbPiUH8.[0m
+2026-10-16 20:21:57.250202 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-10-16 20:21:57.296954 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.SpGxbPiUH8/keyring /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-10-16 20:21:57.340061 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.SpGxbPiUH8/keyring.gpg /tmp/tmp.SpGxbPiUH8/keyring.[0m
+2026-10-16 20:21:57.350266 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ sqv --version.[0m
+2026-10-16 20:21:57.352639 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv_version='sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-10-16 20:21:57.352684 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-10-16 20:21:57.352705 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sort -VC.[0m
+2026-10-16 20:21:57.353456 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-10-16 20:21:57.355031 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-10-16 20:21:57.355053 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-10-16 20:21:57.355096 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-10-16 20:21:57.355120 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.SpGxbPiUH8/keyring /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:21:57.379463 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m453B65310595562855471199CA68BE8010084C9C.[0m
+2026-10-16 20:21:57.379723 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz.asc /home/user/builder-devel/tmp/tmp21gmrqor/libvirt-12.8.0.tar.xz.asc.[0m
+2026-10-16 20:21:57.381448 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ rm -rf /tmp/tmp.SpGxbPiUH8.[0m
+2026-10-16 20:21:57.382903 +0000 build-ubuntu-devel: .[38;5;246m20:21:57 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmp21gmrqor/untrusted_libvirt-12.8.0.tar.xz /home/user/builder-devel/tmp/tmp21gmrqor/libvirt-12.8.0.tar.xz.[0m
+2026-10-16 20:22:08.477130 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp4098..[0m
+2026-10-16 20:22:08.477231 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4098 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/core-libvirt --file-name libvirt_python-12.8.0.tar.gz --file-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc'.[0m
+2026-10-16 20:22:08.816315 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-10-16 20:22:08.818664 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/core-libvirt --file-name libvirt_python-12.8.0.tar.gz --file-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:08.820559 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt_python-12.8.0.tar.gz'\'' --file-url '\''https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz'\'' --signature-url '\''https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc'\'' --'.[0m
+2026-10-16 20:22:08.820617 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/core-libvirt'\'' --file-name '\''libvirt_python-12.8.0.tar.gz'\'' --file-url '\''https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz'\'' --signature-url '\''https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc'\'' --'.[0m
+2026-10-16 20:22:08.823396 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /builder/core-libvirt --file-name libvirt_python-12.8.0.tar.gz --file-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz --signature-url https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc --.[0m
+2026-10-16 20:22:08.823456 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-10-16 20:22:08.823476 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:08.823491 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/core-libvirt.[0m
+2026-10-16 20:22:08.823504 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823555 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823568 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-16 20:22:08.823630 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:08.823667 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:08.823703 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823742 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823754 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-16 20:22:08.823788 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:08.823826 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_URL=https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:08.823838 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823872 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823909 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-16 20:22:08.823921 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:08.823960 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_URL=https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:08.823973 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.823986 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.824045 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-16 20:22:08.824059 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:08.824127 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:08.824167 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-16 20:22:08.824365 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz ']'.[0m
+2026-10-16 20:22:08.824435 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-10-16 20:22:08.824474 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z libvirt_python-12.8.0.tar.gz ']'.[0m
+2026-10-16 20:22:08.824567 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:08.824646 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /builder/core-libvirt ']'.[0m
+2026-10-16 20:22:08.824755 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /builder/core-libvirt.[0m
+2026-10-16 20:22:08.824981 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ cd /builder/core-libvirt.[0m
+2026-10-16 20:22:08.825051 +0000 build-ubuntu-devel: .[38;5;246m20:22:08 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt_python-12.8.0.tar.gz -- https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:11.468291 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-10-16 20:22:11.468379 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:11.468511 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:11.469853 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:11.469908 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:11.469932 +0000 build-ubuntu-devel: .[38;5;246m20:22:11 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_libvirt_python-12.8.0.tar.gz.asc https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.461258 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246mUsing executor local:/tmp/12984441610856083bbc5f8/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmphvh7k50v --untrusted-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc']'..[0m
+2026-10-16 20:22:14.465276 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-10-16 20:22:14.465378 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmphvh7k50v --untrusted-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-10-16 20:22:14.466099 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmphvh7k50v'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-10-16 20:22:14.466307 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmphvh7k50v'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc'\'' --'.[0m
+2026-10-16 20:22:14.466457 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmphvh7k50v --untrusted-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz --untrusted-signature-file /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc --pubkey-file /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc --.[0m
+2026-10-16 20:22:14.466540 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-10-16 20:22:14.466638 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-10-16 20:22:14.466735 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.466837 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmphvh7k50v.[0m
+2026-10-16 20:22:14.466946 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.467083 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.467160 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-10-16 20:22:14.467252 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.467358 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.467449 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.467538 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.467630 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-10-16 20:22:14.467723 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.467827 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.467921 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.468046 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.468159 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-10-16 20:22:14.468235 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.468322 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-10-16 20:22:14.469225 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.469242 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.469256 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-10-16 20:22:14.469269 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.469282 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-10-16 20:22:14.469295 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.469307 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.469319 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-10-16 20:22:14.469332 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-10-16 20:22:14.469344 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ shift.[0m
+2026-10-16 20:22:14.469358 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-10-16 20:22:14.469374 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz ']'.[0m
+2026-10-16 20:22:14.469389 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmphvh7k50v ']'.[0m
+2026-10-16 20:22:14.469404 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmphvh7k50v.[0m
+2026-10-16 20:22:14.469420 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.470027 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.470042 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ FILE_NAME=libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.470056 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-10-16 20:22:14.470137 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:14.470151 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-16 20:22:14.470205 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:14.470223 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:22:14.470241 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:14.470284 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:14.470302 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:22:14.470318 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-10-16 20:22:14.470336 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc ']'.[0m
+2026-10-16 20:22:14.470352 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc ']'.[0m
+2026-10-16 20:22:14.470446 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.471280 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.471389 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.471606 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-10-16 20:22:14.472706 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.hBcvddUiZv.[0m
+2026-10-16 20:22:14.472802 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-10-16 20:22:14.483463 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.hBcvddUiZv/keyring /home/user/builder-devel/sources/core-libvirt/redhat-jiri-denemark-key.asc /home/user/builder-devel/sources/core-libvirt/redhat-veillard-key.asc.[0m
+2026-10-16 20:22:14.501296 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.hBcvddUiZv/keyring.gpg /tmp/tmp.hBcvddUiZv/keyring.[0m
+2026-10-16 20:22:14.512250 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ sqv --version.[0m
+2026-10-16 20:22:14.515843 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv_version='sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-10-16 20:22:14.515875 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-10-16 20:22:14.515889 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sort -VC.[0m
+2026-10-16 20:22:14.515907 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-10-16 20:22:14.516659 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-10-16 20:22:14.517316 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-10-16 20:22:14.517741 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-10-16 20:22:14.518334 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.hBcvddUiZv/keyring /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.521834 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m453B65310595562855471199CA68BE8010084C9C.[0m
+2026-10-16 20:22:14.522614 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz.asc /home/user/builder-devel/tmp/tmphvh7k50v/libvirt_python-12.8.0.tar.gz.asc.[0m
+2026-10-16 20:22:14.523625 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ rm -rf /tmp/tmp.hBcvddUiZv.[0m
+2026-10-16 20:22:14.524804 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmphvh7k50v/untrusted_libvirt_python-12.8.0.tar.gz /home/user/builder-devel/tmp/tmphvh7k50v/libvirt_python-12.8.0.tar.gz.[0m
+2026-10-16 20:22:14.540199 +0000 build-ubuntu-devel: .[38;5;246m20:22:14 .[96m[qb.fetch.core-libvirt] .[38;5;246m['cd -- /builder', "git -C /builder/core-libvirt rev-parse 'HEAD^{}' >> hash", "git -C /builder/core-libvirt tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-10-16 20:22:26.008319 +0000 build-ubuntu-devel: .[38;5;246m20:22:26 .[96m[qb.fetch.core-libvirt.fetch] .[0mUsing executor qubes:disp8597..[0m
+2026-10-16 20:22:26.008409 +0000 build-ubuntu-devel: .[38;5;246m20:22:26 .[96m[qb.fetch.core-libvirt.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8597 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/core-libvirt rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/core-libvirt tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-10-16 20:22:28.285913 +0000 build-ubuntu-devel: .[38;5;246m20:22:28 .[96m[qb] .[38;5;246m> done.[0m
+2026-10-16 20:22:28.285988 +0000 > closing log
