@@ -1,0 +1,25 @@
+2026-10-17 13:36:26.209665 +0000 > starting log
+2026-10-17 13:36:26.210094 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-10-17 13:36:26.210114 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-10-17 13:36:26.210123 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-10-17 13:36:26.210130 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-10-17 13:36:26.210136 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>>   infrastructure.[0m
+2026-10-17 13:36:26.210142 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>>     commit-hash: 6eee5f1728f3b271708c7825d4e1d4321d831129.[0m
+2026-10-17 13:36:26.409508 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>>     source-hash: 38dd28f1820d6f7e7e38103fe47d1909957f983fb0b48cb2704dfdc79a803174dfbf48817ad9f3c8340c966198b004c03fda50b2d80d428ce28c7a5d301e3d72.[0m
+2026-10-17 13:36:26.409639 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-10-17 13:36:26.409669 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-10-17 13:36:26.409748 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-10-17 13:36:26.428996 +0000 build-debian-devel: .[38;5;246m13:36:26 .[96m[qb.fetch.infrastructure] .[0minfrastructure: source already fetched. Updating..[0m
+2026-10-17 13:36:40.566958 +0000 build-debian-devel: .[38;5;246m13:36:40 .[96m[qb.fetch.infrastructure.fetch] .[0mUsing executor qubes:disp530..[0m
+2026-10-17 13:36:40.567096 +0000 build-debian-devel: .[38;5;246m13:36:40 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp530 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-infrastructure.git /builder/infrastructure /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-10-17 13:36:42.746833 +0000 build-debian-devel: .[38;5;246m13:36:42 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-10-17 13:36:42.747054 +0000 build-debian-devel: .[38;5;246m13:36:42 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m---> Good tag 9d45aaee242de6145fabf489f24690271d869958..[0m
+2026-10-17 13:36:42.747126 +0000 build-debian-devel: .[38;5;246m13:36:42 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-10-17 13:36:42.747145 +0000 build-debian-devel: .[38;5;246m13:36:42 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m--> Merging....[0m
+2026-10-17 13:36:42.747162 +0000 build-debian-devel: .[38;5;246m13:36:42 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m--> Updating submodules.[0m
+2026-10-17 13:36:44.659615 +0000 build-debian-devel: .[38;5;246m13:36:44 .[96m[qb.fetch.infrastructure] .[0mLog file: /home/user/builder-devel/logs/20261017T133625-infrastructure.log.[0m
+2026-10-17 13:36:44.689507 +0000 build-debian-devel: .[38;5;246m13:36:44 .[96m[qb.fetch.infrastructure] .[38;5;246m['cd -- /builder', "git -C /builder/infrastructure rev-parse 'HEAD^{}' >> hash", "git -C /builder/infrastructure tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-10-17 13:36:56.317871 +0000 build-debian-devel: .[38;5;246m13:36:56 .[96m[qb.fetch.infrastructure.fetch] .[0mUsing executor qubes:disp2074..[0m
+2026-10-17 13:36:56.317990 +0000 build-debian-devel: .[38;5;246m13:36:56 .[96m[qb.fetch.infrastructure.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2074 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/infrastructure rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/infrastructure tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-10-17 13:36:59.105853 +0000 build-debian-devel: .[38;5;246m13:36:59 .[96m[qb] .[38;5;246m> done.[0m
+2026-10-17 13:36:59.105973 +0000 > closing log
