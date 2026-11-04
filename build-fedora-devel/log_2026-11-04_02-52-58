@@ -1,0 +1,110 @@
+2026-11-04 02:52:58.077436 +0000 > starting log
+2026-11-04 02:52:58.077763 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-04 02:52:58.077783 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-04 02:52:58.077794 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-04 02:52:58.077802 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-04 02:52:58.077809 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>>   lvm2.[0m
+2026-11-04 02:52:58.077817 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>>     commit-hash: 5a32c7546ec96ac302e025221bceedcd0aab3537.[0m
+2026-11-04 02:52:58.077828 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>>     source-hash: 39854189ee9bf4efbbe9ddd80102cf8b73fa1e6287109aa597e1b09caa6356dd408dab9472ad0604f274b65ca9f9080f99a71795f8a1ecddf62a9174be4da49d.[0m
+2026-11-04 02:52:58.077835 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-04 02:52:58.077845 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-fedora-43.x86_64>, <QubesDistribution vm-fedora-44.x86_64>, <QubesDistribution vm-fedora-45.x86_64>].[0m
+2026-11-04 02:52:58.077853 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-04 02:52:58.077860 +0000 build-fedora-devel: .[38;5;246m02:52:58 .[96m[qb.fetch.lvm2] .[0mlvm2: source already fetched. Updating..[0m
+2026-11-04 02:52:59.504924 +0000 build-fedora-devel: .[38;5;246m02:52:59 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp1173..[0m
+2026-11-04 02:52:59.505023 +0000 build-fedora-devel: .[38;5;246m02:52:59 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1173 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-lvm2.git /builder/lvm2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-04 02:53:00.989551 +0000 build-fedora-devel: .[38;5;246m02:53:00 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-04 02:53:00.989618 +0000 build-fedora-devel: .[38;5;246m02:53:00 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m---> Good tag 4be87c2ea9cb646592dcaeab9de2fbdd2deabcbc..[0m
+2026-11-04 02:53:00.989628 +0000 build-fedora-devel: .[38;5;246m02:53:00 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-04 02:53:00.989636 +0000 build-fedora-devel: .[38;5;246m02:53:00 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Merging....[0m
+2026-11-04 02:53:03.183479 +0000 build-fedora-devel: .[38;5;246m02:53:03 .[96m[qb.fetch.lvm2] .[0mLog file: /home/user/builder-fedora/logs/20261104T025257-lvm2.log.[0m
+2026-11-04 02:53:04.939894 +0000 build-fedora-devel: .[38;5;246m02:53:04 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp5561..[0m
+2026-11-04 02:53:04.939977 +0000 build-fedora-devel: .[38;5;246m02:53:04 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5561 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'.[0m
+2026-11-04 02:53:05.095522 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-11-04 02:53:05.096042 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:05.096433 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:53:05.096457 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:53:05.096660 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz --.[0m
+2026-11-04 02:53:05.096715 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:53:05.096745 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:05.096762 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/lvm2.[0m
+2026-11-04 02:53:05.096778 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.096837 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.096880 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:53:05.096982 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:05.096998 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:05.097074 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.097129 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.097171 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:53:05.097212 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:05.097230 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_URL=https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:05.097305 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.097361 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.097376 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:53:05.097433 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:05.097533 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:05.097545 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:53:05.097593 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:53:05.097613 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-11-04 02:53:05.097640 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:53:05.097727 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:05.097740 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /builder/lvm2 ']'.[0m
+2026-11-04 02:53:05.097778 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /builder/lvm2.[0m
+2026-11-04 02:53:05.097920 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ cd /builder/lvm2.[0m
+2026-11-04 02:53:05.097993 +0000 build-fedora-devel: .[38;5;246m02:53:05 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_LVM2.2.03.38.tgz -- https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:09.733026 +0000 build-fedora-devel: .[38;5;246m02:53:09 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-11-04 02:53:09.733095 +0000 build-fedora-devel: .[38;5;246m02:53:09 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:53:10.919420 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mUsing executor local:/tmp/12693246577817638e1e576/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-fedora/tmp/tmpt9pevmkh --untrusted-file /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512']'..[0m
+2026-11-04 02:53:10.926814 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-11-04 02:53:10.928485 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-fedora/tmp/tmpt9pevmkh --untrusted-file /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:53:10.928538 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-fedora/tmp/tmpt9pevmkh'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:53:10.928689 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-fedora/tmp/tmpt9pevmkh'\'' --untrusted-file '\''/home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:53:10.928718 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-fedora/tmp/tmpt9pevmkh --untrusted-file /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512 --.[0m
+2026-11-04 02:53:10.928730 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-11-04 02:53:10.928745 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-11-04 02:53:10.928770 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:10.928838 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-fedora/tmp/tmpt9pevmkh.[0m
+2026-11-04 02:53:10.928901 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.928958 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.929012 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:53:10.929069 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:10.929132 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:10.929185 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.929235 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.929317 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:53:10.929371 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:10.929423 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-11-04 02:53:10.929508 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.929611 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.931236 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:53:10.931263 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:10.931277 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:53:10.931284 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.931290 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.931297 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:53:10.931303 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:53:10.931308 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:53:10.931314 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:53:10.931322 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:53:10.931329 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/tmp/tmpt9pevmkh ']'.[0m
+2026-11-04 02:53:10.931336 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-fedora/tmp/tmpt9pevmkh.[0m
+2026-11-04 02:53:10.931348 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ basename /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:10.931354 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:10.932972 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:10.932995 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:53:10.933006 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:53:10.933013 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -e /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:53:10.933020 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:53:10.933041 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-11-04 02:53:10.933048 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:53:10.933054 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:53:10.933061 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:53:10.933068 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-11-04 02:53:10.933074 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-11-04 02:53:10.933202 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+++ cat /home/user/builder-fedora/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:53:10.933238 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ printf '%s  -\n' 97fd1849cd632943c8233f06f181b1899b0e6937444d672abef10307c66d207c16325701ac669d5ff438490a11596c19d1dbbcff50e4e7c00c9b6e4eb1ecf87c.[0m
+2026-11-04 02:53:10.939232 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mv /home/user/builder-fedora/tmp/tmpt9pevmkh/untrusted_LVM2.2.03.38.tgz /home/user/builder-fedora/tmp/tmpt9pevmkh/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:53:10.945127 +0000 build-fedora-devel: .[38;5;246m02:53:10 .[96m[qb.fetch.lvm2] .[38;5;246m['cd -- /builder', "git -C /builder/lvm2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/lvm2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-04 02:53:12.924896 +0000 build-fedora-devel: .[38;5;246m02:53:12 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp278..[0m
+2026-11-04 02:53:12.925116 +0000 build-fedora-devel: .[38;5;246m02:53:12 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp278 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/lvm2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/lvm2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-04 02:53:15.019996 +0000 build-fedora-devel: .[38;5;246m02:53:15 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-04 02:53:15.020067 +0000 > closing log
