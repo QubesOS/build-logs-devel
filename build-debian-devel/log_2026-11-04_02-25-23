@@ -1,0 +1,107 @@
+2026-11-04 02:25:23.464550 +0000 > starting log
+2026-11-04 02:25:23.466974 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-04 02:25:23.466998 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-04 02:25:23.467009 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-04 02:25:23.467021 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-04 02:25:23.467028 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>>   lvm2.[0m
+2026-11-04 02:25:23.467034 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-04 02:25:23.467044 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-debian-12.amd64>, <QubesDistribution vm-debian-13.amd64>, <QubesDistribution vm-debian-14.amd64>].[0m
+2026-11-04 02:25:23.467051 +0000 build-debian-devel: .[38;5;246m02:25:13 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-04 02:25:23.467058 +0000 build-debian-devel: .[38;5;246m02:25:15 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp6967..[0m
+2026-11-04 02:25:23.467078 +0000 build-debian-devel: .[38;5;246m02:25:15 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6967 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-lvm2.git /builder/lvm2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-04 02:25:23.467087 +0000 build-debian-devel: .[38;5;246m02:25:19 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-04 02:25:23.467095 +0000 build-debian-devel: .[38;5;246m02:25:19 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m---> Good tag 4be87c2ea9cb646592dcaeab9de2fbdd2deabcbc..[0m
+2026-11-04 02:25:23.467107 +0000 build-debian-devel: .[38;5;246m02:25:19 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-04 02:25:23.467115 +0000 build-debian-devel: .[38;5;246m02:25:19 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-11-04 02:25:23.467123 +0000 build-debian-devel: .[38;5;246m02:25:21 .[96m[qb.fetch.lvm2] .[0mLog file: /home/user/builder-devel/logs/20261104T022513-lvm2.log.[0m
+2026-11-04 02:25:27.388944 +0000 build-debian-devel: .[38;5;246m02:25:27 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp8982..[0m
+2026-11-04 02:25:27.389088 +0000 build-debian-devel: .[38;5;246m02:25:27 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8982 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'.[0m
+2026-11-04 02:25:27.781719 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-11-04 02:25:27.782393 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:27.784884 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:25:27.784967 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:25:27.784980 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz --.[0m
+2026-11-04 02:25:27.784997 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:25:27.785007 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:27.785016 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/lvm2.[0m
+2026-11-04 02:25:27.785024 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.785039 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.785050 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:25:27.785073 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:27.785082 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:27.785092 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.785403 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.785731 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:25:27.785815 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:27.785951 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_URL=https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:27.786048 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.786103 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.786338 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:25:27.786633 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:27.786667 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:27.786946 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:25:27.787498 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:27.788078 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-11-04 02:25:27.788111 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:27.788596 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:27.788766 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /builder/lvm2 ']'.[0m
+2026-11-04 02:25:27.788782 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /builder/lvm2.[0m
+2026-11-04 02:25:27.788929 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ cd /builder/lvm2.[0m
+2026-11-04 02:25:27.789129 +0000 build-debian-devel: .[38;5;246m02:25:28 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_LVM2.2.03.38.tgz -- https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:34.738458 +0000 build-debian-devel: .[38;5;246m02:25:34 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-11-04 02:25:34.738521 +0000 build-debian-devel: .[38;5;246m02:25:34 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:36.133311 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mUsing executor local:/tmp/123526997309296307fb160/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpsqt718vu --untrusted-file /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512']'..[0m
+2026-11-04 02:25:36.136805 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-11-04 02:25:36.136865 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpsqt718vu --untrusted-file /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:36.139592 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpsqt718vu'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:25:36.139665 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpsqt718vu'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:25:36.139684 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpsqt718vu --untrusted-file /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 --.[0m
+2026-11-04 02:25:36.139696 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-11-04 02:25:36.139705 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-11-04 02:25:36.139712 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:36.139720 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpsqt718vu.[0m
+2026-11-04 02:25:36.139727 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139734 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139741 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:25:36.139748 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:36.139756 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:36.139764 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139771 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139777 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:25:36.139784 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:36.139791 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-11-04 02:25:36.139797 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139803 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139810 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:25:36.139817 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:36.139825 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:36.139833 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139841 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139847 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:25:36.139854 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:36.139860 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:36.139877 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:25:36.139886 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:36.139894 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpsqt718vu ']'.[0m
+2026-11-04 02:25:36.139901 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpsqt718vu.[0m
+2026-11-04 02:25:36.139920 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:36.141943 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:36.141987 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:36.141999 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:36.142009 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:36.142017 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:36.142025 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:36.142031 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-11-04 02:25:36.142038 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:36.142044 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:36.142052 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:36.142059 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-11-04 02:25:36.142066 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-11-04 02:25:36.143657 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:36.146145 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ printf '%s  -\n' 97fd1849cd632943c8233f06f181b1899b0e6937444d672abef10307c66d207c16325701ac669d5ff438490a11596c19d1dbbcff50e4e7c00c9b6e4eb1ecf87c.[0m
+2026-11-04 02:25:36.152588 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpsqt718vu/untrusted_LVM2.2.03.38.tgz /home/user/builder-devel/tmp/tmpsqt718vu/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:36.163684 +0000 build-debian-devel: .[38;5;246m02:25:36 .[96m[qb.fetch.lvm2] .[38;5;246m['cd -- /builder', "git -C /builder/lvm2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/lvm2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-04 02:25:42.964165 +0000 build-debian-devel: .[38;5;246m02:25:42 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp5346..[0m
+2026-11-04 02:25:42.964265 +0000 build-debian-devel: .[38;5;246m02:25:42 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5346 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/lvm2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/lvm2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-04 02:25:46.074965 +0000 build-debian-devel: .[38;5;246m02:25:46 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-04 02:25:46.075035 +0000 > closing log
