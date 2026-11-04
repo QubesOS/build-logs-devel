@@ -1,0 +1,107 @@
+2026-11-04 02:25:23.464150 +0000 > starting log
+2026-11-04 02:25:23.467322 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-04 02:25:23.467340 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-04 02:25:23.467349 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-04 02:25:23.467356 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-04 02:25:23.467363 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>>   lvm2.[0m
+2026-11-04 02:25:23.467369 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-04 02:25:23.467377 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-11-04 02:25:23.467384 +0000 build-archlinux-devel: .[38;5;246m02:25:15 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-04 02:25:23.467390 +0000 build-archlinux-devel: .[38;5;246m02:25:18 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp1008..[0m
+2026-11-04 02:25:23.467408 +0000 build-archlinux-devel: .[38;5;246m02:25:18 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1008 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-lvm2.git /builder/lvm2 /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-04 02:25:23.467417 +0000 build-archlinux-devel: .[38;5;246m02:25:22 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-04 02:25:23.467428 +0000 build-archlinux-devel: .[38;5;246m02:25:22 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m---> Good tag 4be87c2ea9cb646592dcaeab9de2fbdd2deabcbc..[0m
+2026-11-04 02:25:23.467436 +0000 build-archlinux-devel: .[38;5;246m02:25:22 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-04 02:25:23.467443 +0000 build-archlinux-devel: .[38;5;246m02:25:22 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m--> Switching branch from main branch to main.[0m
+2026-11-04 02:25:25.031071 +0000 build-archlinux-devel: .[38;5;246m02:25:25 .[96m[qb.fetch.lvm2] .[0mLog file: /home/user/builder-devel/logs/20261104T022515-lvm2.log.[0m
+2026-11-04 02:25:29.454558 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp1985..[0m
+2026-11-04 02:25:29.454681 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp1985 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'.[0m
+2026-11-04 02:25:29.664726 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-11-04 02:25:29.664812 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:29.666808 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:25:29.666881 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/lvm2'\'' --file-name '\''LVM2.2.03.38.tgz'\'' --file-url '\''https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz'\'' --'.[0m
+2026-11-04 02:25:29.666908 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /builder/lvm2 --file-name LVM2.2.03.38.tgz --file-url https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz --.[0m
+2026-11-04 02:25:29.666923 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:25:29.666940 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:29.666949 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/lvm2.[0m
+2026-11-04 02:25:29.666957 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.666976 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667218 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:25:29.667253 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:29.667263 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:29.667271 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667277 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667284 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:25:29.667290 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:29.667298 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_URL=https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:29.667304 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667311 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667317 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:25:29.667323 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:29.667329 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:29.667335 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:25:29.667342 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:29.667350 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-11-04 02:25:29.667368 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:29.667414 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:29.667422 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /builder/lvm2 ']'.[0m
+2026-11-04 02:25:29.667429 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /builder/lvm2.[0m
+2026-11-04 02:25:29.671409 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ cd /builder/lvm2.[0m
+2026-11-04 02:25:29.671503 +0000 build-archlinux-devel: .[38;5;246m02:25:29 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_LVM2.2.03.38.tgz -- https://sourceware.org/pub/lvm2/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:37.861944 +0000 build-archlinux-devel: .[38;5;246m02:25:37 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' '' == 1 ']'.[0m
+2026-11-04 02:25:37.863362 +0000 build-archlinux-devel: .[38;5;246m02:25:37 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:39.428652 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246mUsing executor local:/tmp/1247134025450240378a3b5/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmppet3xke3 --untrusted-file /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512']'..[0m
+2026-11-04 02:25:39.431085 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-11-04 02:25:39.431921 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmppet3xke3 --untrusted-file /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:39.433684 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmppet3xke3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:25:39.433763 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmppet3xke3'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz'\'' --checksum-cmd '\''sha512sum'\'' --checksum-file '\''/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512'\'' --'.[0m
+2026-11-04 02:25:39.433784 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmppet3xke3 --untrusted-file /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz --checksum-cmd sha512sum --checksum-file /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 --.[0m
+2026-11-04 02:25:39.433828 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-11-04 02:25:39.433847 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-11-04 02:25:39.433861 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:39.433881 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmppet3xke3.[0m
+2026-11-04 02:25:39.433892 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.433915 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.433928 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-04 02:25:39.433945 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:39.434499 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:39.434520 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434528 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434866 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-04 02:25:39.434884 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:39.434896 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ CHECKSUM_CMD=sha512sum.[0m
+2026-11-04 02:25:39.434906 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434917 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434931 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-04 02:25:39.434943 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:39.434958 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_CHECKSUM=/home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:39.434969 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434983 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.434998 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-04 02:25:39.435009 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-04 02:25:39.435016 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ shift.[0m
+2026-11-04 02:25:39.435026 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-04 02:25:39.435041 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz ']'.[0m
+2026-11-04 02:25:39.435055 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmppet3xke3 ']'.[0m
+2026-11-04 02:25:39.435065 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmppet3xke3.[0m
+2026-11-04 02:25:39.435666 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:39.436502 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:39.436535 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ FILE_NAME=LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:39.436626 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:39.436650 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:39.436665 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -e /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:39.436679 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:39.436718 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-11-04 02:25:39.437505 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:39.437540 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-04 02:25:39.437555 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512 ']'.[0m
+2026-11-04 02:25:39.437561 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ '[' -z sha512sum ']'.[0m
+2026-11-04 02:25:39.437857 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ sha512sum --status -c /dev/fd/63.[0m
+2026-11-04 02:25:39.437869 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+++ cat /home/user/builder-devel/sources/lvm2/LVM2.2.03.38.tgz.sha512.[0m
+2026-11-04 02:25:39.439014 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m++ printf '%s  -\n' 97fd1849cd632943c8233f06f181b1899b0e6937444d672abef10307c66d207c16325701ac669d5ff438490a11596c19d1dbbcff50e4e7c00c9b6e4eb1ecf87c.[0m
+2026-11-04 02:25:39.447976 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmppet3xke3/untrusted_LVM2.2.03.38.tgz /home/user/builder-devel/tmp/tmppet3xke3/LVM2.2.03.38.tgz.[0m
+2026-11-04 02:25:39.459085 +0000 build-archlinux-devel: .[38;5;246m02:25:39 .[96m[qb.fetch.lvm2] .[38;5;246m['cd -- /builder', "git -C /builder/lvm2 rev-parse 'HEAD^{}' >> hash", "git -C /builder/lvm2 tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-04 02:25:41.666644 +0000 build-archlinux-devel: .[38;5;246m02:25:41 .[96m[qb.fetch.lvm2.fetch] .[0mUsing executor qubes:disp132..[0m
+2026-11-04 02:25:41.666712 +0000 build-archlinux-devel: .[38;5;246m02:25:41 .[96m[qb.fetch.lvm2.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp132 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/lvm2 rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/lvm2 tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-04 02:25:44.671325 +0000 build-archlinux-devel: .[38;5;246m02:25:44 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-04 02:25:44.671388 +0000 > closing log
