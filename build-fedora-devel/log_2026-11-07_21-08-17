@@ -1,0 +1,229 @@
+2026-11-07 21:08:17.321087 +0000 > starting log
+2026-11-07 21:08:17.321967 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-07 21:08:17.321981 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-07 21:08:17.321989 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-07 21:08:17.321995 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-07 21:08:17.322001 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>>   linux-kernel-latest.[0m
+2026-11-07 21:08:17.322006 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>>     commit-hash: a2f429c360b8ce14da9c99ad44ca894fb07e1935.[0m
+2026-11-07 21:08:17.374151 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>>     source-hash: 72884e033627d6f07f461ace8260be420c62a1670f18f77c8c357477f31dc7ffc2fca972edb8289dc0a5d87949a5ac53b18db84f778195981a7c75af6c9ff0be.[0m
+2026-11-07 21:08:17.374195 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-07 21:08:17.374203 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[38;5;246m>>   [<QubesDistribution host-fedora-41.x86_64>, <QubesDistribution vm-windows-10.x86_64>].[0m
+2026-11-07 21:08:17.374208 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-07 21:08:17.386660 +0000 build-fedora-devel: .[38;5;246m21:08:17 .[96m[qb.fetch.linux-kernel-latest] .[0mlinux-kernel-latest: source already fetched. Updating..[0m
+2026-11-07 21:08:19.866850 +0000 build-fedora-devel: .[38;5;246m21:08:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp5528..[0m
+2026-11-07 21:08:19.866958 +0000 build-fedora-devel: .[38;5;246m21:08:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5528 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-kernel /builder/linux-kernel-latest /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-07 21:08:24.579142 +0000 build-fedora-devel: .[38;5;246m21:08:24 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-07 21:08:24.579396 +0000 build-fedora-devel: .[38;5;246m21:08:24 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m---> Good tag 05925b41a72839a0b7f0de42a56602d69e0a0f31..[0m
+2026-11-07 21:08:24.579482 +0000 build-fedora-devel: .[38;5;246m21:08:24 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-07 21:08:24.579530 +0000 build-fedora-devel: .[38;5;246m21:08:24 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Merging....[0m
+2026-11-07 21:08:24.579575 +0000 build-fedora-devel: .[38;5;246m21:08:24 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Updating submodules.[0m
+2026-11-07 21:08:26.433798 +0000 build-fedora-devel: .[38;5;246m21:08:26 .[96m[qb.fetch.linux-kernel-latest] .[0mLog file: /home/user/builder-host/logs/20261107T193849-linux-kernel-latest.log.[0m
+2026-11-07 21:08:29.113968 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp251..[0m
+2026-11-07 21:08:29.114067 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp251 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress'.[0m
+2026-11-07 21:08:29.149766 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-11-07 21:08:29.149870 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress.[0m
+2026-11-07 21:08:29.152426 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.3.3.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign'\'' --uncompress --'.[0m
+2026-11-07 21:08:29.152472 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.3.3.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign'\'' --uncompress --'.[0m
+2026-11-07 21:08:29.152532 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress --.[0m
+2026-11-07 21:08:29.152582 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 10 -gt 0 ]].[0m
+2026-11-07 21:08:29.152665 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:08:29.152685 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-kernel-latest.[0m
+2026-11-07 21:08:29.152725 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.152783 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.152843 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 8 -gt 0 ]].[0m
+2026-11-07 21:08:29.152856 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:08:29.152892 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.3.3.tar.xz.[0m
+2026-11-07 21:08:29.152907 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.152919 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.153015 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 6 -gt 0 ]].[0m
+2026-11-07 21:08:29.153028 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:08:29.153043 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz.[0m
+2026-11-07 21:08:29.153075 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.153114 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.153128 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 4 -gt 0 ]].[0m
+2026-11-07 21:08:29.153140 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:08:29.154995 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 21:08:29.155029 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.155047 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.155063 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 2 -gt 0 ]].[0m
+2026-11-07 21:08:29.155078 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:08:29.155093 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNCOMPRESS=1.[0m
+2026-11-07 21:08:29.155107 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.155122 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:08:29.155137 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-07 21:08:29.155157 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 21:08:29.155176 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-11-07 21:08:29.155193 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 21:08:29.155210 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.xz.[0m
+2026-11-07 21:08:29.155228 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /builder/linux-kernel-latest ']'.[0m
+2026-11-07 21:08:29.155247 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /builder/linux-kernel-latest.[0m
+2026-11-07 21:08:29.155263 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ cd /builder/linux-kernel-latest.[0m
+2026-11-07 21:08:29.155286 +0000 build-fedora-devel: .[38;5;246m21:08:29 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.3.3.tar.xz -- https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz.[0m
+2026-11-07 21:11:19.014733 +0000 build-fedora-devel: .[38;5;246m21:11:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1 == 1 ']'.[0m
+2026-11-07 21:11:19.014878 +0000 build-fedora-devel: .[38;5;246m21:11:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.3.3.tar.xz '!=' linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 21:11:19.014933 +0000 build-fedora-devel: .[38;5;246m21:11:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.3.3.tar '!=' linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 21:11:19.014978 +0000 build-fedora-devel: .[38;5;246m21:11:19 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unxz untrusted_linux-7.3.3.tar.xz.[0m
+2026-11-07 21:11:21.313075 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.[0m
+2026-11-07 21:11:21.313173 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:21.313703 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:21.315095 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:21.315160 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:21.315266 +0000 build-fedora-devel: .[38;5;246m21:11:21 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.3.3.tar.sign https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:30.522837 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mUsing executor local:/tmp/123271260245584b6873db7/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-host/tmp/tmphrzntwjy --untrusted-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc']'..[0m
+2026-11-07 21:11:30.525883 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-11-07 21:11:30.526201 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-host/tmp/tmphrzntwjy --untrusted-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-11-07 21:11:30.528335 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-host/tmp/tmphrzntwjy'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar'\'' --untrusted-signature-file '\''/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign'\'' --pubkey-file '\''/home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-11-07 21:11:30.528406 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-host/tmp/tmphrzntwjy'\'' --untrusted-file '\''/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar'\'' --untrusted-signature-file '\''/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign'\'' --pubkey-file '\''/home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-11-07 21:11:30.528449 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-host/tmp/tmphrzntwjy --untrusted-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc --.[0m
+2026-11-07 21:11:30.528465 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-11-07 21:11:30.528480 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-11-07 21:11:30.528493 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528508 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-host/tmp/tmphrzntwjy.[0m
+2026-11-07 21:11:30.528520 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528533 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528546 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-11-07 21:11:30.528558 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528575 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 21:11:30.528587 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528600 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528612 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-07 21:11:30.528625 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528642 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:30.528654 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528666 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528678 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-07 21:11:30.528691 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528704 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-11-07 21:11:30.528717 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528730 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528742 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-07 21:11:30.528755 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528767 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-11-07 21:11:30.528780 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528792 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528805 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-07 21:11:30.528817 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 21:11:30.528829 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 21:11:30.528841 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-07 21:11:30.528857 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar ']'.[0m
+2026-11-07 21:11:30.528873 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmphrzntwjy ']'.[0m
+2026-11-07 21:11:30.528887 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /home/user/builder-host/tmp/tmphrzntwjy.[0m
+2026-11-07 21:11:30.529660 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 21:11:30.531229 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.[0m
+2026-11-07 21:11:30.531263 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.3.3.tar.[0m
+2026-11-07 21:11:30.531283 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-11-07 21:11:30.531333 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:30.531350 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-07 21:11:30.531378 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:30.531398 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 21:11:30.531417 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:30.531436 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:30.531456 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 21:11:30.531472 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-07 21:11:30.531488 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 21:11:30.531503 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 21:11:30.531522 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:30.532499 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:30.532527 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:30.532547 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-11-07 21:11:30.533625 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.kYSG8XK8Ze.[0m
+2026-11-07 21:11:30.533647 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-11-07 21:11:30.541214 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.kYSG8XK8Ze/keyring /home/user/builder-host/sources/linux-kernel-latest/kernel.org-2-key.asc /home/user/builder-host/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-11-07 21:11:30.551130 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.kYSG8XK8Ze/keyring.gpg /tmp/tmp.kYSG8XK8Ze/keyring.[0m
+2026-11-07 21:11:30.557283 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sqv --version.[0m
+2026-11-07 21:11:30.559232 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv_version='sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-11-07 21:11:30.559258 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-11-07 21:11:30.559272 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sort -VC.[0m
+2026-11-07 21:11:30.561111 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-11-07 21:11:30.561743 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-11-07 21:11:30.561773 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-11-07 21:11:30.561793 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-11-07 21:11:30.561815 +0000 build-fedora-devel: .[38;5;246m21:11:30 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.kYSG8XK8Ze/keyring /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 21:11:33.980468 +0000 build-fedora-devel: .[38;5;246m21:11:33 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m647F28654894E3BD457199BE38DBBDC86092693E.[0m
+2026-11-07 21:11:33.981185 +0000 build-fedora-devel: .[38;5;246m21:11:33 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar.sign /home/user/builder-host/tmp/tmphrzntwjy/linux-7.3.3.tar.sign.[0m
+2026-11-07 21:11:33.985189 +0000 build-fedora-devel: .[38;5;246m21:11:33 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ rm -rf /tmp/tmp.kYSG8XK8Ze.[0m
+2026-11-07 21:11:33.986498 +0000 build-fedora-devel: .[38;5;246m21:11:33 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-host/tmp/tmphrzntwjy/untrusted_linux-7.3.3.tar /home/user/builder-host/tmp/tmphrzntwjy/linux-7.3.3.tar.[0m
+2026-11-07 21:11:36.418128 +0000 build-fedora-devel: .[38;5;246m21:11:36 .[96m[qb.fetch.linux-kernel-latest] .[38;5;246m['cd -- /builder', "git -C /builder/linux-kernel-latest rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-kernel-latest tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-07 21:11:38.871202 +0000 build-fedora-devel: .[38;5;246m21:11:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp8121..[0m
+2026-11-07 21:11:38.871279 +0000 build-fedora-devel: .[38;5;246m21:11:38 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8121 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-kernel-latest rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-kernel-latest tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-07 21:11:44.245279 +0000 build-fedora-devel: .[38;5;246m21:11:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp7988..[0m
+2026-11-07 21:11:44.245490 +0000 build-fedora-devel: .[38;5;246m21:11:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7988 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'rm -f -- /builder/modules && cd -- /builder && git -C /builder/linux-kernel-latest/dummy-psu rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/dummy-backlight rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/v4l2loopback rev-parse HEAD >> modules'.[0m
+2026-11-07 21:11:49.193818 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp161..[0m
+2026-11-07 21:11:49.193900 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp161 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-psu dummy-psu-4602afb3f9aeab06.tar.gz dummy-psu/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-backlight dummy-backlight-33420931ad20f1e3.tar.gz dummy-backlight/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/v4l2loopback v4l2loopback-a7e4a4dea36187ad.tar.gz v4l2loopback/'.[0m
+2026-11-07 21:11:49.358923 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 21:11:49.359081 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 21:11:49.359126 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 21:11:49.365252 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 21:11:49.365419 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 21:11:49.365455 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-psu = --no-gitignore ']'.[0m
+2026-11-07 21:11:49.365485 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 21:11:49.365928 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 21:11:49.365960 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 21:11:49.365972 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-11-07 21:11:49.366118 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-psu/ '!=' x ']'.[0m
+2026-11-07 21:11:49.366216 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-psu/.[0m
+2026-11-07 21:11:49.366249 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 21:11:49.366277 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-psu ~.[0m
+2026-11-07 21:11:49.366312 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 21:11:49.393798 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1783647624.[0m
+2026-11-07 21:11:49.394443 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 21:11:49.394524 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 21:11:49.394548 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 21:11:49.397606 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 21:11:49.397736 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1783647624 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-psu/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-psu-4602afb3f9aeab06.tar -cf dummy-psu-4602afb3f9aeab06.tar ..[0m
+2026-11-07 21:11:49.400248 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 21:11:49.400837 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-11-07 21:11:49.406384 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 21:11:49.406530 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 21:11:49.408428 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 21:11:49.408480 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 21:11:49.408492 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 21:11:49.410263 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 21:11:49.410333 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 21:11:49.410360 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-backlight = --no-gitignore ']'.[0m
+2026-11-07 21:11:49.410940 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 21:11:49.411475 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 21:11:49.411624 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 21:11:49.411669 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-11-07 21:11:49.411699 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-backlight/ '!=' x ']'.[0m
+2026-11-07 21:11:49.411725 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-backlight/.[0m
+2026-11-07 21:11:49.411754 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 21:11:49.411784 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-backlight ~.[0m
+2026-11-07 21:11:49.411893 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 21:11:49.414411 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1600607528.[0m
+2026-11-07 21:11:49.415878 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 21:11:49.415955 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 21:11:49.415984 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 21:11:49.417107 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 21:11:49.417240 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1600607528 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-backlight/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-backlight-33420931ad20f1e3.tar -cf dummy-backlight-33420931ad20f1e3.tar ..[0m
+2026-11-07 21:11:49.419875 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 21:11:49.419922 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-11-07 21:11:49.421329 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 21:11:49.421362 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 21:11:49.424549 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 21:11:49.424589 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 21:11:49.424598 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 21:11:49.427005 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 21:11:49.427049 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 21:11:49.427060 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/v4l2loopback = --no-gitignore ']'.[0m
+2026-11-07 21:11:49.428107 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 21:11:49.429163 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 21:11:49.429211 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 21:11:49.429221 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-11-07 21:11:49.429233 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xv4l2loopback/ '!=' x ']'.[0m
+2026-11-07 21:11:49.429241 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=v4l2loopback/.[0m
+2026-11-07 21:11:49.429396 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 21:11:49.429420 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/v4l2loopback ~.[0m
+2026-11-07 21:11:49.429432 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 21:11:49.431609 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1763990111.[0m
+2026-11-07 21:11:49.432564 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 21:11:49.432598 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 21:11:49.432609 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 21:11:49.433842 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 21:11:49.433884 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1763990111 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%v4l2loopback/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude v4l2loopback-a7e4a4dea36187ad.tar -cf v4l2loopback-a7e4a4dea36187ad.tar ..[0m
+2026-11-07 21:11:49.436757 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 21:11:49.436799 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-11-07 21:11:49.456179 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 21:11:49.456251 +0000 build-fedora-devel: .[38;5;246m21:11:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 21:11:52.011007 +0000 build-fedora-devel: .[38;5;246m21:11:52 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-07 21:11:52.011116 +0000 > closing log
