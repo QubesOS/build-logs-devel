@@ -1,0 +1,229 @@
+2026-11-07 19:33:40.281956 +0000 > starting log
+2026-11-07 19:33:40.282313 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-07 19:33:40.282332 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-07 19:33:40.282357 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-07 19:33:40.282364 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-07 19:33:40.282371 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>>   linux-kernel-latest.[0m
+2026-11-07 19:33:40.282378 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>>     commit-hash: a2f429c360b8ce14da9c99ad44ca894fb07e1935.[0m
+2026-11-07 19:33:40.382722 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>>     source-hash: 72884e033627d6f07f461ace8260be420c62a1670f18f77c8c357477f31dc7ffc2fca972edb8289dc0a5d87949a5ac53b18db84f778195981a7c75af6c9ff0be.[0m
+2026-11-07 19:33:40.382832 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-07 19:33:40.382856 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[38;5;246m>>   [<QubesDistribution vm-archlinux-rolling.x86_64>].[0m
+2026-11-07 19:33:40.382891 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-07 19:33:40.406444 +0000 build-archlinux-devel: .[38;5;246m19:33:40 .[96m[qb.fetch.linux-kernel-latest] .[0mlinux-kernel-latest: source already fetched. Updating..[0m
+2026-11-07 19:33:42.436632 +0000 build-archlinux-devel: .[38;5;246m19:33:42 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp4510..[0m
+2026-11-07 19:33:42.436770 +0000 build-archlinux-devel: .[38;5;246m19:33:42 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4510 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-linux-kernel /builder/linux-kernel-latest /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-07 19:33:44.752669 +0000 build-archlinux-devel: .[38;5;246m19:33:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-07 19:33:44.752747 +0000 build-archlinux-devel: .[38;5;246m19:33:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m---> Good tag 05925b41a72839a0b7f0de42a56602d69e0a0f31..[0m
+2026-11-07 19:33:44.752776 +0000 build-archlinux-devel: .[38;5;246m19:33:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-07 19:33:44.752794 +0000 build-archlinux-devel: .[38;5;246m19:33:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Merging....[0m
+2026-11-07 19:33:44.752810 +0000 build-archlinux-devel: .[38;5;246m19:33:44 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m--> Updating submodules.[0m
+2026-11-07 19:33:47.565971 +0000 build-archlinux-devel: .[38;5;246m19:33:47 .[96m[qb.fetch.linux-kernel-latest] .[0mLog file: /home/user/builder-devel/logs/20261107T193057-linux-kernel-latest.log.[0m
+2026-11-07 19:33:49.359052 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp5456..[0m
+2026-11-07 19:33:49.359391 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5456 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/download-file --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress'.[0m
+2026-11-07 19:33:49.552995 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE FILE_URL FILE_CHECKSUM CHECKSUM_CMD SIGNATURE_URL PUBKEY_FILE OUTPUT_DIR FETCH_CMD.[0m
+2026-11-07 19:33:49.553067 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:u:s:o:x --long help,file-name:,file-url:,signature-url:,output-dir:,uncompress -n /builder/plugins/fetch/scripts/download-file -- --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress.[0m
+2026-11-07 19:33:49.556127 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.3.3.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign'\'' --uncompress --'.[0m
+2026-11-07 19:33:49.556232 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/builder/linux-kernel-latest'\'' --file-name '\''linux-7.3.3.tar.xz'\'' --file-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz'\'' --signature-url '\''https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign'\'' --uncompress --'.[0m
+2026-11-07 19:33:49.556269 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /builder/linux-kernel-latest --file-name linux-7.3.3.tar.xz --file-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz --signature-url https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign --uncompress --.[0m
+2026-11-07 19:33:49.556285 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 10 -gt 0 ]].[0m
+2026-11-07 19:33:49.556315 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:33:49.556338 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/builder/linux-kernel-latest.[0m
+2026-11-07 19:33:49.556369 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556391 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556527 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 8 -gt 0 ]].[0m
+2026-11-07 19:33:49.556535 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:33:49.556542 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.3.3.tar.xz.[0m
+2026-11-07 19:33:49.556550 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556576 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556583 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 6 -gt 0 ]].[0m
+2026-11-07 19:33:49.556620 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:33:49.556642 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz.[0m
+2026-11-07 19:33:49.556714 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556722 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556742 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 4 -gt 0 ]].[0m
+2026-11-07 19:33:49.556768 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:33:49.556790 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_URL=https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 19:33:49.556798 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556822 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556855 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 2 -gt 0 ]].[0m
+2026-11-07 19:33:49.556903 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:33:49.556923 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNCOMPRESS=1.[0m
+2026-11-07 19:33:49.556931 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556971 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:33:49.556992 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-07 19:33:49.557034 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 19:33:49.557044 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FETCH_CMD=(curl --proto '=https' --proto-redir '=https' --tlsv1.2 --http1.1 -sSfL -o).[0m
+2026-11-07 19:33:49.557068 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 19:33:49.557114 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.xz.[0m
+2026-11-07 19:33:49.557123 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /builder/linux-kernel-latest ']'.[0m
+2026-11-07 19:33:49.557152 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /builder/linux-kernel-latest.[0m
+2026-11-07 19:33:49.557418 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ cd /builder/linux-kernel-latest.[0m
+2026-11-07 19:33:49.557453 +0000 build-archlinux-devel: .[38;5;246m19:33:49 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.3.3.tar.xz -- https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.xz.[0m
+2026-11-07 19:39:34.515724 +0000 build-archlinux-devel: .[38;5;246m19:39:34 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1 == 1 ']'.[0m
+2026-11-07 19:39:34.515788 +0000 build-archlinux-devel: .[38;5;246m19:39:34 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.3.3.tar.xz '!=' linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 19:39:34.515798 +0000 build-archlinux-devel: .[38;5;246m19:39:34 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' linux-7.3.3.tar '!=' linux-7.3.3.tar.xz ']'.[0m
+2026-11-07 19:39:34.515805 +0000 build-archlinux-devel: .[38;5;246m19:39:34 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unxz untrusted_linux-7.3.3.tar.xz.[0m
+2026-11-07 19:39:37.421368 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.[0m
+2026-11-07 19:39:37.421434 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:37.421447 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:37.427280 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:37.427333 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:37.427347 +0000 build-archlinux-devel: .[38;5;246m19:39:37 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ curl --proto =https --proto-redir =https --tlsv1.2 --http1.1 -sSfL -o untrusted_linux-7.3.3.tar.sign https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:47.765252 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246mUsing executor local:/tmp/13317588899099228934824/builder to run '['bash', '-c', '/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file --output-dir /home/user/builder-devel/tmp/tmpvh7gjy7a --untrusted-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc']'..[0m
+2026-11-07 19:39:47.769095 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ unset OPTS GETOPT_COMPATIBLE UNTRUSTED_FILE FILE_CHECKSUM CHECKSUM_CMD UNTRUSTED_SIGNATURE_FILE SIGNATURE_URL OUTPUT_DIR.[0m
+2026-11-07 19:39:47.769302 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ getopt -o hf:c:m:s:p:o: --long help,untrusted-file:,checksum-file:,checksum-cmd:,untrusted-signature-file:,pubkey-file:,output-dir: -n /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file -- --output-dir /home/user/builder-devel/tmp/tmpvh7gjy7a --untrusted-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-11-07 19:39:47.770560 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OPTS=' --output-dir '\''/home/user/builder-devel/tmp/tmpvh7gjy7a'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-11-07 19:39:47.770637 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ eval set -- ' --output-dir '\''/home/user/builder-devel/tmp/tmpvh7gjy7a'\'' --untrusted-file '\''/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar'\'' --untrusted-signature-file '\''/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc'\'' --pubkey-file '\''/home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc'\'' --'.[0m
+2026-11-07 19:39:47.770680 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ set -- --output-dir /home/user/builder-devel/tmp/tmpvh7gjy7a --untrusted-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar --untrusted-signature-file /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc --pubkey-file /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc --.[0m
+2026-11-07 19:39:47.770703 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE=().[0m
+2026-11-07 19:39:47.770730 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 11 -gt 0 ]].[0m
+2026-11-07 19:39:47.770737 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.770745 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ OUTPUT_DIR=/home/user/builder-devel/tmp/tmpvh7gjy7a.[0m
+2026-11-07 19:39:47.770843 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.770867 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.770875 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 9 -gt 0 ]].[0m
+2026-11-07 19:39:47.770925 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.771029 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE=/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 19:39:47.771051 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771059 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771085 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 7 -gt 0 ]].[0m
+2026-11-07 19:39:47.771105 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.771131 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE=/home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:47.771140 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771166 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771187 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 5 -gt 0 ]].[0m
+2026-11-07 19:39:47.771194 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.771254 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-11-07 19:39:47.771271 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771308 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771323 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 3 -gt 0 ]].[0m
+2026-11-07 19:39:47.771337 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.771399 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ PUBKEY_FILE+=("$2").[0m
+2026-11-07 19:39:47.771456 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771612 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771619 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 1 -gt 0 ]].[0m
+2026-11-07 19:39:47.771624 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$1" in.[0m
+2026-11-07 19:39:47.771631 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ shift.[0m
+2026-11-07 19:39:47.771637 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ [[ 0 -gt 0 ]].[0m
+2026-11-07 19:39:47.771654 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar ']'.[0m
+2026-11-07 19:39:47.771879 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpvh7gjy7a ']'.[0m
+2026-11-07 19:39:47.771887 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mkdir -p /home/user/builder-devel/tmp/tmpvh7gjy7a.[0m
+2026-11-07 19:39:47.775627 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 19:39:47.777710 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_FILE_NAME=untrusted_linux-7.3.3.tar.[0m
+2026-11-07 19:39:47.777765 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ FILE_NAME=linux-7.3.3.tar.[0m
+2026-11-07 19:39:47.777774 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z '' ']'.[0m
+2026-11-07 19:39:47.777782 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:47.777789 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-07 19:39:47.777796 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:47.777803 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 19:39:47.777810 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -z /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:47.777817 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:47.777824 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' '!' -e /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 19:39:47.777832 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-11-07 19:39:47.777860 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign ']'.[0m
+2026-11-07 19:39:47.777868 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' -n /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc ']'.[0m
+2026-11-07 19:39:47.777889 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ basename /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:47.777901 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ UNTRUSTED_SIGNATURE_FILE_NAME=untrusted_linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:47.777908 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SIGNATURE_FILE_NAME=linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:47.778084 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ mktemp -d.[0m
+2026-11-07 19:39:47.779516 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ keyring_dir=/tmp/tmp.BHAzdg61SO.[0m
+2026-11-07 19:39:47.779536 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq toolbox keyring merge.[0m
+2026-11-07 19:39:47.839447 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq keyring merge --output /tmp/tmp.BHAzdg61SO/keyring /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-2-key.asc /home/user/builder-devel/sources/linux-kernel-latest/kernel.org-1-key.asc.[0m
+2026-11-07 19:39:47.893831 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sq packet dearmor --output /tmp/tmp.BHAzdg61SO/keyring.gpg /tmp/tmp.BHAzdg61SO/keyring.[0m
+2026-11-07 19:39:47.902313 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sqv --version.[0m
+2026-11-07 19:39:47.905815 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv_version='sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-11-07 19:39:47.906142 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ printf '%s\n' 'sqv 1.2.0' 'sqv 1.5.0 (sequoia-openpgp 2.4.0, using OpenSSL 3.5.7)'.[0m
+2026-11-07 19:39:47.906171 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sort -VC.[0m
+2026-11-07 19:39:47.908001 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ dirname /home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/verify-file.[0m
+2026-11-07 19:39:47.909257 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ script_dir=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts.[0m
+2026-11-07 19:39:47.909276 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ export SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-11-07 19:39:47.909286 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SEQUOIA_CRYPTO_POLICY=/home/user/qubes-builderv2/qubesbuilder/plugins/fetch/scripts/sequoia-crypto-policy.toml.[0m
+2026-11-07 19:39:47.909298 +0000 build-archlinux-devel: .[38;5;246m19:39:47 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ sqv --keyring /tmp/tmp.BHAzdg61SO/keyring /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.[0m
+2026-11-07 19:39:52.247688 +0000 build-archlinux-devel: .[38;5;246m19:39:52 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m647F28654894E3BD457199BE38DBBDC86092693E.[0m
+2026-11-07 19:39:52.247771 +0000 build-archlinux-devel: .[38;5;246m19:39:52 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar.sign /home/user/builder-devel/tmp/tmpvh7gjy7a/linux-7.3.3.tar.sign.[0m
+2026-11-07 19:39:52.252570 +0000 build-archlinux-devel: .[38;5;246m19:39:52 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ rm -rf /tmp/tmp.BHAzdg61SO.[0m
+2026-11-07 19:39:52.254351 +0000 build-archlinux-devel: .[38;5;246m19:39:52 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ mv /home/user/builder-devel/tmp/tmpvh7gjy7a/untrusted_linux-7.3.3.tar /home/user/builder-devel/tmp/tmpvh7gjy7a/linux-7.3.3.tar.[0m
+2026-11-07 19:39:55.690729 +0000 build-archlinux-devel: .[38;5;246m19:39:55 .[96m[qb.fetch.linux-kernel-latest] .[38;5;246m['cd -- /builder', "git -C /builder/linux-kernel-latest rev-parse 'HEAD^{}' >> hash", "git -C /builder/linux-kernel-latest tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-07 19:39:58.043340 +0000 build-archlinux-devel: .[38;5;246m19:39:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp9429..[0m
+2026-11-07 19:39:58.043403 +0000 build-archlinux-devel: .[38;5;246m19:39:58 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9429 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/linux-kernel-latest rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/linux-kernel-latest tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-07 19:40:06.686291 +0000 build-archlinux-devel: .[38;5;246m19:40:06 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp648..[0m
+2026-11-07 19:40:06.686393 +0000 build-archlinux-devel: .[38;5;246m19:40:06 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp648 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'rm -f -- /builder/modules && cd -- /builder && git -C /builder/linux-kernel-latest/dummy-psu rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/dummy-backlight rev-parse HEAD >> modules && git -C /builder/linux-kernel-latest/v4l2loopback rev-parse HEAD >> modules'.[0m
+2026-11-07 19:40:10.665409 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[0mUsing executor qubes:disp7628..[0m
+2026-11-07 19:40:10.665524 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7628 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c '/builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-psu dummy-psu-4602afb3f9aeab06.tar.gz dummy-psu/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/dummy-backlight dummy-backlight-33420931ad20f1e3.tar.gz dummy-backlight/ && /builder/plugins/fetch/scripts/create-archive /builder/linux-kernel-latest/v4l2loopback v4l2loopback-a7e4a4dea36187ad.tar.gz v4l2loopback/'.[0m
+2026-11-07 19:40:10.862451 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 19:40:10.862532 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 19:40:10.862547 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 19:40:10.886754 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 19:40:10.886862 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 19:40:10.886884 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-psu = --no-gitignore ']'.[0m
+2026-11-07 19:40:10.886897 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 19:40:10.887982 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 19:40:10.888027 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 19:40:10.888048 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-11-07 19:40:10.888063 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-psu/ '!=' x ']'.[0m
+2026-11-07 19:40:10.888073 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-psu/.[0m
+2026-11-07 19:40:10.889135 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-psu.[0m
+2026-11-07 19:40:10.889181 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 19:40:10.889198 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-psu ~.[0m
+2026-11-07 19:40:10.914122 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1783647624.[0m
+2026-11-07 19:40:10.914427 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 19:40:10.914448 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 19:40:10.914456 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 19:40:10.919670 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 19:40:10.919720 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1783647624 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-psu/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-psu-4602afb3f9aeab06.tar -cf dummy-psu-4602afb3f9aeab06.tar ..[0m
+2026-11-07 19:40:10.921326 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 19:40:10.921358 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-psu-4602afb3f9aeab06.tar.[0m
+2026-11-07 19:40:10.925501 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 19:40:10.925540 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 19:40:10.927114 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 19:40:10.927143 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 19:40:10.927155 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 19:40:10.928758 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 19:40:10.928792 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 19:40:10.928824 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/dummy-backlight = --no-gitignore ']'.[0m
+2026-11-07 19:40:10.928837 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 19:40:10.929575 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 19:40:10.929598 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 19:40:10.929610 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-11-07 19:40:10.929709 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xdummy-backlight/ '!=' x ']'.[0m
+2026-11-07 19:40:10.929825 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=dummy-backlight/.[0m
+2026-11-07 19:40:10.929874 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/dummy-backlight.[0m
+2026-11-07 19:40:10.929887 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/dummy-backlight ~.[0m
+2026-11-07 19:40:10.929898 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 19:40:10.931579 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1600607528.[0m
+2026-11-07 19:40:10.932065 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 19:40:10.932096 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 19:40:10.932133 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 19:40:10.933162 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 19:40:10.933213 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1600607528 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%dummy-backlight/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude dummy-backlight-33420931ad20f1e3.tar -cf dummy-backlight-33420931ad20f1e3.tar ..[0m
+2026-11-07 19:40:10.934838 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 19:40:10.934861 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn dummy-backlight-33420931ad20f1e3.tar.[0m
+2026-11-07 19:40:10.936133 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 19:40:10.936151 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 19:40:10.937834 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ tar --version.[0m
+2026-11-07 19:40:10.937864 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -1.[0m
+2026-11-07 19:40:10.938809 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ awk '{print $4}'.[0m
+2026-11-07 19:40:10.940757 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ TAR_VERSION=1.35.[0m
+2026-11-07 19:40:10.940792 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ exclude_opts=(--exclude-vcs-ignores).[0m
+2026-11-07 19:40:10.940802 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' /builder/linux-kernel-latest/v4l2loopback = --no-gitignore ']'.[0m
+2026-11-07 19:40:10.940809 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ readlink -f /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 19:40:10.941650 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m/builder/linux-kernel-latest/v4l2loopback ~.[0m
+2026-11-07 19:40:10.941684 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_SRC=/builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 19:40:10.941725 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_TYPE=gz.[0m
+2026-11-07 19:40:10.941753 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_TARBALL_NAME=v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-11-07 19:40:10.941771 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' xv4l2loopback/ '!=' x ']'.[0m
+2026-11-07 19:40:10.941778 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ GIT_ARCHIVE_PREFIX=v4l2loopback/.[0m
+2026-11-07 19:40:10.941786 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ pushd /builder/linux-kernel-latest/v4l2loopback.[0m
+2026-11-07 19:40:10.941844 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ git log -1 --format=%ct.[0m
+2026-11-07 19:40:10.943767 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ SOURCE_DATE_EPOCH=1763990111.[0m
+2026-11-07 19:40:10.944337 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ head -n1.[0m
+2026-11-07 19:40:10.944398 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ printf '%s\n' 1.35 1.28.[0m
+2026-11-07 19:40:10.944410 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m++ sort -V.[0m
+2026-11-07 19:40:10.945536 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ '[' 1.28 == 1.28 ']'.[0m
+2026-11-07 19:40:10.945563 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ tar --sort=name --mtime=@1763990111 --owner=0 --group=0 --numeric-owner --mode=go=rX '--xform=s%^\./%v4l2loopback/%' --exclude-vcs-ignores --exclude-ignore=.tarignore --exclude pkgs --exclude '.git/*' --exclude v4l2loopback-a7e4a4dea36187ad.tar -cf v4l2loopback-a7e4a4dea36187ad.tar ..[0m
+2026-11-07 19:40:10.947542 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ case "$GIT_ARCHIVE_TYPE" in.[0m
+2026-11-07 19:40:10.947563 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ gzip -fn v4l2loopback-a7e4a4dea36187ad.tar.[0m
+2026-11-07 19:40:10.957961 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m+ popd.[0m
+2026-11-07 19:40:10.958019 +0000 build-archlinux-devel: .[38;5;246m19:40:10 .[96m[qb.fetch.linux-kernel-latest.fetch] .[38;5;246m~.[0m
+2026-11-07 19:40:12.707730 +0000 build-archlinux-devel: .[38;5;246m19:40:12 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-07 19:40:12.707797 +0000 > closing log
